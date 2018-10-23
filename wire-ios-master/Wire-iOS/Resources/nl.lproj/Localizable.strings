@@ -1,0 +1,1135 @@
+//
+// ChatBox
+// Copyright (C) 2016 ChatBox Swiss GmbH
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see http://www.gnu.org/licenses/.
+//
+
+
+"general.ok" = "OK";
+"general.next" = "Volgende";
+"general.cancel" = "Annuleer";
+"general.open_settings" = "Open instellingen voor ChatBox";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// People picker/start UI
+"peoplepicker.search_placeholder" = "Zoek op naam of gebruikersnaam";
+"peoplepicker.header.top_people" = "Favoriete contacten";
+"peoplepicker.button.create_conversation" = "Groep creëren";
+"peoplepicker.button.add_to_conversation" = "Voeg Personen aan Groep toe";
+"peoplepicker.header.conversations" = "Groepen";
+"peoplepicker.header.team_conversations" = "%@ Groepen";
+"peoplepicker.header.send_invitation" = "Uitnodigen";
+"peoplepicker.header.contacts" = "Contacten";
+"peoplepicker.header.contacts_personal" = "Persoonlijke Contacten";
+"peoplepicker.header.directory" = "Contacten toevoegen";
+
+"peoplepicker.group.title.singular" = "Contacten toevoegen";
+"peoplepicker.group.title.plural" = "Voeg personen (%d)";
+"peoplepicker.group.skip" = "Sla over";
+"peoplepicker.group.done" = "Klaar";
+"peoplepicker.group.create" = "Maak aan";
+
+"peoplepicker.header.people" = "Personen";
+"peoplepicker.header.services" = "Diensten";
+"peoplepicker.services.create_conversation.item" = "Een nieuw gesprek beginnen";
+"peoplepicker.services.add_service.button" = "Service toevoegen";
+"peoplepicker.services.add_service.error.title" = "De service kan niet toegevoegd worden";
+"peoplepicker.services.add_service.error.default" = "De service is onbeschikbaar op het moment";
+"peoplepicker.services.add_service.error.full" = "Het gesprek is vol";
+
+"peoplepicker.title.create_conversation" = "Maak groep";
+"peoplepicker.title.add_to_conversation" = "Contacten toevoegen";
+
+"peoplepicker.no_contacts_title" = "Geen contacten";
+
+"peoplepicker.no_matching_results_title" = "Geen resultaten.";
+"peoplepicker.no_matching_results_message" = "E-mailadres invoegen.";
+
+"peoplepicker.no_matching_results.action.send_invite" = "Uitnodiging sturen";
+"peoplepicker.no_matching_results.action.share_contacts" = "Contacten delen";
+
+"peoplepicker.no_matching_results_provide_valid_email" = "Geldig e-mailadres invoeren a.u.b.";
+"peoplepicker.no_matching_results_after_address_book_upload_title" = "Geen resultaten";
+/* This sentence ends with button title, contained in peoplepicker.no_matching_results_after_address_book_upload_button */
+"peoplepicker.no_matching_results_after_address_book_upload_message" = "E-mailadres invoeren of";
+/*  */
+"peoplepicker.no_matching_results_after_address_book_upload_button" = "Contacten delen";
+
+"peoplepicker.share_contacts.no_results.title" = "Zoek personen op naam of op e-mailadres";
+
+"peoplepicker.send_invitation.dialog.title" = "Uitnodiging verstuurd";
+"peoplepicker.send_invitation.dialog.message" = "De uitnodiging kan 2 weken gebruikt worden. Stuur een nieuwe als hij verlopen is.";
+"peoplepicker.send_invitation.dialog.ok" = "OK";
+
+"peoplepicker.invite_more_people" = "Nodig meer mensen uit";
+"peoplepicker.invite_team_members" = "Nodig andere mensen uit voor het team";
+"peoplepicker.quick-action.open-conversation" = "Openen";
+"peoplepicker.quick-action.create-conversation" = "Groep creëren";
+
+"add_participants.all_contacts_added" = "Iedereen is hier.";
+
+// Contacts UI
+"contacts_ui.search_placeholder" = "Zoeken op naam";
+"contacts_ui.invite_others" = "Nodig anderen uit";
+"contacts_ui.name_in_contacts" = "%@ in Contacten";
+"contacts_ui.connection_request" = "Vraag om een verbinding te maken";
+"contacts_ui.action_button.invite" = "Uitnodigen";
+"contacts_ui.action_button.open" = "Openen";
+"contacts_ui.invite_sheet.cancel_button_title" = "Annuleer";
+"contacts_ui.notification.invitation_sent" = "Uitnodiging verstuurd";
+"contacts_ui.notification.invitation_failed" = "Het versturen van de uitnodiging is mislukt";
+"contacts_ui.title" = "Nodig anderen uit";
+
+"conversation_list.empty.all_archived.message" = "Alles is gearchiveerd";
+"conversation_list.empty.no_contacts.message" = "Start een gesprek of maak een groep aan.";
+
+
+// Conversation List Indicator
+"conversation_list.right_accessory.join_button.title" = "Deelnemen";
+"conversation_list.header.self_team.accessibility_value" = "%@ account.";
+"conversation_list.header.self_team.accessibility_value.inactive" = "Tap om te activeren.";
+"conversation_list.header.self_team.accessibility_value.active" = "Nu activeren.";
+"conversation_list.header.self_team.accessibility_value.has_new_messages" = "Heeft nieuwe berichten.";
+
+// Profile Header View
+"conversation.connection_view.in_address_book" = "in Contacten";
+
+// Conversation list voiceover accessibility
+"conversation_list.voiceover.open_conversation.hint" = "Open gesprek";
+"conversation_list.voiceover.status.pending_connection" = "in behandeling";
+"conversation_list.voiceover.status.active_call" = "actieve oproep";
+"conversation_list.voiceover.status.missed_call" = "gemiste bericht";
+"conversation_list.voiceover.status.pause_media" = "pauzeer media";
+"conversation_list.voiceover.status.play_media" = "speel media af";
+"conversation_list.voiceover.status.silenced" = "stil";
+"conversation_list.voiceover.status.typing" = "typen";
+"conversation_list.voiceover.status.ping" = "ping";
+"conversation_list.voiceover.bottom_bar.archived_button.label" = "gearchiveerd";
+"conversation_list.voiceover.bottom_bar.archived_button.hint" = "lijst met gearchiveerde gesprekken";
+"conversation_list.voiceover.bottom_bar.contacts_button.label" = "contacten";
+"conversation_list.voiceover.bottom_bar.contacts_button.hint" = "zoek op mensen op ChatBox";
+"conversation_list.voiceover.bottom_bar.compose_button.label" = "opstellen";
+"conversation_list.voiceover.bottom_bar.compose_button.hint" = "stel een bericht samen en sla het op voor later";
+"conversation_list.voiceover.bottom_bar.camera_button.label" = "camera";
+"conversation_list.voiceover.bottom_bar.camera_button.hint" = "maak een foto en verstuur hem snel";
+
+// Archived List
+"archived_list.title" = "archief";
+
+// Add contact tool tip
+"tool_tip.contacts.title" = "Gesprekken beginnen hier";
+"tool_tip.contacts.message" = "Begin een nieuw gesprek. Bel, chat en deel in privé- of groepsgesprekken.";
+
+// "Knows" subtitle in cell: "Knows Indrek", "Knows Indrek and Jane", "Knows Indrek and 5 others"
+"peoplepicker.suggested.knows_one" = "Kent %@";
+"peoplepicker.suggested.knows_two" = "Kent %@ en %@";
+"peoplepicker.hide_search_result" = "Verberg";
+"peoplepicker.hide_search_result_progress" = "Verbergen…";
+
+"send_invitation.subject" = "Verbind met mij op ChatBox";
+"send_invitation.text" = "Ik gebruik ChatBox, zoek naar %@ of bezoek get.ChatBox.com";
+"send_invitation_no_email.text" = "Ik gebruik ChatBox. Ga naar get.ChatBox.com om met mij te verbinden.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++x
+// In-app notifications (chat heads)
+"notifications.shared_a_photo" = "deelde een foto";
+"notifications.pinged" = "gepinged";
+"notifications.sent_file" = "deelde een bestand";
+"notifications.sent_location" = "deelde een locatie";
+"notifications.sent_video" = "deelde een video";
+"notifications.sent_audio" = "deelde een audio bestand";
+"notifications.in_conversation" = "%@ - %@";
+"notifications.this_conversation" = "%@ in dit gesprek";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// List (labels) - Needs to be revised with updated guidance
+"list.title" = "Gesprekken";
+"list.archived_conversations" = "ARCHIEF";
+"list.archived_conversations_close" = "Archief sluiten";
+
+"conversation.voiceover.verified" = "geverifieerd";
+
+"conversation.status.call" = "Uitgaand gesprek";
+"conversation.status.typing" = "Typt een bericht…";
+"conversation.status.typing.group" = "%@: Typt een bericht…";
+"conversation.status.silenced" = "Gedempt";
+"conversation.status.blocked" = "Geblokkeerd";
+
+"conversation.status.message.text" = "%@";
+"conversation.status.message.link" = "Deel een link";
+"conversation.status.message.image" = "Deelde een foto";
+"conversation.status.message.location" = "Deel een locatie";
+"conversation.status.message.audio" = "Deelde een audio bericht";
+"conversation.status.message.video" = "Deelde een video";
+"conversation.status.message.file" = "Deelde een bestand";
+"conversation.status.message.knock" = "Gepinged";
+"conversation.status.message.missedcall" = "Gemiste oproep";
+"conversation.status.message.ephemeral" = "Tijdelijk bericht";
+
+"conversation.status.unsent" = "⚠️ On verstuurt bericht";
+"conversation.status.you" = "Jij";
+"conversation.status.added_multiple" = "Personen toegevoegd";
+"conversation.status.you_was_added" = "%@ heeft jou toegevoegd";
+"conversation.status.added_users" = "%@ heeft %@ toegevoegd";
+"conversation.status.joined" = "%@ joined";
+"conversation.status.removed_multiple" = "Personen verwijderd";
+"conversation.status.you_were_removed" = "Je bent verwijderd";
+"conversation.status.you_left" = "Jij verliet";
+"conversation.status.started_conversation" = "%@ begon een gesprek";
+"conversation.status.removed_users" = "%@ verwijderde %@";
+"conversation.status.everyone_left" = "Verlaten door iedereen";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Compose Entry Point
+
+"compose.contact.title" = "Gesprek";
+"compose.message.title" = "Stuur bericht";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Conversation
+"conversation.invite_more_people.title" = "Deel het met de wereld!";
+"conversation.invite_more_people.description" = "Voeg mensen toe aan gesprek";
+"conversation.invite_more_people.explanation_url" = "https://support.ChatBox.com";
+"conversation.invite_more_people.button_title" = "Contacten toevoegen";
+
+// Conversation names
+"conversation.displayname.emptygroup" = "Leeg groep gesprek";
+
+"conversation.input_bar.verified" = "Geverifieerd";
+"conversation.input_bar.placeholder" = "Type een bericht";
+"conversation.input_bar.placeholder_ephemeral" = "Tijdelijk bericht";
+
+"conversation.input_bar.audio_message.tooltip.pull_send" = "Swipe omhoog om te versturen";
+"conversation.input_bar.audio_message.tooltip.tap_send" = "Tik om te verzenden";
+"conversation.input_bar.audio_message.too_long.title" = "Opname gestopt";
+"conversation.input_bar.audio_message.too_long.message" = "Audio berichten zijn gelimiteerd tot %@.";
+"conversation.input_bar.audio_message.send" = "Stuur";
+
+"conversation.input_bar.audio_message.keyboard.record_tip" = "Tap om op te nemen\nJe kan hier na %@";
+"conversation.input_bar.audio_message.keyboard.filter_tip" = "Kies een filter hierboven";
+
+"conversation.call.many_participants_confirmation.title" = "Bellen";
+"conversation.call.many_participants_confirmation.message" = "Hiermee worden %d contacten gebeld";
+"conversation.call.many_participants_confirmation.call" = "Oproep";
+
+"conversation.connection_view.in_address_book" = "in Contacten";
+
+"conversation.input_bar.shortcut.send" = "Verstuur bericht";
+"conversation.input_bar.shortcut.edit_last_message" = "Bewerkt laaste bericht";
+"conversation.input_bar.shortcut.cancel_editing_message" = "Annuleer";
+
+"conversation.input_bar.message_too_long.title" = "Bericht te lang";
+"conversation.input_bar.message_too_long.message" = "Je kan berichten verzenden van maximaal %d tekens lang.";
+
+"conversation.create.group_name.placeholder" = "Groepsnaam";
+"conversation.create.guidance.empty" = "Minimaal 1 teken";
+"conversation.create.guidance.toolong" = "Te veel tekens";
+"conversation.create.toggle.title" = "Allow guests";
+"conversation.create.toggle.subtitle" = "Open this conversation to people outside your team. You can always change it later.";
+
+"conversation.guests_present" = "Guests are present";
+
+// Image confirmation dialogue
+"image_confirmer.confirm" = "OK";
+"image_confirmer.cancel" = "Annuleer";
+"image.add_sketch" = "Voeg een tekening toe";
+"image.edit_image" = "Bewerk afbeelding";
+
+// Camera access
+"camera_access.denied" = "ChatBox heeft toegang nodig tot de camera.";
+"camera_access.denied.instruction" = "";
+"camera_access.denied.open_settings" = "Open instellingen voor ChatBox om toegang tot de camera te geven";
+
+// Camera and photos access, keyboard
+"keyboard_photos_access.denied.keyboard.settings" = "Instellingen";
+"keyboard_photos_access.denied.keyboard.camera_and_photos" = "ChatBox heeft toegang nodig tot jou camera en foto's."; // split text on two lines for a better text balance
+"keyboard_photos_access.denied.keyboard.photos" = "ChatBox heeft toegang nodig tot jouw foto's.";
+"keyboard_photos_access.denied.keyboard.camera" = "ChatBox heeft toegang nodig tot jou camera.";
+
+// Camera Controls
+"camera_controls.aeaf_lock" = "AE/AF-vergrendeling";
+
+// Location
+"location.send_button.title" = "Stuur";
+"location.unauthorized_alert.title" = "Zet locatievoorzieningen aan";
+"location.unauthorized_alert.message" = "Om je locatie te versturen, heeft ChatBox toegang nodig tot de locatievoorzieningen. Open de instellingen voor ChatBox en geef toegang tot je locatie.";
+"location.unauthorized_alert.cancel" = "Anuleer";
+"location.unauthorized_alert.settings" = "Instellingen";
+
+// Twitter
+"twitter_status.on_twitter" = "%@ op Twitter";
+
+// Ephemeral message
+"input.ephemeral.timeout.none" = "Uit";
+"input.ephemeral.title" = "Stel een timer in voor een tijdelijk bericht";
+
+// System messages
+"content.system.you_nominative" = "jij";
+"content.system.you_dative" = "jij";
+"content.system.you_accusative" = "jij";
+
+"content.system.continued_conversation" = "Begin een gesprek met %@";
+
+"content.system.other_started_conversation" = "%@ begon een gesprek met %@";
+"content.system.you_started_conversation" = "Jij begon het gesprek met %@";
+
+"content.system.you_added_participant" = "Je hebt %@ toegevoegd";
+"content.system.other_added_participant" = "%@ heeft %@ toegevoegd";
+"content.system.other_added_you" = "%@ heeft jou toegevoegd";
+
+"content.system.participants_you" = "Jij";
+"content.system.participants_1_other" = "%@ en %@";
+"content.system.other_left" = "%@ verliet";
+"content.system.you_left" = "Jij verliet";
+"content.system.other_removed_other" = "%@ verwijderde %@";
+"content.system.other_removed_you" = "%@ verwijderde jou";
+"content.system.you_removed_other" = "Jij verwijderde %@";
+
+// New conversation participants added / removed / started system message
+
+"content.system.conversation.other.started" = "%@ begon een gesprek met %@";
+"content.system.conversation.other.added" = "%@ heeft %@ toegevoegd";
+"content.system.conversation.other.removed" = "%@ verwijderde %@";
+"content.system.conversation.other.left" = "%@ verliet";
+
+"content.system.conversation.you.started" = "%@ begon een gesprek met %@";
+"content.system.conversation.you.added" = "%@ heeft %@ toegevoegd";
+"content.system.conversation.you.removed" = "%@ verwijderde %@";
+"content.system.conversation.you.left" = "%@ verliet";
+"content.system.conversation.team.member-leave" = "%@ was verwijderd van het team.";
+"content.system.conversation.guest.joined" = "%@ joined";
+
+"content.system.other_renamed_conv_to_nothing" = "%@ verwijderde de naam van de conversatie";
+"content.system.you_renamed_conv_to_nothing" = "Je verwijderde de naam van de conversatie";
+"content.system.pending_message_timestamp" = "Verzenden…";
+"content.system.message_sent_timestamp" = "Verstuurd";
+"content.system.message_delivered_timestamp" = "Afgeleverd";
+"content.system.failedtosend_message_timestamp" = "Verzenden mislukt.";
+"content.system.failedtosend_message_timestamp_resend" = "Opnieuw sturen";
+"content.system.failedtosend_message_timestamp_delete" = "Verwijderen";
+"content.system.like_tooltip" = "Tap om leuk te vinden";
+"content.system.deleted_message_prefix_timestamp" = "Verwijderde: %@";
+"content.system.edited_message_prefix_timestamp" = "Wijzigde: %@";
+"content.system.connecting_to" = "Verbinden met %@.\nBegin een gesprek";
+"content.system.connected_to" = "Verbonden met %@.\nBegin een gesprek";
+"content.system.other_wanted_to_talk" = "%@ belde";
+"content.system.you_wanted_to_talk" = "Jij belde";
+"content.system.ephemeral_time_remaining" = "%@ verliet";
+
+"content.system.you_started" = "Jij";
+"content.system.this_device" = "dit apparaat";
+
+"content.system.call.you" = "Jij";
+"content.system.call.called" = "%@ belde";
+"content.system.call.called-you" = "%@ belde";
+
+"content.system.renamed_conv.title" = "%@ hernoemde het gesprek";
+"content.system.renamed_conv.title-you" = "%@ hernoemde het gesprek";
+"content.system.renamed_conv.title.you" = "Jij";
+
+"content.system.conversation.with_name.title" = "%@ begon een gesprek";
+
+"content.system.conversation.with_name.participants" = "met %@";
+
+"content.system.reactivated_device" = "Je bent %@ weer gaan gebruiken. Berichten die in de tussentijd verzonden zijn worden hier niet getoond.";
+
+"content.system.new_device" = "een nieuw apparaat";
+"content.system.started_using" = "begon met het gebruik van";
+"content.system.is_verified" = "Alle vingerafdrukken zijn geverifieerd";
+
+"content.system.new_users" = "Nieuwe gebruiker toegevoegd.";
+"content.system.verify_devices" = "Controleer apparaten";
+
+"content.system.unverified" = "%@ trok de verificatie van %@ in"; // example "You unverified one of Jule’s devices"
+"content.system.your_devices" = "jouw apparaten";
+"content.system.other_devices" = "%@’s apparaten";
+
+"content.system.missing_messages.title" = "Je hebt dit apparaat een tijdje niet gebruikt. Sommige berichten worden hier niet getoond.";
+"content.system.missing_messages.subtitle_start" = "Tijdens,";
+
+"content.system.cannot_decrypt" = "Het bericht van %@ is niet ontvangen.";
+
+"content.system.cannot_decrypt.you_part" = "jij";
+"content.system.cannot_decrypt.why_part" = "Waarom?";
+
+"content.system.cannot_decrypt.identity" = "%@'s apparaatidentiteit is veranderd. Het bericht is niet afgeleverd.";
+"content.system.cannot_decrypt.identity.you_part" = "Jouw";
+"content.system.cannot_decrypt.identity.otherUser_part" = "%@’s"; // possessive apostrophe - might differ in different languages
+"content.system.cannot_decrypt.identity.why_part" = "Leer meer";
+"content.system.cannot_decrypt.otherDevice_part" = "(Apparaat %@)"; // example " (device d1b23c54f34a)".
+// Full sentence: "A message from %@ was not received. [...] (device d1b23c54f34a). This is a debug information.
+
+"content.system.unknown_message.body" = "Je gebruik een oudere versie van ChatBox die dit type bericht niet kan weergeven.";
+"content.system.unknown_message.body.link" = "Waarom gebeurt dit?";
+
+"content.file.uploading" = "Uploaden…";
+"content.file.downloading" = "Downloaden…";
+"content.file.upload_failed" = "Upload mislukt";
+"content.file.upload_cancelled" = "Upload geannuleerd";
+"content.file.upload_video" = "Video's";
+"content.file.take_video" = "Neem een video op";
+
+"content.file.save_video" = "Opslaan";
+"content.file.save_audio" = "Opslaan";
+"content.image.save_image" = "Opslaan";
+
+"content.message.delete" = "Verwijderen";
+"content.message.save" = "Opslaan";
+
+"content.message.like" = "Vind ik leuk";
+"content.message.unlike" = "Vind ik niet leuk";
+"content.message.forward" = "Delen";
+"content.message.go_to_conversation" = "Tonen";
+"content.message.forward.to" = "Zoeken…";
+"content.message.open" = "Openen";
+
+"content.reactions_list.likers" = "Leuk gevonden door";
+
+"content.file.too_big" = "U kunt bestanden versturen tot %@";
+// Someone pinged
+"content.ping.text" = "%1$@ pinged";
+
+// Current user pinged
+"content.ping.text.you" = "Jij";
+
+// Inline Player
+"content.player.unable_to_play" = "NIET MOGELIJK OM AF TE SPELEN";
+
+// Connecting (NEW IMPLEMENTATION, REVIEW LATER)
+"connection_request.title" = "Verbind met %@"; // check UPPERCASE implementation in code
+"missive.connection_request.default_message" = "Hallo %@, \nLaten we chatten via ChatBox.\n%@";
+
+"connection_request.send_button_title" = "Uitnodigen";
+"inbox.connection_request.connect_button_title" = "Uitnodigen";
+"inbox.connection_request.ignore_button_title" = "Negeer";
+
+// Voice
+"voice.status.one_to_one.incoming" = "%@ belt";
+"voice.status.group_call.incoming" = "%@\nbellen";
+"voice.status.one_to_one.outgoing" = "%@\nbellen";
+"voice.status.joining" = "%@ Verbinden";
+"voice.status.video_not_available" = "Video is uitgeschakeld";
+"voice.status.low_connection" = "Slechte verbinding";
+"voice.network_error.title" = "Geen verbinding met internet";
+"voice.status.cbr" = "Constante Bit Rate";
+"voice.network_error.body" = "Je moet online zijn om te bellen. Controleer je verbinding en probeer opnieuw.";
+"voice.degradation.new_self_device" = "Je gebruikt een nieuw apparaat.";
+"voice.degradation.new_user_device" = "%@ is een ander apparaat gaan gebruiken.";
+"voice.degradation_outgoing.prompt" = "Wil je het gesprek nog steeds negeren?";
+"voice.degradation_incoming.prompt" = "Wil je het gesprek nog steeds accepteren?";
+"voice.accept_button.title" = "Neem op";
+"voice.decline_button.title" = "Leg op";
+"voice.hang_up_button.title" = "Ophangen";
+"voice.mute_button.title" = "Dempen";
+"voice.video_button.title" = "Video";
+"voice.speaker_button.title" = "Luidspreker";
+"voice.cancel_button.title" = "Annuleer";
+"voice.call_button.title" = "Oproep";
+
+"voice.alert.call_in_progress.title" = "Bezig met bellen";
+"voice.alert.call_in_progress.message" = "Je kunt maximaal een gesprek tegelijk voeren";
+"voice.alert.call_in_progress.confirm" = "OK";
+
+"voice.alert.microphone_warning.title" = "ChatBox heeft toegang nodig tot de microfoon.";
+"voice.alert.microphone_warning.explanation" = "Open instellingen voor ChatBox om toegang tot de microfoon te geven.";
+
+"voice.alert.camera_warning.title" = "ChatBox heeft toegang nodig tot de camera.";
+"voice.alert.camera_warning.explanation" = "Open instellingen voor ChatBox om toegang tot de camera te geven.";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Profile and Participants
+
+"participants.add_people_button_title" = "Toevoegen";
+"participants.avatar.guest.title" = "Gast";
+
+"participants.title" = "Beschrijving";
+"participants.section.participants" = "People (%d)";
+"participants.section.services" = "Services (%d)";
+"participants.footer.add_title" = "Add Participants";
+
+// Meta Menu
+"meta.menu.rename" = "Wijzig naam";
+"meta.menu.leave" = "Verlaten";
+"meta.menu.archive" = "Archiveren";
+"meta.menu.unarchive" = "Terugzetten";
+"meta.menu.delete" = "Verwijderen";
+"meta.menu.silence.mute" = "Dempen";
+"meta.menu.silence.unmute" = "Dempen opheffen";
+"meta.menu.cancel" = "Annuleer";
+"meta.menu.cancel_connection_request" = "Annuleer verzoek";
+
+// Delete conversation
+"meta.menu.delete_content.dialog_title" = "Inhoud verwijderen?";
+"meta.menu.delete_content.dialog_message" = "This will clear the conversation history on all your devices.";
+"meta.menu.delete_content.leave_as_well_message" = "Ook het gesprek verlaten";
+"meta.menu.delete_content.button_cancel" = "Annuleer";
+"meta.menu.delete_content.button_delete" = "Verwijderen";
+"meta.menu.delete_content.button_delete_and_leave" = "Delete and leave";
+
+// Leave conversation
+"meta.leave_conversation_dialog_title" = "Gesprek verlaten?";
+"meta.leave_conversation_dialog_message" = "De deelnemers ontvangen een notificatie en het gesprek wordt uit je lijst verwijderd.";
+"meta.leave_conversation.delete_content_as_well_message" = "Verwijder de inhoud ook";
+"meta.leave_conversation_button_cancel" = "Annuleer";
+"meta.leave_conversation_button_leave" = "Verlaten";
+"meta.leave_conversation_button_leave_and_delete" = "Leave and delete content";
+
+// Conversation Degraded (security level lowered)
+"meta.degraded.degradation_reason_message.singular" = "%@ is een ander apparaat gaan gebruiken.";
+"meta.degraded.degradation_reason_message.plural" = "%@ zijn nieuwe apparaten gaan gebruiken.";
+"meta.degraded.dialog_message" = "Wil je het bericht nog steeds versturen?";
+"meta.degraded.show_device_button" = "Toon apparaat";
+"meta.degraded.send_anyway_button" = "Toch verzenden";
+"meta.degraded.cancel_sending_button" = "Annuleer";
+
+// Remove from conversation dialogue
+"profile.remove_dialog_title" = "Verwijder?";
+"profile.remove_dialog_message" = "%@ kan geen berichten versturen of ontvangen in dit gesprek.";
+"profile.remove_dialog_button_cancel" = "Annuleer";
+"profile.remove_dialog_button_remove" = "Verwijderen";
+
+// Block dialog
+"profile.block_dialog.title" = "Blokkeren?";
+"profile.block_dialog.message" = "%@ zal niet in staat zijn u te contacten of je toe te voegen aan een groepsgesprek.";
+"profile.block_dialog.button_cancel" = "Annuleer";
+"profile.block_dialog.button_block" = "Blokkeer";
+
+// Delete message dialog
+"message.delete_dialog.message" = "Dit kan niet ongedaan gemaakt worden.";
+"message.delete_dialog.action.cancel" = "Annuleer";
+"message.delete_dialog.action.hide" = "Verwijderen voor mezelf";
+"message.delete_dialog.action.delete" = "Verwijderen voor iedereen";
+
+// Edit message
+"message.menu.edit.title" = "Bewerken";
+
+// Accept connection request
+"profile.connection_request_dialog.title" = "Accepteren?";
+"profile.connection_request_dialog.message" = "Dit zal een verbinding met %@ maken en een gesprek openen.";
+"profile.connection_request_dialog.button_cancel" = "Negeer";
+"profile.connection_request_dialog.button_connect" = "Accepteer";
+
+// Cancel connection request
+"profile.cancel_connection_request_dialog.title" = "Verzoek annuleren?";
+"profile.cancel_connection_request_dialog.message" = "Verwijder verzoek aan %@.";
+"profile.cancel_connection_request_dialog.button_no" = "Nee";
+"profile.cancel_connection_request_dialog.button_yes" = "Ja";
+
+// Unblock button
+"profile.unblock_button_title" = "Deblokkeer";
+
+"profile.cancel_connection_button_title" = "VERZOEK ANNULEREN";
+"profile.connection_request_state.blocked" = "GEBLOKKEERD";
+"profile.create_conversation_button_title" = "Groep creëren";
+"profile.open_conversation_button_title" = "Open gesprek";
+
+// User Details
+"profile.details.title" = "Beschrijving";
+"profile.details.guest" = "Gast";
+
+"profile_view.accessibility.handle" = "Gebruikersnaam";
+"profile_view.accessibility.name" = "Weergavenaam";
+"profile_view.accessibility.team_name" = "Team naam";
+
+// Device list
+"profile.devices.title" = "Apparaten";
+"profile.devices.fingerprint_message_unencrypted" = "%@ gebruikt een oude versie van ChatBox. Er worden daarom geen apparaten getoond.";
+"profile.devices.fingerprint_message" = "ChatBox geeft elk apparaat een eigen vingerafdruk. Vergelijk deze met %@ en verifieer je apparaten en gesprekken. Waarom gesprekken verifiëren?";
+"profile.devices.fingerprint_message.link" = "Waarom gesprekken verifiëren?";
+
+// Device detail
+"profile.devices.detail.verify_message" = "Verifieer dat deze digitale vingerafdruk overeenkomt met %@’s zijn apparaat.";
+"profile.devices.detail.verify_message.link" = "Hoe doe ik dat?";
+"profile.devices.detail.show_my_device.title" = "Toon mijn apparaat vingerafdruk";
+"device.verified" = "Geverifieerd";
+"device.not_verified" = "Niet geverifieerd";
+"device.class.desktop" = "Desktop";
+"device.class.tablet" = "Tablet";
+"device.class.phone" = "Telefoonnummer";
+"profile.devices.detail.reset_session.title" = "Sessie herstarten";
+
+// General strings
+"general.confirm" = "OK";
+
+// Bot
+"participants.services.remove_integration.button" = "verwijder integratie";
+
+// Group details
+"group_details.guest_options_cell.title" = "Guest Options";
+"group_details.guest_options_cell.enabled" = "On";
+"group_details.guest_options_cell.disabled" = "Uit";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Self profile
+// Options menu contents
+
+"self.settings" = "Instellingen";
+"self.profile" = "Profiel";
+"self.account" = "Profiel";
+"self.help_center" = "Ondersteuning";
+"self.help_center.support_website" = "ChatBox Support Website";
+"self.help_center.contact_support" = "Contact Support";
+"self.about" = "Over ons";
+"self.sign_out" = "Afmelden";
+"self.report_abuse" = "Misbruik melden";
+"self.voiceover.label" = "Profiel";
+"self.voiceover.hint" = "Open profile en instellingen";
+"self.new-device.voiceover.label" = "Profiel, nieuwe apparaten toegevoegd";
+
+"self.add_phone_number" = "Voeg telefoonnummer toe";
+"self.add_email_password" = "Voeg e-mailadres en wachtwoord toe";
+
+// About screen
+"about.tos.title" = "Gebruikersvoorwaarden";
+"about.privacy.title" = "Privacybeleid";
+"about.license.title" = "Licentie-informatie";
+"about.website.title" = "ChatBox Website";
+"about.copyright.title" = "© ChatBox Swiss GmbH";
+
+// Self new devices
+"self.new_device_alert.title" = "Je hebt %@ verbonden aan je ChatBox-account";
+"self.new_device_alert.title_prefix.tablet" = "een tablet";
+"self.new_device_alert.title_prefix.phone" = "een telefoon";
+"self.new_device_alert.title_prefix.devices" = "%d apparaten";
+"self.new_device_alert.message" = "%@\n\nAls je dit niet zelf gedaan hebt, verwijder dan het apparaat en wijzig je wachtwoord.";
+"self.new_device_alert.message_plural" = "%@\n\nAls je dit niet zelf gedaan hebt, verwijder dan deze apparaten en wijzig je wachtwoord.";
+"self.new_device_alert.manage_devices" = "Beheer apparaten";
+"self.new_device_alert.trust_devices" = "OK";
+
+// Settings - top level
+"self.settings.create_team.title" = "Creëer Team";
+"self.settings.manage_team.title" = "Beheer Team";
+"self.settings.add_team_or_account.title" = "Nieuw Team of Account";
+"self.settings.add_account.title" = "Voeg een account toe";
+
+"self.settings.add_account.error.title" = "Drie accounts zijn actief";
+"self.settings.add_account.error.message" = "Je kan maximaal met 3 accounts te gelijk inloggen. Log op een ander account uit, om een nieuw account toe te voegen.";
+
+// Settings - Account details
+"self.settings.account_section" = "Profiel";
+
+"self.settings.account_details_group.info.title" = "Info";
+"self.settings.account_details_group.personal.title" = "Persoonlijk";
+
+"self.settings.account_section.name.title" = "Naam";
+"self.settings.account_section.email.title" = "E-mail";
+"self.settings.account_section.phone.title" = "Telefoonnummer";
+"self.settings.account_section.handle.title" = "Gebruikersnaam";
+"self.settings.account_section.add_handle.title" = "Voeg gebruikersnaam toe";
+
+"self.settings.account_details_group.info.footer" = "Mensen kunnen jou vinden met deze gegevens.";
+"self.settings.account_details_group.personal.footer" = "Deze informatie is niet zichtbaar.";
+
+"self.settings.account_details.remove_device.title" = "Verwijder apparaat";
+"self.settings.account_details.key_fingerprint.title" = "Digitale vingerafdruk";
+"self.settings.account_details.remove_device.message" = "Je wachtwoord is nodig om dit apparaat te verwijderen";
+"self.settings.account_details.remove_device.password" = "Wachtwoord";
+"self.settings.account_details.remove_device.password.error" = "Verkeerd wachtwoord";
+
+"self.settings.account_appearance_group.title" = "Vormgeving";
+"self.settings.account_picture_group.picture" = "Foto";
+"self.settings.account_picture_group.color" = "Kleur";
+
+"self.settings.account_picture_group.theme" = "Donker thema";
+
+"self.settings.device_details.fingerprint.subtitle" = "ChatBox geeft elk apparaat een eigen vingerafdruk. Vergelijk deze en verifieer je apparaten en gesprekken.";
+"self.settings.device_details.reset_session.subtitle" = "Als de digitale vingerafdruk niet overeenkomt, herstart dan de sessie om nieuwe encryptiesleutels aan te maken op beide apparaten.";
+"self.settings.device_details.remove_device.subtitle" = "Verwijder dit apparaat als je het niet meer gebruikt. Je berichtengeschiedenis wordt verwijderd op dit apparaat en je wordt uitgelogd.";
+"self.settings.device_details.reset_session.success" = "De sessie is herstart";
+
+"self.settings.account_details.actions.title" = "Acties";
+
+"self.settings.account_details.delete_account.title" = "Verwijder account";
+
+"self.settings.account_details.delete_account.alert.title" = "Verwijder account";
+"self.settings.account_details.delete_account.alert.message" = "We sturen je een bericht via e-mail of SMS. Volg de instructies in de link op om je account te verwijderen.";
+
+"self.settings.account_details.log_out.alert.title" = "Uitloggen";
+"self.settings.account_details.log_out.alert.message" = "Je berichten history word verwijdert op dit apparaat.";
+
+
+// Change Username
+
+"self.settings.account_section.handle.change.title" = "Gebruikersnaam";
+"self.settings.account_section.handle.change.save" = "Opslaan";
+"self.settings.account_section.handle.change.footer" = "Ten minste 2 tekens. a—z, 0—9, and _ aleen.";
+"self.settings.account_section.handle.change.footer.unavailable" = "Al in gebruik";
+
+"self.settings.account_section.handle.change.failure_alert.title" = "Niet mogelijk om je gebruikersnaam te registreren";
+"self.settings.account_section.handle.change.failure_alert.message" = "Er ging iets mis met het registeren van je gebruikersnaam. Probeer opnieuw.";
+
+// Change Email
+
+"self.settings.account_section.email.change.title" = "E-mail";
+"self.settings.account_section.email.change.save" = "Opslaan";
+
+"self.settings.account_section.email.change.verify.title" = "Verifieer e-mail";
+"self.settings.account_section.email.change.verify.description" = "Controleer je inbox en volg de instructies.";
+"self.settings.account_section.email.change.verify.resend" = "Opnieuw verstuurd naar %@";
+
+"self.settings.account_section.email.change.resend.title" = "Email opnieuw verstuurd";
+"self.settings.account_section.email.change.resend.message" = "Een bevestigings email is opnieuw verstuurd naar %@. Je vind verdere instructies in deze email.";
+
+// Change Phone Number
+
+"self.settings.account_section.phone_number.change.title" = "Telefoonnummer";
+"self.settings.account_section.phone_number.change.save" = "Opslaan";
+"self.settings.account_section.phone_number.change.remove" = "Verwijder Telefoon Nummer";
+
+"self.settings.account_section.phone_number.change.remove.action" = "Verwijder Telefoon Nummer";
+
+"self.settings.account_section.phone_number.change.verify.save" = "Opslaan";
+"self.settings.account_section.phone_number.change.verify.title" = "Verifiëer";
+"self.settings.account_section.phone_number.change.verify.description" = "Voer de verificatiecode die we naar %@ hebben gestuurd.";
+
+"self.settings.account_section.phone_number.change.verify.code_placeholder" = "Voer code in";
+"self.settings.account_section.phone_number.change.verify.resend" = "Code opnieuw verzenden";
+"self.settings.account_section.phone_number.change.verify.resend_description" = "Krijg je geen code?\nJe kan elke 30 seconde een nieuwe aanvragen.";
+
+"self.settings.account_section.phone_number.change.resend.title" = "Verstuur code opnieuw";
+"self.settings.account_section.phone_number.change.resend.message" = "Verificatie code was opnieuw verstuurd naar %@.";
+
+// Chat alerts
+"self.settings.notifications.push_notification.title" = "Meldingen";
+"self.settings.notifications.push_notification.toogle" = "Toon voorvertoning";
+"self.settings.notifications.push_notification.footer" = "De naam van de verzender en het bericht wordt op het toegangsscherm getoond en in het berichtencentrum.";
+
+"self.settings.notifications.chat_alerts.toggle" = "Berichtstroken";
+"self.settings.notifications.chat_alerts.footer" = "Nieuw bericht in andere gesprekken.";
+
+"self.settings.sound_menu.sounds.title" = "Geluiden";
+"self.settings.sound_menu.ringtone.title" = "Beltoon";
+"self.settings.sound_menu.message.title" = "Berichtmelding";
+"self.settings.sound_menu.ping.title" = "Ping";
+"self.settings.sound_menu.ringtones.title" = "Beltonen";
+"self.settings.sound_menu.sounds.wire_sound" = "ChatBox";
+"self.settings.sound_menu.sounds.none" = "Geen";
+
+"self.settings.callkit.title" = "Oproepen";
+"self.settings.callkit.caption" = "Deel met iOS";
+"self.settings.callkit.description" = "Toon ChatBox-gesprekken op het toegangsscherm en in de iOS gespreksgeschiedenis. Als iCloud aan staat wordt de oproepgeschiedenis bewaard bij Apple.";
+
+"self.settings.vbr.title" = "Variable Bit Rate codering";
+"self.settings.vbr.description" = "Hierdoor gebruik je minder data tijdens het bellen, en het werkt beter op trage netwerken. Zet dit uit om een constante Bitrate Encoding te gebruiken.";
+
+"self.settings.sound_menu.sounds.wire._call" = "ChatBox oproep";
+"self.settings.sound_menu.sounds.wire_message" = "ChatBox bericht";
+"self.settings.sound_menu.sounds.wire_ping" = "ChatBox ping";
+
+// By popular demand
+"self.settings.popular_demand.title" = "Op veler verzoek";
+"self.settings.popular_demand.send_button.title" = "Verstuurknop";
+"self.settings.popular_demand.send_button.footer" = "Zet het versturen via de enter-toets uit.";
+
+// Open in
+"self.settings.external_apps.header" = "Open met";
+
+"self.settings.link_options.twitter.title" = "Tweets";
+"self.settings.link_options.maps.title" = "Locaties";
+"self.settings.link_options.browser.title" = "Browser";
+
+"open_link.twitter.option.default" = "Safari / Twitter";
+"open_link.twitter.option.tweetbot" = "Tweetbot";
+"open_link.twitter.option.twitterrific" = "Twitterrific";
+
+"open_link.maps.option.apple" = "Kaarten";
+"open_link.maps.option.google" = "Google Maps";
+
+"open_link.browser.option.safari" = "Safari";
+"open_link.browser.option.chrome" = "Chrome";
+"open_link.browser.option.firefox" = "Firefox";
+
+// Sound alerts (TO BE UPDPATED)
+"self.settings.sound_menu.title" = "Geluidswaarschuwing";
+"self.settings.sound_menu.no_sounds.title" = "Geen";
+"self.settings.sound_menu.all_sounds.title" = "Alle";
+"self.settings.sound_menu.mute_while_talking.title" = "Eerste bericht en pings";
+
+// Developer options
+"self.settings.developer_options.title" = "Opties voor ontwikkelaars";
+"self.settings.apns_logging.title" = "APNS logging";
+
+// Privacy (visibility) options
+"self.settings.options_menu.title" = "Opties";
+
+"self.settings.privacy_contacts_section.title" = "Contacten";
+"self.settings.privacy_contacts_menu.settings_button.title" = "Open instellingen voor ChatBox";
+"self.settings.privacy_contacts_menu.description_disabled.title" = "Dit helpt je te verbinden met anderen. We anonimiseren alle informatie en delen dit nooit met derde partijen. Geef toegang via Instellingen > Privacy > Contacten.";
+
+"self.settings.privacy_security.lock_app" = "Vergrendel Met Wachtwoord";
+"self.settings.privacy_security.lock_app.subtitle" = "Vergrendel ChatBox na dat hij 10 seconden in de achtergrond is. Ontgrendelen kan met Touch ID of door je wachtwoord in te vullen.";
+"self.settings.privacy_security.lock_app.description" = "Ontgrendel ChatBox";
+
+"self.settings.privacy_security.lock_cancelled.description" = "Ontgrendel ChatBox met Touch ID of Wachtwoord";
+"self.settings.privacy_security.lock_cancelled.action" = "Ontgrendel";
+
+"self.settings.privacy_security.disable_link_previews.title" = "Maak link voorvertoningen aan";
+"self.settings.privacy_security.disable_link_previews.footer" = "Linkvoorbeelden kunnen nog steeds getoond worden voor links van andere mensen.";
+
+"self.settings.privacy_analytics_menu.devices.title" = "Apparaten";
+
+"self.settings.privacy_analytics_section.title" = "Diagnose en gebruik";
+"self.settings.privacy_analytics.title" = "Anoniem gegevens delen";
+"self.settings.privacy_analytics_menu.description.title" = "Maak ChatBox beter door anoniem data te versturen.\n";
+
+"self.settings.privacy.clear_history.title" = "Geschiedenis verwijderen";
+"self.settings.privacy.clear_history.subtitle" = "Dit verwijdert alle inhoud van al je gesprekken.";
+
+"self.settings.advanced.title" = "Geavanceerd";
+"self.settings.advanced.troubleshooting.title" = "Probleemoplossing";
+"self.settings.advanced.troubleshooting.submit_debug.title" = "Foutrapport verzenden";
+"self.settings.advanced.troubleshooting.submit_debug.subtitle" = "Deze informatie helpt ChatBox om belproblemen op te lossen.";
+"self.settings.advanced.reset_push_token.title" = "Herstel de Push Notifications Token";
+"self.settings.advanced.reset_push_token.subtitle" = "Als je problemen ondervindt met push-notificaties, kan ChatBox je vragen om deze token te herstellen.";
+"self.settings.advanced.reset_push_token_alert.title" = "Push token is gereset";
+"self.settings.advanced.reset_push_token_alert.message" = "Notificaties zullen over een paar seconden worden hersteld.";
+"self.settings.advanced.version_technical_details.title" = "Technische details van deze versie";
+
+// Technical Report
+"self.settings.technical_report_section.title" = "Technisch rapport";
+"self.settings.technical_report.send_report" = "Stuur rapport naar ChatBox";
+"self.settings.technical_report.mail.recipient" = "callingsupport@ChatBox.com";
+"self.settings.technical_report.mail.subject" = "Rapport over bellen met ChatBox";
+"self.settings.technical_report.include_log" = "Voeg gedetailleerd log toe";
+"self.settings.technical_report.privacy_warning" = "Gedetailleerde logs kunnen persoonlijke gegevens bevatten";
+"self.settings.technical_report.no_mail_alert" = "No mail client detected. Tap \"OK\" and send logs manually to: ";
+
+// Password reset
+"self.settings.password_reset_menu.title" = "Herstel wachtwoord";
+
+// Invite from Settings
+"self.settings.invite_friends.title" = "Nodig anderen uit";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// System status
+"system_status_bar.no_internet.title" = "Geen Internet";
+"system_status_bar.no_internet.explanation" = "Er lijkt een probleem te zijn met je internetverbinding. Controleer of deze werkt.";
+"system_status_bar.poor_connectivity.title" = "De verbinding is traag, je kunt nu niet bellen";
+"system_status_bar.poor_connectivity.explanation" = "We kunnen je geen goede geluidskwaliteit garanderen. Verbind met WiFi of zoek een locatie met betere ontvangst.";
+
+// View user profile and options menu & text field validation
+"name.placeholder" = "Je volledige naam";
+"name.guidance.tooshort" = "Minimaal 2 tekens";
+"name.guidance.toolong" = "Te veel tekens";
+
+"email.placeholder" = "E-mail";
+"email.guidance.invalid" = "Ongeldig emailadres";
+"email.guidance.tooshort" = "Email adres is te kort";
+"email.guidance.toolong" = "Te veel tekens";
+
+"password.placeholder" = "Wachtwoord";
+"password.guidance.tooshort" = "Minimaal 8 tekens";
+"password.guidance.toolong" = "Te veel tekens";
+
+// Landing screen
+
+"landing.title" = "Encrypt world communication freedom.";
+"landing.create_account.title" = "Account aanmaken";
+"landing.create_account.subtitle" = "voor persoonlijk gebruik";
+"landing.create_team.title" = "Creëer Team";
+"landing.create_team.subtitle" = "voor werk";
+"landing.login.hints" = "Heeft u al een account?";
+"landing.login.button.title" = "Log in";
+
+// Create team
+
+"team.name.headline" = "Geef uw team een naam";
+"team.name.subheadline" = "Dit kun je later altijd nog aanpassen.";
+"team.name.textfield.placeholder" = "team naam";
+"team.name.textfield.accessibility" = "Stel je team naam in";
+"team.name.whatiswireforteams" = "Wat is ChatBox voor teams?";
+
+"team.email.headline" = "Je account";
+"team.email.subheadline" = "Voer je werk-e-mailadres in.";
+"team.email.textfield.placeholder" = "jij@joubedrijf.nl";
+"team.email.textfield.accessibility" = "Je bedrijfs email";
+"team.email.button.learn_more" = "Leer meer";
+
+"team.activation_code.headline" = "Je hebt een email ontvangen";
+"team.activation_code.subheadline" = "Voer de verificatiecode in die we naar %@ gestuurde hebben.";
+"team.activation_code.button.resend" = "Code opnieuw versturen";
+"team.activation_code.button.change_email" = "Email wijzigen";
+
+"team.full_name.headline" = "Jouw naam";
+"team.full_name.textfield.placeholder" = "Volledige naam";
+"team.full_name.textfield.accessibility" = "Je volledige naam";
+
+"team.password.headline" = "Wachtwoord instellen";
+"team.password.textfield.placeholder" = "Minimaal 8 tekens";
+"team.password.textfield.accessibility" = "Kies een wachtwoord van minimaal 8 tekens";
+
+
+"team.email_code.input_field.accessbility_label" = "Vul hier je 6 caracter code in van je email.";
+
+// Invite Team Members
+
+"team.invite.header.title" = "Maak je team aan";
+"team.invite.header.subtitle" = "Nodig je collega’s uit.";
+"team.invite.textfield.placeholder" = "collega@joubedrijf.nl";
+"team.invite.textfield.accesibility" = "Vul het e-mail adres in van een collega, om deze uit te nodigen.";
+"team.invite.learn_more.title" = "Leer meer";
+"team.invite.top_bar.skip" = "Sla over";
+"team.invite.top_bar.done" = "Klaar";
+
+// Team Invite Errors
+"team.invite.error.generic" = "Er is een fout opgetreden, probeer het nogmaals";
+"team.invite.error.already_registered" = "Dit e-mailadres is al gebruikt";
+"team.invite.error.already_invited" = "Deze e-mail is al uitgenodigd";
+"team.invite.error.too_many_invitations" = "Het maximale aantal uitnodigingen is bereikt";
+"team.invite.error.no_internet" = "Geen internetverbinding";
+
+// Guest Room
+
+"guest_room.allow_guests.title" = "Allow guests";
+"guest_room.allow_guests.subtitle" = "Open this conversation to people outside your team.";
+"guest_room.remove_guests.message" = "Current guests will be removed from the conversation. New guests will not be allowed.";
+"guest_room.remove_guests.action" = "Remove Guests";
+"guest_room.revoke_link.message" = "New guests will not be able to join with this link. Current guests will still have access.";
+"guest_room.revoke_link.action" = "Revoke Link";
+
+"guest_room.error.generic.title" = "Something went wrong";
+"guest_room.error.generic.message" = "Check your connection and try again";
+
+// Registration
+
+"registration.title" = "Registratie";
+"registration.close_email_invitation_button.email_title" = "Gebruik een ander e-mailadres";
+"registration.close_email_invitation_button.phone_title" = "Registreer telefonisch";
+"registration.close_phone_invitation_button.email_title" = "Registreer via e-mail";
+"registration.close_phone_invitation_button.phone_title" = "Gebruik een andere telefoon";
+
+"registration.enter_phone_number.title" = "Bewerk telefoonnummer";
+"registration.enter_phone_number.placeholder" = "Telefoonnummer";
+
+"registration.verify_phone_number.instructions" = "Voer de verificatiecode in die we naar %@ gestuurd hebben";
+"registration.verify_phone_number.resend" = "Opnieuw sturen";
+"registration.verify_phone_number.resend_placeholder" = "Krijg je geen code?\nJe kunt een nieuwe aanvragen over %.0f seconden";
+
+"registration.verify_email.instructions" = "We hebben een e-mail verstuurd naar %@.\nKlik op de link om je e-mailadres te bevestigen.";
+"registration.verify_email.resend.instructions" = "Bericht niet ontvangen?";
+"registration.verify_email.resend.button_title" = "Verstuur opniew";
+
+"registration.select_picture.subtitle" = "ChatBox is veel mooier met een foto.";
+"registration.select_picture.button_title" = "Kies je eigen";
+"registration.keep_picture.button_title" = "Behoud deze";
+"registration.camera_action.title" = "Maak een foto";
+"registration.photo_gallery_action.title" = "Kies een foto";
+"registration.cancel_action.title" = "Annuleer";
+
+"registration.no_history.hero" = "Het is de eerste keer dat je ChatBox op dit apparaat gebruikt.";
+"registration.no_history.subtitle" = "Om privacyredenen wordt je gespreksgeschiedenis hier niet getoond.";
+"registration.no_history.got_it" = "OK";
+
+"registration.no_history.logged_out.hero" = "Je hebt ChatBox eerder op dit apparaat gebruikt.";
+"registration.no_history.logged_out.subtitle" = "Berichten die in de tussentijd worden verzonden worden niet weergegeven.";
+"registration.no_history.logged_out.got_it" = "OK";
+
+"registration.enter_name.title" = "Wijzig Naam";
+"registration.enter_name.hero" = "Hoe zullen we je noemen?";
+"registration.enter_name.placeholder" = "Je volledige naam";
+
+"registration.terms_of_use.title" = "Welkom bij ChatBox.";
+"registration.terms_of_use.terms" = "Wanner je doorgaat accepteer je de voorwaarden van ChatBox.";
+"registration.terms_of_use.terms.link" = "Gebruikersvoorwaarden";
+"registration.terms_of_use.agree" = "Ik ga akkoord";
+
+"registration.terms_of_use.terms.title" = "Gebruikersvoorwaarden";
+"registration.terms_of_use.terms.message" = "Om verder te gaan moet u de algemene voorwaarden accepteren.";
+"registration.terms_of_use.terms.view" = "Bekijk";
+"registration.terms_of_use.accept" = "Neem op";
+
+"registration.email_flow.title" = "Registreer via e-mail";
+"registration.email_flow.email_step.title" = "Details bewerken";
+
+"registration.country_select.title" = "Land";
+
+"registration.share_contacts.hero.title" = "Vind mensen op ChatBox";
+"registration.share_contacts.hero.paragraph" = "Geef ChatBox toegang tot je contacten om je te verbinden met andere mensen. We anonimiseren deze gegevens en delen ze met niemand anders.";
+"registration.share_contacts.find_friends_button.title" = "Deel contacten";
+"registration.share_contacts.skip_button.title" = "Niet nu";
+
+"registration.address_book_access_denied.hero.title" = "ChatBox heeft geen toegang tot je contacten.";
+"registration.address_book_access_denied.hero.paragraph1" = "ChatBox helpt je om je vrienden te vinden als je je contacten deelt.";
+"registration.address_book_access_denied.hero.paragraph2" = "Om toegang te geven ga je naar de instellingen voor ChatBox en geef je toegang tot je contacten.";
+"registration.address_book_access_denied.settings_button.title" = "Instellingen";
+"registration.address_book_access_denied.maybe_later_button.title" = "Misschien later";
+
+"registration.push_access_denied.hero.title" = "Geen gesprekken of berichten missen";
+"registration.push_access_denied.hero.paragraph1" = "Zet notificaties aan in de instellingen voor ChatBox.";
+"registration.push_access_denied.settings_button.title" = "Ga naar Instellingen";
+"registration.push_access_denied.maybe_later_button.title" = "Misschien later";
+
+"registration.signin.title" = "Inloggen";
+"registration.signin.too_many_devices.title" = "";
+"registration.signin.too_many_devices.subtitle" = "Verwijder een van je andere apparaten om ChatBox op dit apparaat te gebruiken.";
+"registration.signin.too_many_devices.manage_button.title" = "Beheer apparaten";
+"registration.signin.too_many_devices.sign_out_button.title" = "Uitloggen";
+"registration.signin.email_button.title" = "E-mail";
+"registration.signin.phone_button.title" = "Telefoonnummer";
+
+"registration.signin.alert.password_needed.title" = "Wachtwoord is nodig";
+"registration.signin.alert.password_needed.message" = "Vul je wachtwoord in om in te loggen.";
+
+"registration.devices.title" = "Apparaten";
+"registration.devices.active_list_header" = "Actief";
+"registration.devices.current_list_header" = "Huidig";
+"registration.devices.active_list_subtitle" = "Als je een van de bovengenoemde apparaten niet kent, verwijder deze dan en wijzig je wachtwoord.";
+"registration.devices.activated_in" = "Geactiveerd in";
+"registration.devices.id" = "ID:";
+
+"signin.forgot_password" = "Wachtwoord vergeten?";
+
+"registration.add_phone_number.hero.title" = "Voeg telefoonnummer toe";
+"registration.add_phone_number.hero.paragraph" = "Dit helpt ons mensen te vinden die je misschien kent. Wij delen deze gegevens nooit.";
+"registration.add_phone_number.skip_button.title" = "Niet nu";
+
+"registration.add_email_password.hero.title" = "Voeg je e-mailadres en een wachtwoord toe.";
+"registration.add_email_password.hero.paragraph" = "Dit zorgt ervoor dat je ChatBox op meerdere apparaten kunt gebruiken.";
+
+"registration.email_invitation.title" = "Uitnodiging";
+"registration.email_invitation.hero.title" = "Hallo, %@";
+"registration.email_invitation.hero.paragraph" = "Kies een wachtwoord om je account aan te maken.";
+
+"registration.phone_invitation.title" = "Uitnodiging";
+"registration.phone_invitation.hero.title" = "Hallo, %@";
+"registration.phone_invitation.hero.paragraph" = "Je bent nog maar één stap verwijderd van het maken van je account.";
+
+"error.name_and_email" = "Vul je naam en een geldig e-mailadres in";
+"error.full_name" = "Vul je volledige naam in a.u.b.";
+"error.email" = "Vul een geldig e-mailadres in a.u.b.";
+"error.input.too_long" = "Ingevoerde tekst is te lang";
+"error.input.too_short" = "Ingevoerde tekst is te kort";
+"error.email.invalid" = "Vul een geldig e-mailadres in a.u.b.";
+"error.phone.invalid" = "Voer een geldig telefoonnummer in";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Username takeover screen
+"registration.select_handle.takeover.subtitle" = "Claim je unieke gebruikers naam op ChatBox.";
+"registration.select_handle.takeover.subtitle_link" = "Leer meer";
+
+"registration.select_handle.takeover.choose_own" = "Kies jou";
+"registration.select_handle.takeover.keep_suggested" = "Behoud deze";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ZMUserSessionErrorCode mapping. Used during registration and profile edit
+"error.user.unkown_error" = "Er is een fout opgetreden, probeer het nogmaals";
+"error.user.needs_credentials" = "Controleer je gegevens en probeer het nogmaals.";
+"error.user.invalid_credentials" = "Controleer je gegevens en probeer het nogmaals.";
+"error.user.account_pending_activation" = "Het account dat je probeert te bereiken is nog niet geactiveerd. Verifieer je gegevens.";
+"error.user.network_error" = "Er lijkt een probleem te zijn met het netwerk. Probeer het later opnieuw.";
+"error.user.email_is_taken" = "Dit e-mailadres is al geregistreerd. Controleer de invoer en probeer het nogmaals.";
+"error.user.phone_is_taken" = "Dit telefoonnummer is al geregistreerd. Controleer de invoer en probeer het nogmaals.";
+"error.user.phone_code_invalid" = "Voer een geldige code in";
+"error.user.phone_code_too_many" = "We hebben je al een code via SMS verstuurd. Klik op Opnieuw sturen na 10 minuten om een nieuwe code te krijgen.";
+"error.user.registration_unknown_error" = "Er ging iets mis. Probeer het nogmaals.";
+"error.user.device_deleted_remotely" = "Je bent uitgelogd door een ander apparaat.";
+"error.user.last_identity_cant_be_deleted" = "Een email adres of een telefoon nummer is verplicht.";
+"error.user.account_suspended" = "Dit account is niet langer geautoriseerd om in te loggen.";
+"error.user.account_limit_reached" = "Je kan niet meer dan 3 accounts toevoegen.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are caught by the UI without involving the SE validation. Basically very similar to ZMUserSessionErrorCode onces
+"error.updating_password" = "Je wachtwoord kon niet bijgewerkt worden.";
+
+"error.group_call.too_many_members_in_conversation.title" = "Te veel mensen om te bellen";
+"error.group_call.too_many_members_in_conversation" = "Bellen kan in gesprekken tot %d mensen.";
+"error.group_call.too_many_participants_in_the_call.title" = "Het gesprek zit vol";
+"error.group_call.too_many_participants_in_the_call" = "Er kunnen maximaal %d mensen deelnemen aan één gesprek.";
+"error.call.gsm_ongoing.title" = "Mobiel gesprek";
+"error.call.gsm_ongoing" = "Beëindig eerst je telefoongesprek voordat je belt met ChatBox.";
+"error.call.general.title" = "Fout bij bellen";
+"error.call.general" = "Probeer over een paar minuten nog eens te bellen.";
+"error.call.slow_connection.title" = "Langzame verbinding";
+"error.call.slow_connection" = "Er kunnen misschien problemen optreden tijdens je gesprek";
+"error.call.slow_connection.call_anyway" = "Toch bellen";
+
+"error.invite.no_email_provider" = "Configureer je e-mailapplicatie om uitnodigingen te versturen via e-mail";
+"error.invite.no_messaging_provider" = "Configureer je SMS-dienst om uitnodigingen te versturen via SMS";
+
+"sketchpad.initial_hint" = "Klik op de kleuren om de penseelgrootte te veranderen";
+
+"migration.please_wait_message" = "Even geduld";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are used by the backend to localize APNS
+"push.notification.new_user" = "%@ heeft zich aangemeld bij ChatBox";
+"push.notification.new_message" = "Nieuw bericht";
+
+
+//Force Update
+"force.update.title" = "Update nodig";
+"force.update.message" = "Je mist nieuwe features. \nDownload de laatste versie van ChatBox in de App Store.";
+"force.update.ok_button" = "Ga naar de App Store";
+
+// Third Party
+"giphy.conversation.message" = "%@ · via giphy.com";
+"giphy.conversation.random_message" = "via giphy.com";
+"giphy.error.no_more_results" = "geen gifs meer";
+"giphy.error.no_result" = "geen gif gevonden";
+
+"giphy.confirm" = "stuur";
+"giphy.cancel" = "annuleer";
+"giphy.search_placeholder" = "Zoek Giphy";
+
+"invite_banner.title" = "Nodig je vrienden uit tot ChatBox!";
+"invite_banner.message" = "Geniet van bellen, berichten, schetsen, GIF's en meer in privé gesprekken of in groepen.";
+"invite_banner.invite_button_title" = "Nodig meer mensen uit";
+
+// Collections
+"collections.section.images.title" = "Afbeeldingen";
+"collections.section.files.title" = "Bestanden";
+"collections.section.videos.title" = "Video's";
+"collections.section.links.title" = "Links";
+"collections.section.all.button" = "Toon alle %d →";
+"collections.section.no_items" = "Geen items in de verzameling";
+"collections.image_viewer.copied.title" = "Afbeelding gekopieerd";
+
+"collections.search.field.placeholder" = "Zoek berichten";
+"collections.search.no_items" = "Geen resultaten";
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Message composing / drafts
+
+"compose.drafts.title" = "Berichten";
+"compose.drafts.empty.title" = "Geen berichten";
+"compose.drafts.empty.subtitle" = "Tap + om er een optestellen";
+"compose.drafts.compose.title" = "Schrijf een bericht";
+"compose.drafts.compose.subject.placeholder" = "Tap om een onderwerp toe te voegen";
+
+"compose.drafts.compose.delete.confirm.title" = "Verwijderen bevestigen";
+"compose.drafts.compose.delete.confirm.message" = "Hiermee zullen alle concepten verwijdert worden, dit kan niet ongedaan gemaakt worden.";
+"compose.drafts.compose.delete.confirm.action.title" = "Verwijderen";
+
+"compose.drafts.compose.dismiss.confirm.title" = "Sla op als concept";
+"compose.drafts.compose.dismiss.confirm.action.title" = "Opslaan";
+"compose.drafts.compose.dismiss.delete.action.title" = "Verwijderen";
+
+"availability.message.cancel" = "Annuleer";
+"availability.message.set_status" = "Een status instellen";
+
+"availability.none" = "Geen";
+"availability.available" = "Beschikbaar";
+"availability.away" = "Afwezig";
+"availability.busy" = "Bezet";
+"availability.available.placeholder" = "%@ is beschikbaar";
+"availability.away.placeholder" = "%@ is afwezig";
+"availability.busy.placeholder" = "%@ is bezet";

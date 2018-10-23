@@ -1,0 +1,1135 @@
+//
+// ChatBox
+// Copyright (C) 2016 ChatBox Swiss GmbH
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see http://www.gnu.org/licenses/.
+//
+
+
+"general.ok" = "OK";
+"general.next" = "Next";
+"general.cancel" = "Peruuta";
+"general.open_settings" = "Avaa ChatBoxn Asetukset";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// People picker/start UI
+"peoplepicker.search_placeholder" = "Etsi nimellä tai käyttäjänimellä";
+"peoplepicker.header.top_people" = "Eniten käytetyt kontaktit";
+"peoplepicker.button.create_conversation" = "Luo ryhmä";
+"peoplepicker.button.add_to_conversation" = "Lisää käyttäjiä ryhmään";
+"peoplepicker.header.conversations" = "Ryhmät";
+"peoplepicker.header.team_conversations" = "%@ Ryhmät";
+"peoplepicker.header.send_invitation" = "Kutsu";
+"peoplepicker.header.contacts" = "Yhteystiedot";
+"peoplepicker.header.contacts_personal" = "Henkilökohtaiset kontaktit";
+"peoplepicker.header.directory" = "Yhdistä";
+
+"peoplepicker.group.title.singular" = "Lisää ihmisiä";
+"peoplepicker.group.title.plural" = "Add People (%d)";
+"peoplepicker.group.skip" = "Skip";
+"peoplepicker.group.done" = "Done";
+"peoplepicker.group.create" = "Create";
+
+"peoplepicker.header.people" = "People";
+"peoplepicker.header.services" = "Services";
+"peoplepicker.services.create_conversation.item" = "Create a new conversation";
+"peoplepicker.services.add_service.button" = "Add service";
+"peoplepicker.services.add_service.error.title" = "The service can't be added";
+"peoplepicker.services.add_service.error.default" = "The service is unavailable at the moment";
+"peoplepicker.services.add_service.error.full" = "The conversation is full";
+
+"peoplepicker.title.create_conversation" = "Luo ryhmä";
+"peoplepicker.title.add_to_conversation" = "Lisää ihmisiä";
+
+"peoplepicker.no_contacts_title" = "Ei Yhteystietoja.";
+
+"peoplepicker.no_matching_results_title" = "Ei tuloksia.";
+"peoplepicker.no_matching_results_message" = "Anna kelvollinen sähköpostiosoite.";
+
+"peoplepicker.no_matching_results.action.send_invite" = "Lähetä kutsu";
+"peoplepicker.no_matching_results.action.share_contacts" = "Jaa yhteystietoja";
+
+"peoplepicker.no_matching_results_provide_valid_email" = "Anna kelvollinen sähköpostiosoite";
+"peoplepicker.no_matching_results_after_address_book_upload_title" = "Ei tuloksia.";
+/* This sentence ends with button title, contained in peoplepicker.no_matching_results_after_address_book_upload_button */
+"peoplepicker.no_matching_results_after_address_book_upload_message" = "Anna kelvollinen sähköpostiosoite tai";
+/*  */
+"peoplepicker.no_matching_results_after_address_book_upload_button" = "jaa yhteystietoja";
+
+"peoplepicker.share_contacts.no_results.title" = "Etsi ihmisiä nimellä tai sähköpostiosoitteella";
+
+"peoplepicker.send_invitation.dialog.title" = "Kutsu lähetetty";
+"peoplepicker.send_invitation.dialog.message" = "Sitä voidaan käyttää 2 viikon ajan. Lähetä uusi jos se vanhenee.";
+"peoplepicker.send_invitation.dialog.ok" = "OK";
+
+"peoplepicker.invite_more_people" = "Kutsu lisää ihmisiä";
+"peoplepicker.invite_team_members" = "Invite people to join the team";
+"peoplepicker.quick-action.open-conversation" = "Avaa";
+"peoplepicker.quick-action.create-conversation" = "Luo ryhmä";
+
+"add_participants.all_contacts_added" = "Kaikki ovat täällä.";
+
+// Contacts UI
+"contacts_ui.search_placeholder" = "Hae nimellä";
+"contacts_ui.invite_others" = "Kutsu muita";
+"contacts_ui.name_in_contacts" = "%@ Yhteystiedoissa";
+"contacts_ui.connection_request" = "Pyysi yhteyden muodostamista";
+"contacts_ui.action_button.invite" = "Kutsu";
+"contacts_ui.action_button.open" = "Avaa";
+"contacts_ui.invite_sheet.cancel_button_title" = "Peruuta";
+"contacts_ui.notification.invitation_sent" = "Kutsu lähetetty";
+"contacts_ui.notification.invitation_failed" = "Kutsun lähettäminen epäonnistui";
+"contacts_ui.title" = "Kutsu ihmisiä";
+
+"conversation_list.empty.all_archived.message" = "Everything archived";
+"conversation_list.empty.no_contacts.message" = "Start a conversation or\ncreate a group.";
+
+
+// Conversation List Indicator
+"conversation_list.right_accessory.join_button.title" = "Liity";
+"conversation_list.header.self_team.accessibility_value" = "%@ n tili.";
+"conversation_list.header.self_team.accessibility_value.inactive" = "Napauta aktivoidaksesi.";
+"conversation_list.header.self_team.accessibility_value.active" = "Aktiivinen nyt.";
+"conversation_list.header.self_team.accessibility_value.has_new_messages" = "On uusia viestejä.";
+
+// Profile Header View
+"conversation.connection_view.in_address_book" = "yhteystiedoissa";
+
+// Conversation list voiceover accessibility
+"conversation_list.voiceover.open_conversation.hint" = "Avaa keskustelu";
+"conversation_list.voiceover.status.pending_connection" = "odottaa";
+"conversation_list.voiceover.status.active_call" = "aktiivinen puhelu";
+"conversation_list.voiceover.status.missed_call" = "vastaamaton puhelu";
+"conversation_list.voiceover.status.pause_media" = "pysäytä media";
+"conversation_list.voiceover.status.play_media" = "toista media";
+"conversation_list.voiceover.status.silenced" = "mykistetty";
+"conversation_list.voiceover.status.typing" = "kirjoittaa";
+"conversation_list.voiceover.status.ping" = "ping";
+"conversation_list.voiceover.bottom_bar.archived_button.label" = "arkistoitu";
+"conversation_list.voiceover.bottom_bar.archived_button.hint" = "lista arkistoiduista keskusteluista";
+"conversation_list.voiceover.bottom_bar.contacts_button.label" = "yhteystiedot";
+"conversation_list.voiceover.bottom_bar.contacts_button.hint" = "etsi ihmisiä ChatBoxssä";
+"conversation_list.voiceover.bottom_bar.compose_button.label" = "kirjoita";
+"conversation_list.voiceover.bottom_bar.compose_button.hint" = "kirjoita viestejä ja tallenna myöhempää käyttöä varten";
+"conversation_list.voiceover.bottom_bar.camera_button.label" = "kamera";
+"conversation_list.voiceover.bottom_bar.camera_button.hint" = "ota kuva ja lähetä nopeasti";
+
+// Archived List
+"archived_list.title" = "arkistoi";
+
+// Add contact tool tip
+"tool_tip.contacts.title" = "Keskustelut alkavat tästä";
+"tool_tip.contacts.message" = "Aloita keskustelu. Soita, pikaviestitä ja jaa yksityisesti tai ryhmissä.";
+
+// "Knows" subtitle in cell: "Knows Indrek", "Knows Indrek and Jane", "Knows Indrek and 5 others"
+"peoplepicker.suggested.knows_one" = "Tuntee %@";
+"peoplepicker.suggested.knows_two" = "Tuntee %@ ja %@";
+"peoplepicker.hide_search_result" = "Piilota";
+"peoplepicker.hide_search_result_progress" = "Piilotetaan…";
+
+"send_invitation.subject" = "Ota minuun yhteys ChatBoxssä";
+"send_invitation.text" = "Olen ChatBoxssä, etsi %@ tai mene osoitteeseen get.ChatBox.com";
+"send_invitation_no_email.text" = "Olen ChatBoxssä. Mene osoitteeseen get.ChatBox.com ottaaksesi minuun yhteyttä.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++x
+// In-app notifications (chat heads)
+"notifications.shared_a_photo" = "jakoi kuvan";
+"notifications.pinged" = "pinggasi";
+"notifications.sent_file" = "jakoi tiedoston";
+"notifications.sent_location" = "jakoi sijainnin";
+"notifications.sent_video" = "jakoi videon";
+"notifications.sent_audio" = "jakoi äänen";
+"notifications.in_conversation" = "%@ - %@";
+"notifications.this_conversation" = "%@ Tässä keskustelussa";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// List (labels) - Needs to be revised with updated guidance
+"list.title" = "Keskustelut";
+"list.archived_conversations" = "ARKISTOI";
+"list.archived_conversations_close" = "Sulje arkisto";
+
+"conversation.voiceover.verified" = "vahvistettu";
+
+"conversation.status.call" = "Käynnissä oleva puhelu";
+"conversation.status.typing" = "Kirjoittaa viestiä…";
+"conversation.status.typing.group" = "%@ kirjoittaa viestiä…";
+"conversation.status.silenced" = "Mykistetty";
+"conversation.status.blocked" = "Estetty";
+
+"conversation.status.message.text" = "%@";
+"conversation.status.message.link" = "Jakoi linkin";
+"conversation.status.message.image" = "Jakoi kuvan";
+"conversation.status.message.location" = "Jakoi sijainnin";
+"conversation.status.message.audio" = "Jakoi ääniviestin";
+"conversation.status.message.video" = "Jakoi videon";
+"conversation.status.message.file" = "Jakoi tiedoston";
+"conversation.status.message.knock" = "Pinggasi";
+"conversation.status.message.missedcall" = "Vastaamaton puhelu";
+"conversation.status.message.ephemeral" = "Ajoitettu viesti";
+
+"conversation.status.unsent" = "⚠ Lähettämätön viesti";
+"conversation.status.you" = "Sinä";
+"conversation.status.added_multiple" = "Ihmiset lisätty";
+"conversation.status.you_was_added" = "%@ lisäsi sinut";
+"conversation.status.added_users" = "%@ lisäsi %@ n";
+"conversation.status.joined" = "%@ joined";
+"conversation.status.removed_multiple" = "Ihmiset poistettu";
+"conversation.status.you_were_removed" = "Sinut poistettiin";
+"conversation.status.you_left" = "Sinä poistuit";
+"conversation.status.started_conversation" = "%@ aloitti keskustelun";
+"conversation.status.removed_users" = "%@ poisti %@ n";
+"conversation.status.everyone_left" = "Kaikki poistuivat";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Compose Entry Point
+
+"compose.contact.title" = "Keskustelu";
+"compose.message.title" = "Viesti";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Conversation
+"conversation.invite_more_people.title" = "Levitä sanaa!";
+"conversation.invite_more_people.description" = "Lisää käyttäjiä tähän keskusteluun";
+"conversation.invite_more_people.explanation_url" = "https://support.ChatBox.com";
+"conversation.invite_more_people.button_title" = "Lisää ihmisiä";
+
+// Conversation names
+"conversation.displayname.emptygroup" = "Tyhjä ryhmäkeskustelu";
+
+"conversation.input_bar.verified" = "Vahvistettu";
+"conversation.input_bar.placeholder" = "Kirjoita viesti";
+"conversation.input_bar.placeholder_ephemeral" = "Ajoitettu viesti";
+
+"conversation.input_bar.audio_message.tooltip.pull_send" = "Pyyhkäise ylös lähettääksesi";
+"conversation.input_bar.audio_message.tooltip.tap_send" = "Napauta lähettääksesi";
+"conversation.input_bar.audio_message.too_long.title" = "Äänitys pysäytetty";
+"conversation.input_bar.audio_message.too_long.message" = "Audio messages are limited to %@.";
+"conversation.input_bar.audio_message.send" = "Lähetä";
+
+"conversation.input_bar.audio_message.keyboard.record_tip" = "Napauta äänittääksesi\nVoit %@ sen jälkeen";
+"conversation.input_bar.audio_message.keyboard.filter_tip" = "Valitse suodatan yläpuolelta";
+
+"conversation.call.many_participants_confirmation.title" = "Aloita puhelu";
+"conversation.call.many_participants_confirmation.message" = "Tämä soittaa %d käyttäjälle";
+"conversation.call.many_participants_confirmation.call" = "Puhelu";
+
+"conversation.connection_view.in_address_book" = "yhteystiedoissa";
+
+"conversation.input_bar.shortcut.send" = "Lähetä Viesti";
+"conversation.input_bar.shortcut.edit_last_message" = "Edit Last Message";
+"conversation.input_bar.shortcut.cancel_editing_message" = "Peruuta";
+
+"conversation.input_bar.message_too_long.title" = "Message too long";
+"conversation.input_bar.message_too_long.message" = "You can send messages up to %d characters long.";
+
+"conversation.create.group_name.placeholder" = "Group name";
+"conversation.create.guidance.empty" = "At least 1 character";
+"conversation.create.guidance.toolong" = "Liian monta merkkiä";
+"conversation.create.toggle.title" = "Allow guests";
+"conversation.create.toggle.subtitle" = "Open this conversation to people outside your team. You can always change it later.";
+
+"conversation.guests_present" = "Guests are present";
+
+// Image confirmation dialogue
+"image_confirmer.confirm" = "OK";
+"image_confirmer.cancel" = "Peruuta";
+"image.add_sketch" = "Lisää piirros";
+"image.edit_image" = "Muokkaa kuvaa";
+
+// Camera access
+"camera_access.denied" = "ChatBox tarvitsee luvan käyttää kameraa.";
+"camera_access.denied.instruction" = "";
+"camera_access.denied.open_settings" = "Salli se ChatBoxn asetuksissa";
+
+// Camera and photos access, keyboard
+"keyboard_photos_access.denied.keyboard.settings" = "Asetukset";
+"keyboard_photos_access.denied.keyboard.camera_and_photos" = "ChatBox needs access to your\ncamera and photos."; // split text on two lines for a better text balance
+"keyboard_photos_access.denied.keyboard.photos" = "ChatBox needs access to your photos.";
+"keyboard_photos_access.denied.keyboard.camera" = "ChatBox needs access to your camera.";
+
+// Camera Controls
+"camera_controls.aeaf_lock" = "AE/AF Lukko";
+
+// Location
+"location.send_button.title" = "Lähetä";
+"location.unauthorized_alert.title" = "Ota Sijaintipalvelut käyttöön";
+"location.unauthorized_alert.message" = "Lähettääksesi sijaintisi, ota sijaintipalvelut käyttöön ja salli ChatBoxn käyttää sijaintiasi.";
+"location.unauthorized_alert.cancel" = "Peruuta";
+"location.unauthorized_alert.settings" = "Asetukset";
+
+// Twitter
+"twitter_status.on_twitter" = "%@ Twitterissä";
+
+// Ephemeral message
+"input.ephemeral.timeout.none" = "Pois päältä";
+"input.ephemeral.title" = "Aseta aika jonka jälkeen viesti katoaa";
+
+// System messages
+"content.system.you_nominative" = "sinä";
+"content.system.you_dative" = "sinä";
+"content.system.you_accusative" = "sinä";
+
+"content.system.continued_conversation" = "Aloita keskustelu %@ n kanssa";
+
+"content.system.other_started_conversation" = "%@ aloitti keskustelun %@ n kanssa";
+"content.system.you_started_conversation" = "Aloitit keskustelun %@ n kanssa";
+
+"content.system.you_added_participant" = "Lisäsit %@ n";
+"content.system.other_added_participant" = "%@ lisäsi %@ n";
+"content.system.other_added_you" = "%@ lisäsi sinut";
+
+"content.system.participants_you" = "Sinä";
+"content.system.participants_1_other" = "%@ ja %@";
+"content.system.other_left" = "%@ poistui";
+"content.system.you_left" = "Sinä poistuit";
+"content.system.other_removed_other" = "%@ poisti %@ n";
+"content.system.other_removed_you" = "%@ poisti sinut";
+"content.system.you_removed_other" = "Sinä poistit %@ n";
+
+// New conversation participants added / removed / started system message
+
+"content.system.conversation.other.started" = "%@ aloitti keskustelun %@ n kanssa";
+"content.system.conversation.other.added" = "%@ lisäsi %@ n";
+"content.system.conversation.other.removed" = "%@ poisti %@ n";
+"content.system.conversation.other.left" = "%@ poistui";
+
+"content.system.conversation.you.started" = "%@ aloitti keskustelun %@ n kanssa";
+"content.system.conversation.you.added" = "%@ lisäsi %@ n";
+"content.system.conversation.you.removed" = "%@ poisti %@ n";
+"content.system.conversation.you.left" = "%@ poistui";
+"content.system.conversation.team.member-leave" = "%@ poistettiin tiimistä.";
+"content.system.conversation.guest.joined" = "%@ joined";
+
+"content.system.other_renamed_conv_to_nothing" = "%@ poisti keskustelun nimen";
+"content.system.you_renamed_conv_to_nothing" = "Sinä poistit keskustelun nimen";
+"content.system.pending_message_timestamp" = "Lähetetään…";
+"content.system.message_sent_timestamp" = "Lähetetty";
+"content.system.message_delivered_timestamp" = "Toimitettu";
+"content.system.failedtosend_message_timestamp" = "Lähettäminen epäonnistui.";
+"content.system.failedtosend_message_timestamp_resend" = "Lähetä uudelleen";
+"content.system.failedtosend_message_timestamp_delete" = "Poista";
+"content.system.like_tooltip" = "Napauta tykkääksesi";
+"content.system.deleted_message_prefix_timestamp" = "Deleted: %@";
+"content.system.edited_message_prefix_timestamp" = "Edited: %@";
+"content.system.connecting_to" = "Yhdistetään %@ een.\nAloita keskustelu";
+"content.system.connected_to" = "Yhdistetty %@ een\nAloita keskustelu";
+"content.system.other_wanted_to_talk" = "%@ soitti";
+"content.system.you_wanted_to_talk" = "Sinä soitit";
+"content.system.ephemeral_time_remaining" = "%@ poistui";
+
+"content.system.you_started" = "Sinä";
+"content.system.this_device" = "tämä laite";
+
+"content.system.call.you" = "Sinä";
+"content.system.call.called" = "%@ soitti";
+"content.system.call.called-you" = "%@ soitit";
+
+"content.system.renamed_conv.title" = "%@ nimesi keskustelun uudelleen";
+"content.system.renamed_conv.title-you" = "%@ nimesit keskustelun uudelleen";
+"content.system.renamed_conv.title.you" = "Sinä";
+
+"content.system.conversation.with_name.title" = "%@ started the conversation";
+
+"content.system.conversation.with_name.participants" = "with %@";
+
+"content.system.reactivated_device" = "Aloitit käyttämään %@ uudestaan. Viestit jotka lähetettiin sillä välin eivät näy täällä.";
+
+"content.system.new_device" = "uusi laite";
+"content.system.started_using" = "aloittettiin käyttämään";
+"content.system.is_verified" = "Kaikki sormenjäljet on vahvistettu";
+
+"content.system.new_users" = "Uusi käyttäjä liittyi.";
+"content.system.verify_devices" = "Vahvista laitteet";
+
+"content.system.unverified" = "%@ poisti vahvistuksen yhdestä %@"; // example "You unverified one of Jule’s devices"
+"content.system.your_devices" = "sinun laitteista";
+"content.system.other_devices" = "%@ n laitteista";
+
+"content.system.missing_messages.title" = "Et ole käyttänyt tätä laitetta pitkään aikaan. Jotkut viestit eivät saata näkyä täällä.";
+"content.system.missing_messages.subtitle_start" = "Sillä aikaa";
+
+"content.system.cannot_decrypt" = "Viesti käyttäjältä: %@ ei tullut perille.";
+
+"content.system.cannot_decrypt.you_part" = "sinä";
+"content.system.cannot_decrypt.why_part" = "Miksi?";
+
+"content.system.cannot_decrypt.identity" = "%@ laitteen identiteetti muuttui. Perilletoimittamaton viesti.";
+"content.system.cannot_decrypt.identity.you_part" = "Sinun";
+"content.system.cannot_decrypt.identity.otherUser_part" = "%@ n"; // possessive apostrophe - might differ in different languages
+"content.system.cannot_decrypt.identity.why_part" = "Lisätietoja";
+"content.system.cannot_decrypt.otherDevice_part" = "(laite %@)"; // example " (device d1b23c54f34a)".
+// Full sentence: "A message from %@ was not received. [...] (device d1b23c54f34a). This is a debug information.
+
+"content.system.unknown_message.body" = "Käytät vanhempaa ChatBox versiota, joka ei voi näyttää tätä viestiä.";
+"content.system.unknown_message.body.link" = "Miksi näin tapahtuu?";
+
+"content.file.uploading" = "Lähetetään…";
+"content.file.downloading" = "Ladataan…";
+"content.file.upload_failed" = "Lähettäminen epäonnistui";
+"content.file.upload_cancelled" = "Lähettäminen peruutettu";
+"content.file.upload_video" = "Videot";
+"content.file.take_video" = "Kuvaa video";
+
+"content.file.save_video" = "Tallenna";
+"content.file.save_audio" = "Tallenna";
+"content.image.save_image" = "Tallenna";
+
+"content.message.delete" = "Poista";
+"content.message.save" = "Tallenna";
+
+"content.message.like" = "Tykkää";
+"content.message.unlike" = "Poista tykkäys";
+"content.message.forward" = "Jaa";
+"content.message.go_to_conversation" = "Näytä";
+"content.message.forward.to" = "Etsi…";
+"content.message.open" = "Avaa";
+
+"content.reactions_list.likers" = "Tykätty";
+
+"content.file.too_big" = "Voit lähettää maksimissaan %@ n kokoisia tiedostoja";
+// Someone pinged
+"content.ping.text" = "%1$@ pinggasi";
+
+// Current user pinged
+"content.ping.text.you" = "Sinä";
+
+// Inline Player
+"content.player.unable_to_play" = "EI VOI SOITTAA KAPPALETTA";
+
+// Connecting (NEW IMPLEMENTATION, REVIEW LATER)
+"connection_request.title" = "Yhdistä %@een"; // check UPPERCASE implementation in code
+"missive.connection_request.default_message" = "Hei, %@.\nOta yhteys minuun ChatBoxssä.\n%@";
+
+"connection_request.send_button_title" = "Yhdistä";
+"inbox.connection_request.connect_button_title" = "Yhdistä";
+"inbox.connection_request.ignore_button_title" = "Hylkää";
+
+// Voice
+"voice.status.one_to_one.incoming" = "%@\nSoittaa";
+"voice.status.group_call.incoming" = "%@\nHälyyttää";
+"voice.status.one_to_one.outgoing" = "%@\nHälyyttää";
+"voice.status.joining" = "%@\nYhdistää";
+"voice.status.video_not_available" = "Video pois päältä";
+"voice.status.low_connection" = "Huono yhteys";
+"voice.network_error.title" = "Ei internet-yhteyttä";
+"voice.status.cbr" = "Tasainen Bittinopeus";
+"voice.network_error.body" = "Sinun pitää olla online-tilassa soittaaksesi puheluja. Tarkista yhteytesi ja yritä uudelleen.";
+"voice.degradation.new_self_device" = "Aloitit käyttämään uutta laitetta.";
+"voice.degradation.new_user_device" = "%@ aloitti käyttämään uutta laitetta.";
+"voice.degradation_outgoing.prompt" = "Haluatko silti soittaa puhelun?";
+"voice.degradation_incoming.prompt" = "Haluatko silti vastata puheluun?";
+"voice.accept_button.title" = "Hyväksy";
+"voice.decline_button.title" = "Kieltäydy";
+"voice.hang_up_button.title" = "Katkaise puhelu";
+"voice.mute_button.title" = "Mykistä";
+"voice.video_button.title" = "Video";
+"voice.speaker_button.title" = "Kaiutin";
+"voice.cancel_button.title" = "Peruuta";
+"voice.call_button.title" = "Puhelu";
+
+"voice.alert.call_in_progress.title" = "Puhelu käynnissä";
+"voice.alert.call_in_progress.message" = "Sinulla voi olla vain yksi aktiivinen puhelu kerrallaan";
+"voice.alert.call_in_progress.confirm" = "OK";
+
+"voice.alert.microphone_warning.title" = "ChatBox tarvitsee luvan käyttää mikrofonia.";
+"voice.alert.microphone_warning.explanation" = "Salli se ChatBoxn asetuksissa.";
+
+"voice.alert.camera_warning.title" = "ChatBox tarvitsee luvan käyttää kameraa.";
+"voice.alert.camera_warning.explanation" = "Mene Asetuksiin ja salli ChatBoxn käyttää kameraa.";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Profile and Participants
+
+"participants.add_people_button_title" = "Add";
+"participants.avatar.guest.title" = "Vieras";
+
+"participants.title" = "Lisätietoja";
+"participants.section.participants" = "People (%d)";
+"participants.section.services" = "Services (%d)";
+"participants.footer.add_title" = "Add Participants";
+
+// Meta Menu
+"meta.menu.rename" = "Nimeä uudelleen";
+"meta.menu.leave" = "Poistu";
+"meta.menu.archive" = "Arkistoi";
+"meta.menu.unarchive" = "Palauta arkistosta";
+"meta.menu.delete" = "Poista";
+"meta.menu.silence.mute" = "Mykistä";
+"meta.menu.silence.unmute" = "Poista mykistys";
+"meta.menu.cancel" = "Peruuta";
+"meta.menu.cancel_connection_request" = "Peru pyyntö";
+
+// Delete conversation
+"meta.menu.delete_content.dialog_title" = "Poista sisältö?";
+"meta.menu.delete_content.dialog_message" = "This will clear the conversation history on all your devices.";
+"meta.menu.delete_content.leave_as_well_message" = "Poistu myös keskustelusta";
+"meta.menu.delete_content.button_cancel" = "Peruuta";
+"meta.menu.delete_content.button_delete" = "Poista";
+"meta.menu.delete_content.button_delete_and_leave" = "Delete and leave";
+
+// Leave conversation
+"meta.leave_conversation_dialog_title" = "Poistu keskustelusta?";
+"meta.leave_conversation_dialog_message" = "Osallistujille ilmoitetaan ja keskustelu poistetaan listastasi.";
+"meta.leave_conversation.delete_content_as_well_message" = "Poista myös sisältö";
+"meta.leave_conversation_button_cancel" = "Peruuta";
+"meta.leave_conversation_button_leave" = "Poistu";
+"meta.leave_conversation_button_leave_and_delete" = "Leave and delete content";
+
+// Conversation Degraded (security level lowered)
+"meta.degraded.degradation_reason_message.singular" = "%@ aloitti käyttämään uutta laitetta.";
+"meta.degraded.degradation_reason_message.plural" = "%@ aloitti käyttämään uusia laitteita.";
+"meta.degraded.dialog_message" = "Haluatko vielä silti lähettää viestisi?";
+"meta.degraded.show_device_button" = "Näytä laite";
+"meta.degraded.send_anyway_button" = "Lähetä siitä huolimatta";
+"meta.degraded.cancel_sending_button" = "Peruuta";
+
+// Remove from conversation dialogue
+"profile.remove_dialog_title" = "Poista?";
+"profile.remove_dialog_message" = "%@ ei pysty lähettämään tai vastaanottamaan viestejä tässä keskustelussa.";
+"profile.remove_dialog_button_cancel" = "Peruuta";
+"profile.remove_dialog_button_remove" = "Poista";
+
+// Block dialog
+"profile.block_dialog.title" = "Estä?";
+"profile.block_dialog.message" = "%@ ei pysty ottamaan sinuun yhteyttä tai lisäämään sinua ryhmäkeskusteluihin.";
+"profile.block_dialog.button_cancel" = "Peruuta";
+"profile.block_dialog.button_block" = "Estä";
+
+// Delete message dialog
+"message.delete_dialog.message" = "Tätä ei voi perua.";
+"message.delete_dialog.action.cancel" = "Peruuta";
+"message.delete_dialog.action.hide" = "Poista minulta";
+"message.delete_dialog.action.delete" = "Poista kaikilta";
+
+// Edit message
+"message.menu.edit.title" = "Muokkaa";
+
+// Accept connection request
+"profile.connection_request_dialog.title" = "Hyväksy?";
+"profile.connection_request_dialog.message" = "Tämä yhdistää teidät ja avaa keskustelun %@ kanssa.";
+"profile.connection_request_dialog.button_cancel" = "Hylkää";
+"profile.connection_request_dialog.button_connect" = "Yhdistä";
+
+// Cancel connection request
+"profile.cancel_connection_request_dialog.title" = "Peruuta pyyntö?";
+"profile.cancel_connection_request_dialog.message" = "Poista yhteyspyyntö %@ lle.";
+"profile.cancel_connection_request_dialog.button_no" = "Ei";
+"profile.cancel_connection_request_dialog.button_yes" = "Kyllä";
+
+// Unblock button
+"profile.unblock_button_title" = "Poista esto";
+
+"profile.cancel_connection_button_title" = "PERUUTA PYYNTÖ";
+"profile.connection_request_state.blocked" = "ESTETTY";
+"profile.create_conversation_button_title" = "Luo ryhmä";
+"profile.open_conversation_button_title" = "Avaa keskustelu";
+
+// User Details
+"profile.details.title" = "Lisätietoja";
+"profile.details.guest" = "Vieras";
+
+"profile_view.accessibility.handle" = "Käyttäjänimi";
+"profile_view.accessibility.name" = "Näyttönimi";
+"profile_view.accessibility.team_name" = "Tiimin nimi";
+
+// Device list
+"profile.devices.title" = "Laitteet";
+"profile.devices.fingerprint_message_unencrypted" = "%@ käyttää vanhempaa versiota ChatBoxstä. Laitteita ei näytetä täällä.";
+"profile.devices.fingerprint_message" = "ChatBox antaa jokaisella laiteelle yksilöllisen sormenjäljen. Vertaa niitä %@ n kanssa ja vahvista keskustelu. Miksi vahvistaa keskusteluja?";
+"profile.devices.fingerprint_message.link" = "Miksi vahvistaa keskusteluja?";
+
+// Device detail
+"profile.devices.detail.verify_message" = "Vahvista että tämä vastaa sormenjälkeä joka näkyy %@ n laitteella.";
+"profile.devices.detail.verify_message.link" = "Miten teen sen?";
+"profile.devices.detail.show_my_device.title" = "Näytä laitteeni sormenjälki";
+"device.verified" = "Vahvistettu";
+"device.not_verified" = "Ei todennettu";
+"device.class.desktop" = "Tietokone";
+"device.class.tablet" = "Tabletti";
+"device.class.phone" = "Puhelinnumero";
+"profile.devices.detail.reset_session.title" = "Nollaa istunto";
+
+// General strings
+"general.confirm" = "OK";
+
+// Bot
+"participants.services.remove_integration.button" = "remove integration";
+
+// Group details
+"group_details.guest_options_cell.title" = "Guest Options";
+"group_details.guest_options_cell.enabled" = "On";
+"group_details.guest_options_cell.disabled" = "Pois päältä";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Self profile
+// Options menu contents
+
+"self.settings" = "Asetukset";
+"self.profile" = "Profiili";
+"self.account" = "Tili";
+"self.help_center" = "Tuki";
+"self.help_center.support_website" = "ChatBoxn Tuki Sivusto";
+"self.help_center.contact_support" = "Ota yhteyttä tukeen";
+"self.about" = "Tietoja meistä";
+"self.sign_out" = "Kirjaudu ulos";
+"self.report_abuse" = "Ilmoita väärinkäyttö";
+"self.voiceover.label" = "Profiili";
+"self.voiceover.hint" = "Avaa profiili ja asetukset";
+"self.new-device.voiceover.label" = "Profiili, uusia laitteita lisätty";
+
+"self.add_phone_number" = "Lisää puhelinnumero";
+"self.add_email_password" = "Lisää sähköpostiosoite ja salasana";
+
+// About screen
+"about.tos.title" = "Käyttöehdot";
+"about.privacy.title" = "Yksityisyyskäytännöt";
+"about.license.title" = "Lisenssitiedot";
+"about.website.title" = "ChatBoxn verkkosivu";
+"about.copyright.title" = "© ChatBox Swiss GmbH";
+
+// Self new devices
+"self.new_device_alert.title" = "Olet liittänyt %@ n ChatBox tiliisi";
+"self.new_device_alert.title_prefix.tablet" = "tabletti";
+"self.new_device_alert.title_prefix.phone" = "puhelin";
+"self.new_device_alert.title_prefix.devices" = "%d laitteet";
+"self.new_device_alert.message" = "%@\n\nJos et tehnyt tätä, poista laite ja vaihda salasanasi.";
+"self.new_device_alert.message_plural" = "%@\n\nJos et tehnyt tätä, poista laitteet ja vaihda salasanasi.";
+"self.new_device_alert.manage_devices" = "Hallitse laitteita";
+"self.new_device_alert.trust_devices" = "OK";
+
+// Settings - top level
+"self.settings.create_team.title" = "Luo tiimi";
+"self.settings.manage_team.title" = "Hallinnoi tiimiä";
+"self.settings.add_team_or_account.title" = "Uusi tiimi tai tili";
+"self.settings.add_account.title" = "Lisää tili";
+
+"self.settings.add_account.error.title" = "Three accounts active";
+"self.settings.add_account.error.message" = "You can only be logged in with three accounts at once. Log out from one to add another.";
+
+// Settings - Account details
+"self.settings.account_section" = "Tili";
+
+"self.settings.account_details_group.info.title" = "Lisätietoja";
+"self.settings.account_details_group.personal.title" = "Henkilökohtainen";
+
+"self.settings.account_section.name.title" = "Nimi";
+"self.settings.account_section.email.title" = "Sähköposti";
+"self.settings.account_section.phone.title" = "Puhelinnumero";
+"self.settings.account_section.handle.title" = "Käyttäjänimi";
+"self.settings.account_section.add_handle.title" = "Lisää käyttäjänimi";
+
+"self.settings.account_details_group.info.footer" = "Ihmiset voivat löytää sinut näillä tiedoilla.";
+"self.settings.account_details_group.personal.footer" = "Tämä tieto ei näy.";
+
+"self.settings.account_details.remove_device.title" = "Poista laite";
+"self.settings.account_details.key_fingerprint.title" = "Sormenjälki";
+"self.settings.account_details.remove_device.message" = "Sinun täytää kirjoittaa salasanasi poistaaksesi laitteen";
+"self.settings.account_details.remove_device.password" = "Salasana";
+"self.settings.account_details.remove_device.password.error" = "Väärä salasana";
+
+"self.settings.account_appearance_group.title" = "Ulkoasu";
+"self.settings.account_picture_group.picture" = "Kuva";
+"self.settings.account_picture_group.color" = "Väri";
+
+"self.settings.account_picture_group.theme" = "Tumma teema";
+
+"self.settings.device_details.fingerprint.subtitle" = "ChatBox antaa jokaiselle laitteelle yksilöllisen sormenjäljen. Vertaa niitä ja varmenna laitteesi ja keskustelusi.";
+"self.settings.device_details.reset_session.subtitle" = "Jos sormenjäljet eivät täsmää, nollaa istunto luodaksesi uudet salausavaimet molemmille osapuolille.";
+"self.settings.device_details.remove_device.subtitle" = "Poista tämä laite jos olet lakannut käyttämästä sitä. Sinut kirjataan ulos tästä laitteesta välittömästi.";
+"self.settings.device_details.reset_session.success" = "Istunto on nollattu";
+
+"self.settings.account_details.actions.title" = "Toiminnot";
+
+"self.settings.account_details.delete_account.title" = "Poista tili";
+
+"self.settings.account_details.delete_account.alert.title" = "Poista tili";
+"self.settings.account_details.delete_account.alert.message" = "Lähetämme sinulle viestin joko sähköpostina tai tekstiviestinä. Paina viestissä olevaa linkkiä poistaaksesi tilisi lopullisesti.";
+
+"self.settings.account_details.log_out.alert.title" = "Kirjaudu ulos";
+"self.settings.account_details.log_out.alert.message" = "Viestihistoriasi poistetaan tästä laitteesta.";
+
+
+// Change Username
+
+"self.settings.account_section.handle.change.title" = "Käyttäjänimi";
+"self.settings.account_section.handle.change.save" = "Tallenna";
+"self.settings.account_section.handle.change.footer" = "Vähintään 2 merkkiä, vain a - z, 0 - 9 ja _.";
+"self.settings.account_section.handle.change.footer.unavailable" = "On jo käytössä";
+
+"self.settings.account_section.handle.change.failure_alert.title" = "Ei pysty asettamaan käyttäjänimeä";
+"self.settings.account_section.handle.change.failure_alert.message" = "Virhe yrittäessä asettaa käyttäjänimeä. Yritä uudelleen.";
+
+// Change Email
+
+"self.settings.account_section.email.change.title" = "Sähköposti";
+"self.settings.account_section.email.change.save" = "Tallenna";
+
+"self.settings.account_section.email.change.verify.title" = "Vahvista sähköpostiosoite";
+"self.settings.account_section.email.change.verify.description" = "Tarkista sähköpostisi saapuneet-kansio ja seuraa ohjeita.";
+"self.settings.account_section.email.change.verify.resend" = "Lähetä uudelleen%@lle";
+
+"self.settings.account_section.email.change.resend.title" = "Sähköposti lähetetty";
+"self.settings.account_section.email.change.resend.message" = "Varmistusviesti on lähetetty osoitteeseen: %@. Tarkista sähköpostisi saapuneet kansio ja seuraa ohjeita.";
+
+// Change Phone Number
+
+"self.settings.account_section.phone_number.change.title" = "Puhelinnumero";
+"self.settings.account_section.phone_number.change.save" = "Tallenna";
+"self.settings.account_section.phone_number.change.remove" = "Poista Puhelinnumero";
+
+"self.settings.account_section.phone_number.change.remove.action" = "Poista Puhelinnumero";
+
+"self.settings.account_section.phone_number.change.verify.save" = "Tallenna";
+"self.settings.account_section.phone_number.change.verify.title" = "Vahvista";
+"self.settings.account_section.phone_number.change.verify.description" = "Syötä vahvistuskoodi jonka lähetimme numeroon: %@";
+
+"self.settings.account_section.phone_number.change.verify.code_placeholder" = "Syötä koodi";
+"self.settings.account_section.phone_number.change.verify.resend" = "Lähetä koodi uudelleen";
+"self.settings.account_section.phone_number.change.verify.resend_description" = "Eikö koodi saavu perille? \nVoit pyytää uutta joka 30: s sekunti.";
+
+"self.settings.account_section.phone_number.change.resend.title" = "Koodi lähetetty uudelleen";
+"self.settings.account_section.phone_number.change.resend.message" = "Vahvistuskoodi lähetettiin uudelleen %@.";
+
+// Chat alerts
+"self.settings.notifications.push_notification.title" = "Ilmoitukset";
+"self.settings.notifications.push_notification.toogle" = "Viestin esikatselu";
+"self.settings.notifications.push_notification.footer" = "Lähettäjän nimi ja viesti Lukitusnäytössä ja Ilmoituskeskuksessa.";
+
+"self.settings.notifications.chat_alerts.toggle" = "Viesti Bannerit";
+"self.settings.notifications.chat_alerts.footer" = "Uusia viestejä toisissa keskusteluissa.";
+
+"self.settings.sound_menu.sounds.title" = "Äänet";
+"self.settings.sound_menu.ringtone.title" = "Soittoääni";
+"self.settings.sound_menu.message.title" = "Tekstin merkkiääni";
+"self.settings.sound_menu.ping.title" = "Pinggaa";
+"self.settings.sound_menu.ringtones.title" = "Soittoäänet";
+"self.settings.sound_menu.sounds.wire_sound" = "ChatBox";
+"self.settings.sound_menu.sounds.none" = "Ei mitään";
+
+"self.settings.callkit.title" = "Soittaa";
+"self.settings.callkit.caption" = "Jaa iOS: lle";
+"self.settings.callkit.description" = "Näytä ChatBoxn puhelut lukitusnäytössä ja iOS: n puheluhistoriassa. Jos iCloud on käytössä, puheluhistoria jaetaan Applelle.";
+
+"self.settings.vbr.title" = "Vaihteleva bittitaajuus";
+"self.settings.vbr.description" = "Tämä vähentää äänipuheluiden datan käyttöä ja toimii paremmin hitaammilla yhteyksillä. Poista käytöstä käyttääksesi vakiobittitaajuutta.";
+
+"self.settings.sound_menu.sounds.wire_call" = "ChatBox Puhelu";
+"self.settings.sound_menu.sounds.wire_message" = "ChatBox Viesti";
+"self.settings.sound_menu.sounds.wire_ping" = "ChatBox Pingi";
+
+// By popular demand
+"self.settings.popular_demand.title" = "Yleisön pyynnöstä";
+"self.settings.popular_demand.send_button.title" = "Lähetä Painike";
+"self.settings.popular_demand.send_button.footer" = "Poista käyöstä lähetys rivinvaihtonäppäimellä.";
+
+// Open in
+"self.settings.external_apps.header" = "Avaa sovelluksessa";
+
+"self.settings.link_options.twitter.title" = "Tweetit";
+"self.settings.link_options.maps.title" = "Sijainnit";
+"self.settings.link_options.browser.title" = "Selain";
+
+"open_link.twitter.option.default" = "Safari/ Twitter";
+"open_link.twitter.option.tweetbot" = "Tweetbot";
+"open_link.twitter.option.twitterrific" = "Twitterrific";
+
+"open_link.maps.option.apple" = "Kartat";
+"open_link.maps.option.google" = "Google Kartat";
+
+"open_link.browser.option.safari" = "Safari";
+"open_link.browser.option.chrome" = "Chrome";
+"open_link.browser.option.firefox" = "Firefox";
+
+// Sound alerts (TO BE UPDPATED)
+"self.settings.sound_menu.title" = "Äänimerkit";
+"self.settings.sound_menu.no_sounds.title" = "Ei mitään";
+"self.settings.sound_menu.all_sounds.title" = "Kaikki";
+"self.settings.sound_menu.mute_while_talking.title" = "First message and pings";
+
+// Developer options
+"self.settings.developer_options.title" = "Kehittäjäasetukset";
+"self.settings.apns_logging.title" = "APNS kirjaaminen";
+
+// Privacy (visibility) options
+"self.settings.options_menu.title" = "Valinnat";
+
+"self.settings.privacy_contacts_section.title" = "Yhteystiedot";
+"self.settings.privacy_contacts_menu.settings_button.title" = "Avaa Yhteystieto-asetukset";
+"self.settings.privacy_contacts_menu.description_disabled.title" = "Tämä auttaa sinua löytämään tuttuja. Me anonymisoimme kaiken tiedon ja emme jaa sitä kenellekään muulle. Anna lupa Asetuksista > Yksityisyys > Yhteystiedot.";
+
+"self.settings.privacy_security.lock_app" = "Lukitse Salasanalla";
+"self.settings.privacy_security.lock_app.subtitle" = "Lukitse ChatBox 10 sekunnin jälkeen taustalla. Avaa Touch tunnuksella tai syötä salasanasi.";
+"self.settings.privacy_security.lock_app.description" = "Avata ChatBox";
+
+"self.settings.privacy_security.lock_cancelled.description" = "Avaa ChatBox Touch tunnuksella tai Salasanalla";
+"self.settings.privacy_security.lock_cancelled.action" = "Avaa lukitus";
+
+"self.settings.privacy_security.disable_link_previews.title" = "Luo linkin esikatselukuvat";
+"self.settings.privacy_security.disable_link_previews.footer" = "Esikatselut saattavat silti näkyä muiden lähettämissä linkeissä.";
+
+"self.settings.privacy_analytics_menu.devices.title" = "Laitteet";
+
+"self.settings.privacy_analytics_section.title" = "Käyttö- ja vikaraportit";
+"self.settings.privacy_analytics.title" = "Lähetä tunnistamatonta tietoa";
+"self.settings.privacy_analytics_menu.description.title" = "Tee ChatBoxstä parempi lähettämällä anonyymiä tietoa.\n";
+
+"self.settings.privacy.clear_history.title" = "Tyhjennä historia";
+"self.settings.privacy.clear_history.subtitle" = "Tämä poistaa lopullisesti sisällön kaikista keskusteluistasi.";
+
+"self.settings.advanced.title" = "Extrat";
+"self.settings.advanced.troubleshooting.title" = "Vianetsintä";
+"self.settings.advanced.troubleshooting.submit_debug.title" = "Puhelujen vikaraportti";
+"self.settings.advanced.troubleshooting.submit_debug.subtitle" = "Tämä tieto auttaa ChatBoxn tukea diagnosoimaan puhelu-ongelmia.";
+"self.settings.advanced.reset_push_token.title" = "Palauta Push-ilmoitusten tunnus";
+"self.settings.advanced.reset_push_token.subtitle" = "Jos kohtaat ongelmia push-ilmoitusten kanssa. ChatBoxn Tuki voi pyytää sinua nollaamaan tämän tunnuksen.";
+"self.settings.advanced.reset_push_token_alert.title" = "Push-tunnus on nollattu";
+"self.settings.advanced.reset_push_token_alert.message" = "Ilmoitukset palautetaan muutamassa sekunnissa.";
+"self.settings.advanced.version_technical_details.title" = "Version Tekniset Tiedot";
+
+// Technical Report
+"self.settings.technical_report_section.title" = "Tekninen Raportti";
+"self.settings.technical_report.send_report" = "Lähetä raportti ChatBoxlle";
+"self.settings.technical_report.mail.recipient" = "callingsupport@ChatBox.com";
+"self.settings.technical_report.mail.subject" = "ChatBoxn Puhelu Raportti";
+"self.settings.technical_report.include_log" = "Sisällytä yksityiskohtainen loki";
+"self.settings.technical_report.privacy_warning" = "Yksityiskohtaiset logit voivat sisältää henkilökohtaista tietoa";
+"self.settings.technical_report.no_mail_alert" = "No mail client detected. Tap \"OK\" and send logs manually to: ";
+
+// Password reset
+"self.settings.password_reset_menu.title" = "Vaihda Salasana";
+
+// Invite from Settings
+"self.settings.invite_friends.title" = "Kutsu ihmisiä";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// System status
+"system_status_bar.no_internet.title" = "Ei Internet-yhteyttä";
+"system_status_bar.no_internet.explanation" = "Vaikuttaa että Internet-yhteydessäsi on jokin ongelma. Varmista, että se toimii.";
+"system_status_bar.poor_connectivity.title" = "Hidas internet, ei voi soittaa nyt";
+"system_status_bar.poor_connectivity.explanation" = "Emme voi taata äänenlaatua. Yhdistä Wi-fiin tai yritä vaihtaa sijaintiasi.";
+
+// View user profile and options menu & text field validation
+"name.placeholder" = "Koko nimesi";
+"name.guidance.tooshort" = "Vähintään 2 merkkiä";
+"name.guidance.toolong" = "Liian monta merkkiä";
+
+"email.placeholder" = "Sähköposti";
+"email.guidance.invalid" = "Invalid email address";
+"email.guidance.tooshort" = "Email is too short";
+"email.guidance.toolong" = "Liian monta merkkiä";
+
+"password.placeholder" = "Salasana";
+"password.guidance.tooshort" = "Vähintään 8 merkkiä";
+"password.guidance.toolong" = "Liian monta merkkiä";
+
+// Landing screen
+
+"landing.title" = "Encrypt world communication freedom.";
+"landing.create_account.title" = "Create an account";
+"landing.create_account.subtitle" = "for personal use";
+"landing.create_team.title" = "Luo tiimi";
+"landing.create_team.subtitle" = "for work";
+"landing.login.hints" = "Already have an account?";
+"landing.login.button.title" = "Log in";
+
+// Create team
+
+"team.name.headline" = "Name your team";
+"team.name.subheadline" = "You can always change it later.";
+"team.name.textfield.placeholder" = "team name";
+"team.name.textfield.accessibility" = "Set team name";
+"team.name.whatiswireforteams" = "What is ChatBox for teams?";
+
+"team.email.headline" = "Your account";
+"team.email.subheadline" = "Enter your work email address.";
+"team.email.textfield.placeholder" = "you@yourcompany.com";
+"team.email.textfield.accessibility" = "Your company email";
+"team.email.button.learn_more" = "Lisätietoja";
+
+"team.activation_code.headline" = "You've got mail";
+"team.activation_code.subheadline" = "Enter the verification code we sent to %@.";
+"team.activation_code.button.resend" = "Resend code";
+"team.activation_code.button.change_email" = "Change email";
+
+"team.full_name.headline" = "Your name";
+"team.full_name.textfield.placeholder" = "Full name";
+"team.full_name.textfield.accessibility" = "Set full name";
+
+"team.password.headline" = "Set password";
+"team.password.textfield.placeholder" = "Vähintään 8 merkkiä";
+"team.password.textfield.accessibility" = "Set password, at least 8 characters";
+
+
+"team.email_code.input_field.accessbility_label" = "Please enter the six-digit code from the email.";
+
+// Invite Team Members
+
+"team.invite.header.title" = "Build your team";
+"team.invite.header.subtitle" = "Invite your colleagues to join.";
+"team.invite.textfield.placeholder" = "colleague@yourcompany.com";
+"team.invite.textfield.accesibility" = "Enter e-mail address for colleague to invite.";
+"team.invite.learn_more.title" = "Lue lisää";
+"team.invite.top_bar.skip" = "Skip";
+"team.invite.top_bar.done" = "Done";
+
+// Team Invite Errors
+"team.invite.error.generic" = "Jokin meni pieleen, yritä uudelleen";
+"team.invite.error.already_registered" = "This email address is already in use";
+"team.invite.error.already_invited" = "This email has already been invited";
+"team.invite.error.too_many_invitations" = "The maximum number of invitations has been sent";
+"team.invite.error.no_internet" = "No internet connection";
+
+// Guest Room
+
+"guest_room.allow_guests.title" = "Allow guests";
+"guest_room.allow_guests.subtitle" = "Open this conversation to people outside your team.";
+"guest_room.remove_guests.message" = "Current guests will be removed from the conversation. New guests will not be allowed.";
+"guest_room.remove_guests.action" = "Remove Guests";
+"guest_room.revoke_link.message" = "New guests will not be able to join with this link. Current guests will still have access.";
+"guest_room.revoke_link.action" = "Revoke Link";
+
+"guest_room.error.generic.title" = "Something went wrong";
+"guest_room.error.generic.message" = "Check your connection and try again";
+
+// Registration
+
+"registration.title" = "Rekisteröityminen";
+"registration.close_email_invitation_button.email_title" = "Käytä toista sähköpostiosoitetta";
+"registration.close_email_invitation_button.phone_title" = "Rekisteröidy puhelimella";
+"registration.close_phone_invitation_button.email_title" = "Rekisteröidy sähköpostilla";
+"registration.close_phone_invitation_button.phone_title" = "Käytä toista puhelinta";
+
+"registration.enter_phone_number.title" = "Muokkaa puhelinnumeroa";
+"registration.enter_phone_number.placeholder" = "Puhelinnumero";
+
+"registration.verify_phone_number.instructions" = "Syötä vahvistuskoodi jonka lähetimme numeroon: %@";
+"registration.verify_phone_number.resend" = "Lähetä uudelleen";
+"registration.verify_phone_number.resend_placeholder" = "Eikö koodi saavu perille?\nVoit pyytää uutta koodia %.0f sekunnin päästä";
+
+"registration.verify_email.instructions" = "Lähetimme sähköpostia osoitteeseen: %@\nKlikkaa viestissä olevaa linkkiä vahvistaaksesi sähköpostiosoitteesi.";
+"registration.verify_email.resend.instructions" = "Etkö saanut sähköpostiviestiä?";
+"registration.verify_email.resend.button_title" = "Lähetä uudelleen";
+
+"registration.select_picture.subtitle" = "ChatBox on niin paljon mukavampi kuvalla.";
+"registration.select_picture.button_title" = "Valitse omasi";
+"registration.keep_picture.button_title" = "Pidä tämä";
+"registration.camera_action.title" = "Ota valokuva";
+"registration.photo_gallery_action.title" = "Valitse valokuva";
+"registration.cancel_action.title" = "Peruuta";
+
+"registration.no_history.hero" = "Käytät ChatBoxä ensimmäistä kertaa tällä laitteella.";
+"registration.no_history.subtitle" = "Tietosuojasyistä keskusteluhistoriasi ei näy täällä.";
+"registration.no_history.got_it" = "OK";
+
+"registration.no_history.logged_out.hero" = "Olet käyttänyt ChatBoxä tällä laitteella aiemmin.";
+"registration.no_history.logged_out.subtitle" = "Sillä välin lähetetyt viestit eivät näy.";
+"registration.no_history.logged_out.got_it" = "OK";
+
+"registration.enter_name.title" = "Muokkaa Nimeä";
+"registration.enter_name.hero" = "Miten meidän pitäisi kutsua sinua?";
+"registration.enter_name.placeholder" = "Koko nimesi";
+
+"registration.terms_of_use.title" = "Tervetuloa ChatBoxen.";
+"registration.terms_of_use.terms" = "Jatkamalla hyväksyt ChatBoxn käyttöehdot.";
+"registration.terms_of_use.terms.link" = "Käyttöehdot";
+"registration.terms_of_use.agree" = "Hyväksyn";
+
+"registration.terms_of_use.terms.title" = "Käyttöehdot";
+"registration.terms_of_use.terms.message" = "Please accept the Terms of Use to continue.";
+"registration.terms_of_use.terms.view" = "View";
+"registration.terms_of_use.accept" = "Hyväksy";
+
+"registration.email_flow.title" = "Rekisteröidy sähköpostilla";
+"registration.email_flow.email_step.title" = "Muokkaa tietoja";
+
+"registration.country_select.title" = "Maa";
+
+"registration.share_contacts.hero.title" = "Etsi ChatBoxn käyttäjiä";
+"registration.share_contacts.hero.paragraph" = "Jaa yhteystietosi, jotta voimme yhdistää sinut muiden kanssa. Anonymisoimme kaiken tiedon ja emmekä jaa sitä kenellekkään muulle.";
+"registration.share_contacts.find_friends_button.title" = "Jaa yhteystietoja";
+"registration.share_contacts.skip_button.title" = "Ei nyt";
+
+"registration.address_book_access_denied.hero.title" = "ChatBoxllä ei ole käyttöoikeutta kontakteihisi.";
+"registration.address_book_access_denied.hero.paragraph1" = "ChatBox auttaa löytämään ystäviäsi jos jaat yhteystietosi.";
+"registration.address_book_access_denied.hero.paragraph2" = "Salli pääsy napauttamalla Asetuksia ja pistä Yhteystiedot päälle.";
+"registration.address_book_access_denied.settings_button.title" = "Asetukset";
+"registration.address_book_access_denied.maybe_later_button.title" = "Ehkä myöhemmin";
+
+"registration.push_access_denied.hero.title" = "Älä koskaan jää vaille puhelua tai viestiä.";
+"registration.push_access_denied.hero.paragraph1" = "Ota Ilmoitukset käyttöön Asetuksissa.";
+"registration.push_access_denied.settings_button.title" = "Mene Asetuksiin";
+"registration.push_access_denied.maybe_later_button.title" = "Ehkä myöhemmin";
+
+"registration.signin.title" = "Kirjaudu sisään";
+"registration.signin.too_many_devices.title" = "";
+"registration.signin.too_many_devices.subtitle" = "Poista yksi laitteistasi aloittaaksesi ChatBoxn käytön tässä laiteessa.";
+"registration.signin.too_many_devices.manage_button.title" = "Hallitse laitteita";
+"registration.signin.too_many_devices.sign_out_button.title" = "Kirjaudu ulos";
+"registration.signin.email_button.title" = "Sähköposti";
+"registration.signin.phone_button.title" = "Puhelinnumero";
+
+"registration.signin.alert.password_needed.title" = "Password needed";
+"registration.signin.alert.password_needed.message" = "Please enter your Password in order to log in.";
+
+"registration.devices.title" = "Laitteet";
+"registration.devices.active_list_header" = "Aktiivinen";
+"registration.devices.current_list_header" = "Nykyinen";
+"registration.devices.active_list_subtitle" = "Jos et tunnista yllä olevaa laitetta, poista se ja vaihda salasanasi.";
+"registration.devices.activated_in" = "Aktivoitu paikassa";
+"registration.devices.id" = "ID:";
+
+"signin.forgot_password" = "Unohditko salasanan?";
+
+"registration.add_phone_number.hero.title" = "Lisää puhelinnumero";
+"registration.add_phone_number.hero.paragraph" = "Tämä auttaa meitä löytämään ihmisiä joita saatat tuntea. Emme koskaan jaa sitä.";
+"registration.add_phone_number.skip_button.title" = "Ei nyt";
+
+"registration.add_email_password.hero.title" = "Lisää sähköpostiosoitteesi ja salasanasi.";
+"registration.add_email_password.hero.paragraph" = "Tämä mahdollistaa ChatBoxn käytön useilla laitteilla.";
+
+"registration.email_invitation.title" = "Kutsu";
+"registration.email_invitation.hero.title" = "Hei, %@";
+"registration.email_invitation.hero.paragraph" = "Valitse salasana luodaksesi tilisi.";
+
+"registration.phone_invitation.title" = "Kutsu";
+"registration.phone_invitation.hero.title" = "Hei, %@";
+"registration.phone_invitation.hero.paragraph" = "Olet askeleen päässä viimeistelleksesi tilisi.";
+
+"error.name_and_email" = "Syötä koko nimesi ja voimassa oleva sähköpostiosoite";
+"error.full_name" = "Kirjoita koko nimesi";
+"error.email" = "Anna kelvollinen sähköpostiosoite";
+"error.input.too_long" = "Teksti on liian pitkä";
+"error.input.too_short" = "Teksti on liian lyhyt";
+"error.email.invalid" = "Anna kelvollinen sähköpostiosoite";
+"error.phone.invalid" = "Syötä voimassa oleva puhelinnumero";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Username takeover screen
+"registration.select_handle.takeover.subtitle" = "Valtaa yksilöllinen nimesi ChatBoxssä.";
+"registration.select_handle.takeover.subtitle_link" = "Lue lisää";
+
+"registration.select_handle.takeover.choose_own" = "Valitse omasi";
+"registration.select_handle.takeover.keep_suggested" = "Pidä tämä";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ZMUserSessionErrorCode mapping. Used during registration and profile edit
+"error.user.unkown_error" = "Jokin meni pieleen, yritä uudelleen";
+"error.user.needs_credentials" = "Vahvista tietosi ja yritä uudelleen.";
+"error.user.invalid_credentials" = "Vahvista tietosi ja yritä uudelleen.";
+"error.user.account_pending_activation" = "Tili jota yrität käyttää odottaa aktivointia. Vahvista tietosi.";
+"error.user.network_error" = "Vaikuttaa siltä, että sinun verkkoyhteydessäsi on ongelma. Yritä myöhemmin uudelleen.";
+"error.user.email_is_taken" = "Sähköpostiosoite jonka annoit on jo rekisteröity. Yritä uudelleen.";
+"error.user.phone_is_taken" = "Puhelinnumero jonka annoit on jo rekisteröity. Kokeile uudestaan.";
+"error.user.phone_code_invalid" = "Syötä kelvollinen koodi";
+"error.user.phone_code_too_many" = "Olemme lähettäneet jo sinulle koodin tekstiviestillä. Napauta Lähetä Uudelleen 10 minuutin päästä saadaksesi uuden koodin.";
+"error.user.registration_unknown_error" = "Jotain meni pieleen. Yritä uudelleen.";
+"error.user.device_deleted_remotely" = "Olet kirjautunut ulos toisesta laitteesta.";
+"error.user.last_identity_cant_be_deleted" = "Sähköpostiosoite tai puhelinnumero tarvitaan.";
+"error.user.account_suspended" = "Tämä tili ei ole enää oikeutettu kirjautumaan sisään.";
+"error.user.account_limit_reached" = "Et voi lisätä useampaa kuin kolmea tiliä.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are caught by the UI without involving the SE validation. Basically very similar to ZMUserSessionErrorCode onces
+"error.updating_password" = "Salasanaasi ei voitu uusia.";
+
+"error.group_call.too_many_members_in_conversation.title" = "Liian monta ihmistä puheluun";
+"error.group_call.too_many_members_in_conversation" = "Puhelut toimivat keskusteluissa joissa on korkeintaan %d käyttäjää.";
+"error.group_call.too_many_participants_in_the_call.title" = "Puhelu on täynnä";
+"error.group_call.too_many_participants_in_the_call" = "Täällä on tilaa vain %d käyttäjälle.";
+"error.call.gsm_ongoing.title" = "Puhelu mobiilidatalla";
+"error.call.gsm_ongoing" = "Lopeta kännykkäpuhelu ennen kuin soitat ChatBoxssä.";
+"error.call.general.title" = "Puhelu virhe";
+"error.call.general" = "Yritä soittaa uudelleen muutaman minuutin kuluttua.";
+"error.call.slow_connection.title" = "Hidas yhteys";
+"error.call.slow_connection" = "Voit kohdata ongelmia puhelun aikana";
+"error.call.slow_connection.call_anyway" = "Soita kuitenkin";
+
+"error.invite.no_email_provider" = "Määritä sähköpostiohjelmasi pystyäksesi lähettämään kutsuja sähköpostitse";
+"error.invite.no_messaging_provider" = "Määritä tekstiviesti-asetuksesi pystyäksesi lähettämään kutsuja sähköpostitse";
+
+"sketchpad.initial_hint" = "Napauta värejä vaihtaaksesi siveltimen kokoa";
+
+"migration.please_wait_message" = "Pieni hetki";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are used by the backend to localize APNS
+"push.notification.new_user" = "%@ liittyi ChatBoxen";
+"push.notification.new_message" = "Uusi viesti";
+
+
+//Force Update
+"force.update.title" = "Päivitys on välttämätön";
+"force.update.message" = "Jäät vaille uusista ominaisuuksista.\nHanki uusin versio ChatBoxstä App Storesta.";
+"force.update.ok_button" = "Siirry App Storeen";
+
+// Third Party
+"giphy.conversation.message" = "%@ · giphy.com:in kautta";
+"giphy.conversation.random_message" = "giphy.com:in kautta";
+"giphy.error.no_more_results" = "ei enempää giffejä";
+"giphy.error.no_result" = "giffiä ei löytynyt";
+
+"giphy.confirm" = "lähetä";
+"giphy.cancel" = "peruuta";
+"giphy.search_placeholder" = "Etsi Giphy";
+
+"invite_banner.title" = "Tuo ystäväsi ChatBoxen!";
+"invite_banner.message" = "Nauti puheluista, viesteistä, piirroksista, giffeistä ym privaatisti tai ryhmissä.";
+"invite_banner.invite_button_title" = "Kutsu lisää ihmisiä";
+
+// Collections
+"collections.section.images.title" = "Kuvat";
+"collections.section.files.title" = "Tiedostot";
+"collections.section.videos.title" = "Videot";
+"collections.section.links.title" = "Linkit";
+"collections.section.all.button" = "Näytä kaikki %d→";
+"collections.section.no_items" = "Ei kohteita kokoelmassa";
+"collections.image_viewer.copied.title" = "Kuva kopioitu";
+
+"collections.search.field.placeholder" = "Etsi viestejä";
+"collections.search.no_items" = "Ei tuloksia";
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Message composing / drafts
+
+"compose.drafts.title" = "Viestit";
+"compose.drafts.empty.title" = "Ei viestejä";
+"compose.drafts.empty.subtitle" = "Napauta + kirjoittaaksesi";
+"compose.drafts.compose.title" = "Kirjoita viesti";
+"compose.drafts.compose.subject.placeholder" = "Napauta asettaaksesi aiheen";
+
+"compose.drafts.compose.delete.confirm.title" = "Vahvista poisto";
+"compose.drafts.compose.delete.confirm.message" = "This action will permanently delete this draft and cannot be undone.";
+"compose.drafts.compose.delete.confirm.action.title" = "Poista";
+
+"compose.drafts.compose.dismiss.confirm.title" = "Tallenna luonnoksena";
+"compose.drafts.compose.dismiss.confirm.action.title" = "Tallenna";
+"compose.drafts.compose.dismiss.delete.action.title" = "Poista";
+
+"availability.message.cancel" = "Peruuta";
+"availability.message.set_status" = "Set a status";
+
+"availability.none" = "Ei mitään";
+"availability.available" = "Available";
+"availability.away" = "Away";
+"availability.busy" = "Busy";
+"availability.available.placeholder" = "%@ is available";
+"availability.away.placeholder" = "%@ is away";
+"availability.busy.placeholder" = "%@ is busy";

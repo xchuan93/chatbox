@@ -1,0 +1,1135 @@
+//
+// ChatBox
+// Copyright (C) 2016 ChatBox Swiss GmbH
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see http://www.gnu.org/licenses/.
+//
+
+
+"general.ok" = "OK";
+"general.next" = "Próximo";
+"general.cancel" = "Cancelar";
+"general.open_settings" = "Abrir Ajustes do ChatBox";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// People picker/start UI
+"peoplepicker.search_placeholder" = "Procurar por nome ou nome de usuário";
+"peoplepicker.header.top_people" = "Contatos frequentes";
+"peoplepicker.button.create_conversation" = "Criar grupo";
+"peoplepicker.button.add_to_conversation" = "Adicionar pessoas ao grupo";
+"peoplepicker.header.conversations" = "Grupos";
+"peoplepicker.header.team_conversations" = "Grupos de %@";
+"peoplepicker.header.send_invitation" = "Convidar";
+"peoplepicker.header.contacts" = "Contatos";
+"peoplepicker.header.contacts_personal" = "Contatos pessoais";
+"peoplepicker.header.directory" = "Conectar";
+
+"peoplepicker.group.title.singular" = "Adicionar Pessoas";
+"peoplepicker.group.title.plural" = "Adicionar pessoas (%d)";
+"peoplepicker.group.skip" = "Pular";
+"peoplepicker.group.done" = "Pronto";
+"peoplepicker.group.create" = "Criar";
+
+"peoplepicker.header.people" = "Pessoas";
+"peoplepicker.header.services" = "Serviços";
+"peoplepicker.services.create_conversation.item" = "Criar uma nova conversa";
+"peoplepicker.services.add_service.button" = "Adicionar serviço";
+"peoplepicker.services.add_service.error.title" = "O serviço não pode ser adicionado";
+"peoplepicker.services.add_service.error.default" = "O serviço está indisponível no momento";
+"peoplepicker.services.add_service.error.full" = "A conversa está cheia";
+
+"peoplepicker.title.create_conversation" = "Criar grupo";
+"peoplepicker.title.add_to_conversation" = "Adicionar pessoas";
+
+"peoplepicker.no_contacts_title" = "Sem contatos.";
+
+"peoplepicker.no_matching_results_title" = "Sem resultados.";
+"peoplepicker.no_matching_results_message" = "Digite um endereço de e-mail completo.";
+
+"peoplepicker.no_matching_results.action.send_invite" = "Enviar um convite";
+"peoplepicker.no_matching_results.action.share_contacts" = "Compartilhar Contatos";
+
+"peoplepicker.no_matching_results_provide_valid_email" = "Por favor, insira um endereço de e-mail válido";
+"peoplepicker.no_matching_results_after_address_book_upload_title" = "Sem resultados.";
+/* This sentence ends with button title, contained in peoplepicker.no_matching_results_after_address_book_upload_button */
+"peoplepicker.no_matching_results_after_address_book_upload_message" = "Digite um endereço de e-mail ou";
+/*  */
+"peoplepicker.no_matching_results_after_address_book_upload_button" = "compartilhar contatos";
+
+"peoplepicker.share_contacts.no_results.title" = "Encontrar pessoas pelo nome ou endereço de e-mail";
+
+"peoplepicker.send_invitation.dialog.title" = "Convite enviado";
+"peoplepicker.send_invitation.dialog.message" = "Pode ser usado por duas semanas. Envie um novo caso expire.";
+"peoplepicker.send_invitation.dialog.ok" = "OK";
+
+"peoplepicker.invite_more_people" = "Convidar mais pessoas";
+"peoplepicker.invite_team_members" = "Convide pessoas para entrar na equipe";
+"peoplepicker.quick-action.open-conversation" = "Abrir";
+"peoplepicker.quick-action.create-conversation" = "Criar grupo";
+
+"add_participants.all_contacts_added" = "Todo mundo está aqui.";
+
+// Contacts UI
+"contacts_ui.search_placeholder" = "Pesquisar por nome";
+"contacts_ui.invite_others" = "Convidar outras pessoas";
+"contacts_ui.name_in_contacts" = "%@ nos Contatos";
+"contacts_ui.connection_request" = "Solicitou se conectar";
+"contacts_ui.action_button.invite" = "Convidar";
+"contacts_ui.action_button.open" = "Abrir";
+"contacts_ui.invite_sheet.cancel_button_title" = "Cancelar";
+"contacts_ui.notification.invitation_sent" = "Convite enviado";
+"contacts_ui.notification.invitation_failed" = "Falha ao enviar o convite";
+"contacts_ui.title" = "Convidar pessoas";
+
+"conversation_list.empty.all_archived.message" = "Tudo foi arquivado";
+"conversation_list.empty.no_contacts.message" = "Iniciar uma conversa ou \ncrie um grupo.";
+
+
+// Conversation List Indicator
+"conversation_list.right_accessory.join_button.title" = "Participe";
+"conversation_list.header.self_team.accessibility_value" = "%@ conta.";
+"conversation_list.header.self_team.accessibility_value.inactive" = "Toque para ativar.";
+"conversation_list.header.self_team.accessibility_value.active" = "Ative agora.";
+"conversation_list.header.self_team.accessibility_value.has_new_messages" = "Tem novas mensagens.";
+
+// Profile Header View
+"conversation.connection_view.in_address_book" = "nos Contatos";
+
+// Conversation list voiceover accessibility
+"conversation_list.voiceover.open_conversation.hint" = "Abrir conversa";
+"conversation_list.voiceover.status.pending_connection" = "pendente";
+"conversation_list.voiceover.status.active_call" = "chamada ativa";
+"conversation_list.voiceover.status.missed_call" = "chamada perdida";
+"conversation_list.voiceover.status.pause_media" = "pausar a mídia";
+"conversation_list.voiceover.status.play_media" = "reproduzir mídia";
+"conversation_list.voiceover.status.silenced" = "silenciado";
+"conversation_list.voiceover.status.typing" = "digitando";
+"conversation_list.voiceover.status.ping" = "ping";
+"conversation_list.voiceover.bottom_bar.archived_button.label" = "arquivado";
+"conversation_list.voiceover.bottom_bar.archived_button.hint" = "lista de conversas arquivadas";
+"conversation_list.voiceover.bottom_bar.contacts_button.label" = "contatos";
+"conversation_list.voiceover.bottom_bar.contacts_button.hint" = "busca por pessoas no ChatBox";
+"conversation_list.voiceover.bottom_bar.compose_button.label" = "escrever";
+"conversation_list.voiceover.bottom_bar.compose_button.hint" = "escrever mensagens e salvar para mais tarde";
+"conversation_list.voiceover.bottom_bar.camera_button.label" = "câmera";
+"conversation_list.voiceover.bottom_bar.camera_button.hint" = "tire uma foto e envie rapidamente";
+
+// Archived List
+"archived_list.title" = "arquivado";
+
+// Add contact tool tip
+"tool_tip.contacts.title" = "As conversas começam aqui";
+"tool_tip.contacts.message" = "Inicie uma conversa. Faça chamadas, envie mensagens privadas ou em grupos.";
+
+// "Knows" subtitle in cell: "Knows Indrek", "Knows Indrek and Jane", "Knows Indrek and 5 others"
+"peoplepicker.suggested.knows_one" = "Conhece %@";
+"peoplepicker.suggested.knows_two" = "Conhece %@ e %@";
+"peoplepicker.hide_search_result" = "Esconder";
+"peoplepicker.hide_search_result_progress" = "Escondendo...";
+
+"send_invitation.subject" = "Conecte-se comigo no ChatBox";
+"send_invitation.text" = "Eu estou no ChatBox, pesquise por %@ ou visite get.ChatBox.com";
+"send_invitation_no_email.text" = "Estou no ChatBox. Visite get.ChatBox.com para se conectar comigo.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++x
+// In-app notifications (chat heads)
+"notifications.shared_a_photo" = "compartilhou uma imagem";
+"notifications.pinged" = "pingou";
+"notifications.sent_file" = "compartilhou um arquivo";
+"notifications.sent_location" = "compartilhou uma localização";
+"notifications.sent_video" = "compartilhou um vídeo";
+"notifications.sent_audio" = "compartilhou um áudio";
+"notifications.in_conversation" = "%@ - %@";
+"notifications.this_conversation" = "%@ nesta conversa";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// List (labels) - Needs to be revised with updated guidance
+"list.title" = "Conversas";
+"list.archived_conversations" = "ARQUIVO";
+"list.archived_conversations_close" = "Fechar arquivo";
+
+"conversation.voiceover.verified" = "verificado";
+
+"conversation.status.call" = "Chamada em curso";
+"conversation.status.typing" = "Digitando uma mensagem…";
+"conversation.status.typing.group" = "%@: está digitando…";
+"conversation.status.silenced" = "Silenciado";
+"conversation.status.blocked" = "Bloqueado";
+
+"conversation.status.message.text" = "%@";
+"conversation.status.message.link" = "Compartilhou um link";
+"conversation.status.message.image" = "Compartilhou uma imagem";
+"conversation.status.message.location" = "Compartilhou uma localização";
+"conversation.status.message.audio" = "Compartilhou uma mensagem de áudio";
+"conversation.status.message.video" = "Compartilhou um vídeo";
+"conversation.status.message.file" = "Compartilhou um arquivo";
+"conversation.status.message.knock" = "Pingou";
+"conversation.status.message.missedcall" = "Chamada não atendida";
+"conversation.status.message.ephemeral" = "Mensagem com tempo";
+
+"conversation.status.unsent" = "⚠️ Mensagem não enviada";
+"conversation.status.you" = "Você";
+"conversation.status.added_multiple" = "Pessoas adicionadas";
+"conversation.status.you_was_added" = "%@ adicionou você";
+"conversation.status.added_users" = "%@ adicionou %@";
+"conversation.status.joined" = "%@ juntou-se";
+"conversation.status.removed_multiple" = "Pessoas removidas";
+"conversation.status.you_were_removed" = "Você foram removido";
+"conversation.status.you_left" = "Você saiu";
+"conversation.status.started_conversation" = "%@ iniciou uma conversa";
+"conversation.status.removed_users" = "%@ removeu %@";
+"conversation.status.everyone_left" = "Todos saíram";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Compose Entry Point
+
+"compose.contact.title" = "Conversa";
+"compose.message.title" = "Mensagem";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Conversation
+"conversation.invite_more_people.title" = "Espalhe a palavra!";
+"conversation.invite_more_people.description" = "Adicionar pessoas a esta conversa";
+"conversation.invite_more_people.explanation_url" = "https://support.ChatBox.com";
+"conversation.invite_more_people.button_title" = "Adicionar Pessoas";
+
+// Conversation names
+"conversation.displayname.emptygroup" = "Conversa em grupo vazia";
+
+"conversation.input_bar.verified" = "Verificado";
+"conversation.input_bar.placeholder" = "Digite uma mensagem";
+"conversation.input_bar.placeholder_ephemeral" = "Mensagem com tempo";
+
+"conversation.input_bar.audio_message.tooltip.pull_send" = "Puxe para cima para enviar";
+"conversation.input_bar.audio_message.tooltip.tap_send" = "Toque para enviar";
+"conversation.input_bar.audio_message.too_long.title" = "Gravação Parou";
+"conversation.input_bar.audio_message.too_long.message" = "Mensagens de áudio são limitadas a %@.";
+"conversation.input_bar.audio_message.send" = "Enviar";
+
+"conversation.input_bar.audio_message.keyboard.record_tip" = "Toque para gravar\nVocê pode %@ depois disso";
+"conversation.input_bar.audio_message.keyboard.filter_tip" = "Escolha um filtro acima";
+
+"conversation.call.many_participants_confirmation.title" = "Iniciar uma chamada";
+"conversation.call.many_participants_confirmation.message" = "Isso chama %d pessoas";
+"conversation.call.many_participants_confirmation.call" = "Chamada";
+
+"conversation.connection_view.in_address_book" = "nos Contatos";
+
+"conversation.input_bar.shortcut.send" = "Enviar mensagem";
+"conversation.input_bar.shortcut.edit_last_message" = "Editar Última Mensagem";
+"conversation.input_bar.shortcut.cancel_editing_message" = "Cancelar";
+
+"conversation.input_bar.message_too_long.title" = "Mensagem muito longa";
+"conversation.input_bar.message_too_long.message" = "Você pode enviar mensagens até %d caracteres.";
+
+"conversation.create.group_name.placeholder" = "Nome do grupo";
+"conversation.create.guidance.empty" = "Pelo menos 1 caractere";
+"conversation.create.guidance.toolong" = "Muitos caracteres";
+"conversation.create.toggle.title" = "Permitir convidados";
+"conversation.create.toggle.subtitle" = "Abra esta conversa à pessoas fora da sua equipe. Você sempre pode mudar isso mais tarde.";
+
+"conversation.guests_present" = "Os convidados estão presentes";
+
+// Image confirmation dialogue
+"image_confirmer.confirm" = "OK";
+"image_confirmer.cancel" = "Cancelar";
+"image.add_sketch" = "Adicionar um desenho";
+"image.edit_image" = "Editar imagem";
+
+// Camera access
+"camera_access.denied" = "ChatBox precisa acessar a câmera.";
+"camera_access.denied.instruction" = "";
+"camera_access.denied.open_settings" = "Habilite nas configurações do ChatBox";
+
+// Camera and photos access, keyboard
+"keyboard_photos_access.denied.keyboard.settings" = "Ajustes";
+"keyboard_photos_access.denied.keyboard.camera_and_photos" = "ChatBox precisa acessar sua \ncâmera e fotos."; // split text on two lines for a better text balance
+"keyboard_photos_access.denied.keyboard.photos" = "ChatBox precisa acessar suas fotos.";
+"keyboard_photos_access.denied.keyboard.camera" = "ChatBox precisa acessar sua câmera.";
+
+// Camera Controls
+"camera_controls.aeaf_lock" = "Bloqueio AE/AF";
+
+// Location
+"location.send_button.title" = "Enviar";
+"location.unauthorized_alert.title" = "Habilitar os Serviços de Localização";
+"location.unauthorized_alert.message" = "Para enviar a sua localização, habilite os Serviços de Localização e permita que o ChatBox acesse sua localização.";
+"location.unauthorized_alert.cancel" = "Cancelar";
+"location.unauthorized_alert.settings" = "Configurações";
+
+// Twitter
+"twitter_status.on_twitter" = "%@ no Twitter";
+
+// Ephemeral message
+"input.ephemeral.timeout.none" = "Desligar";
+"input.ephemeral.title" = "Defina um tempo para a mensagem desaparecer";
+
+// System messages
+"content.system.you_nominative" = "você";
+"content.system.you_dative" = "você";
+"content.system.you_accusative" = "você";
+
+"content.system.continued_conversation" = "Iniciar uma conversa com %@";
+
+"content.system.other_started_conversation" = "%@ iniciou uma conversa com %@";
+"content.system.you_started_conversation" = "Você iniciou uma conversa com %@";
+
+"content.system.you_added_participant" = "Você adicionou %@";
+"content.system.other_added_participant" = "%@ adicionou %@";
+"content.system.other_added_you" = "%@ adicionou você";
+
+"content.system.participants_you" = "Você";
+"content.system.participants_1_other" = "%@ e %@";
+"content.system.other_left" = "%@ saiu";
+"content.system.you_left" = "Você saiu";
+"content.system.other_removed_other" = "%@ removeu %@";
+"content.system.other_removed_you" = "%@ removeu você";
+"content.system.you_removed_other" = "Você removeu %@";
+
+// New conversation participants added / removed / started system message
+
+"content.system.conversation.other.started" = "%@ iniciou uma conversa com %@";
+"content.system.conversation.other.added" = "%@ adicionou %@";
+"content.system.conversation.other.removed" = "%@ removeu %@";
+"content.system.conversation.other.left" = "%@ saiu";
+
+"content.system.conversation.you.started" = "%@ iniciou uma conversa com %@";
+"content.system.conversation.you.added" = "%@ adicionou %@";
+"content.system.conversation.you.removed" = "%@ removeu %@";
+"content.system.conversation.you.left" = "%@ saiu";
+"content.system.conversation.team.member-leave" = "%@ foi removido da equipe.";
+"content.system.conversation.guest.joined" = "%@ juntou-se";
+
+"content.system.other_renamed_conv_to_nothing" = "%@ removeu o nome da conversa";
+"content.system.you_renamed_conv_to_nothing" = "Você removeu o nome da conversa";
+"content.system.pending_message_timestamp" = "Enviando…";
+"content.system.message_sent_timestamp" = "Enviado";
+"content.system.message_delivered_timestamp" = "Entregue";
+"content.system.failedtosend_message_timestamp" = "Envio falhou.";
+"content.system.failedtosend_message_timestamp_resend" = "Reenviar";
+"content.system.failedtosend_message_timestamp_delete" = "Apagar";
+"content.system.like_tooltip" = "Toque para curtir";
+"content.system.deleted_message_prefix_timestamp" = "Excluído: %@";
+"content.system.edited_message_prefix_timestamp" = "Editado: %@";
+"content.system.connecting_to" = "Conectando-se a %@. \nInciar uma conversa";
+"content.system.connected_to" = "Conectado a %@ \niniciar uma conversa";
+"content.system.other_wanted_to_talk" = "%@ ligou";
+"content.system.you_wanted_to_talk" = "Você ligou";
+"content.system.ephemeral_time_remaining" = "%@ saiu";
+
+"content.system.you_started" = "Você";
+"content.system.this_device" = "este dispositivo";
+
+"content.system.call.you" = "Você";
+"content.system.call.called" = "%@ ligou";
+"content.system.call.called-you" = "%@ ligou";
+
+"content.system.renamed_conv.title" = "%@ renomeou a conversa";
+"content.system.renamed_conv.title-you" = "%@ renomeou a conversa";
+"content.system.renamed_conv.title.you" = "Você";
+
+"content.system.conversation.with_name.title" = "%@ iniciou a conversa";
+
+"content.system.conversation.with_name.participants" = "com %@";
+
+"content.system.reactivated_device" = "Você começou a usar o %@ novamente. Mensagens enviadas entretanto não aparecerão aqui.";
+
+"content.system.new_device" = "um novo dispositivo";
+"content.system.started_using" = "começou a usar";
+"content.system.is_verified" = "Todas as impressões digitais são verificadas";
+
+"content.system.new_users" = "Novo usuário juntou-se.";
+"content.system.verify_devices" = "Verifique dispositivos";
+
+"content.system.unverified" = "%@ desautorizou um dos %@"; // example "You unverified one of Jule’s devices"
+"content.system.your_devices" = "seus dispositivos";
+"content.system.other_devices" = "dispositivos de %@";
+
+"content.system.missing_messages.title" = "Você não usou este dispositivo por algum um tempo. Algumas mensagens podem não aparecer aqui.";
+"content.system.missing_messages.subtitle_start" = "Enquanto isso,";
+
+"content.system.cannot_decrypt" = "Uma mensagem de %@ não foi recebida.";
+
+"content.system.cannot_decrypt.you_part" = "você";
+"content.system.cannot_decrypt.why_part" = "Por que?";
+
+"content.system.cannot_decrypt.identity" = "%@ identidade do dispositivo alterada. Mensagem não entregue.";
+"content.system.cannot_decrypt.identity.you_part" = "Seu";
+"content.system.cannot_decrypt.identity.otherUser_part" = "de %@"; // possessive apostrophe - might differ in different languages
+"content.system.cannot_decrypt.identity.why_part" = "Saiba Mais";
+"content.system.cannot_decrypt.otherDevice_part" = "(dispositivo %@)"; // example " (device d1b23c54f34a)".
+// Full sentence: "A message from %@ was not received. [...] (device d1b23c54f34a). This is a debug information.
+
+"content.system.unknown_message.body" = "Você está usando uma versão antiga do ChatBox que não pode exibir esta mensagem.";
+"content.system.unknown_message.body.link" = "Por que isso acontece?";
+
+"content.file.uploading" = "Enviando…";
+"content.file.downloading" = "Baixando…";
+"content.file.upload_failed" = "Falha de envio";
+"content.file.upload_cancelled" = "Envio cancelado";
+"content.file.upload_video" = "Vídeos";
+"content.file.take_video" = "Gravar um vídeo";
+
+"content.file.save_video" = "Salvar";
+"content.file.save_audio" = "Salvar";
+"content.image.save_image" = "Salvar";
+
+"content.message.delete" = "Apagar";
+"content.message.save" = "Salvar";
+
+"content.message.like" = "Curtir";
+"content.message.unlike" = "Descurtir";
+"content.message.forward" = "Compartilhar";
+"content.message.go_to_conversation" = "Exibir";
+"content.message.forward.to" = "Procurar…";
+"content.message.open" = "Abrir";
+
+"content.reactions_list.likers" = "Curtido por";
+
+"content.file.too_big" = "Você pode enviar arquivos de até %@";
+// Someone pinged
+"content.ping.text" = "%1$@ pingou";
+
+// Current user pinged
+"content.ping.text.you" = "Você";
+
+// Inline Player
+"content.player.unable_to_play" = "NÃO É POSSÍVEL REPRODUZIR FAIXA";
+
+// Connecting (NEW IMPLEMENTATION, REVIEW LATER)
+"connection_request.title" = "Conectar a %@"; // check UPPERCASE implementation in code
+"missive.connection_request.default_message" = "Olá %@,\nVamos nos conectar no ChatBox.\n%@";
+
+"connection_request.send_button_title" = "Conectar";
+"inbox.connection_request.connect_button_title" = "Conectar";
+"inbox.connection_request.ignore_button_title" = "Ignorar";
+
+// Voice
+"voice.status.one_to_one.incoming" = "%@\nChamando";
+"voice.status.group_call.incoming" = "%@\nChamando";
+"voice.status.one_to_one.outgoing" = "%@\nChamando";
+"voice.status.joining" = "%@\nConectando";
+"voice.status.video_not_available" = "Vídeo desligado";
+"voice.status.low_connection" = "Conexão ruim";
+"voice.network_error.title" = "Sem conexão de internet";
+"voice.status.cbr" = "Taxa de Bits Constante";
+"voice.network_error.body" = "Você deve estar on-line para ligar. Verifique sua conexão e tente novamente.";
+"voice.degradation.new_self_device" = "Você começou a usar um novo dispositivo.";
+"voice.degradation.new_user_device" = "%@ começou a usar um novo dispositivo.";
+"voice.degradation_outgoing.prompt" = "Você ainda quer fazer a ligação?";
+"voice.degradation_incoming.prompt" = "Você ainda quer aceitar a ligação?";
+"voice.accept_button.title" = "Aceitar";
+"voice.decline_button.title" = "Rejeitar";
+"voice.hang_up_button.title" = "Desligar";
+"voice.mute_button.title" = "Silenciar";
+"voice.video_button.title" = "Vídeo";
+"voice.speaker_button.title" = "Alto-falante";
+"voice.cancel_button.title" = "Cancelar";
+"voice.call_button.title" = "Chamada";
+
+"voice.alert.call_in_progress.title" = "Chamada em andamento";
+"voice.alert.call_in_progress.message" = "Você pode ter apenas uma chamada ativa de cada vez";
+"voice.alert.call_in_progress.confirm" = "OK";
+
+"voice.alert.microphone_warning.title" = "ChatBox precisa de acesso ao microfone.";
+"voice.alert.microphone_warning.explanation" = "Habilite nas configurações do ChatBox.";
+
+"voice.alert.camera_warning.title" = "ChatBox precisa acessar a câmera.";
+"voice.alert.camera_warning.explanation" = "Vá para Ajustes e permita que o ChatBox acesse sua câmera.";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Profile and Participants
+
+"participants.add_people_button_title" = "Adicionar";
+"participants.avatar.guest.title" = "Convidado";
+
+"participants.title" = "Detalhes";
+"participants.section.participants" = "Pessoas (%d)";
+"participants.section.services" = "Serviços (%d)";
+"participants.footer.add_title" = "Adicionar Participantes";
+
+// Meta Menu
+"meta.menu.rename" = "Renomear";
+"meta.menu.leave" = "Deixar";
+"meta.menu.archive" = "Arquivar";
+"meta.menu.unarchive" = "Desarquivar";
+"meta.menu.delete" = "Apagar";
+"meta.menu.silence.mute" = "Silenciar";
+"meta.menu.silence.unmute" = "Notificar";
+"meta.menu.cancel" = "Cancelar";
+"meta.menu.cancel_connection_request" = "Cancelar pedido";
+
+// Delete conversation
+"meta.menu.delete_content.dialog_title" = "Excluir conteúdo?";
+"meta.menu.delete_content.dialog_message" = "Isto irá limpar o histórico de conversas em todos os seus dispositivos.";
+"meta.menu.delete_content.leave_as_well_message" = "Também sair da conversa";
+"meta.menu.delete_content.button_cancel" = "Cancelar";
+"meta.menu.delete_content.button_delete" = "Apagar";
+"meta.menu.delete_content.button_delete_and_leave" = "Apagar e sair";
+
+// Leave conversation
+"meta.leave_conversation_dialog_title" = "Sair da conversa?";
+"meta.leave_conversation_dialog_message" = "Os participantes serão notificados e a conversa será removida da sua lista.";
+"meta.leave_conversation.delete_content_as_well_message" = "Também excluir o conteúdo";
+"meta.leave_conversation_button_cancel" = "Cancelar";
+"meta.leave_conversation_button_leave" = "Sair";
+"meta.leave_conversation_button_leave_and_delete" = "Sair e excluir conteúdo";
+
+// Conversation Degraded (security level lowered)
+"meta.degraded.degradation_reason_message.singular" = "%@ começou a usar um novo dispositivo.";
+"meta.degraded.degradation_reason_message.plural" = "%@ começou a usar novos dispositivos.";
+"meta.degraded.dialog_message" = "Ainda quer enviar sua mensagem?";
+"meta.degraded.show_device_button" = "Mostrar o dispositivo";
+"meta.degraded.send_anyway_button" = "Enviar assim mesmo";
+"meta.degraded.cancel_sending_button" = "Cancelar";
+
+// Remove from conversation dialogue
+"profile.remove_dialog_title" = "Remover?";
+"profile.remove_dialog_message" = "%@ não será capaz de enviar ou receber mensagens nesta conversa.";
+"profile.remove_dialog_button_cancel" = "Cancelar";
+"profile.remove_dialog_button_remove" = "Remover";
+
+// Block dialog
+"profile.block_dialog.title" = "Bloquear?";
+"profile.block_dialog.message" = "%@ não será capaz de entrar em contato com você ou convidá-lo para uma conversa em grupo.";
+"profile.block_dialog.button_cancel" = "Cancelar";
+"profile.block_dialog.button_block" = "Bloquear";
+
+// Delete message dialog
+"message.delete_dialog.message" = "Isto não pode ser desfeito.";
+"message.delete_dialog.action.cancel" = "Cancelar";
+"message.delete_dialog.action.hide" = "Apagar para mim";
+"message.delete_dialog.action.delete" = "Apagar para Todos";
+
+// Edit message
+"message.menu.edit.title" = "Editar";
+
+// Accept connection request
+"profile.connection_request_dialog.title" = "Aceitar?";
+"profile.connection_request_dialog.message" = "Isto irá conectá-lo e abrir a conversa com %@.";
+"profile.connection_request_dialog.button_cancel" = "Ignorar";
+"profile.connection_request_dialog.button_connect" = "Conectar";
+
+// Cancel connection request
+"profile.cancel_connection_request_dialog.title" = "Cancelar pedido?";
+"profile.cancel_connection_request_dialog.message" = "Remova a solicitação de conexão com %@.";
+"profile.cancel_connection_request_dialog.button_no" = "Não";
+"profile.cancel_connection_request_dialog.button_yes" = "Sim";
+
+// Unblock button
+"profile.unblock_button_title" = "Desbloquear";
+
+"profile.cancel_connection_button_title" = "CANCELAR PEDIDO";
+"profile.connection_request_state.blocked" = "BLOQUEADO";
+"profile.create_conversation_button_title" = "Criar grupo";
+"profile.open_conversation_button_title" = "Abrir conversa";
+
+// User Details
+"profile.details.title" = "Detalhes";
+"profile.details.guest" = "Convidado";
+
+"profile_view.accessibility.handle" = "Nome de usuário";
+"profile_view.accessibility.name" = "Nome de exibição";
+"profile_view.accessibility.team_name" = "Nome da Equipe";
+
+// Device list
+"profile.devices.title" = "Dispositivos";
+"profile.devices.fingerprint_message_unencrypted" = "%@ está usando uma versão antiga do ChatBox. Nenhum dispositivo será mostrado aqui.";
+"profile.devices.fingerprint_message" = "O ChatBox fornece para cada dispositivo uma única impressão digital. Compare-as com %@ e verifique a sua conversa. Por que verificar conversas?";
+"profile.devices.fingerprint_message.link" = "Por que verificar conversas?";
+
+// Device detail
+"profile.devices.detail.verify_message" = "Verifique se isso corresponde com a impressão digital mostrada no dispositivo de %@.";
+"profile.devices.detail.verify_message.link" = "Como eu faço isso?";
+"profile.devices.detail.show_my_device.title" = "Mostrar a minha impressão digital do dispositivo";
+"device.verified" = "Verificado";
+"device.not_verified" = "Não Verificado";
+"device.class.desktop" = "Computador de Mesa";
+"device.class.tablet" = "Tablet";
+"device.class.phone" = "Telefone";
+"profile.devices.detail.reset_session.title" = "Redefinir Sessão";
+
+// General strings
+"general.confirm" = "OK";
+
+// Bot
+"participants.services.remove_integration.button" = "remover integração";
+
+// Group details
+"group_details.guest_options_cell.title" = "Opções de Convidados";
+"group_details.guest_options_cell.enabled" = "Ligado";
+"group_details.guest_options_cell.disabled" = "Desligar";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Self profile
+// Options menu contents
+
+"self.settings" = "Ajustes";
+"self.profile" = "Perfil";
+"self.account" = "Conta";
+"self.help_center" = "Suporte";
+"self.help_center.support_website" = "Site de suporte do ChatBox";
+"self.help_center.contact_support" = "Entre em contato com o suporte";
+"self.about" = "Sobre";
+"self.sign_out" = "Sair";
+"self.report_abuse" = "Reportar Abuso";
+"self.voiceover.label" = "Perfil";
+"self.voiceover.hint" = "Abrir perfil e configurações";
+"self.new-device.voiceover.label" = "Perfil, novos dispositivos adicionados";
+
+"self.add_phone_number" = "Adicionar número de telefone";
+"self.add_email_password" = "Adicionar o endereço de e-mail e senha";
+
+// About screen
+"about.tos.title" = "Termos de uso";
+"about.privacy.title" = "Política de privacidade";
+"about.license.title" = "Informações de Licença";
+"about.website.title" = "Site do ChatBox";
+"about.copyright.title" = "© ChatBox Swiss GmbH";
+
+// Self new devices
+"self.new_device_alert.title" = "Você conectou %@ à sua conta do ChatBox";
+"self.new_device_alert.title_prefix.tablet" = "um tablet";
+"self.new_device_alert.title_prefix.phone" = "um telefone";
+"self.new_device_alert.title_prefix.devices" = "%d dispositivos";
+"self.new_device_alert.message" = "%@\n\nSe você não fez isso, remova o dispositivo e redefina sua senha.";
+"self.new_device_alert.message_plural" = "%@\n\nSe você não fez isso, remova os dispositivos e redefina sua senha.";
+"self.new_device_alert.manage_devices" = "Gerenciar dispositivos";
+"self.new_device_alert.trust_devices" = "OK";
+
+// Settings - top level
+"self.settings.create_team.title" = "Criar uma equipe";
+"self.settings.manage_team.title" = "Gerenciar Equipe";
+"self.settings.add_team_or_account.title" = "Nova Equipe ou Conta";
+"self.settings.add_account.title" = "Adicionar uma conta";
+
+"self.settings.add_account.error.title" = "Três contas de ativas";
+"self.settings.add_account.error.message" = "Você apenas pode estar conectado com três contas de uma vez. Saia de uma para adicionar outra.";
+
+// Settings - Account details
+"self.settings.account_section" = "Conta";
+
+"self.settings.account_details_group.info.title" = "Informações";
+"self.settings.account_details_group.personal.title" = "Pessoal";
+
+"self.settings.account_section.name.title" = "Nome";
+"self.settings.account_section.email.title" = "E-mail";
+"self.settings.account_section.phone.title" = "Telefone";
+"self.settings.account_section.handle.title" = "Nome de usuário";
+"self.settings.account_section.add_handle.title" = "Adicionar nome de usuário";
+
+"self.settings.account_details_group.info.footer" = "Pessoas podem te encontrar com esses detalhes.";
+"self.settings.account_details_group.personal.footer" = "Esta informação ainda não está disponível .";
+
+"self.settings.account_details.remove_device.title" = "Remover o dispositivo";
+"self.settings.account_details.key_fingerprint.title" = "Chave digital";
+"self.settings.account_details.remove_device.message" = "Sua senha é necessária para remover o dispositivo";
+"self.settings.account_details.remove_device.password" = "Senha";
+"self.settings.account_details.remove_device.password.error" = "Senha errada";
+
+"self.settings.account_appearance_group.title" = "Aparência";
+"self.settings.account_picture_group.picture" = "Foto";
+"self.settings.account_picture_group.color" = "Cor";
+
+"self.settings.account_picture_group.theme" = "Tema Escuro";
+
+"self.settings.device_details.fingerprint.subtitle" = "ChatBox dá uma impressão digital única a cada dispositivo. Compare-os e verifique seus dispositivos e conversas.";
+"self.settings.device_details.reset_session.subtitle" = "Se as impressões digitais não corresponderem, redefina a sessão para gerar novas chaves de criptografia em ambos os lados.";
+"self.settings.device_details.remove_device.subtitle" = "Remova este dispositivo se você tiver parado de usá-lo. Sua sessão será encerrada nesse dispositivo imediatamente.";
+"self.settings.device_details.reset_session.success" = "A sessão foi redefinida";
+
+"self.settings.account_details.actions.title" = "Ações";
+
+"self.settings.account_details.delete_account.title" = "Excluir Conta";
+
+"self.settings.account_details.delete_account.alert.title" = "Excluir Conta";
+"self.settings.account_details.delete_account.alert.message" = "Nós enviaremos uma mensagem via e-mail ou SMS. Siga o link para excluir permanentemente a sua conta.";
+
+"self.settings.account_details.log_out.alert.title" = "Sair";
+"self.settings.account_details.log_out.alert.message" = "Seu histórico de mensagens será apagado neste dispositivo.";
+
+
+// Change Username
+
+"self.settings.account_section.handle.change.title" = "Nome de usuário";
+"self.settings.account_section.handle.change.save" = "Salvar";
+"self.settings.account_section.handle.change.footer" = "Ao menos 2 caracteres. a—z, 0—9 e _ apenas.";
+"self.settings.account_section.handle.change.footer.unavailable" = "Já está sendo usado";
+
+"self.settings.account_section.handle.change.failure_alert.title" = "Não é possível definir o nome de usuário";
+"self.settings.account_section.handle.change.failure_alert.message" = "Houve um erro ao configurar seu nome de usuário. Por favor, tente novamente.";
+
+// Change Email
+
+"self.settings.account_section.email.change.title" = "E-mail";
+"self.settings.account_section.email.change.save" = "Salvar";
+
+"self.settings.account_section.email.change.verify.title" = "Verificar e-mail";
+"self.settings.account_section.email.change.verify.description" = "Verifique sua caixa de e-mail e siga as instruções.";
+"self.settings.account_section.email.change.verify.resend" = "Reenvie para %@";
+
+"self.settings.account_section.email.change.resend.title" = "E-mail reenviado";
+"self.settings.account_section.email.change.resend.message" = "Um e-mail de confirmação foi reenviado para %@. Verifique sua caixa de entrada do e-mail e siga as instruções.";
+
+// Change Phone Number
+
+"self.settings.account_section.phone_number.change.title" = "Telefone";
+"self.settings.account_section.phone_number.change.save" = "Salvar";
+"self.settings.account_section.phone_number.change.remove" = "Remover número de telefone";
+
+"self.settings.account_section.phone_number.change.remove.action" = "Remover número de telefone";
+
+"self.settings.account_section.phone_number.change.verify.save" = "Salvar";
+"self.settings.account_section.phone_number.change.verify.title" = "Verificar";
+"self.settings.account_section.phone_number.change.verify.description" = "Digite o código de verificação que nós enviamos para %@.";
+
+"self.settings.account_section.phone_number.change.verify.code_placeholder" = "Digite o código";
+"self.settings.account_section.phone_number.change.verify.resend" = "Reenviar código";
+"self.settings.account_section.phone_number.change.verify.resend_description" = "Nenhum código aparecendo?\nVocê pode solicitar um novo a cada 30 segundos.";
+
+"self.settings.account_section.phone_number.change.resend.title" = "Código reenviado";
+"self.settings.account_section.phone_number.change.resend.message" = "O código de verificação foi reenviado pata %@.";
+
+// Chat alerts
+"self.settings.notifications.push_notification.title" = "Notificações";
+"self.settings.notifications.push_notification.toogle" = "Pré-visualização de Mensagens";
+"self.settings.notifications.push_notification.footer" = "Nome do remetente e mensagem na tela de bloqueio e na Central de Notificações.";
+
+"self.settings.notifications.chat_alerts.toggle" = "Banners de Mensagens";
+"self.settings.notifications.chat_alerts.footer" = "Novas mensagens em outras conversas.";
+
+"self.settings.sound_menu.sounds.title" = "Sons";
+"self.settings.sound_menu.ringtone.title" = "Toque";
+"self.settings.sound_menu.message.title" = "Tom de alerta";
+"self.settings.sound_menu.ping.title" = "Ping";
+"self.settings.sound_menu.ringtones.title" = "Toques";
+"self.settings.sound_menu.sounds.wire_sound" = "ChatBox";
+"self.settings.sound_menu.sounds.none" = "Nenhum";
+
+"self.settings.callkit.title" = "Chamadas";
+"self.settings.callkit.caption" = "Compartilhar com o iOS";
+"self.settings.callkit.description" = "Mostrar as chamadas do ChatBox na tela de bloqueio e no histórico de chamadas do iOS. Se o Icloud estiver ativado, o histórico de chamadas é compartilhado com a Apple.";
+
+"self.settings.vbr.title" = "Codificação com Taxa de Bits Variável";
+"self.settings.vbr.description" = "Isto faz chamadas de áudio usar menos dados e funcionam melhor em redes mais lentas. Desligue para usar a Codificação com Taxa de Bits Constante.";
+
+"self.settings.sound_menu.sounds.wire_call" = "Chamada do ChatBox";
+"self.settings.sound_menu.sounds.wire_message" = "Mensagem do ChatBox";
+"self.settings.sound_menu.sounds.wire_ping" = "Ping do ChatBox";
+
+// By popular demand
+"self.settings.popular_demand.title" = "Por demanda popular";
+"self.settings.popular_demand.send_button.title" = "Botão Enviar";
+"self.settings.popular_demand.send_button.footer" = "Desabilite para enviar através da tecla return.";
+
+// Open in
+"self.settings.external_apps.header" = "Abrir com";
+
+"self.settings.link_options.twitter.title" = "Tuites";
+"self.settings.link_options.maps.title" = "Localidades";
+"self.settings.link_options.browser.title" = "Navegador";
+
+"open_link.twitter.option.default" = "Safari / Twitter";
+"open_link.twitter.option.tweetbot" = "Tweetbot";
+"open_link.twitter.option.twitterrific" = "Twitterrific";
+
+"open_link.maps.option.apple" = "Mapas";
+"open_link.maps.option.google" = "Google Maps";
+
+"open_link.browser.option.safari" = "Safari";
+"open_link.browser.option.chrome" = "Chrome";
+"open_link.browser.option.firefox" = "Firefox";
+
+// Sound alerts (TO BE UPDPATED)
+"self.settings.sound_menu.title" = "Alertas de som";
+"self.settings.sound_menu.no_sounds.title" = "Nenhum";
+"self.settings.sound_menu.all_sounds.title" = "Todos";
+"self.settings.sound_menu.mute_while_talking.title" = "Primeira mensagem e pings";
+
+// Developer options
+"self.settings.developer_options.title" = "Opções de desenvolvedor";
+"self.settings.apns_logging.title" = "APNS Logging";
+
+// Privacy (visibility) options
+"self.settings.options_menu.title" = "Opções";
+
+"self.settings.privacy_contacts_section.title" = "Contatos";
+"self.settings.privacy_contacts_menu.settings_button.title" = "Abrir Ajustes de Contatos";
+"self.settings.privacy_contacts_menu.description_disabled.title" = "Isso ajuda a você se conectar com outros. Nós tornamos secretas todas as informações e não compartilhamos com ninguém. Permita o acesso em Ajustes > Privacidade > Contatos.";
+
+"self.settings.privacy_security.lock_app" = "Bloquear Com Código";
+"self.settings.privacy_security.lock_app.subtitle" = "Bloquear ChatBox depois de 10 segundos em plano de fundo. Debloqueie com o Touch ID ou entre seu código.";
+"self.settings.privacy_security.lock_app.description" = "Desbloquear ChatBox";
+
+"self.settings.privacy_security.lock_cancelled.description" = "Desbloqueie o ChatBox com o Touch ID ou Código";
+"self.settings.privacy_security.lock_cancelled.action" = "Desbloquear";
+
+"self.settings.privacy_security.disable_link_previews.title" = "Criar pré-visualizações de links";
+"self.settings.privacy_security.disable_link_previews.footer" = "Pré-Visualizações ainda serão mostradas para links de outras pessoas.";
+
+"self.settings.privacy_analytics_menu.devices.title" = "Dispositivos";
+
+"self.settings.privacy_analytics_section.title" = "Relatórios de Uso e Erro";
+"self.settings.privacy_analytics.title" = "Enviar Dados Anônimos";
+"self.settings.privacy_analytics_menu.description.title" = "Faça o ChatBox melhorar mandando informações de uso anônimas.\n";
+
+"self.settings.privacy.clear_history.title" = "Limpar Histórico";
+"self.settings.privacy.clear_history.subtitle" = "Isto apagará permanentemente o conteúdo de todas as suas conversas.";
+
+"self.settings.advanced.title" = "Avançado";
+"self.settings.advanced.troubleshooting.title" = "Solução de problemas";
+"self.settings.advanced.troubleshooting.submit_debug.title" = "Relatório de Depuração de Chamadas";
+"self.settings.advanced.troubleshooting.submit_debug.subtitle" = "Essa informação ajuda o suporte do ChatBox a diagnosticar problemas de ligação.";
+"self.settings.advanced.reset_push_token.title" = "Redefinir Token de Notificações Push";
+"self.settings.advanced.reset_push_token.subtitle" = "Se você tiver problemas com notificações, o Suporte do ChatBox pode solicitar que você redefinir esse token.";
+"self.settings.advanced.reset_push_token_alert.title" = "Token de notificações foi redefinido";
+"self.settings.advanced.reset_push_token_alert.message" = "As notificações serão restauradas em poucos segundos.";
+"self.settings.advanced.version_technical_details.title" = "Detalhes técnicos da Versão";
+
+// Technical Report
+"self.settings.technical_report_section.title" = "Relatório Técnico";
+"self.settings.technical_report.send_report" = "Enviar relatório para o ChatBox";
+"self.settings.technical_report.mail.recipient" = "callingsupport@ChatBox.com";
+"self.settings.technical_report.mail.subject" = "Relatório de Chamadas do ChatBox";
+"self.settings.technical_report.include_log" = "Incluir o log detalhado";
+"self.settings.technical_report.privacy_warning" = "Registros detalhados podem conter dados pessoais";
+"self.settings.technical_report.no_mail_alert" = "No mail client detected. Tap \"OK\" and send logs manually to: ";
+
+// Password reset
+"self.settings.password_reset_menu.title" = "Redefinir senha";
+
+// Invite from Settings
+"self.settings.invite_friends.title" = "Convidar pessoas";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// System status
+"system_status_bar.no_internet.title" = "Sem Internet";
+"system_status_bar.no_internet.explanation" = "Parece que há um problema com sua conexão de Internet. Por favor, verifique se tudo está funcionando.";
+"system_status_bar.poor_connectivity.title" = "Internet Lenta, não é possível chamar agora";
+"system_status_bar.poor_connectivity.explanation" = "Nós não podemos garantir a qualidade da voz. Conecte-se ao Wi-Fi ou tente alterar sua localização.";
+
+// View user profile and options menu & text field validation
+"name.placeholder" = "Seu nome completo";
+"name.guidance.tooshort" = "Pelo menos 2 caracteres";
+"name.guidance.toolong" = "Muitos caracteres";
+
+"email.placeholder" = "E-mail";
+"email.guidance.invalid" = "Endereço de e-mail inválido";
+"email.guidance.tooshort" = "O e-mail é muito curto";
+"email.guidance.toolong" = "Muitos caracteres";
+
+"password.placeholder" = "Senha";
+"password.guidance.tooshort" = "Pelo menos 8 caracteres";
+"password.guidance.toolong" = "Muitos caracteres";
+
+// Landing screen
+
+"landing.title" = "Encrypt world communication freedom.";
+"landing.create_account.title" = "Criar uma conta";
+"landing.create_account.subtitle" = "para uso pessoal";
+"landing.create_team.title" = "Criar uma equipe";
+"landing.create_team.subtitle" = "para o trabalho";
+"landing.login.hints" = "Já tem uma conta?";
+"landing.login.button.title" = "Iniciar sessão";
+
+// Create team
+
+"team.name.headline" = "Dê um nome à sua equipa";
+"team.name.subheadline" = "Você sempre pode mudar isso mais tarde.";
+"team.name.textfield.placeholder" = "nome da equipe";
+"team.name.textfield.accessibility" = "Defina um nome da equipe";
+"team.name.whatiswireforteams" = "O que é o ChatBox para equipes?";
+
+"team.email.headline" = "Sua conta";
+"team.email.subheadline" = "Digite seu endereço de e-mail empresarial.";
+"team.email.textfield.placeholder" = "you@yourcompany.com";
+"team.email.textfield.accessibility" = "Seu e-mail da empresa";
+"team.email.button.learn_more" = "Saiba Mais";
+
+"team.activation_code.headline" = "Você tem um e-mail";
+"team.activation_code.subheadline" = "Digite o código de verificação que enviamos para %@.";
+"team.activation_code.button.resend" = "Reenviar código";
+"team.activation_code.button.change_email" = "Alterar e-mail";
+
+"team.full_name.headline" = "Seu nome";
+"team.full_name.textfield.placeholder" = "Nome completo";
+"team.full_name.textfield.accessibility" = "Defina seu nome completo";
+
+"team.password.headline" = "Definir senha";
+"team.password.textfield.placeholder" = "Pelo menos 8 caracteres";
+"team.password.textfield.accessibility" = "Definir senha, pelo menos 8 caracteres";
+
+
+"team.email_code.input_field.accessbility_label" = "Por favor introduza o código de seis dígitos do e-mail.";
+
+// Invite Team Members
+
+"team.invite.header.title" = "Crie sua equipe";
+"team.invite.header.subtitle" = "Convide seus colegas para participar.";
+"team.invite.textfield.placeholder" = "colega@suacompanhia.com";
+"team.invite.textfield.accesibility" = "Digite o endereço de e-mail do colega para convidar.";
+"team.invite.learn_more.title" = "Mais informação";
+"team.invite.top_bar.skip" = "Pular";
+"team.invite.top_bar.done" = "Pronto";
+
+// Team Invite Errors
+"team.invite.error.generic" = "Algo deu errado, por favor tente novamente";
+"team.invite.error.already_registered" = "Esse endereço de e-mail já está sendo usado";
+"team.invite.error.already_invited" = "Este e-mail já foi convidado";
+"team.invite.error.too_many_invitations" = "O número máximo de convites foi enviado";
+"team.invite.error.no_internet" = "Sem conexão à Internet";
+
+// Guest Room
+
+"guest_room.allow_guests.title" = "Permitir convidados";
+"guest_room.allow_guests.subtitle" = "Abrir esta conversa à pessoas fora da sua equipe.";
+"guest_room.remove_guests.message" = "Os convidados atuais serão removidos da conversa. Não serão permitidos novos convidados.";
+"guest_room.remove_guests.action" = "Remover Convidados";
+"guest_room.revoke_link.message" = "Novos convidados não será capazes de juntar-se com este link. Os convidados atuais ainda terão acesso.";
+"guest_room.revoke_link.action" = "Desativar Link";
+
+"guest_room.error.generic.title" = "Something went wrong";
+"guest_room.error.generic.message" = "Check your connection and try again";
+
+// Registration
+
+"registration.title" = "Cadastro";
+"registration.close_email_invitation_button.email_title" = "Use outro e-mail";
+"registration.close_email_invitation_button.phone_title" = "Cadastre-se por telefone";
+"registration.close_phone_invitation_button.email_title" = "Cadastre-se por e-mail";
+"registration.close_phone_invitation_button.phone_title" = "Use outro telefone";
+
+"registration.enter_phone_number.title" = "Editar número de telefone";
+"registration.enter_phone_number.placeholder" = "Número de telefone";
+
+"registration.verify_phone_number.instructions" = "Digite o código de verificação que nós enviamos para %@";
+"registration.verify_phone_number.resend" = "Reenviar";
+"registration.verify_phone_number.resend_placeholder" = "Nenhum código aparecendo?\nVocê pode solicitar um novo em %.0f segundos";
+
+"registration.verify_email.instructions" = "Enviamos um e-mail para %@. \nSiga o link para confirmar o seu endereço.";
+"registration.verify_email.resend.instructions" = "Não recebeu a mensagem de verificação?";
+"registration.verify_email.resend.button_title" = "Re-enviar";
+
+"registration.select_picture.subtitle" = "O ChatBox é muito mais legal com uma foto.";
+"registration.select_picture.button_title" = "Escolha sua foto";
+"registration.keep_picture.button_title" = "Manter essa";
+"registration.camera_action.title" = "Tirar foto";
+"registration.photo_gallery_action.title" = "Escolha a foto";
+"registration.cancel_action.title" = "Cancelar";
+
+"registration.no_history.hero" = "É a primeira vez que você está usando o ChatBox nesse dispositivo.";
+"registration.no_history.subtitle" = "Por questões de privacidade, o seu histórico de conversa não aparecerá aqui.";
+"registration.no_history.got_it" = "OK";
+
+"registration.no_history.logged_out.hero" = "Você não usou o ChatBox nesse dispositivo antes.";
+"registration.no_history.logged_out.subtitle" = "Mensagens enviadas nesse meio tempo não irão aparecer.";
+"registration.no_history.logged_out.got_it" = "OK";
+
+"registration.enter_name.title" = "Editar Nome";
+"registration.enter_name.hero" = "Como você quer ser chamado?";
+"registration.enter_name.placeholder" = "Seu nome completo";
+
+"registration.terms_of_use.title" = "Bem-vindo ao ChatBox.";
+"registration.terms_of_use.terms" = "Continuando, você concorda com os termos de uso do ChatBox.";
+"registration.terms_of_use.terms.link" = "Termos de uso";
+"registration.terms_of_use.agree" = "Eu aceito";
+
+"registration.terms_of_use.terms.title" = "Termos de uso";
+"registration.terms_of_use.terms.message" = "Por favor, aceite os termos de uso para continuar.";
+"registration.terms_of_use.terms.view" = "Vizualizar";
+"registration.terms_of_use.accept" = "Aceitar";
+
+"registration.email_flow.title" = "Cadastre-se por e-mail";
+"registration.email_flow.email_step.title" = "Editar detalhes";
+
+"registration.country_select.title" = "País";
+
+"registration.share_contacts.hero.title" = "Encontrar pessoas no ChatBox";
+"registration.share_contacts.hero.paragraph" = "Compartilhe seus contatos, assim podemos conectar você com outras pessoas. Nós tornamos secretas todas as informações e não compartilhamos com mais ninguém.";
+"registration.share_contacts.find_friends_button.title" = "Compartilhar Contatos";
+"registration.share_contacts.skip_button.title" = "Agora não";
+
+"registration.address_book_access_denied.hero.title" = "O ChatBox não tem acesso aos seus contatos.";
+"registration.address_book_access_denied.hero.paragraph1" = "O ChatBox ajuda você a encontrar seus amigos, se você compartilhar com seus contatos.";
+"registration.address_book_access_denied.hero.paragraph2" = "Para habilitar os contatos toque em Ajustes e ative os Contatos.";
+"registration.address_book_access_denied.settings_button.title" = "Ajustes";
+"registration.address_book_access_denied.maybe_later_button.title" = "Talvez mais tarde";
+
+"registration.push_access_denied.hero.title" = "Nunca perca uma chamada ou uma mensagem.";
+"registration.push_access_denied.hero.paragraph1" = "Habilite Notificações em Ajustes.";
+"registration.push_access_denied.settings_button.title" = "Vá para os ajustes";
+"registration.push_access_denied.maybe_later_button.title" = "Talvez mais tarde";
+
+"registration.signin.title" = "Entrar";
+"registration.signin.too_many_devices.title" = "";
+"registration.signin.too_many_devices.subtitle" = "Remova um de seus outros dispostos para começar a usar o ChatBox neste.";
+"registration.signin.too_many_devices.manage_button.title" = "Gerenciar dispositivos";
+"registration.signin.too_many_devices.sign_out_button.title" = "Sair";
+"registration.signin.email_button.title" = "E-mail";
+"registration.signin.phone_button.title" = "Telefone";
+
+"registration.signin.alert.password_needed.title" = "Senha necessária";
+"registration.signin.alert.password_needed.message" = "Por favor, digite sua senha para entrar.";
+
+"registration.devices.title" = "Dispositivos";
+"registration.devices.active_list_header" = "Ativo";
+"registration.devices.current_list_header" = "Atual";
+"registration.devices.active_list_subtitle" = "Se você não reconhecer um dispositivo acima, remova-o e redefina sua senha.";
+"registration.devices.activated_in" = "Ativado em";
+"registration.devices.id" = "ID:";
+
+"signin.forgot_password" = "Esqueceu a senha?";
+
+"registration.add_phone_number.hero.title" = "Adicionar número de telefone";
+"registration.add_phone_number.hero.paragraph" = "Isso nos ajuda a encontrar pessoas que você pode conhecer. Nós nunca compartilhamos isso.";
+"registration.add_phone_number.skip_button.title" = "Agora não";
+
+"registration.add_email_password.hero.title" = "Adicione seu e-mail e uma senha.";
+"registration.add_email_password.hero.paragraph" = "Isso permite que você use ChatBox em vários dispositivos.";
+
+"registration.email_invitation.title" = "Convite";
+"registration.email_invitation.hero.title" = "Olá, %@";
+"registration.email_invitation.hero.paragraph" = "Escolha uma senha para criar sua conta.";
+
+"registration.phone_invitation.title" = "Convite";
+"registration.phone_invitation.hero.title" = "Olá, %@";
+"registration.phone_invitation.hero.paragraph" = "Você está a um passo de criar sua conta.";
+
+"error.name_and_email" = "Por favor, digite seu nome completo e um endereço de e-mail válido";
+"error.full_name" = "Por favor, digite seu nome completo";
+"error.email" = "Por favor insira um endereço de e-mail válido";
+"error.input.too_long" = "Entrada muito longa";
+"error.input.too_short" = "Entrada muito curta";
+"error.email.invalid" = "Por favor insira um endereço de e-mail válido";
+"error.phone.invalid" = "Introduza um número de telefone válido";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Username takeover screen
+"registration.select_handle.takeover.subtitle" = "Revindicar seu nome único no ChatBox.";
+"registration.select_handle.takeover.subtitle_link" = "Mais informação";
+
+"registration.select_handle.takeover.choose_own" = "Escolha o seu";
+"registration.select_handle.takeover.keep_suggested" = "Manter essa";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ZMUserSessionErrorCode mapping. Used during registration and profile edit
+"error.user.unkown_error" = "Algo deu errado, por favor tente novamente";
+"error.user.needs_credentials" = "Por favor, verifique seus dados e tente novamente.";
+"error.user.invalid_credentials" = "Por favor, verifique seus dados e tente novamente.";
+"error.user.account_pending_activation" = "A conta que você está tentando acessar ainda está com a ativação pendente. Por favor, verifique seus detalhes.";
+"error.user.network_error" = "Parece que há um problema com a sua rede. Por favor, tente novamente mais tarde.";
+"error.user.email_is_taken" = "O endereço de e-mail que você registrou já foi registrado. Por favor, tente novamente.";
+"error.user.phone_is_taken" = "O número de telefone que você informou já foi registrado. Por favor, tente novamente.";
+"error.user.phone_code_invalid" = "Por favor, introduza um código válido";
+"error.user.phone_code_too_many" = "Nós já enviamos um código via SMS. Toque em 'Re-enviar' após 10 minutos para conseguir um novo.";
+"error.user.registration_unknown_error" = "Algo deu errado. Por favor, tente novamente.";
+"error.user.device_deleted_remotely" = "Você foi desconectado através de um outro aparelho.";
+"error.user.last_identity_cant_be_deleted" = "Um número de telefone ou um endereço de e-mail é necessário.";
+"error.user.account_suspended" = "Esta conta não está mais autorizada a entrar.";
+"error.user.account_limit_reached" = "Você não pode adicionar mais de 3 contas.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are caught by the UI without involving the SE validation. Basically very similar to ZMUserSessionErrorCode onces
+"error.updating_password" = "Não é possível atualizar sua senha.";
+
+"error.group_call.too_many_members_in_conversation.title" = "Muitas pessoas na chamada";
+"error.group_call.too_many_members_in_conversation" = "Chamadas funcionam em conversas com até %d pessoas.";
+"error.group_call.too_many_participants_in_the_call.title" = "A chamada está cheia";
+"error.group_call.too_many_participants_in_the_call" = "Há apenas espaço para %1$d pessoas aqui.";
+"error.call.gsm_ongoing.title" = "Chamada via rede de celular";
+"error.call.gsm_ongoing" = "Por favor, cancele a ligação celular antes de ligar no ChatBox.";
+"error.call.general.title" = "Erro de chamada";
+"error.call.general" = "Por favor, tente ligar novamente em alguns minutos.";
+"error.call.slow_connection.title" = "Conexão lenta";
+"error.call.slow_connection" = "Pode haver alguns problemas durante a chamada";
+"error.call.slow_connection.call_anyway" = "Chame de qualquer maneira";
+
+"error.invite.no_email_provider" = "Por favor, configure seu cliente de e-mail para poder enviar os convites via e-mail";
+"error.invite.no_messaging_provider" = "Por favor, configure seu SMS para ser capaz de enviar os convites através de SMS";
+
+"sketchpad.initial_hint" = "Toque em cores para alterar o tamanho do pincel";
+
+"migration.please_wait_message" = "Um momento, por favor";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are used by the backend to localize APNS
+"push.notification.new_user" = "%@ entrou no ChatBox";
+"push.notification.new_message" = "Nova mensagem";
+
+
+//Force Update
+"force.update.title" = "Atualização necessária";
+"force.update.message" = "Você está perdendo novas funcionalidades. \nObtenha a última versão do ChatBox na App Store.";
+"force.update.ok_button" = "Vá para a App Store";
+
+// Third Party
+"giphy.conversation.message" = "%@ · via giphy.com";
+"giphy.conversation.random_message" = "via giphy.com";
+"giphy.error.no_more_results" = "não há mais gifs";
+"giphy.error.no_result" = "nenhum gif encontrado";
+
+"giphy.confirm" = "enviar";
+"giphy.cancel" = "cancelar";
+"giphy.search_placeholder" = "Pesquisa Giphy";
+
+"invite_banner.title" = "Traga seus amigos para o ChatBox!";
+"invite_banner.message" = "Desfrute de chamadas, mensagens, desenhos, GIFs e muito mais em privado ou com grupos.";
+"invite_banner.invite_button_title" = "Convidar mais pessoas";
+
+// Collections
+"collections.section.images.title" = "Imagens";
+"collections.section.files.title" = "Arquivos";
+"collections.section.videos.title" = "Vídeos";
+"collections.section.links.title" = "Links";
+"collections.section.all.button" = "Mostrar todos os %d →";
+"collections.section.no_items" = "Não há itens na coleção";
+"collections.image_viewer.copied.title" = "Imagem copiada";
+
+"collections.search.field.placeholder" = "Buscar mensagens de texto";
+"collections.search.no_items" = "Não há resultados";
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Message composing / drafts
+
+"compose.drafts.title" = "Mensagens";
+"compose.drafts.empty.title" = "Sem mensagens";
+"compose.drafts.empty.subtitle" = "Toque em + para compor um";
+"compose.drafts.compose.title" = "Escreva uma mensagem";
+"compose.drafts.compose.subject.placeholder" = "Toque para definir um assunto";
+
+"compose.drafts.compose.delete.confirm.title" = "Confirmar Exclusão";
+"compose.drafts.compose.delete.confirm.message" = "Esta ação irá apagar permanentemente esse rascunho e não pode ser desfeita.";
+"compose.drafts.compose.delete.confirm.action.title" = "Apagar";
+
+"compose.drafts.compose.dismiss.confirm.title" = "Salvar como rascunho";
+"compose.drafts.compose.dismiss.confirm.action.title" = "Salvar";
+"compose.drafts.compose.dismiss.delete.action.title" = "Apagar";
+
+"availability.message.cancel" = "Cancelar";
+"availability.message.set_status" = "Definir status";
+
+"availability.none" = "Nenhum";
+"availability.available" = "Disponível";
+"availability.away" = "Ausente";
+"availability.busy" = "Ocupado";
+"availability.available.placeholder" = "%@ está disponível";
+"availability.away.placeholder" = "%@ está ausente";
+"availability.busy.placeholder" = "%@ está ocupado";

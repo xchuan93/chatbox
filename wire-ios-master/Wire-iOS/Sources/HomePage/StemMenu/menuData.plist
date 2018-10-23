@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>首页</key>
+	<array/>
+	<key>关于干细胞干细胞</key>
+	<array/>
+	<key>干细胞疗法</key>
+	<array>
+		<string>治疗疾病</string>
+		<string>美容抗衰老</string>
+		<string>病症案例</string>
+	</array>
+	<key>会员中心</key>
+	<array>
+		<string>青春之旅</string>
+		<string>常见问题</string>
+	</array>
+</dict>
+</plist>

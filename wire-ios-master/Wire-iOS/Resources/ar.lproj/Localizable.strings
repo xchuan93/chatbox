@@ -1,0 +1,1135 @@
+//
+// ChatBox
+// Copyright (C) 2016 ChatBox Swiss GmbH
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see http://www.gnu.org/licenses/.
+//
+
+
+"general.ok" = "موافق";
+"general.next" = "Next";
+"general.cancel" = "إلغاء";
+"general.open_settings" = "فتح إعدادات ChatBox";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// People picker/start UI
+"peoplepicker.search_placeholder" = "ابحث باستخدام الاسم أو المعرّف";
+"peoplepicker.header.top_people" = "الأشخاص المفضلين";
+"peoplepicker.button.create_conversation" = "إنشاء مجموعة";
+"peoplepicker.button.add_to_conversation" = "إضافة أشخاص للمجموعة";
+"peoplepicker.header.conversations" = "المجموعات";
+"peoplepicker.header.team_conversations" = "%@ مجموعات";
+"peoplepicker.header.send_invitation" = "قم بدعوة";
+"peoplepicker.header.contacts" = "جهات الاتصال";
+"peoplepicker.header.contacts_personal" = "جهات الاتصال شخصية";
+"peoplepicker.header.directory" = "تواصل";
+
+"peoplepicker.group.title.singular" = "إضافة أشخاص";
+"peoplepicker.group.title.plural" = "Add People (%d)";
+"peoplepicker.group.skip" = "Skip";
+"peoplepicker.group.done" = "Done";
+"peoplepicker.group.create" = "Create";
+
+"peoplepicker.header.people" = "أشخاص";
+"peoplepicker.header.services" = "Services";
+"peoplepicker.services.create_conversation.item" = "Create a new conversation";
+"peoplepicker.services.add_service.button" = "إضافة خدمة";
+"peoplepicker.services.add_service.error.title" = "The service can't be added";
+"peoplepicker.services.add_service.error.default" = "The service is unavailable at the moment";
+"peoplepicker.services.add_service.error.full" = "The conversation is full";
+
+"peoplepicker.title.create_conversation" = "إنشاء مجموعة";
+"peoplepicker.title.add_to_conversation" = "إضافة أشخاص";
+
+"peoplepicker.no_contacts_title" = "لا توجد جهات اتصال.";
+
+"peoplepicker.no_matching_results_title" = "لا توجد نتائج.";
+"peoplepicker.no_matching_results_message" = "أدخل عنوان البريد الإلكتروني.";
+
+"peoplepicker.no_matching_results.action.send_invite" = "إرسال دعوة";
+"peoplepicker.no_matching_results.action.share_contacts" = "مشاركة جهات الاتصال";
+
+"peoplepicker.no_matching_results_provide_valid_email" = "الرجاء إدخال عنوان بريد إلكتروني صالح.";
+"peoplepicker.no_matching_results_after_address_book_upload_title" = "لا توجد نتائج.";
+/* This sentence ends with button title, contained in peoplepicker.no_matching_results_after_address_book_upload_button */
+"peoplepicker.no_matching_results_after_address_book_upload_message" = "أدخل عنوان البريد الإلكتروني أو";
+/*  */
+"peoplepicker.no_matching_results_after_address_book_upload_button" = "مشاركة جهات الاتصال";
+
+"peoplepicker.share_contacts.no_results.title" = "البحث عن أشخاص باستخدام الاسم أو عنوان البريد الإلكتروني";
+
+"peoplepicker.send_invitation.dialog.title" = "تم إرسال الدعوة";
+"peoplepicker.send_invitation.dialog.message" = "يمكن استخدامها لمدة أسبوعين. حال انتهاء صلاحيتها أرسل واحدة جديدة.";
+"peoplepicker.send_invitation.dialog.ok" = "موافق";
+
+"peoplepicker.invite_more_people" = "ادعُ أشخاصًا أكثر";
+"peoplepicker.invite_team_members" = "Invite people to join the team";
+"peoplepicker.quick-action.open-conversation" = "افتح";
+"peoplepicker.quick-action.create-conversation" = "إنشاء مجموعة";
+
+"add_participants.all_contacts_added" = "الكل حاضر.";
+
+// Contacts UI
+"contacts_ui.search_placeholder" = "البحث بحسب الاسم";
+"contacts_ui.invite_others" = "ادعُ آخرين";
+"contacts_ui.name_in_contacts" = "%@ في جهات اتصالك";
+"contacts_ui.connection_request" = "تم إرسال طلب اتصال";
+"contacts_ui.action_button.invite" = "قم بدعوة";
+"contacts_ui.action_button.open" = "افتح";
+"contacts_ui.invite_sheet.cancel_button_title" = "إلغاء";
+"contacts_ui.notification.invitation_sent" = "تم إرسال الدعوة";
+"contacts_ui.notification.invitation_failed" = "فَشل إرسال الدعوة";
+"contacts_ui.title" = "دعوة أُناس";
+
+"conversation_list.empty.all_archived.message" = "Everything archived";
+"conversation_list.empty.no_contacts.message" = "Start a conversation or\ncreate a group.";
+
+
+// Conversation List Indicator
+"conversation_list.right_accessory.join_button.title" = "انضم إلى";
+"conversation_list.header.self_team.accessibility_value" = "حساب %@.";
+"conversation_list.header.self_team.accessibility_value.inactive" = "انقر للتفعيل.";
+"conversation_list.header.self_team.accessibility_value.active" = "تفعيل الآن.";
+"conversation_list.header.self_team.accessibility_value.has_new_messages" = "لديه رسائل جديدة.";
+
+// Profile Header View
+"conversation.connection_view.in_address_book" = "في جهات الاتصال";
+
+// Conversation list voiceover accessibility
+"conversation_list.voiceover.open_conversation.hint" = "افتح المحادثة";
+"conversation_list.voiceover.status.pending_connection" = "مُعلّق";
+"conversation_list.voiceover.status.active_call" = "مكالمة نشطة";
+"conversation_list.voiceover.status.missed_call" = "مكالمة فائتة";
+"conversation_list.voiceover.status.pause_media" = "إيقاف الوسائط";
+"conversation_list.voiceover.status.play_media" = "تشغيل الوسائط";
+"conversation_list.voiceover.status.silenced" = "صامت";
+"conversation_list.voiceover.status.typing" = "كتابة";
+"conversation_list.voiceover.status.ping" = "بينغ";
+"conversation_list.voiceover.bottom_bar.archived_button.label" = "مؤرشف";
+"conversation_list.voiceover.bottom_bar.archived_button.hint" = "قائمة المحادثات المؤرشفة";
+"conversation_list.voiceover.bottom_bar.contacts_button.label" = "جهات اتصال";
+"conversation_list.voiceover.bottom_bar.contacts_button.hint" = "البحث عن أشخاص في ChatBox";
+"conversation_list.voiceover.bottom_bar.compose_button.label" = "إنشاء";
+"conversation_list.voiceover.bottom_bar.compose_button.hint" = "إنشاء الرسائل وحفظها في وقت لاحق";
+"conversation_list.voiceover.bottom_bar.camera_button.label" = "الكاميرا";
+"conversation_list.voiceover.bottom_bar.camera_button.hint" = "التقاط الصورة وإرسالها بسرعة";
+
+// Archived List
+"archived_list.title" = "الأرشيف";
+
+// Add contact tool tip
+"tool_tip.contacts.title" = "المحادثات تبدأ هنا";
+"tool_tip.contacts.message" = "ابدأ محادثة. اتصل أو أرسل رسائل أو شارك في محادثات خاصة أوجماعية.";
+
+// "Knows" subtitle in cell: "Knows Indrek", "Knows Indrek and Jane", "Knows Indrek and 5 others"
+"peoplepicker.suggested.knows_one" = "تعرف %@";
+"peoplepicker.suggested.knows_two" = "تعرف %@ و %@";
+"peoplepicker.hide_search_result" = "إخفاء";
+"peoplepicker.hide_search_result_progress" = "جارٍ الإخفاء…";
+
+"send_invitation.subject" = "تواصل معي على ChatBox";
+"send_invitation.text" = "أنا أستخدم ChatBox, ابحث عن %@ أو لِج get.ChatBox.com";
+"send_invitation_no_email.text" = "أنا أستخدم ChatBox. لِج get.ChatBox.com لتتواصل معي.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++x
+// In-app notifications (chat heads)
+"notifications.shared_a_photo" = "شارك صورة";
+"notifications.pinged" = "pinged";
+"notifications.sent_file" = "شارك ملف";
+"notifications.sent_location" = "شارك موقع";
+"notifications.sent_video" = "شارك فيديو";
+"notifications.sent_audio" = "شارك مقطع صوتي";
+"notifications.in_conversation" = "%@ - %@";
+"notifications.this_conversation" = "%@ في هذه المُحادثة";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// List (labels) - Needs to be revised with updated guidance
+"list.title" = "المحادثات";
+"list.archived_conversations" = "حفظ في الأرشيف";
+"list.archived_conversations_close" = "إغلاق الأرشيف";
+
+"conversation.voiceover.verified" = "موثّق";
+
+"conversation.status.call" = "المكالمة الجارية";
+"conversation.status.typing" = "يكتب رسالة…";
+"conversation.status.typing.group" = "%@: يكتب رسالة…";
+"conversation.status.silenced" = "صامت";
+"conversation.status.blocked" = "محظور";
+
+"conversation.status.message.text" = "%@";
+"conversation.status.message.link" = "شارك رابط";
+"conversation.status.message.image" = "شارك صورة";
+"conversation.status.message.location" = "شارك موقع";
+"conversation.status.message.audio" = "شارك رسالة صوتية";
+"conversation.status.message.video" = "شارك فيديو";
+"conversation.status.message.file" = "شارك ملف";
+"conversation.status.message.knock" = "بينغ";
+"conversation.status.message.missedcall" = "مكالمة فائتة";
+"conversation.status.message.ephemeral" = "رسالة مؤقّتة";
+
+"conversation.status.unsent" = "⚠️ رسالة غير مرسلة";
+"conversation.status.you" = "أنت";
+"conversation.status.added_multiple" = "تم إضافة أشخاص";
+"conversation.status.you_was_added" = "%@ أضافك";
+"conversation.status.added_users" = "%@ أضاف %@";
+"conversation.status.joined" = "%@ joined";
+"conversation.status.removed_multiple" = "أزيل أشخاص";
+"conversation.status.you_were_removed" = "تمت إزالتك";
+"conversation.status.you_left" = "أنت غادرت";
+"conversation.status.started_conversation" = "بدأ %@ محادثة جديدة";
+"conversation.status.removed_users" = "قام %@ بإزالة %@";
+"conversation.status.everyone_left" = "غادر الكُلّ";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Compose Entry Point
+
+"compose.contact.title" = "محادثة";
+"compose.message.title" = "رسالة";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Conversation
+"conversation.invite_more_people.title" = "اُنشر التطبيق!";
+"conversation.invite_more_people.description" = "أضف أشخاص لهذه المحادثة";
+"conversation.invite_more_people.explanation_url" = "https://support.ChatBox.com";
+"conversation.invite_more_people.button_title" = "إضافة أشخاص";
+
+// Conversation names
+"conversation.displayname.emptygroup" = "محادثة جماعية";
+
+"conversation.input_bar.verified" = "تم التحقق";
+"conversation.input_bar.placeholder" = "اكتب رسالة";
+"conversation.input_bar.placeholder_ephemeral" = "رسالة مؤقّتة";
+
+"conversation.input_bar.audio_message.tooltip.pull_send" = "اسحب لأعلى للإرسال";
+"conversation.input_bar.audio_message.tooltip.tap_send" = "اُنقُر للإرسال";
+"conversation.input_bar.audio_message.too_long.title" = "تم إيقاف التسجيل";
+"conversation.input_bar.audio_message.too_long.message" = "Audio messages are limited to %@.";
+"conversation.input_bar.audio_message.send" = "إرسال";
+
+"conversation.input_bar.audio_message.keyboard.record_tip" = "انقر لبدء التسجيل\nبإمكانك %@ بعد ذلك";
+"conversation.input_bar.audio_message.keyboard.filter_tip" = "اختر الفلتر أعلاه";
+
+"conversation.call.many_participants_confirmation.title" = "بدء مكالمة";
+"conversation.call.many_participants_confirmation.message" = "ستتصل بـ%d أشخاص";
+"conversation.call.many_participants_confirmation.call" = "اتصال";
+
+"conversation.connection_view.in_address_book" = "في جهات الاتصال";
+
+"conversation.input_bar.shortcut.send" = "إرسال رسالة";
+"conversation.input_bar.shortcut.edit_last_message" = "تحرير آخر رسالة";
+"conversation.input_bar.shortcut.cancel_editing_message" = "إلغاء";
+
+"conversation.input_bar.message_too_long.title" = "الرسالة طويلة جداً";
+"conversation.input_bar.message_too_long.message" = "يمكنك إرسال رسائل حتى %d حرفاً.";
+
+"conversation.create.group_name.placeholder" = "Group name";
+"conversation.create.guidance.empty" = "At least 1 character";
+"conversation.create.guidance.toolong" = "حروف كثيرة عن الحد";
+"conversation.create.toggle.title" = "Allow guests";
+"conversation.create.toggle.subtitle" = "Open this conversation to people outside your team. You can always change it later.";
+
+"conversation.guests_present" = "Guests are present";
+
+// Image confirmation dialogue
+"image_confirmer.confirm" = "موافق";
+"image_confirmer.cancel" = "إلغاء";
+"image.add_sketch" = "إضافة رسم يدوي";
+"image.edit_image" = "تَعديل الصورة";
+
+// Camera access
+"camera_access.denied" = "ChatBox يحتاج للوصول للكاميرا.";
+"camera_access.denied.instruction" = "";
+"camera_access.denied.open_settings" = "تَفعيلها من إعدادات ChatBox";
+
+// Camera and photos access, keyboard
+"keyboard_photos_access.denied.keyboard.settings" = "الإعدادات";
+"keyboard_photos_access.denied.keyboard.camera_and_photos" = "ChatBox needs access to your\ncamera and photos."; // split text on two lines for a better text balance
+"keyboard_photos_access.denied.keyboard.photos" = "ChatBox يريد الوصول لصورك.";
+"keyboard_photos_access.denied.keyboard.camera" = "ChatBox يريد الوصول للكاميرا.";
+
+// Camera Controls
+"camera_controls.aeaf_lock" = "AE/AF قفل";
+
+// Location
+"location.send_button.title" = "إرسال";
+"location.unauthorized_alert.title" = "تَفعيل خدمات الموقع";
+"location.unauthorized_alert.message" = "لإرسال موقعك، فَعِّل خدمات الموقع لتمكين ChatBox من الوصول لموقعك.";
+"location.unauthorized_alert.cancel" = "إلغاء";
+"location.unauthorized_alert.settings" = "الإعدادات";
+
+// Twitter
+"twitter_status.on_twitter" = "%@ مُتواجد على تويتر";
+
+// Ephemeral message
+"input.ephemeral.timeout.none" = "غير مفعل";
+"input.ephemeral.title" = "اضبط وقت إختفاء الرسالة";
+
+// System messages
+"content.system.you_nominative" = "أنت";
+"content.system.you_dative" = "أنت";
+"content.system.you_accusative" = "أنت";
+
+"content.system.continued_conversation" = "بدأ مُحادثة مع %@";
+
+"content.system.other_started_conversation" = "%@ بدأ مُحادثة مع %@";
+"content.system.you_started_conversation" = "بدأت محادثة مع %@";
+
+"content.system.you_added_participant" = "قمت بإضافة %@";
+"content.system.other_added_participant" = "%@ أضاف %@";
+"content.system.other_added_you" = "%@ أضافك";
+
+"content.system.participants_you" = "أنت";
+"content.system.participants_1_other" = "%@ و %@";
+"content.system.other_left" = "غادر %@";
+"content.system.you_left" = "أنت غادرت";
+"content.system.other_removed_other" = "قام %@ بإزالة %@";
+"content.system.other_removed_you" = "قام %@ بإزالتك";
+"content.system.you_removed_other" = "قمت بإزالة %@";
+
+// New conversation participants added / removed / started system message
+
+"content.system.conversation.other.started" = "%@ بدأ مُحادثة مع %@";
+"content.system.conversation.other.added" = "%@ أضاف %@";
+"content.system.conversation.other.removed" = "قام %@ بإزالة %@";
+"content.system.conversation.other.left" = "غادر %@";
+
+"content.system.conversation.you.started" = "%@ بدأ مُحادثة مع %@";
+"content.system.conversation.you.added" = "%@ أضاف %@";
+"content.system.conversation.you.removed" = "قام %@ بإزالة %@";
+"content.system.conversation.you.left" = "غادر %@";
+"content.system.conversation.team.member-leave" = "حُذِف %@ من الفريق.";
+"content.system.conversation.guest.joined" = "%@ joined";
+
+"content.system.other_renamed_conv_to_nothing" = "حذف %@ اسم المُحادثة";
+"content.system.you_renamed_conv_to_nothing" = "قمت بحذف اسم المُحادثة";
+"content.system.pending_message_timestamp" = "جاري الإرسال...";
+"content.system.message_sent_timestamp" = "أُرسِلت";
+"content.system.message_delivered_timestamp" = "تم التسليم";
+"content.system.failedtosend_message_timestamp" = "فَشِل الإرسال.";
+"content.system.failedtosend_message_timestamp_resend" = "إعادة الإرسال";
+"content.system.failedtosend_message_timestamp_delete" = "حذف";
+"content.system.like_tooltip" = "انقر للإعجاب";
+"content.system.deleted_message_prefix_timestamp" = "حُذِفت: %@";
+"content.system.edited_message_prefix_timestamp" = "Edited: %@";
+"content.system.connecting_to" = "التواصل مع %@\nبدأ مُحادثة";
+"content.system.connected_to" = "تم التواصل مع %@\nبدأ مُحادثة";
+"content.system.other_wanted_to_talk" = "اتصل %@";
+"content.system.you_wanted_to_talk" = "اتّصلت أنت";
+"content.system.ephemeral_time_remaining" = "غادر %@";
+
+"content.system.you_started" = "أنت";
+"content.system.this_device" = "هذا الجهاز";
+
+"content.system.call.you" = "أنت";
+"content.system.call.called" = "اتصل %@";
+"content.system.call.called-you" = "اتصل %@";
+
+"content.system.renamed_conv.title" = "قام %@ بإعادة تسمية المُحادثة";
+"content.system.renamed_conv.title-you" = "قام %@ بإعادة تسمية المُحادثة";
+"content.system.renamed_conv.title.you" = "أنت";
+
+"content.system.conversation.with_name.title" = "%@ started the conversation";
+
+"content.system.conversation.with_name.participants" = "with %@";
+
+"content.system.reactivated_device" = "بدأت استخدام %@ مرة أخرى. الرسائل المُرسلة في ذاك الحين لن تُعرض هنا.";
+
+"content.system.new_device" = "جهاز جديد";
+"content.system.started_using" = "بدأت استخدام";
+"content.system.is_verified" = "تم التّحقق من رمز التشفير";
+
+"content.system.new_users" = "انضمّ مستخدم جديد.";
+"content.system.verify_devices" = "التحقق من الأجهزة";
+
+"content.system.unverified" = "%@ أزال واحدً من %@"; // example "You unverified one of Jule’s devices"
+"content.system.your_devices" = "أجهزتك";
+"content.system.other_devices" = "أجهزة %@";
+
+"content.system.missing_messages.title" = "لم تستخدم هذا الجهاز لمدة. بعض الرسائل لن تظهر هُنَا.";
+"content.system.missing_messages.subtitle_start" = "في هذه الأثناء،";
+
+"content.system.cannot_decrypt" = "لم يتم تلقي رسالة من %@.";
+
+"content.system.cannot_decrypt.you_part" = "أنت";
+"content.system.cannot_decrypt.why_part" = "لماذا؟";
+
+"content.system.cannot_decrypt.identity" = "تغيّرت هوية جهاز %@. رسالة غير مُستلمة.";
+"content.system.cannot_decrypt.identity.you_part" = "الخاص بك";
+"content.system.cannot_decrypt.identity.otherUser_part" = "خاص بـ%@"; // possessive apostrophe - might differ in different languages
+"content.system.cannot_decrypt.identity.why_part" = "معرفة المزيد";
+"content.system.cannot_decrypt.otherDevice_part" = "(جهاز %@)"; // example " (device d1b23c54f34a)".
+// Full sentence: "A message from %@ was not received. [...] (device d1b23c54f34a). This is a debug information.
+
+"content.system.unknown_message.body" = "أنت تستخدم إصدار قديم من ChatBox لا يستطيع عرض هذه الرسالة.";
+"content.system.unknown_message.body.link" = "لِمَ هذا؟";
+
+"content.file.uploading" = "تحميل...";
+"content.file.downloading" = "تنزيل...";
+"content.file.upload_failed" = "فشلت عملية الرفع";
+"content.file.upload_cancelled" = "تم إلغاء الرفع";
+"content.file.upload_video" = "مقاطع فيديو";
+"content.file.take_video" = "تسجيل الفيديو";
+
+"content.file.save_video" = "حفظ";
+"content.file.save_audio" = "حفظ";
+"content.image.save_image" = "حفظ";
+
+"content.message.delete" = "حذف";
+"content.message.save" = "حفظ";
+
+"content.message.like" = "اعجاب";
+"content.message.unlike" = "إلغاء إعجابي";
+"content.message.forward" = "شارك";
+"content.message.go_to_conversation" = "إظهار";
+"content.message.forward.to" = "بحث…";
+"content.message.open" = "افتح";
+
+"content.reactions_list.likers" = "إعجاب من  ";
+
+"content.file.too_big" = "يمكنك إرسال ملفات حتى %@";
+// Someone pinged
+"content.ping.text" = "%1$@ pings";
+
+// Current user pinged
+"content.ping.text.you" = "أنت";
+
+// Inline Player
+"content.player.unable_to_play" = "غير قادر على تشغيل المقطع";
+
+// Connecting (NEW IMPLEMENTATION, REVIEW LATER)
+"connection_request.title" = "الاتصال بـ%@"; // check UPPERCASE implementation in code
+"missive.connection_request.default_message" = "مرحبًا %@،\nلنتواصل عبر ChatBox\n%@";
+
+"connection_request.send_button_title" = "تواصل";
+"inbox.connection_request.connect_button_title" = "تواصل";
+"inbox.connection_request.ignore_button_title" = "تجاهل";
+
+// Voice
+"voice.status.one_to_one.incoming" = "%@\nيتصل";
+"voice.status.group_call.incoming" = "%@\nيرن";
+"voice.status.one_to_one.outgoing" = "%@\nيرن";
+"voice.status.joining" = "%@\nجار الاتصال";
+"voice.status.video_not_available" = "تم إيقاف الفيديو";
+"voice.status.low_connection" = "حالة الإتصال سيئة";
+"voice.network_error.title" = "لا يوجد اتصال بالإنترنت";
+"voice.status.cbr" = "معدل بت ثابت";
+"voice.network_error.body" = "يجب أن تكون متصلا بالإنترنت لتتمكن من إجراء مكالمة. تحقق من الاتصال بالإنترنت وحاول مرة أخرى.";
+"voice.degradation.new_self_device" = "بدأت باستخدام جهاز جديد.";
+"voice.degradation.new_user_device" = "%@ بدأ باستخدام جهاز جديد.";
+"voice.degradation_outgoing.prompt" = "هل ما زلت تريد إجراء المكالمة؟";
+"voice.degradation_incoming.prompt" = "هل ما زلت تريد استقبال المكالمة؟";
+"voice.accept_button.title" = "قبول";
+"voice.decline_button.title" = "رفض";
+"voice.hang_up_button.title" = "إنهاء الاتصال";
+"voice.mute_button.title" = "كتم الصوت";
+"voice.video_button.title" = "فيديو";
+"voice.speaker_button.title" = "مكبّر الصوت";
+"voice.cancel_button.title" = "إلغاء";
+"voice.call_button.title" = "اتصال";
+
+"voice.alert.call_in_progress.title" = "يتم إجراء المكالمة";
+"voice.alert.call_in_progress.message" = "تستطيع إجراء مكالمة واحدة فقط في نفس الوقت";
+"voice.alert.call_in_progress.confirm" = "موافق";
+
+"voice.alert.microphone_warning.title" = "ChatBox يحتاج للوصول للميكرفون.";
+"voice.alert.microphone_warning.explanation" = "تَفعيلها من إعدادات ChatBox.";
+
+"voice.alert.camera_warning.title" = "ChatBox يحتاج للوصول للكاميرا.";
+"voice.alert.camera_warning.explanation" = "اسمح لـChatBox بالوصول للكاميرا من الإعدادات.";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Profile and Participants
+
+"participants.add_people_button_title" = "إضافة";
+"participants.avatar.guest.title" = "ضيف";
+
+"participants.title" = "التفاصيل";
+"participants.section.participants" = "People (%d)";
+"participants.section.services" = "Services (%d)";
+"participants.footer.add_title" = "Add Participants";
+
+// Meta Menu
+"meta.menu.rename" = "إعادة التّسمية";
+"meta.menu.leave" = "غادر";
+"meta.menu.archive" = "حفظ في الأرشيف";
+"meta.menu.unarchive" = "إلغاء الأرشفة";
+"meta.menu.delete" = "حذف";
+"meta.menu.silence.mute" = "كتم الصوت";
+"meta.menu.silence.unmute" = "إلغاء كتم الصوت";
+"meta.menu.cancel" = "إلغاء";
+"meta.menu.cancel_connection_request" = "تم إلغاء الطلب";
+
+// Delete conversation
+"meta.menu.delete_content.dialog_title" = "حذف المحتوى؟";
+"meta.menu.delete_content.dialog_message" = "This will clear the conversation history on all your devices.";
+"meta.menu.delete_content.leave_as_well_message" = "غادر المحادثة أيضا";
+"meta.menu.delete_content.button_cancel" = "إلغاء";
+"meta.menu.delete_content.button_delete" = "حذف";
+"meta.menu.delete_content.button_delete_and_leave" = "Delete and leave";
+
+// Leave conversation
+"meta.leave_conversation_dialog_title" = "مُغادرة المُحادثة؟";
+"meta.leave_conversation_dialog_message" = "سيتم إبلاغ المشاركين وحذف المحادثة من قائمتك.";
+"meta.leave_conversation.delete_content_as_well_message" = "وحذف مُحتواها";
+"meta.leave_conversation_button_cancel" = "إلغاء";
+"meta.leave_conversation_button_leave" = "غادر";
+"meta.leave_conversation_button_leave_and_delete" = "Leave and delete content";
+
+// Conversation Degraded (security level lowered)
+"meta.degraded.degradation_reason_message.singular" = "%@ بدأ باستخدام جهاز جديد.";
+"meta.degraded.degradation_reason_message.plural" = "%@ بدأ باستخدام جهاز جديد.";
+"meta.degraded.dialog_message" = "ألا زلت تريد إرسال رسالتك؟";
+"meta.degraded.show_device_button" = "اعرض الجهاز";
+"meta.degraded.send_anyway_button" = "أرسل على أي حال";
+"meta.degraded.cancel_sending_button" = "إلغاء";
+
+// Remove from conversation dialogue
+"profile.remove_dialog_title" = "إزالة؟";
+"profile.remove_dialog_message" = "لن يتمكن %@ من إرسال أو إستقبال رسائل في هذه المُحادثة.";
+"profile.remove_dialog_button_cancel" = "إلغاء";
+"profile.remove_dialog_button_remove" = "إزالة";
+
+// Block dialog
+"profile.block_dialog.title" = "حظر؟\n";
+"profile.block_dialog.message" = "لن يتمكن %@ من التواصل معك أو إضافتك إلى محادثات جماعية.";
+"profile.block_dialog.button_cancel" = "إلغاء";
+"profile.block_dialog.button_block" = "حظر \n";
+
+// Delete message dialog
+"message.delete_dialog.message" = "لا يمكن التراجع عن هذا بعد القيام به";
+"message.delete_dialog.action.cancel" = "إلغاء";
+"message.delete_dialog.action.hide" = "حذف بالنسبة لي";
+"message.delete_dialog.action.delete" = "حذف للجميع";
+
+// Edit message
+"message.menu.edit.title" = "تعديل";
+
+// Accept connection request
+"profile.connection_request_dialog.title" = "قبول؟";
+"profile.connection_request_dialog.message" = "سوف يتم توصيلك وبدأ مُحادثة مع %@.";
+"profile.connection_request_dialog.button_cancel" = "تجاهل";
+"profile.connection_request_dialog.button_connect" = "تواصل";
+
+// Cancel connection request
+"profile.cancel_connection_request_dialog.title" = "الغاء الطّلب؟";
+"profile.cancel_connection_request_dialog.message" = "حذف طلب الإتصال مع %@.";
+"profile.cancel_connection_request_dialog.button_no" = "لا";
+"profile.cancel_connection_request_dialog.button_yes" = "نعم";
+
+// Unblock button
+"profile.unblock_button_title" = "إلغاء حظر";
+
+"profile.cancel_connection_button_title" = "إلغاء الطلب";
+"profile.connection_request_state.blocked" = "حظر";
+"profile.create_conversation_button_title" = "إنشاء مجموعة";
+"profile.open_conversation_button_title" = "افتح المحادثة";
+
+// User Details
+"profile.details.title" = "التفاصيل";
+"profile.details.guest" = "ضيف";
+
+"profile_view.accessibility.handle" = "مُعرّف";
+"profile_view.accessibility.name" = "اسم العرض";
+"profile_view.accessibility.team_name" = "اسم الفريق";
+
+// Device list
+"profile.devices.title" = "الأجهزة";
+"profile.devices.fingerprint_message_unencrypted" = "يستخدم %@ نسخة قديمة من ChatBox. لا توجد أجهزة معروضة هنا.";
+"profile.devices.fingerprint_message" = "يعطي ChatBox كل جهاز بصمة فريدة.\nقارنها مع %@ للتحقق من مُحادثتك.\nلِمَ أتحقق من مُحادثاتي؟";
+"profile.devices.fingerprint_message.link" = "لِمَ أتحقق من مُحادثاتي؟";
+
+// Device detail
+"profile.devices.detail.verify_message" = "تحقق أن هذه البصمة تتطابق مع المعروضة على جهاز %@.";
+"profile.devices.detail.verify_message.link" = "كيف أفعل ذلك؟";
+"profile.devices.detail.show_my_device.title" = "اعرض بصمة جهازي";
+"device.verified" = "تم التحقق";
+"device.not_verified" = "لم يتم التحقق منه";
+"device.class.desktop" = "سطح المكتب";
+"device.class.tablet" = "الجهاز اللوحي";
+"device.class.phone" = "الهاتف";
+"profile.devices.detail.reset_session.title" = "إعادة تعيين الجلسة";
+
+// General strings
+"general.confirm" = "موافق";
+
+// Bot
+"participants.services.remove_integration.button" = "remove integration";
+
+// Group details
+"group_details.guest_options_cell.title" = "Guest Options";
+"group_details.guest_options_cell.enabled" = "On";
+"group_details.guest_options_cell.disabled" = "غير مفعل";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Self profile
+// Options menu contents
+
+"self.settings" = "الإعدادات";
+"self.profile" = "الملف الشخصي";
+"self.account" = "الحساب";
+"self.help_center" = "الدعم";
+"self.help_center.support_website" = "الموقع الإلكتروني للدعم في واير ";
+"self.help_center.contact_support" = "اتصل بالدعم";
+"self.about" = "عن";
+"self.sign_out" = "تسجيل الخروج";
+"self.report_abuse" = "بلغ عن إساءة الاستخدام";
+"self.voiceover.label" = "الملف الشخصي";
+"self.voiceover.hint" = "فتح الملف والإعدادات";
+"self.new-device.voiceover.label" = "الملف، أجهزة مضافة جديدة";
+
+"self.add_phone_number" = "أضف رقم الهاتف";
+"self.add_email_password" = "إضافة عنوان البريد الإلكتروني وكلمة المرور";
+
+// About screen
+"about.tos.title" = "شروط الاستخدام";
+"about.privacy.title" = "سياسة الخصوصية";
+"about.license.title" = "معلومات عن الترخيص";
+"about.website.title" = "الموقع الإلكتروني ل واير";
+"about.copyright.title" = "© ChatBox Swiss GmbH";
+
+// Self new devices
+"self.new_device_alert.title" = "قمت بربط %@ لحسابك في ChatBox";
+"self.new_device_alert.title_prefix.tablet" = "جهاز لوحي";
+"self.new_device_alert.title_prefix.phone" = "هاتف";
+"self.new_device_alert.title_prefix.devices" = "أجهزة %d";
+"self.new_device_alert.message" = "%@\n\nإذا لم يكن أنت من فعل هذا، أزل الجهاز وأعد تعيين كلمة المرور.";
+"self.new_device_alert.message_plural" = "%@\n\nإذا لم تفعل ذلك، أزل هذه الأجهزة وقُم بتعيين كلمة المرور.";
+"self.new_device_alert.manage_devices" = "إدارة الأجهزة";
+"self.new_device_alert.trust_devices" = "موافق";
+
+// Settings - top level
+"self.settings.create_team.title" = "إنشاء فريق";
+"self.settings.manage_team.title" = "إدارة الفريق";
+"self.settings.add_team_or_account.title" = "فريق أو حساب جديد";
+"self.settings.add_account.title" = "إضافة حساب";
+
+"self.settings.add_account.error.title" = "ثلاث حساب نشطة";
+"self.settings.add_account.error.message" = "بإمكانك تسجيل الدخول بثلاث حسابات في المرة الواحدة. اخرج من أحدهم لتضيف آخر.";
+
+// Settings - Account details
+"self.settings.account_section" = "الحساب";
+
+"self.settings.account_details_group.info.title" = "معلومات";
+"self.settings.account_details_group.personal.title" = "شخصي";
+
+"self.settings.account_section.name.title" = "الاسم";
+"self.settings.account_section.email.title" = "البريد الإلكتروني";
+"self.settings.account_section.phone.title" = "الهاتف";
+"self.settings.account_section.handle.title" = "مُعرّف";
+"self.settings.account_section.add_handle.title" = "أضف مُعرّف";
+
+"self.settings.account_details_group.info.footer" = "سيتمكن الناس من ايجادك من خلال هذه التفاصيل.";
+"self.settings.account_details_group.personal.footer" = "هذه المعلومة غير مرئيّة.";
+
+"self.settings.account_details.remove_device.title" = "إزالة الجهاز";
+"self.settings.account_details.key_fingerprint.title" = "مفتاح البصمة";
+"self.settings.account_details.remove_device.message" = "كلمة مرورك مطلوبة لحذف هذا الجهاز";
+"self.settings.account_details.remove_device.password" = "كلمة المرور";
+"self.settings.account_details.remove_device.password.error" = "كلمة مرور خاطئة";
+
+"self.settings.account_appearance_group.title" = "المظهر";
+"self.settings.account_picture_group.picture" = "الصورة";
+"self.settings.account_picture_group.color" = "اللون";
+
+"self.settings.account_picture_group.theme" = "ثيم غامق";
+
+"self.settings.device_details.fingerprint.subtitle" = "واير يعطي كل جهاز بصمة فريدة. قم بمقارنة البصمات و تحقق من أجهزتك و محادثاتك.";
+"self.settings.device_details.reset_session.subtitle" = "في حالة عدم تطابق بصمات الأجهزة، أعد تعيين الجلسة لإنشاء مفاتيح تشفير جديدة على كلا الجانبين.";
+"self.settings.device_details.remove_device.subtitle" = "أزل هذا الجهاز في حال لم تعد تستخدمه.\nسوف يتم تسجيل خروجك من هذا الجهاز فورًا.";
+"self.settings.device_details.reset_session.success" = "تم إعادة تعيين الجلسة";
+
+"self.settings.account_details.actions.title" = "الإجراءات";
+
+"self.settings.account_details.delete_account.title" = "حذف الحساب";
+
+"self.settings.account_details.delete_account.alert.title" = "حذف الحساب";
+"self.settings.account_details.delete_account.alert.message" = "سوف نرسل لك رسالة عبر البريد الإلكتروني أو في رسالة قصيرة.\nاتّبع التعليمات في الرابط لحذف حسابك بشكل دائم.";
+
+"self.settings.account_details.log_out.alert.title" = "تسجيل الخروج";
+"self.settings.account_details.log_out.alert.message" = "ستمسح محفوظات رسائلك على هذا الجهاز.";
+
+
+// Change Username
+
+"self.settings.account_section.handle.change.title" = "مُعرّف";
+"self.settings.account_section.handle.change.save" = "حفظ";
+"self.settings.account_section.handle.change.footer" = "على الأقلّ محرفين. a–z, 0–9 و _ فقط.";
+"self.settings.account_section.handle.change.footer.unavailable" = "تمّ استخدامه";
+
+"self.settings.account_section.handle.change.failure_alert.title" = "تعذَّر تعيين المُعرّف";
+"self.settings.account_section.handle.change.failure_alert.message" = "حدث خطأ في إعداد مُعرّفك. من فضلك حاول مرة أخرى.";
+
+// Change Email
+
+"self.settings.account_section.email.change.title" = "البريد الإلكتروني";
+"self.settings.account_section.email.change.save" = "حفظ";
+
+"self.settings.account_section.email.change.verify.title" = "تأكيد البريدالإلكتروني";
+"self.settings.account_section.email.change.verify.description" = "تحقق من بريدك الإلكتروني الوارد واتبع الإرشادات التي تظهر.";
+"self.settings.account_section.email.change.verify.resend" = "إعادة الإرسال إلى %@";
+
+"self.settings.account_section.email.change.resend.title" = "تمّت إعادة إرسال البريد";
+"self.settings.account_section.email.change.resend.message" = "تم إعادة إرسال رسالة التأكيد إلى %@. تحقق من صندوق الوارد واتّبع الإرشادات.";
+
+// Change Phone Number
+
+"self.settings.account_section.phone_number.change.title" = "الهاتف";
+"self.settings.account_section.phone_number.change.save" = "حفظ";
+"self.settings.account_section.phone_number.change.remove" = "إزالة رقم الهاتف";
+
+"self.settings.account_section.phone_number.change.remove.action" = "إزالة رقم الهاتف";
+
+"self.settings.account_section.phone_number.change.verify.save" = "حفظ";
+"self.settings.account_section.phone_number.change.verify.title" = "تحقق";
+"self.settings.account_section.phone_number.change.verify.description" = "أدخل رمز التحقق الذي أرسلناه إلى: %@.";
+
+"self.settings.account_section.phone_number.change.verify.code_placeholder" = "أدخل الرمز";
+"self.settings.account_section.phone_number.change.verify.resend" = "إعادة إرسال الرمز";
+"self.settings.account_section.phone_number.change.verify.resend_description" = "لم يظهر لك الرمز؟\nبإمكانك طلب رمز جديد كل ٣٠ ثانية.";
+
+"self.settings.account_section.phone_number.change.resend.title" = "تمت إعادة إرسال الرمز";
+"self.settings.account_section.phone_number.change.resend.message" = "تمّ إرسال رمز التحقق إلى %@.";
+
+// Chat alerts
+"self.settings.notifications.push_notification.title" = "إشعارات";
+"self.settings.notifications.push_notification.toogle" = "استعراض الرسائل";
+"self.settings.notifications.push_notification.footer" = "اسم المُرسل ورسالته في قفل الشاشة وفي مركز الإشعارات.";
+
+"self.settings.notifications.chat_alerts.toggle" = "شارة الرسالة";
+"self.settings.notifications.chat_alerts.footer" = "رسائل جديدة في مُحادثات أخرى.";
+
+"self.settings.sound_menu.sounds.title" = "الأصوات";
+"self.settings.sound_menu.ringtone.title" = "نغمة الرنين";
+"self.settings.sound_menu.message.title" = "نغمة التنبيه";
+"self.settings.sound_menu.ping.title" = "بينغ";
+"self.settings.sound_menu.ringtones.title" = "النغمات";
+"self.settings.sound_menu.sounds.wire_sound" = "ChatBox";
+"self.settings.sound_menu.sounds.none" = "لا شيء";
+
+"self.settings.callkit.title" = "المكالمات";
+"self.settings.callkit.caption" = "مشاركة بواسطة iOS";
+"self.settings.callkit.description" = "إظهار مكالمات ChatBox على شاشة القفل وفي سجّل مكالمات الهاتف. في حال تفعيل iCloud، سيتم مشاركة سجّل المكالمات مع Apple.";
+
+"self.settings.vbr.title" = "ترميز بمعدل بت متغير";
+"self.settings.vbr.description" = "هذا يجعل المكالمات الصوتية تستهلك بيانات أقل وتعمل بشكل أفضل على الشبكات الأبطأ. أوقفه لتستخدم ترميز ذو معدل بت ثابت.";
+
+"self.settings.sound_menu.sounds.wire_call" = "مُكالمة ChatBox";
+"self.settings.sound_menu.sounds.wire_message" = "رسالة ChatBox";
+"self.settings.sound_menu.sounds.wire_ping" = "رنين ChatBox";
+
+// By popular demand
+"self.settings.popular_demand.title" = "الأكثر شعبية";
+"self.settings.popular_demand.send_button.title" = "زر الإرسال";
+"self.settings.popular_demand.send_button.footer" = "عطّله لتستخدم زر لوحة المفاتيح.";
+
+// Open in
+"self.settings.external_apps.header" = "فتح باستخدام";
+
+"self.settings.link_options.twitter.title" = "غرّد";
+"self.settings.link_options.maps.title" = "مواقع";
+"self.settings.link_options.browser.title" = "المُتصفّح";
+
+"open_link.twitter.option.default" = "سفاري / تويتر";
+"open_link.twitter.option.tweetbot" = "Tweetbot";
+"open_link.twitter.option.twitterrific" = "Twitterrific";
+
+"open_link.maps.option.apple" = "خرائط";
+"open_link.maps.option.google" = "خرائط جوجل";
+
+"open_link.browser.option.safari" = "سفاري";
+"open_link.browser.option.chrome" = "جوجل كروم";
+"open_link.browser.option.firefox" = "فيرفكس";
+
+// Sound alerts (TO BE UPDPATED)
+"self.settings.sound_menu.title" = "التنبيهات الصوتية";
+"self.settings.sound_menu.no_sounds.title" = "لا شيء";
+"self.settings.sound_menu.all_sounds.title" = "الجميع";
+"self.settings.sound_menu.mute_while_talking.title" = "First message and pings";
+
+// Developer options
+"self.settings.developer_options.title" = "خيارات مطور البرامج";
+"self.settings.apns_logging.title" = "APNS Logging";
+
+// Privacy (visibility) options
+"self.settings.options_menu.title" = "الخيارات";
+
+"self.settings.privacy_contacts_section.title" = "جهات الاتصال";
+"self.settings.privacy_contacts_menu.settings_button.title" = "فتح إعدادات جهات الإتصال";
+"self.settings.privacy_contacts_menu.description_disabled.title" = "يُساعدك هذا بالاتصال بالآخرين. نقوم بتمهية كل المعلومات ولا نشاركها مع أحد. اسمح بالوصول عبر الإعدادات > الخصوصية > جهات الاتصال.";
+
+"self.settings.privacy_security.lock_app" = "قفل برمز المرور";
+"self.settings.privacy_security.lock_app.subtitle" = "قفل ChatBox بعد ١٠ ثواني في الخلفية.\nفك القفل بإستخدام Touch ID أو أدخل رمز المرور.";
+"self.settings.privacy_security.lock_app.description" = "إلغاء تأمين ChatBox";
+
+"self.settings.privacy_security.lock_cancelled.description" = "فتح قفل ChatBox بإستخدام Touch ID أو رمز الدخول";
+"self.settings.privacy_security.lock_cancelled.action" = "فتح القفل";
+
+"self.settings.privacy_security.disable_link_previews.title" = "إنشاء معاينات للروابط";
+"self.settings.privacy_security.disable_link_previews.footer" = "قد تظهر المعاينات للروابط من الأشخاص الآخرين.";
+
+"self.settings.privacy_analytics_menu.devices.title" = "الأجهزة";
+
+"self.settings.privacy_analytics_section.title" = "تقارير الإستخدام والأعطال";
+"self.settings.privacy_analytics.title" = "أرسل بيانات كمجهول";
+"self.settings.privacy_analytics_menu.description.title" = "اجعل ChatBox أفضل عبر إرسال معلومات مُموّهة.\n";
+
+"self.settings.privacy.clear_history.title" = "مسح التاريخ";
+"self.settings.privacy.clear_history.subtitle" = "سيؤدي هذا إلى محو محتوى جميع المحادثات الخاصة بك بشكل دائم.";
+
+"self.settings.advanced.title" = "متقدم";
+"self.settings.advanced.troubleshooting.title" = "اكتشاف الأخطاء وإصلاحها";
+"self.settings.advanced.troubleshooting.submit_debug.title" = "Calling Debug تقرير";
+"self.settings.advanced.troubleshooting.submit_debug.subtitle" = "هذه المعلومات تساعد ChatBox Support في تشخيص مشاكل الاتصال.";
+"self.settings.advanced.reset_push_token.title" = "إعادة تعيين أذون تدفق الإشعارات";
+"self.settings.advanced.reset_push_token.subtitle" = "في حال وجود مشكلة في تدفق الإشعارات، من المحتمل أن يخبرك ChatBox Support بإعادة تعيين هذه الأذون.";
+"self.settings.advanced.reset_push_token_alert.title" = "تم إعادة تعيين أذون التدفق";
+"self.settings.advanced.reset_push_token_alert.message" = "سيتم إستعادة الإشعارات خلال ثوانٍ.";
+"self.settings.advanced.version_technical_details.title" = "نسخة التفاصيل الفنية";
+
+// Technical Report
+"self.settings.technical_report_section.title" = "تقرير فني";
+"self.settings.technical_report.send_report" = "أرسل تقرير لـChatBox";
+"self.settings.technical_report.mail.recipient" = "callingsupport@ChatBox.com";
+"self.settings.technical_report.mail.subject" = "تقرير اتصال ChatBox";
+"self.settings.technical_report.include_log" = "تضمين سجل مُفصّل";
+"self.settings.technical_report.privacy_warning" = "السّجلات المفصّلة قد تضمّن بيانات شخصيّة";
+"self.settings.technical_report.no_mail_alert" = "No mail client detected. Tap \"OK\" and send logs manually to: ";
+
+// Password reset
+"self.settings.password_reset_menu.title" = "إعادة تعيين كلمة المرور";
+
+// Invite from Settings
+"self.settings.invite_friends.title" = "دعوة أُناس";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// System status
+"system_status_bar.no_internet.title" = "لا يوجد إنترنت";
+"system_status_bar.no_internet.explanation" = "يبدو أن هناك مشكلة في اتصالك بالإنترنت. من فضلك تأكد من عمل الاتصال.";
+"system_status_bar.poor_connectivity.title" = "اتصال سيّء، لا يمكن إجراء مُكالمة الآن";
+"system_status_bar.poor_connectivity.explanation" = "لا نستطيع أن نضمن لك جودة الاتصال. اتصل من خلال Wi-Fi او حاول تغيير موقعك.";
+
+// View user profile and options menu & text field validation
+"name.placeholder" = "اسمك الكامل";
+"name.guidance.tooshort" = "استخدام على الأقل حرفين";
+"name.guidance.toolong" = "حروف كثيرة عن الحد";
+
+"email.placeholder" = "البريد الإلكتروني";
+"email.guidance.invalid" = "عنوان البريد إلكتروني غير فعال";
+"email.guidance.tooshort" = "Email is too short";
+"email.guidance.toolong" = "حروف كثيرة عن الحد";
+
+"password.placeholder" = "كلمة المرور";
+"password.guidance.tooshort" = "8 أحرف على الأقل";
+"password.guidance.toolong" = "حروف كثيرة عن الحد";
+
+// Landing screen
+
+"landing.title" = "Encrypt world communication freedom.";
+"landing.create_account.title" = "إنشاء حساب";
+"landing.create_account.subtitle" = "للاستخدام الشخصي";
+"landing.create_team.title" = "إنشاء فريق";
+"landing.create_team.subtitle" = "للعمل";
+"landing.login.hints" = "لديك حساب بالفعل ؟";
+"landing.login.button.title" = "تسجيل الدخول";
+
+// Create team
+
+"team.name.headline" = "سمّ فريقك";
+"team.name.subheadline" = "بإمكانك تغييره لاحقًا.";
+"team.name.textfield.placeholder" = "اسم الفريق";
+"team.name.textfield.accessibility" = "ضع اسم للفريق";
+"team.name.whatiswireforteams" = "What is ChatBox for teams?";
+
+"team.email.headline" = "حسابك";
+"team.email.subheadline" = "Enter your work email address.";
+"team.email.textfield.placeholder" = "you@yourcompany.com";
+"team.email.textfield.accessibility" = "ايميل الشركه";
+"team.email.button.learn_more" = "معرفة المزيد";
+
+"team.activation_code.headline" = "لديك رسالة";
+"team.activation_code.subheadline" = "أدخل رمز التحقق الذي أرسلناه إلى: %@.";
+"team.activation_code.button.resend" = "إعادة إرسال الرمز";
+"team.activation_code.button.change_email" = "تغيير البريد الإلكتروني";
+
+"team.full_name.headline" = "اسمُك";
+"team.full_name.textfield.placeholder" = "الاسم الكامل";
+"team.full_name.textfield.accessibility" = "Set full name";
+
+"team.password.headline" = "تعيين كلمة السر";
+"team.password.textfield.placeholder" = "8 أحرف على الأقل";
+"team.password.textfield.accessibility" = "Set password, at least 8 characters";
+
+
+"team.email_code.input_field.accessbility_label" = "Please enter the six-digit code from the email.";
+
+// Invite Team Members
+
+"team.invite.header.title" = "Build your team";
+"team.invite.header.subtitle" = "Invite your colleagues to join.";
+"team.invite.textfield.placeholder" = "colleague@yourcompany.com";
+"team.invite.textfield.accesibility" = "Enter e-mail address for colleague to invite.";
+"team.invite.learn_more.title" = "معرفة المزيد";
+"team.invite.top_bar.skip" = "Skip";
+"team.invite.top_bar.done" = "Done";
+
+// Team Invite Errors
+"team.invite.error.generic" = "حدث خطأ ما، برجاء إعادة المحاولة";
+"team.invite.error.already_registered" = "This email address is already in use";
+"team.invite.error.already_invited" = "This email has already been invited";
+"team.invite.error.too_many_invitations" = "The maximum number of invitations has been sent";
+"team.invite.error.no_internet" = "No internet connection";
+
+// Guest Room
+
+"guest_room.allow_guests.title" = "Allow guests";
+"guest_room.allow_guests.subtitle" = "Open this conversation to people outside your team.";
+"guest_room.remove_guests.message" = "Current guests will be removed from the conversation. New guests will not be allowed.";
+"guest_room.remove_guests.action" = "Remove Guests";
+"guest_room.revoke_link.message" = "New guests will not be able to join with this link. Current guests will still have access.";
+"guest_room.revoke_link.action" = "Revoke Link";
+
+"guest_room.error.generic.title" = "Something went wrong";
+"guest_room.error.generic.message" = "Check your connection and try again";
+
+// Registration
+
+"registration.title" = "تسجيل";
+"registration.close_email_invitation_button.email_title" = "استخدام بريد إلكتروني آخر";
+"registration.close_email_invitation_button.phone_title" = "تسجيل بواسطة رقم الهاتف";
+"registration.close_phone_invitation_button.email_title" = "تسجيل بواسطة بريد إلكتروني";
+"registration.close_phone_invitation_button.phone_title" = "استخدام رقم هاتف آخر";
+
+"registration.enter_phone_number.title" = "تعديل رقم الهاتف";
+"registration.enter_phone_number.placeholder" = "رقم الهاتف";
+
+"registration.verify_phone_number.instructions" = "أدخل رمز التّحقق الذي أُرسل لـ%@";
+"registration.verify_phone_number.resend" = "إعادة الإرسال";
+"registration.verify_phone_number.resend_placeholder" = "لم يظهر لك الرمز؟\nبإمكانك طلب رمز جديد خلال %.0f ثانية";
+
+"registration.verify_email.instructions" = "قمنا بإرسال رسالة لـ %@.\nتتبع الرابط لتأكيد بريدك الإلكتروني.";
+"registration.verify_email.resend.instructions" = "لم تستلم الرسالة؟";
+"registration.verify_email.resend.button_title" = "إعادة إرسال";
+
+"registration.select_picture.subtitle" = "واير أجمل بكثير مع صورة.";
+"registration.select_picture.button_title" = "اختيار الخاصة بك";
+"registration.keep_picture.button_title" = "إبقاء هذه";
+"registration.camera_action.title" = "إلتقط صورة";
+"registration.photo_gallery_action.title" = "إختيار صورة";
+"registration.cancel_action.title" = "إلغاء";
+
+"registration.no_history.hero" = "أنها المرة الأولى التي تستخدم فيها واير على هذا الجهاز.";
+"registration.no_history.subtitle" = "لأسباب تتعلق بالخصوصية، لن يظهر تاريخ المحادثات الخاصة بك هنا.";
+"registration.no_history.got_it" = "موافق";
+
+"registration.no_history.logged_out.hero" = "قمت بإستخدام ChatBox على هذا الجهاز من قبل.";
+"registration.no_history.logged_out.subtitle" = "الرسائل المُرسلة خلال ذلك الحين لن تظهر هنا.";
+"registration.no_history.logged_out.got_it" = "موافق";
+
+"registration.enter_name.title" = "تعديل الاسم";
+"registration.enter_name.hero" = "ماذا يجب أن نسميك؟";
+"registration.enter_name.placeholder" = "اسمك الكامل";
+
+"registration.terms_of_use.title" = "مرحبًا بك في ChatBox.";
+"registration.terms_of_use.terms" = "في حال الاستمرار أنت توافق على شروط استخدام ChatBox.";
+"registration.terms_of_use.terms.link" = "شروط الاستخدام";
+"registration.terms_of_use.agree" = "أُوافق";
+
+"registration.terms_of_use.terms.title" = "شروط الاستخدام";
+"registration.terms_of_use.terms.message" = "Please accept the Terms of Use to continue.";
+"registration.terms_of_use.terms.view" = "عرض";
+"registration.terms_of_use.accept" = "قبول";
+
+"registration.email_flow.title" = "تسجيل بواسطة بريد إلكتروني";
+"registration.email_flow.email_step.title" = "تعديل التفاصيل";
+
+"registration.country_select.title" = "البلد";
+
+"registration.share_contacts.hero.title" = "إيجاد أُناس على ChatBox";
+"registration.share_contacts.hero.paragraph" = "اسمح لـChatBox بالوصول لجهات الإتصال الخاصة بك حتى تتمكن من التواصل مع الآخرين. نحن نحفظ سرية معلوماتك ولا نتشاركها من أحد آخر.";
+"registration.share_contacts.find_friends_button.title" = "مشاركة جهات الاتصال";
+"registration.share_contacts.skip_button.title" = "ليس الآن";
+
+"registration.address_book_access_denied.hero.title" = "لا يملك ChatBox صلاحية الوصول لجهات اتصالك.";
+"registration.address_book_access_denied.hero.paragraph1" = "يساعدك ChatBox في العثور على أصدقائك عند مشاركة جهات اتصالك.";
+"registration.address_book_access_denied.hero.paragraph2" = "لتمكين الوصول اذهب للإعدادات وقم بتفعيله.";
+"registration.address_book_access_denied.settings_button.title" = "الإعدادات";
+"registration.address_book_access_denied.maybe_later_button.title" = "ربما في وقت لاحق";
+
+"registration.push_access_denied.hero.title" = "لا تُفَوّت أي مُكالمة أو رسالة.";
+"registration.push_access_denied.hero.paragraph1" = "فعّل الإشعارات من الإعدادات.";
+"registration.push_access_denied.settings_button.title" = "اذهب للإعدادات";
+"registration.push_access_denied.maybe_later_button.title" = "ربما في وقت لاحق";
+
+"registration.signin.title" = "تسجيل الدخول";
+"registration.signin.too_many_devices.title" = "";
+"registration.signin.too_many_devices.subtitle" = "قم بإزالة أحد الأجهزة الأخرى الخاصة بك لبدء استخدام واير على هذا الجهاز.";
+"registration.signin.too_many_devices.manage_button.title" = "إدارة الأجهزة";
+"registration.signin.too_many_devices.sign_out_button.title" = "تسجيل الخروج";
+"registration.signin.email_button.title" = "البريد الإلكتروني";
+"registration.signin.phone_button.title" = "الهاتف";
+
+"registration.signin.alert.password_needed.title" = "Password needed";
+"registration.signin.alert.password_needed.message" = "Please enter your Password in order to log in.";
+
+"registration.devices.title" = "الأجهزة";
+"registration.devices.active_list_header" = "نشط";
+"registration.devices.current_list_header" = "الحالي";
+"registration.devices.active_list_subtitle" = "إذا كنت لا تتعرف على الجهاز أعلاه، قم بإزالته وإعادة تعيين كلمة المرور الخاصة بك.";
+"registration.devices.activated_in" = "تم تنشيطه في";
+"registration.devices.id" = "المُعرّف:";
+
+"signin.forgot_password" = "نسيتَ كلمة المرور؟";
+
+"registration.add_phone_number.hero.title" = "أضف رقم الهاتف";
+"registration.add_phone_number.hero.paragraph" = "يساعدنا هذا على إيجاد أشخاص لربما تعرفهم. نحن لا نشارك هذه المعلومات.";
+"registration.add_phone_number.skip_button.title" = "ليس الآن";
+
+"registration.add_email_password.hero.title" = "قم بإضافة عنوان بريدك الإلكتروني وكلمة مرور.";
+"registration.add_email_password.hero.paragraph" = "هذا يمكنك من استخدام واير على أجهزة متعددة.";
+
+"registration.email_invitation.title" = "دعوة";
+"registration.email_invitation.hero.title" = "مرحبًا، %@";
+"registration.email_invitation.hero.paragraph" = "اختر كلمة مرور لإنشاء الحساب الخاص بك.";
+
+"registration.phone_invitation.title" = "دعوة";
+"registration.phone_invitation.hero.title" = "مرحبًا، %@";
+"registration.phone_invitation.hero.paragraph" = "أنت على بعد خطوة واحدة من إنشاء حسابك الخاص.";
+
+"error.name_and_email" = "الرجاء إدخال اسمك الكامل وعنوان بريد إلكتروني صحيح";
+"error.full_name" = "ادخل اسمك الكامل";
+"error.email" = "الرجاء إدخال عنوان بريد إلكتروني صالح.";
+"error.input.too_long" = "المُدخل طويل جدًا";
+"error.input.too_short" = "المُدخل قصير جداً";
+"error.email.invalid" = "الرجاء إدخال عنوان بريد إلكتروني صالح.";
+"error.phone.invalid" = "الرجاء إدخال رقم هاتف صحيح";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Username takeover screen
+"registration.select_handle.takeover.subtitle" = "أعلن معرّفك الفريد على ChatBox.";
+"registration.select_handle.takeover.subtitle_link" = "معرفة المزيد";
+
+"registration.select_handle.takeover.choose_own" = "اختر الخاص بك";
+"registration.select_handle.takeover.keep_suggested" = "إبقاء هذه";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ZMUserSessionErrorCode mapping. Used during registration and profile edit
+"error.user.unkown_error" = "حدث خطأ ما، برجاء إعادة المحاولة";
+"error.user.needs_credentials" = "الرجاء التحقق من التفاصيل الخاصة بك وحاول مرة أخرى.";
+"error.user.invalid_credentials" = "الرجاء التحقق من التفاصيل الخاصة بك وحاول مرة أخرى.";
+"error.user.account_pending_activation" = "الحساب الذي تحاول الوصول له في انتظار التفعيل. من فضلك تحقق من التفاصيل.";
+"error.user.network_error" = "يبدو أن هناك مشكلة في شبكة اتصالك. الرجاء المحاولة مرة أخرى لاحقاً.";
+"error.user.email_is_taken" = "البريد الإلكتروني المُدخل تم استخدامه بالفعل. الرجاء استخدام بريد إلكتروني مختلف.";
+"error.user.phone_is_taken" = "رقم الهاتف الذي أعطيته تم تسجيله من قبل. الرجاء حاول مرة أخرى.";
+"error.user.phone_code_invalid" = "الرجاء ادخال رمز صحيح";
+"error.user.phone_code_too_many" = "لقد قمنا بإرسال رمز إليك عبر رسالة قصيرة . انقر فوق إعادة إرسال بعد 10 دقائق للحصول على رمز جديد.";
+"error.user.registration_unknown_error" = "حدث خطأ ما. برجاء إعادة المحاولة.";
+"error.user.device_deleted_remotely" = "قمت بتسجيل خروج من جهاز آخر.";
+"error.user.last_identity_cant_be_deleted" = "مطلوب إمّا عنوان بريد إلكتروني أو رقم هاتف.";
+"error.user.account_suspended" = "لم يعد مصرّحًا لهذا الحساب بتسجيل الدخول.";
+"error.user.account_limit_reached" = "لا يمكنك إضافة أكثر من ثلاث حسابات.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are caught by the UI without involving the SE validation. Basically very similar to ZMUserSessionErrorCode onces
+"error.updating_password" = "تعذَّر تحديث كلمة مرورك.";
+
+"error.group_call.too_many_members_in_conversation.title" = "هناك أشخاص أكثر مما يجب في هذه المكالمة";
+"error.group_call.too_many_members_in_conversation" = "تستطيع إجراء مكالمات لحد %d أشخاص.";
+"error.group_call.too_many_participants_in_the_call.title" = "المكالمة ممتلئة";
+"error.group_call.too_many_participants_in_the_call" = "لا يوجد متسع لغير %d أشخاص.";
+"error.call.gsm_ongoing.title" = "مُكالمة خلوية";
+"error.call.gsm_ongoing" = "من فضلك أنهِ المكالمة الخلوية قبل التّحدث باستخدام ChatBox.";
+"error.call.general.title" = "خطأ في المكالمة";
+"error.call.general" = "حاول الاتصال مرة أخرى خلال دقائق.";
+"error.call.slow_connection.title" = "اتصال بطيء";
+"error.call.slow_connection" = "قد تواجه مشكلات أثناء المكالمة";
+"error.call.slow_connection.call_anyway" = "الاتصال على أي حال";
+
+"error.invite.no_email_provider" = "من فضلك اضبط تطبيق البريد الإلكتروني للتّمكن من إرسال دعوات من خلاله";
+"error.invite.no_messaging_provider" = "من فضلك اضبط الـSMS لتتمكن من إرسال دعوات من خلالها";
+
+"sketchpad.initial_hint" = "انقر على الألوان لتغيير حجم الفرشة";
+
+"migration.please_wait_message" = "لحظة، من فضلك";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are used by the backend to localize APNS
+"push.notification.new_user" = "انضمّ %@ لـChatBox";
+"push.notification.new_message" = "رسالة جديدة";
+
+
+//Force Update
+"force.update.title" = "مطلوب التحديث";
+"force.update.message" = "أنت تفتقد مميزات جديدة.\nاحصل على آخر إصدار من ChatBox من خلال App Store.";
+"force.update.ok_button" = "اذهب لـApp Store";
+
+// Third Party
+"giphy.conversation.message" = "%@ · عبر giphy.com";
+"giphy.conversation.random_message" = "عبر giphy.com";
+"giphy.error.no_more_results" = "لا مزيد من gifs";
+"giphy.error.no_result" = "لم يتم العثور على أي gif";
+
+"giphy.confirm" = "إرسال";
+"giphy.cancel" = "إلغاء";
+"giphy.search_placeholder" = "البحث عن جيفي";
+
+"invite_banner.title" = "ادعُ أصدقاء لاستخدام ChatBox!";
+"invite_banner.message" = "استمتع بالمكالمات، الرسائل، الرسومات، الصور المتحركة والمزيد في المحادثات الفردية أو الجماعية.";
+"invite_banner.invite_button_title" = "ادعُ أُناسًا أكثر";
+
+// Collections
+"collections.section.images.title" = "صور";
+"collections.section.files.title" = "ملفّات";
+"collections.section.videos.title" = "مقاطع فيديو";
+"collections.section.links.title" = "روابط";
+"collections.section.all.button" = "عرض كل %d ←";
+"collections.section.no_items" = "لا توجد عناصر في المختارات";
+"collections.image_viewer.copied.title" = "تم نسخ الصورة";
+
+"collections.search.field.placeholder" = "بحث في الرسائل النصية";
+"collections.search.no_items" = "لا توجد نتائج";
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Message composing / drafts
+
+"compose.drafts.title" = "الرسائل";
+"compose.drafts.empty.title" = "لا توجد رسائل";
+"compose.drafts.empty.subtitle" = "انقر + لإنشاء واحدة";
+"compose.drafts.compose.title" = "كتابة رسالة";
+"compose.drafts.compose.subject.placeholder" = "انقر لتعيين موضوع";
+
+"compose.drafts.compose.delete.confirm.title" = "تأكيد الحذف";
+"compose.drafts.compose.delete.confirm.message" = "سيتم حذف هذه المسودّة بشكل دائم، ولن يمكن إرجاعها.";
+"compose.drafts.compose.delete.confirm.action.title" = "حذف";
+
+"compose.drafts.compose.dismiss.confirm.title" = "حفظ كمسودة";
+"compose.drafts.compose.dismiss.confirm.action.title" = "حفظ";
+"compose.drafts.compose.dismiss.delete.action.title" = "حذف";
+
+"availability.message.cancel" = "إلغاء";
+"availability.message.set_status" = "تعيين الحالة";
+
+"availability.none" = "لا شيء";
+"availability.available" = "متاح";
+"availability.away" = "بالخارج";
+"availability.busy" = "مشغول";
+"availability.available.placeholder" = "%@ is available";
+"availability.away.placeholder" = "%@ is away";
+"availability.busy.placeholder" = "%@ is busy";

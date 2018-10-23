@@ -1,0 +1,28 @@
+/*
+ *  ChatBox
+ *  Copyright (C) 2016 ChatBox Swiss GmbH
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program. If not, see http://www.gnu.org/licenses/.
+ */
+
+"NSContactsUsageDescription" = "اسمح لـChatBox بالوصول لجهات الإتصال الخاصة بك للتواصل مع الآخرين. نحن نحفظ سرية معلوماتك ولا نتشاركها من أحد آخر.";
+"NSMicrophoneUsageDescription" = "اسمح لـChatBox بالوصول للميكروفون لتستطيع التحدث للآخرين وإرسال رسائل صوتية.";
+"NSLocationWhenInUseUsageDescription" = "اسمح لـChatBox بالوصول لخدمات الموقع حتى تتمكن من إرسال موقعك للآخرين.";
+"NSCameraUsageDescription" = "اسمح لـChatBox بالوصول للكاميرا حتى تتمكن من إجراء مكالمات فيديو وإرسال الصور.";
+/* Showed after taking a picture with camera, but only when NSPhotoLibraryUsageDescription permission was declined. Asks permission for only writing to photo library. */
+"NSPhotoLibraryAddUsageDescription" = "اسمح لـChatBox بحفظ الصور الملتقطة في مكتبك الصور.";
+/* Showed when trying to send picture from conversaiton list. Asks permissions for reading and writing to photo library */
+"NSPhotoLibraryUsageDescription" = "اسمح لـChatBox بالوصول للصور المخزنة في مكتبة الصور.";
+/* Is shown to the user when app is locked with AppLock feature on the phone that supports Face ID */
+"NSFaceIDUsageDescription" = "In order to authenticate in the app allow ChatBox to access the Face ID feature.";

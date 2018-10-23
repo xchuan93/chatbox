@@ -1,0 +1,1135 @@
+//
+// ChatBox
+// Copyright (C) 2016 ChatBox Swiss GmbH
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see http://www.gnu.org/licenses/.
+//
+
+
+"general.ok" = "OK";
+"general.next" = "Next";
+"general.cancel" = "キャンセル";
+"general.open_settings" = "ChatBoxの設定を開く";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// People picker/start UI
+"peoplepicker.search_placeholder" = "名前またはユーザーネームで検索する";
+"peoplepicker.header.top_people" = "Top people";
+"peoplepicker.button.create_conversation" = "グループを作成";
+"peoplepicker.button.add_to_conversation" = "グループに友人を追加する";
+"peoplepicker.header.conversations" = "グループ";
+"peoplepicker.header.team_conversations" = "%@ グループ";
+"peoplepicker.header.send_invitation" = "招待";
+"peoplepicker.header.contacts" = "連絡先";
+"peoplepicker.header.contacts_personal" = "個人の連絡先";
+"peoplepicker.header.directory" = "接続";
+
+"peoplepicker.group.title.singular" = "友達を追加";
+"peoplepicker.group.title.plural" = "Add People (%d)";
+"peoplepicker.group.skip" = "Skip";
+"peoplepicker.group.done" = "Done";
+"peoplepicker.group.create" = "Create";
+
+"peoplepicker.header.people" = "People";
+"peoplepicker.header.services" = "Services";
+"peoplepicker.services.create_conversation.item" = "Create a new conversation";
+"peoplepicker.services.add_service.button" = "Add service";
+"peoplepicker.services.add_service.error.title" = "The service can't be added";
+"peoplepicker.services.add_service.error.default" = "The service is unavailable at the moment";
+"peoplepicker.services.add_service.error.full" = "The conversation is full";
+
+"peoplepicker.title.create_conversation" = "グループを作成します";
+"peoplepicker.title.add_to_conversation" = "人を追加します";
+
+"peoplepicker.no_contacts_title" = "連絡先がありません";
+
+"peoplepicker.no_matching_results_title" = "結果はありません";
+"peoplepicker.no_matching_results_message" = "メールアドレスを正確に入力します";
+
+"peoplepicker.no_matching_results.action.send_invite" = "招待状を送信します";
+"peoplepicker.no_matching_results.action.share_contacts" = "連絡先を共有します";
+
+"peoplepicker.no_matching_results_provide_valid_email" = "有効なメール アドレスを入力してください";
+"peoplepicker.no_matching_results_after_address_book_upload_title" = "結果はありません";
+/* This sentence ends with button title, contained in peoplepicker.no_matching_results_after_address_book_upload_button */
+"peoplepicker.no_matching_results_after_address_book_upload_message" = "メールアドレスを正確に入力します";
+/*  */
+"peoplepicker.no_matching_results_after_address_book_upload_button" = "連絡先を共有します";
+
+"peoplepicker.share_contacts.no_results.title" = "名前またはメールアドレスで見つける";
+
+"peoplepicker.send_invitation.dialog.title" = "招待状を送信しました";
+"peoplepicker.send_invitation.dialog.message" = "2週間使用できます。\n期限が切れた時は新しいものを送ります";
+"peoplepicker.send_invitation.dialog.ok" = "OK";
+
+"peoplepicker.invite_more_people" = "さらに招待する";
+"peoplepicker.invite_team_members" = "Invite people to join the team";
+"peoplepicker.quick-action.open-conversation" = "開く";
+"peoplepicker.quick-action.create-conversation" = "グループを作成します";
+
+"add_participants.all_contacts_added" = "Everyone's here.";
+
+// Contacts UI
+"contacts_ui.search_placeholder" = "名前で検索します";
+"contacts_ui.invite_others" = "他の人を招待します";
+"contacts_ui.name_in_contacts" = "連絡先に %@";
+"contacts_ui.connection_request" = "つながりをリクエストする";
+"contacts_ui.action_button.invite" = "招待";
+"contacts_ui.action_button.open" = "開く";
+"contacts_ui.invite_sheet.cancel_button_title" = "キャンセル";
+"contacts_ui.notification.invitation_sent" = "招待状を送信しました";
+"contacts_ui.notification.invitation_failed" = "招待状を送信できませんでした";
+"contacts_ui.title" = "友達を招待する";
+
+"conversation_list.empty.all_archived.message" = "Everything archived";
+"conversation_list.empty.no_contacts.message" = "Start a conversation or\ncreate a group.";
+
+
+// Conversation List Indicator
+"conversation_list.right_accessory.join_button.title" = "参加する";
+"conversation_list.header.self_team.accessibility_value" = "%@ account.";
+"conversation_list.header.self_team.accessibility_value.inactive" = "タップしてアクティブにする";
+"conversation_list.header.self_team.accessibility_value.active" = "有効";
+"conversation_list.header.self_team.accessibility_value.has_new_messages" = "新しいメッセージ";
+
+// Profile Header View
+"conversation.connection_view.in_address_book" = "連絡先";
+
+// Conversation list voiceover accessibility
+"conversation_list.voiceover.open_conversation.hint" = "会話を始めます";
+"conversation_list.voiceover.status.pending_connection" = "pending";
+"conversation_list.voiceover.status.active_call" = "active call";
+"conversation_list.voiceover.status.missed_call" = "不在着信";
+"conversation_list.voiceover.status.pause_media" = "pause media";
+"conversation_list.voiceover.status.play_media" = "play media";
+"conversation_list.voiceover.status.silenced" = "silenced";
+"conversation_list.voiceover.status.typing" = "typing";
+"conversation_list.voiceover.status.ping" = "ping";
+"conversation_list.voiceover.bottom_bar.archived_button.label" = "archived";
+"conversation_list.voiceover.bottom_bar.archived_button.hint" = "list of archived conversations";
+"conversation_list.voiceover.bottom_bar.contacts_button.label" = "連絡先";
+"conversation_list.voiceover.bottom_bar.contacts_button.hint" = "search for people on ChatBox";
+"conversation_list.voiceover.bottom_bar.compose_button.label" = "compose";
+"conversation_list.voiceover.bottom_bar.compose_button.hint" = "compose messages and save for later";
+"conversation_list.voiceover.bottom_bar.camera_button.label" = "camera";
+"conversation_list.voiceover.bottom_bar.camera_button.hint" = "take picture and send quickly";
+
+// Archived List
+"archived_list.title" = "アーカイブ";
+
+// Add contact tool tip
+"tool_tip.contacts.title" = "ここから会話を始めます";
+"tool_tip.contacts.message" = "Start a conversation. Call, message and share in private or with groups.";
+
+// "Knows" subtitle in cell: "Knows Indrek", "Knows Indrek and Jane", "Knows Indrek and 5 others"
+"peoplepicker.suggested.knows_one" = "%@を知っています";
+"peoplepicker.suggested.knows_two" = "%@と%@を知っています";
+"peoplepicker.hide_search_result" = "隠す";
+"peoplepicker.hide_search_result_progress" = "隠しています...";
+
+"send_invitation.subject" = "ChatBoxで繋がります";
+"send_invitation.text" = "私はChatBoxにいます。%@ で検索するか、get.ChatBox.com. にアクセスしてください";
+"send_invitation_no_email.text" = "私はChatBoxにいます。https://get.ChatBox.com にアクセスして私とつながりましょう。";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++x
+// In-app notifications (chat heads)
+"notifications.shared_a_photo" = "写真を共有します";
+"notifications.pinged" = "ping しました";
+"notifications.sent_file" = "ファイルを共有します";
+"notifications.sent_location" = "場所を共有します";
+"notifications.sent_video" = "ビデオを共有します";
+"notifications.sent_audio" = "音声を共有します";
+"notifications.in_conversation" = "%@%@";
+"notifications.this_conversation" = "%@はこの会話に参加しています";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// List (labels) - Needs to be revised with updated guidance
+"list.title" = "会話";
+"list.archived_conversations" = "アーカイブ";
+"list.archived_conversations_close" = "アーカイブして閉じます";
+
+"conversation.voiceover.verified" = "verified";
+
+"conversation.status.call" = "通話中";
+"conversation.status.typing" = "メッセージを入力中";
+"conversation.status.typing.group" = "%@: メッセージの入力中";
+"conversation.status.silenced" = "ミュート";
+"conversation.status.blocked" = "ブロック";
+
+"conversation.status.message.text" = "%@";
+"conversation.status.message.link" = "リンクを共有";
+"conversation.status.message.image" = "写真が共有されました";
+"conversation.status.message.location" = "場所を共有しました";
+"conversation.status.message.audio" = "音声メッセージが共有されました";
+"conversation.status.message.video" = "ビデオを共有しました";
+"conversation.status.message.file" = "ファイルが共有されました";
+"conversation.status.message.knock" = "Ping されました";
+"conversation.status.message.missedcall" = "不在着信";
+"conversation.status.message.ephemeral" = "タイマーメッセージ";
+
+"conversation.status.unsent" = "⚠️ 未送信メッセージ";
+"conversation.status.you" = "あなた";
+"conversation.status.added_multiple" = "追加された人";
+"conversation.status.you_was_added" = "%@はあなたを追加しました";
+"conversation.status.added_users" = "%@は%@を追加しました";
+"conversation.status.joined" = "%@ joined";
+"conversation.status.removed_multiple" = "削除された人";
+"conversation.status.you_were_removed" = "あなたは削除されました";
+"conversation.status.you_left" = "あなたは退出しました";
+"conversation.status.started_conversation" = "%@ 会話を始めました";
+"conversation.status.removed_users" = "%@は%@を削除しました";
+"conversation.status.everyone_left" = "Everyone left";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Compose Entry Point
+
+"compose.contact.title" = "会話";
+"compose.message.title" = "メッセージ";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Conversation
+"conversation.invite_more_people.title" = "言葉を広めよう！";
+"conversation.invite_more_people.description" = "この会話に人を追加します";
+"conversation.invite_more_people.explanation_url" = "サポートアドレス https://support.ChatBox.com";
+"conversation.invite_more_people.button_title" = "友達を追加";
+
+// Conversation names
+"conversation.displayname.emptygroup" = "誰もいないグループ";
+
+"conversation.input_bar.verified" = "検証する";
+"conversation.input_bar.placeholder" = "メッセージを入力します";
+"conversation.input_bar.placeholder_ephemeral" = "タイマーメッセージ";
+
+"conversation.input_bar.audio_message.tooltip.pull_send" = "上にスワイプして送信";
+"conversation.input_bar.audio_message.tooltip.tap_send" = "タップして送信";
+"conversation.input_bar.audio_message.too_long.title" = "録音を停止";
+"conversation.input_bar.audio_message.too_long.message" = "Audio messages are limited to %@.";
+"conversation.input_bar.audio_message.send" = "送信";
+
+"conversation.input_bar.audio_message.keyboard.record_tip" = "タップして録音を開始します、その後  %@  できます。";
+"conversation.input_bar.audio_message.keyboard.filter_tip" = "上記のフィルターを選択します。";
+
+"conversation.call.many_participants_confirmation.title" = "通話を始める";
+"conversation.call.many_participants_confirmation.message" = "%d 人を呼び出す";
+"conversation.call.many_participants_confirmation.call" = "通話";
+
+"conversation.connection_view.in_address_book" = "連絡先";
+
+"conversation.input_bar.shortcut.send" = "Send Message";
+"conversation.input_bar.shortcut.edit_last_message" = "Edit Last Message";
+"conversation.input_bar.shortcut.cancel_editing_message" = "キャンセル";
+
+"conversation.input_bar.message_too_long.title" = "Message too long";
+"conversation.input_bar.message_too_long.message" = "You can send messages up to %d characters long.";
+
+"conversation.create.group_name.placeholder" = "Group name";
+"conversation.create.guidance.empty" = "At least 1 character";
+"conversation.create.guidance.toolong" = "文字が多すぎます";
+"conversation.create.toggle.title" = "Allow guests";
+"conversation.create.toggle.subtitle" = "Open this conversation to people outside your team. You can always change it later.";
+
+"conversation.guests_present" = "Guests are present";
+
+// Image confirmation dialogue
+"image_confirmer.confirm" = "OK";
+"image_confirmer.cancel" = "キャンセル";
+"image.add_sketch" = "スケッチを追加";
+"image.edit_image" = "イメージを編集します";
+
+// Camera access
+"camera_access.denied" = "ChatBoxはカメラへアクセスする必要が有ります";
+"camera_access.denied.instruction" = "";
+"camera_access.denied.open_settings" = "ChatBoxの設定で有効にします";
+
+// Camera and photos access, keyboard
+"keyboard_photos_access.denied.keyboard.settings" = "設定";
+"keyboard_photos_access.denied.keyboard.camera_and_photos" = "ChatBox needs access to your\ncamera and photos."; // split text on two lines for a better text balance
+"keyboard_photos_access.denied.keyboard.photos" = "ChatBox needs access to your photos.";
+"keyboard_photos_access.denied.keyboard.camera" = "ChatBox needs access to your camera.";
+
+// Camera Controls
+"camera_controls.aeaf_lock" = "AE/AF ロック";
+
+// Location
+"location.send_button.title" = "送信";
+"location.unauthorized_alert.title" = "位置情報サービスを有効にします。";
+"location.unauthorized_alert.message" = "位置情報を送信するには、位置情報サービスを有効にして、ChatBoxが位置情報にアクセス出来るようにする必要が有ります。";
+"location.unauthorized_alert.cancel" = "キャンセル";
+"location.unauthorized_alert.settings" = "設定";
+
+// Twitter
+"twitter_status.on_twitter" = "%@ はツイッターにいます";
+
+// Ephemeral message
+"input.ephemeral.timeout.none" = "オフ";
+"input.ephemeral.title" = "メッセージが消えるまでの時間を設定する";
+
+// System messages
+"content.system.you_nominative" = "あなた";
+"content.system.you_dative" = "あなた";
+"content.system.you_accusative" = "あなた";
+
+"content.system.continued_conversation" = "%@と会話を始めます";
+
+"content.system.other_started_conversation" = "%@と%@は会話を始めました";
+"content.system.you_started_conversation" = "%@と会話を始めました";
+
+"content.system.you_added_participant" = "%@を追加しました";
+"content.system.other_added_participant" = "%@は%@を追加しました";
+"content.system.other_added_you" = "%@はあなたを追加しました";
+
+"content.system.participants_you" = "あなた";
+"content.system.participants_1_other" = "%@と%@";
+"content.system.other_left" = "%@が退出しました";
+"content.system.you_left" = "あなたは退出しました";
+"content.system.other_removed_other" = "%@は%@を削除しました";
+"content.system.other_removed_you" = "%@はあなたを削除しました";
+"content.system.you_removed_other" = "あなたは%@を削除しました";
+
+// New conversation participants added / removed / started system message
+
+"content.system.conversation.other.started" = "%@と%@は会話を始めました";
+"content.system.conversation.other.added" = "%@は%@を追加しました";
+"content.system.conversation.other.removed" = "%@は%@を削除しました";
+"content.system.conversation.other.left" = "%@が退出しました";
+
+"content.system.conversation.you.started" = "%@と%@は会話を始めました";
+"content.system.conversation.you.added" = "%@は%@を追加しました";
+"content.system.conversation.you.removed" = "%@は%@を削除しました";
+"content.system.conversation.you.left" = "%@が退出しました";
+"content.system.conversation.team.member-leave" = "%@ がチームから削除されました";
+"content.system.conversation.guest.joined" = "%@ joined";
+
+"content.system.other_renamed_conv_to_nothing" = "%@が会話の名前を削除しました";
+"content.system.you_renamed_conv_to_nothing" = "あなたは会話の名前を削除しました";
+"content.system.pending_message_timestamp" = "送信中…";
+"content.system.message_sent_timestamp" = "送信済み";
+"content.system.message_delivered_timestamp" = "配信済み";
+"content.system.failedtosend_message_timestamp" = "送信できませんでした";
+"content.system.failedtosend_message_timestamp_resend" = "再送する";
+"content.system.failedtosend_message_timestamp_delete" = "削除";
+"content.system.like_tooltip" = "タップしていいね！";
+"content.system.deleted_message_prefix_timestamp" = "Deleted: %@";
+"content.system.edited_message_prefix_timestamp" = "Edited: %@";
+"content.system.connecting_to" = "%@につながり、会話を始めます";
+"content.system.connected_to" = "%@につながり、会話をはじめます";
+"content.system.other_wanted_to_talk" = "%@ からの着信";
+"content.system.you_wanted_to_talk" = "あなたの発信";
+"content.system.ephemeral_time_remaining" = "%@が退出しました";
+
+"content.system.you_started" = "あなた";
+"content.system.this_device" = "このデバイス";
+
+"content.system.call.you" = "あなた";
+"content.system.call.called" = "%@ からの着信";
+"content.system.call.called-you" = "%@ からの着信";
+
+"content.system.renamed_conv.title" = "%@が会話に名前を付けました";
+"content.system.renamed_conv.title-you" = "%@が会話に名前を付けました";
+"content.system.renamed_conv.title.you" = "あなた";
+
+"content.system.conversation.with_name.title" = "%@ started the conversation";
+
+"content.system.conversation.with_name.participants" = "with %@";
+
+"content.system.reactivated_device" = "あなたは %@ を再び利用しています。いままでのメッセージはここには表示されません。";
+
+"content.system.new_device" = "新しいデバイス";
+"content.system.started_using" = "使用を始めます";
+"content.system.is_verified" = "すべてのフィンガープリントは確認済みです";
+
+"content.system.new_users" = "新しいユーザーが参加しました。";
+"content.system.verify_devices" = "デバイスを認証する";
+
+"content.system.unverified" = "%@%@デバイスの一つは認証されませんでした。"; // example "You unverified one of Jule’s devices"
+"content.system.your_devices" = "あなたのデバイス";
+"content.system.other_devices" = "%@ のデバイス";
+
+"content.system.missing_messages.title" = "しばらくの間、このデバイスでChatBoxを利用していなかったため、いくつかのメッセージがここに表示されない可能性があります。";
+"content.system.missing_messages.subtitle_start" = "同時に";
+
+"content.system.cannot_decrypt" = "%@からのメッセージは受信されませんでした。";
+
+"content.system.cannot_decrypt.you_part" = "あなた";
+"content.system.cannot_decrypt.why_part" = "なぜ？";
+
+"content.system.cannot_decrypt.identity" = "%@のデバイスIDが変更されました。配信不能なメッセージです。";
+"content.system.cannot_decrypt.identity.you_part" = "あなたの";
+"content.system.cannot_decrypt.identity.otherUser_part" = "%@ のデバイス"; // possessive apostrophe - might differ in different languages
+"content.system.cannot_decrypt.identity.why_part" = "もっと知る";
+"content.system.cannot_decrypt.otherDevice_part" = "(デバイス %@)"; // example " (device d1b23c54f34a)".
+// Full sentence: "A message from %@ was not received. [...] (device d1b23c54f34a). This is a debug information.
+
+"content.system.unknown_message.body" = "古いバージョンのChatBoxを利用されているため、このメッセージは表示されません。";
+"content.system.unknown_message.body.link" = "なぜこれが起こるのか？";
+
+"content.file.uploading" = "アップロード中...";
+"content.file.downloading" = "ダウンロード中…";
+"content.file.upload_failed" = "アップロードに失敗しました";
+"content.file.upload_cancelled" = "アップロードがキャンセルされました";
+"content.file.upload_video" = "ビデオ";
+"content.file.take_video" = "ビデオを録画";
+
+"content.file.save_video" = "保存";
+"content.file.save_audio" = "保存";
+"content.image.save_image" = "保存";
+
+"content.message.delete" = "削除";
+"content.message.save" = "保存";
+
+"content.message.like" = "いいね！";
+"content.message.unlike" = "いいね！を取消す";
+"content.message.forward" = "共有";
+"content.message.go_to_conversation" = "開く";
+"content.message.forward.to" = "検索...";
+"content.message.open" = "開く";
+
+"content.reactions_list.likers" = "いいね！しました";
+
+"content.file.too_big" = "%@までのファイルを送信できます。";
+// Someone pinged
+"content.ping.text" = "%1$@ pingしました";
+
+// Current user pinged
+"content.ping.text.you" = "あなた";
+
+// Inline Player
+"content.player.unable_to_play" = "トラックを再生できません";
+
+// Connecting (NEW IMPLEMENTATION, REVIEW LATER)
+"connection_request.title" = "%@とつながる"; // check UPPERCASE implementation in code
+"missive.connection_request.default_message" = "こんにちは。%@\nChatBoxでつながりましょう。\n%@";
+
+"connection_request.send_button_title" = "接続";
+"inbox.connection_request.connect_button_title" = "接続";
+"inbox.connection_request.ignore_button_title" = "無視";
+
+// Voice
+"voice.status.one_to_one.incoming" = "%@を呼出中";
+"voice.status.group_call.incoming" = "%@から呼出中";
+"voice.status.one_to_one.outgoing" = "%@から呼出中";
+"voice.status.joining" = "%@に接続中";
+"voice.status.video_not_available" = "ビデオ通話がオフになっています";
+"voice.status.low_connection" = "接続不良";
+"voice.network_error.title" = "インターネット接続がありません";
+"voice.status.cbr" = "固定ビットレート";
+"voice.network_error.body" = "オンラインにしてから通話する必要が有ります。接続を確認してもう一度やり直して下さい。";
+"voice.degradation.new_self_device" = "新しいデバイスを使い始めました";
+"voice.degradation.new_user_device" = "%@が新しいデバイスを使い始めました。";
+"voice.degradation_outgoing.prompt" = "さらに電話をかけますか？";
+"voice.degradation_incoming.prompt" = "さらに電話をうけますか？";
+"voice.accept_button.title" = "承諾";
+"voice.decline_button.title" = "辞退";
+"voice.hang_up_button.title" = "電話を切る";
+"voice.mute_button.title" = "ミュート";
+"voice.video_button.title" = "ビデオ";
+"voice.speaker_button.title" = "スピーカー";
+"voice.cancel_button.title" = "キャンセル";
+"voice.call_button.title" = "通話";
+
+"voice.alert.call_in_progress.title" = "通話中です";
+"voice.alert.call_in_progress.message" = "同時にできる通話は一つのみです";
+"voice.alert.call_in_progress.confirm" = "OK";
+
+"voice.alert.microphone_warning.title" = "ChatBoxはマイクにアクセスする必要が有ります";
+"voice.alert.microphone_warning.explanation" = "ChatBoxの設定で有効にして下さい";
+
+"voice.alert.camera_warning.title" = "ChatBoxはカメラへのアクセスする必要が有ります";
+"voice.alert.camera_warning.explanation" = "設定に移動して、ChatBoxがカメラにアクセスすることを有効にして下さい";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Profile and Participants
+
+"participants.add_people_button_title" = "Add";
+"participants.avatar.guest.title" = "ゲスト";
+
+"participants.title" = "詳細";
+"participants.section.participants" = "People (%d)";
+"participants.section.services" = "Services (%d)";
+"participants.footer.add_title" = "Add Participants";
+
+// Meta Menu
+"meta.menu.rename" = "名前の変更";
+"meta.menu.leave" = "退室";
+"meta.menu.archive" = "アーカイブ";
+"meta.menu.unarchive" = "解答する";
+"meta.menu.delete" = "削除";
+"meta.menu.silence.mute" = "ミュート";
+"meta.menu.silence.unmute" = "ミュート解除します。";
+"meta.menu.cancel" = "キャンセル";
+"meta.menu.cancel_connection_request" = "リクエストを取り消す";
+
+// Delete conversation
+"meta.menu.delete_content.dialog_title" = "コンテンツを削除しますか?";
+"meta.menu.delete_content.dialog_message" = "This will clear the conversation history on all your devices.";
+"meta.menu.delete_content.leave_as_well_message" = "会話からも退室する";
+"meta.menu.delete_content.button_cancel" = "キャンセル";
+"meta.menu.delete_content.button_delete" = "削除";
+"meta.menu.delete_content.button_delete_and_leave" = "Delete and leave";
+
+// Leave conversation
+"meta.leave_conversation_dialog_title" = "会話から退室しますか？";
+"meta.leave_conversation_dialog_message" = "参加者に通知されたうえで、あなたのリストから会話が削除されます。";
+"meta.leave_conversation.delete_content_as_well_message" = "コンテンツも削除されます";
+"meta.leave_conversation_button_cancel" = "キャンセル";
+"meta.leave_conversation_button_leave" = "離れる";
+"meta.leave_conversation_button_leave_and_delete" = "Leave and delete content";
+
+// Conversation Degraded (security level lowered)
+"meta.degraded.degradation_reason_message.singular" = "%@が新しいデバイスを使い始めました。";
+"meta.degraded.degradation_reason_message.plural" = "%@が新しいデバイスを使い始めました。";
+"meta.degraded.dialog_message" = "まだメッセージを送信しますか？";
+"meta.degraded.show_device_button" = "デバイスを表示する。";
+"meta.degraded.send_anyway_button" = "このまま送信";
+"meta.degraded.cancel_sending_button" = "キャンセル";
+
+// Remove from conversation dialogue
+"profile.remove_dialog_title" = "削除しますか?";
+"profile.remove_dialog_message" = "%@ は、この会話でメッセージを送受信することができません。";
+"profile.remove_dialog_button_cancel" = "キャンセル";
+"profile.remove_dialog_button_remove" = "削除";
+
+// Block dialog
+"profile.block_dialog.title" = "ブロックしますか?";
+"profile.block_dialog.message" = "%@ は、あなたにコンタクトをすることやグループ会話にあなたを追加することができません。";
+"profile.block_dialog.button_cancel" = "キャンセル";
+"profile.block_dialog.button_block" = "ブロック";
+
+// Delete message dialog
+"message.delete_dialog.message" = "この操作は元に戻すことができません。";
+"message.delete_dialog.action.cancel" = "キャンセル";
+"message.delete_dialog.action.hide" = "削除します";
+"message.delete_dialog.action.delete" = "削除します";
+
+// Edit message
+"message.menu.edit.title" = "編集";
+
+// Accept connection request
+"profile.connection_request_dialog.title" = "許可しますか？";
+"profile.connection_request_dialog.message" = "%@とのつながって、会話を始める。";
+"profile.connection_request_dialog.button_cancel" = "放置";
+"profile.connection_request_dialog.button_connect" = "接続";
+
+// Cancel connection request
+"profile.cancel_connection_request_dialog.title" = "リクエストを取り消しますか？";
+"profile.cancel_connection_request_dialog.message" = "%@への接続リクエストを削除します。";
+"profile.cancel_connection_request_dialog.button_no" = "いいえ";
+"profile.cancel_connection_request_dialog.button_yes" = "はい";
+
+// Unblock button
+"profile.unblock_button_title" = "ブロック解除";
+
+"profile.cancel_connection_button_title" = "リクエストをキャンセルします";
+"profile.connection_request_state.blocked" = "ブロックしています";
+"profile.create_conversation_button_title" = "グループを作成します";
+"profile.open_conversation_button_title" = "会話を始めます";
+
+// User Details
+"profile.details.title" = "詳細";
+"profile.details.guest" = "ゲスト";
+
+"profile_view.accessibility.handle" = "ユーザーネーム";
+"profile_view.accessibility.name" = "Display name";
+"profile_view.accessibility.team_name" = "Team name";
+
+// Device list
+"profile.devices.title" = "デバイス";
+"profile.devices.fingerprint_message_unencrypted" = "%@は古いバージョンのChatBoxを使用しています。端末は表示されません。";
+"profile.devices.fingerprint_message" = "ChatBox はそれぞれのデバイスに固有のフィンガープリントを付与します。それを %@と比較して、会話を確認します。なぜ会話を確認するか。";
+"profile.devices.fingerprint_message.link" = "なぜ会話を確認するのですか? _";
+
+// Device detail
+"profile.devices.detail.verify_message" = "%@のデバイスに表示されるフィンガー プリントと一致することを確認します。";
+"profile.devices.detail.verify_message.link" = "どうすればいいですか?";
+"profile.devices.detail.show_my_device.title" = "自分のデバイスのフィンガープリントを表示";
+"device.verified" = "検証済み";
+"device.not_verified" = "未確認";
+"device.class.desktop" = "PC";
+"device.class.tablet" = "タブレット";
+"device.class.phone" = "携帯電話";
+"profile.devices.detail.reset_session.title" = "セッションをリセットする";
+
+// General strings
+"general.confirm" = "OK";
+
+// Bot
+"participants.services.remove_integration.button" = "remove integration";
+
+// Group details
+"group_details.guest_options_cell.title" = "Guest Options";
+"group_details.guest_options_cell.enabled" = "On";
+"group_details.guest_options_cell.disabled" = "オフ";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Self profile
+// Options menu contents
+
+"self.settings" = "設定";
+"self.profile" = "プロフィール";
+"self.account" = "アカウント";
+"self.help_center" = "サポート";
+"self.help_center.support_website" = "ChatBox サポート ウェブサイト";
+"self.help_center.contact_support" = "サポートへの問い合わせ";
+"self.about" = "概要";
+"self.sign_out" = "ログアウト";
+"self.report_abuse" = "悪用を報告する";
+"self.voiceover.label" = "プロフィール";
+"self.voiceover.hint" = "Open profile and settings";
+"self.new-device.voiceover.label" = "Profile, new devices added";
+
+"self.add_phone_number" = "電話番号を追加する";
+"self.add_email_password" = "メールアドレスとパスワードを追加";
+
+// About screen
+"about.tos.title" = "利用規約";
+"about.privacy.title" = "プライバシーポリシー";
+"about.license.title" = "ライセンス情報";
+"about.website.title" = "ChatBox のウェブサイト";
+"about.copyright.title" = "© ChatBox Swiss GmbH";
+
+// Self new devices
+"self.new_device_alert.title" = "%@とワイヤでつながりました。";
+"self.new_device_alert.title_prefix.tablet" = "タブレット";
+"self.new_device_alert.title_prefix.phone" = "電話";
+"self.new_device_alert.title_prefix.devices" = "%d のデバイス";
+"self.new_device_alert.message" = "%@\nもしあなたがこれをしてなかった場合、デバイスを削除しパスワードを削除してください。";
+"self.new_device_alert.message_plural" = "%@\nもしあなたがこれをしてなかった場合、これらのデバイスとあなたのパスワードを削除してください。";
+"self.new_device_alert.manage_devices" = "デバイスを管理";
+"self.new_device_alert.trust_devices" = "OK";
+
+// Settings - top level
+"self.settings.create_team.title" = "新しいチームを作成";
+"self.settings.manage_team.title" = "Manage Team";
+"self.settings.add_team_or_account.title" = "New Team or Account";
+"self.settings.add_account.title" = "アカウントを追加";
+
+"self.settings.add_account.error.title" = "Three accounts active";
+"self.settings.add_account.error.message" = "You can only be logged in with three accounts at once. Log out from one to add another.";
+
+// Settings - Account details
+"self.settings.account_section" = "アカウント";
+
+"self.settings.account_details_group.info.title" = "情報";
+"self.settings.account_details_group.personal.title" = "パーソナル";
+
+"self.settings.account_section.name.title" = "名前";
+"self.settings.account_section.email.title" = "メール";
+"self.settings.account_section.phone.title" = "携帯電話";
+"self.settings.account_section.handle.title" = "ユーザーネーム";
+"self.settings.account_section.add_handle.title" = "ユーザーネームを追加する";
+
+"self.settings.account_details_group.info.footer" = "この情報で他の人があなたを見つけることができます。";
+"self.settings.account_details_group.personal.footer" = "この情報は表示されません。";
+
+"self.settings.account_details.remove_device.title" = "デバイスを削除する";
+"self.settings.account_details.key_fingerprint.title" = "重要なフィンガープリント";
+"self.settings.account_details.remove_device.message" = "デバイスを削除するにはパスワードが必要です。";
+"self.settings.account_details.remove_device.password" = "パスワード";
+"self.settings.account_details.remove_device.password.error" = "パスワードが間違っています";
+
+"self.settings.account_appearance_group.title" = "外観";
+"self.settings.account_picture_group.picture" = "写真";
+"self.settings.account_picture_group.color" = "色";
+
+"self.settings.account_picture_group.theme" = "ダークテーマ";
+
+"self.settings.device_details.fingerprint.subtitle" = "ChatBoxは各デバイスに固有のフィンガープリントを付与します。これを比較することでお使いのデバイスと会話を確認します。";
+"self.settings.device_details.reset_session.subtitle" = "フィンガープリントが一致しない場合は、セッションをリセットして、会話相手と双方で新しい暗号化キーを生成します。";
+"self.settings.device_details.remove_device.subtitle" = "このデバイスを使用していない場合、このデバイスを削除する。メッセージ履歴はこのデバイスから削除されログアウトされます。";
+"self.settings.device_details.reset_session.success" = "このセッションはリセットされました";
+
+"self.settings.account_details.actions.title" = "アクション";
+
+"self.settings.account_details.delete_account.title" = "アカウントを削除";
+
+"self.settings.account_details.delete_account.alert.title" = "アカウントを削除";
+"self.settings.account_details.delete_account.alert.message" = "EメールまたはSMSをあなたに送信します。リンクに従ってあなたのアカウントを削除してください";
+
+"self.settings.account_details.log_out.alert.title" = "ログアウト";
+"self.settings.account_details.log_out.alert.message" = "Your message history will be erased on this device.";
+
+
+// Change Username
+
+"self.settings.account_section.handle.change.title" = "ユーザーネーム";
+"self.settings.account_section.handle.change.save" = "保存";
+"self.settings.account_section.handle.change.footer" = "少なくとも２文字。a-z, 0-9, および _ のみが利用できます。";
+"self.settings.account_section.handle.change.footer.unavailable" = "すでに利用されています";
+
+"self.settings.account_section.handle.change.failure_alert.title" = "ユーザーネームを設定できません";
+"self.settings.account_section.handle.change.failure_alert.message" = "ユーザーネームの設定にエラーがありました。再設定してください。";
+
+// Change Email
+
+"self.settings.account_section.email.change.title" = "メール";
+"self.settings.account_section.email.change.save" = "保存";
+
+"self.settings.account_section.email.change.verify.title" = "メール アドレスを確認";
+"self.settings.account_section.email.change.verify.description" = "メールの受信トレイを確認して、手順に従ってください。";
+"self.settings.account_section.email.change.verify.resend" = "%@ に再送";
+
+"self.settings.account_section.email.change.resend.title" = "メールを再送信";
+"self.settings.account_section.email.change.resend.message" = "確認メールが%@ に再送されました。メールボックスを確認し、記載されている手続きを行って。";
+
+// Change Phone Number
+
+"self.settings.account_section.phone_number.change.title" = "電話";
+"self.settings.account_section.phone_number.change.save" = "保存";
+"self.settings.account_section.phone_number.change.remove" = "電話番号を削除する";
+
+"self.settings.account_section.phone_number.change.remove.action" = "電話番号を削除する";
+
+"self.settings.account_section.phone_number.change.verify.save" = "保存";
+"self.settings.account_section.phone_number.change.verify.title" = "認証";
+"self.settings.account_section.phone_number.change.verify.description" = "%@ に送信した認証コードを入力してください";
+
+"self.settings.account_section.phone_number.change.verify.code_placeholder" = "コードを入力する";
+"self.settings.account_section.phone_number.change.verify.resend" = "コードを再送信";
+"self.settings.account_section.phone_number.change.verify.resend_description" = "コードが表示されませんか？\n新しいコードを30秒ごとにリクエストすることができます。";
+
+"self.settings.account_section.phone_number.change.resend.title" = "コードの再送";
+"self.settings.account_section.phone_number.change.resend.message" = "%@ に認証コードを再送しました";
+
+// Chat alerts
+"self.settings.notifications.push_notification.title" = "通知センター";
+"self.settings.notifications.push_notification.toogle" = "メッセージプレビュー";
+"self.settings.notifications.push_notification.footer" = "ロックスクリーンと通知センターでの送信者名およびメッセージ";
+
+"self.settings.notifications.chat_alerts.toggle" = "メッセージ バナー";
+"self.settings.notifications.chat_alerts.footer" = "他の会話での新しいメッセージ";
+
+"self.settings.sound_menu.sounds.title" = "サウンド";
+"self.settings.sound_menu.ringtone.title" = "着信音";
+"self.settings.sound_menu.message.title" = "テキスト 着信音";
+"self.settings.sound_menu.ping.title" = "Ping";
+"self.settings.sound_menu.ringtones.title" = "着信音";
+"self.settings.sound_menu.sounds.wire_sound" = "ChatBox";
+"self.settings.sound_menu.sounds.none" = "なし";
+
+"self.settings.callkit.title" = "通話";
+"self.settings.callkit.caption" = "iOSで共有する";
+"self.settings.callkit.description" = "Show ChatBox calls on the lock screen and in iOS call history. If iCloud is enabled, call history is shared with Apple.";
+
+"self.settings.vbr.title" = "可変ビットレートエンコーディング";
+"self.settings.vbr.description" = "これは通話でのデータ量を削減し、低速なネットワークにおける通話をより良くします。これをオフにすることで固定ビットレートエンコーディングを利用することができます。";
+
+"self.settings.sound_menu.sounds.wire_call" = "ChatBoxコール";
+"self.settings.sound_menu.sounds.wire_message" = "ChatBoxメッセージ";
+"self.settings.sound_menu.sounds.wire_ping" = "ChatBox Ping";
+
+// By popular demand
+"self.settings.popular_demand.title" = "人気の高い順";
+"self.settings.popular_demand.send_button.title" = "送信ボタン";
+"self.settings.popular_demand.send_button.footer" = "キーボードからの送信を無効にします。";
+
+// Open in
+"self.settings.external_apps.header" = "リンクを開く";
+
+"self.settings.link_options.twitter.title" = "ツイート";
+"self.settings.link_options.maps.title" = "ロケーション";
+"self.settings.link_options.browser.title" = "ブラウザ";
+
+"open_link.twitter.option.default" = "Safari / Twitter";
+"open_link.twitter.option.tweetbot" = "Tweetbot";
+"open_link.twitter.option.twitterrific" = "Twitterrific";
+
+"open_link.maps.option.apple" = "マップ";
+"open_link.maps.option.google" = "Google マップ";
+
+"open_link.browser.option.safari" = "Safari";
+"open_link.browser.option.chrome" = "Chrome";
+"open_link.browser.option.firefox" = "Firefox";
+
+// Sound alerts (TO BE UPDPATED)
+"self.settings.sound_menu.title" = "アラートのサウンド";
+"self.settings.sound_menu.no_sounds.title" = "なし";
+"self.settings.sound_menu.all_sounds.title" = "すべて";
+"self.settings.sound_menu.mute_while_talking.title" = "First message and pings";
+
+// Developer options
+"self.settings.developer_options.title" = "開発者向けオプション";
+"self.settings.apns_logging.title" = "APNS ログ";
+
+// Privacy (visibility) options
+"self.settings.options_menu.title" = "オプション";
+
+"self.settings.privacy_contacts_section.title" = "連絡先";
+"self.settings.privacy_contacts_menu.settings_button.title" = "連絡先の設定を開く";
+"self.settings.privacy_contacts_menu.description_disabled.title" = "これはあなたが友人とつながるを容易にします。私たちはすべての情報を匿名化し、他の第三者と共有することはしません。アクセスを許可するためには、設定>プライバシー>連絡先で設定します。";
+
+"self.settings.privacy_security.lock_app" = "コードでロック";
+"self.settings.privacy_security.lock_app.subtitle" = "バックグラウンドでChatBoxを10秒後にロックします。Touch ID またはパスコードを入力しロックを解除します。";
+"self.settings.privacy_security.lock_app.description" = "ChatBoxのロックを解除する";
+
+"self.settings.privacy_security.lock_cancelled.description" = "Touch ID またはパスコードでChatBoxのロックを解除する";
+"self.settings.privacy_security.lock_cancelled.action" = "ロックを解除";
+
+"self.settings.privacy_security.disable_link_previews.title" = "Create Link Previews";
+"self.settings.privacy_security.disable_link_previews.footer" = "Previews may still be shown for links from other people.";
+
+"self.settings.privacy_analytics_menu.devices.title" = "デバイス";
+
+"self.settings.privacy_analytics_section.title" = "使用状況データと障害報告";
+"self.settings.privacy_analytics.title" = "Send Anonymous Data";
+"self.settings.privacy_analytics_menu.description.title" = "匿名の情報を送信することによって ChatBox の改良に協力します。\n";
+
+"self.settings.privacy.clear_history.title" = "履歴をクリア";
+"self.settings.privacy.clear_history.subtitle" = "すべてのあなたの会話の内容が完全に消去されます。";
+
+"self.settings.advanced.title" = "高度";
+"self.settings.advanced.troubleshooting.title" = "トラブルシューティング";
+"self.settings.advanced.troubleshooting.submit_debug.title" = "デバッグ報告を送信";
+"self.settings.advanced.troubleshooting.submit_debug.subtitle" = "この情報は通話の問題をChatBox が診断するのに役立ます";
+"self.settings.advanced.reset_push_token.title" = "プッシュ通知のトークンをリセットする";
+"self.settings.advanced.reset_push_token.subtitle" = "プッシュ通知に関して問題があった場合、ChatBoxサポートチームはあなたにトークンのリセットを求めることがあります。";
+"self.settings.advanced.reset_push_token_alert.title" = "プッシュトークンがリセットされました。";
+"self.settings.advanced.reset_push_token_alert.message" = "通知は数秒で復元されます。";
+"self.settings.advanced.version_technical_details.title" = "バージョンの技術的詳細";
+
+// Technical Report
+"self.settings.technical_report_section.title" = "テクニカルリポート";
+"self.settings.technical_report.send_report" = "ChatBoxにレポートを送信する";
+"self.settings.technical_report.mail.recipient" = "callingsupport@ChatBox.com";
+"self.settings.technical_report.mail.subject" = "ChatBox通話のレポート";
+"self.settings.technical_report.include_log" = "詳細なログを含める";
+"self.settings.technical_report.privacy_warning" = "詳細なログは個人情報を含む可能性があります";
+"self.settings.technical_report.no_mail_alert" = "No mail client detected. Tap \"OK\" and send logs manually to: ";
+
+// Password reset
+"self.settings.password_reset_menu.title" = "パスワードをリセット";
+
+// Invite from Settings
+"self.settings.invite_friends.title" = "招待する";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// System status
+"system_status_bar.no_internet.title" = "インターネットがありません";
+"system_status_bar.no_internet.explanation" = "インターネット接続に問題があるようです。インターネット接続を確認してください。";
+"system_status_bar.poor_connectivity.title" = "インターネット接続が遅いため、いまは通話はできません。";
+"system_status_bar.poor_connectivity.explanation" = "音声品質を保証できません。Wi-Fiに接続するか、場所を変えて接続してください。";
+
+// View user profile and options menu & text field validation
+"name.placeholder" = "あなたの氏名";
+"name.guidance.tooshort" = "少なくとも2文字";
+"name.guidance.toolong" = "文字が多すぎます";
+
+"email.placeholder" = "メール";
+"email.guidance.invalid" = "Invalid email address";
+"email.guidance.tooshort" = "Email is too short";
+"email.guidance.toolong" = "文字が多すぎます";
+
+"password.placeholder" = "パスワード";
+"password.guidance.tooshort" = "8 文字以上";
+"password.guidance.toolong" = "文字が多すぎます";
+
+// Landing screen
+
+"landing.title" = "Encrypt world communication freedom.";
+"landing.create_account.title" = "Create an account";
+"landing.create_account.subtitle" = "for personal use";
+"landing.create_team.title" = "新しいチームを作成";
+"landing.create_team.subtitle" = "for work";
+"landing.login.hints" = "Already have an account?";
+"landing.login.button.title" = "Log in";
+
+// Create team
+
+"team.name.headline" = "Name your team";
+"team.name.subheadline" = "You can always change it later.";
+"team.name.textfield.placeholder" = "team name";
+"team.name.textfield.accessibility" = "Set team name";
+"team.name.whatiswireforteams" = "What is ChatBox for teams?";
+
+"team.email.headline" = "Your account";
+"team.email.subheadline" = "Enter your work email address.";
+"team.email.textfield.placeholder" = "you@yourcompany.com";
+"team.email.textfield.accessibility" = "Your company email";
+"team.email.button.learn_more" = "もっと知る";
+
+"team.activation_code.headline" = "You've got mail";
+"team.activation_code.subheadline" = "Enter the verification code we sent to %@.";
+"team.activation_code.button.resend" = "Resend code";
+"team.activation_code.button.change_email" = "Change email";
+
+"team.full_name.headline" = "Your name";
+"team.full_name.textfield.placeholder" = "Full name";
+"team.full_name.textfield.accessibility" = "Set full name";
+
+"team.password.headline" = "Set password";
+"team.password.textfield.placeholder" = "8 文字以上";
+"team.password.textfield.accessibility" = "Set password, at least 8 characters";
+
+
+"team.email_code.input_field.accessbility_label" = "Please enter the six-digit code from the email.";
+
+// Invite Team Members
+
+"team.invite.header.title" = "Build your team";
+"team.invite.header.subtitle" = "Invite your colleagues to join.";
+"team.invite.textfield.placeholder" = "colleague@yourcompany.com";
+"team.invite.textfield.accesibility" = "Enter e-mail address for colleague to invite.";
+"team.invite.learn_more.title" = "もっと知る";
+"team.invite.top_bar.skip" = "Skip";
+"team.invite.top_bar.done" = "Done";
+
+// Team Invite Errors
+"team.invite.error.generic" = "問題が生じたようです。もう一度やり直してください。";
+"team.invite.error.already_registered" = "This email address is already in use";
+"team.invite.error.already_invited" = "This email has already been invited";
+"team.invite.error.too_many_invitations" = "The maximum number of invitations has been sent";
+"team.invite.error.no_internet" = "No internet connection";
+
+// Guest Room
+
+"guest_room.allow_guests.title" = "Allow guests";
+"guest_room.allow_guests.subtitle" = "Open this conversation to people outside your team.";
+"guest_room.remove_guests.message" = "Current guests will be removed from the conversation. New guests will not be allowed.";
+"guest_room.remove_guests.action" = "Remove Guests";
+"guest_room.revoke_link.message" = "New guests will not be able to join with this link. Current guests will still have access.";
+"guest_room.revoke_link.action" = "Revoke Link";
+
+"guest_room.error.generic.title" = "Something went wrong";
+"guest_room.error.generic.message" = "Check your connection and try again";
+
+// Registration
+
+"registration.title" = "登録";
+"registration.close_email_invitation_button.email_title" = "別のメール アドレスを使う";
+"registration.close_email_invitation_button.phone_title" = "電話番号で登録する";
+"registration.close_phone_invitation_button.email_title" = "メールで登録する";
+"registration.close_phone_invitation_button.phone_title" = "別の携帯電話を使用する";
+
+"registration.enter_phone_number.title" = "電話番号を編集する";
+"registration.enter_phone_number.placeholder" = "電話番号";
+
+"registration.verify_phone_number.instructions" = "%@に送信された認証コードを入力してください。";
+"registration.verify_phone_number.resend" = "再送する";
+"registration.verify_phone_number.resend_placeholder" = "コードが表示されませんか？\n新しいコードを%.0f秒以内にリクエストすることができます。";
+
+"registration.verify_email.instructions" = "%@にメールを送信しました。\n リンクに従ってあなたのメールアドレスを確認してください。";
+"registration.verify_email.resend.instructions" = "メッセージを取得できませんでしたか?";
+"registration.verify_email.resend.button_title" = "再送信";
+
+"registration.select_picture.subtitle" = "ChatBox は写真があると素敵です。";
+"registration.select_picture.button_title" = "自分で選ぶ";
+"registration.keep_picture.button_title" = "これにする";
+"registration.camera_action.title" = "写真を撮影する";
+"registration.photo_gallery_action.title" = "写真を選択してください。";
+"registration.cancel_action.title" = "キャンセル";
+
+"registration.no_history.hero" = "このデバイスで ChatBox を使用するのは初めてです。";
+"registration.no_history.subtitle" = "プライバシー上の理由から、会話の履歴はここに表示されません。";
+"registration.no_history.got_it" = "OK";
+
+"registration.no_history.logged_out.hero" = "以前にこのデバイスでワイヤーを使用しました。";
+"registration.no_history.logged_out.subtitle" = "同時に送信されたメッセージは表示されません。";
+"registration.no_history.logged_out.got_it" = "OK";
+
+"registration.enter_name.title" = "名前を編集";
+"registration.enter_name.hero" = "あなたを何と呼べばいいですか?";
+"registration.enter_name.placeholder" = "あなたの氏名";
+
+"registration.terms_of_use.title" = "ChatBoxにようこそ！";
+"registration.terms_of_use.terms" = "継続することによってあなたはChatBoxの利用規約に同意したことになります。";
+"registration.terms_of_use.terms.link" = "利用規約";
+"registration.terms_of_use.agree" = "同意する";
+
+"registration.terms_of_use.terms.title" = "利用規約";
+"registration.terms_of_use.terms.message" = "Please accept the Terms of Use to continue.";
+"registration.terms_of_use.terms.view" = "View";
+"registration.terms_of_use.accept" = "承諾";
+
+"registration.email_flow.title" = "メールで登録する。";
+"registration.email_flow.email_step.title" = "詳細を編集する";
+
+"registration.country_select.title" = "国";
+
+"registration.share_contacts.hero.title" = "ChatBoxで友人を見つける";
+"registration.share_contacts.hero.paragraph" = "他のユーザーとつながるために、ChatBoxがあなたの連絡先にアクセスすることを許可してください。私たちはすべての情報を匿名化し、他の誰ともあなたの連絡先に関する情報をシェアしません。";
+"registration.share_contacts.find_friends_button.title" = "連絡先を共有します";
+"registration.share_contacts.skip_button.title" = "いまは行わない";
+
+"registration.address_book_access_denied.hero.title" = "ChatBoxはあなたの連絡先へのアクセスしていません。";
+"registration.address_book_access_denied.hero.paragraph1" = "連絡先をシェアした場合、ChatBoxで友人を探すことが容易になります。";
+"registration.address_book_access_denied.hero.paragraph2" = "設定から連絡先を有効にすることで連絡先にアクセスできるようになります。";
+"registration.address_book_access_denied.settings_button.title" = "設定";
+"registration.address_book_access_denied.maybe_later_button.title" = "後で";
+
+"registration.push_access_denied.hero.title" = "電話やメッセージを見逃さない";
+"registration.push_access_denied.hero.paragraph1" = "設定で通知を有効にする";
+"registration.push_access_denied.settings_button.title" = "設定に移動する";
+"registration.push_access_denied.maybe_later_button.title" = "後で";
+
+"registration.signin.title" = "ログイン";
+"registration.signin.too_many_devices.title" = "";
+"registration.signin.too_many_devices.subtitle" = "このデバイスで ChatBox を使用するため、他のデバイスを 1 つ削除してください。";
+"registration.signin.too_many_devices.manage_button.title" = "デバイスを管理";
+"registration.signin.too_many_devices.sign_out_button.title" = "ログアウト";
+"registration.signin.email_button.title" = "メール";
+"registration.signin.phone_button.title" = "携帯電話";
+
+"registration.signin.alert.password_needed.title" = "Password needed";
+"registration.signin.alert.password_needed.message" = "Please enter your Password in order to log in.";
+
+"registration.devices.title" = "端末";
+"registration.devices.active_list_header" = "アクティブ";
+"registration.devices.current_list_header" = "最新";
+"registration.devices.active_list_subtitle" = "もし上のデバイスを知らない場合は、それを削除して、パスワードをリセットしてください。";
+"registration.devices.activated_in" = "アクティベートする";
+"registration.devices.id" = "ID:";
+
+"signin.forgot_password" = "パスワードをお忘れですか？";
+
+"registration.add_phone_number.hero.title" = "電話番号を追加する";
+"registration.add_phone_number.hero.paragraph" = "これはあなたが友人を探すことを容易にします。私たちは決して第三者とシェアいません。";
+"registration.add_phone_number.skip_button.title" = "いまは行わない";
+
+"registration.add_email_password.hero.title" = "メールアドレスとパスワードを追加してください。";
+"registration.add_email_password.hero.paragraph" = "これにより、複数のデバイスで ChatBox を使用できます。";
+
+"registration.email_invitation.title" = "招待状";
+"registration.email_invitation.hero.title" = "こんにちは、%@";
+"registration.email_invitation.hero.paragraph" = "アカウントを作成するためのパスワードを選択してください。";
+
+"registration.phone_invitation.title" = "招待状";
+"registration.phone_invitation.hero.title" = "こんにちは、%@";
+"registration.phone_invitation.hero.paragraph" = "アカウントの作成までもうひと息です。";
+
+"error.name_and_email" = "名前と有効なメールアドレスを入力してください。";
+"error.full_name" = "氏名を入力してください";
+"error.email" = "有効なメール アドレスを入力してください";
+"error.input.too_long" = "入力が長すぎます";
+"error.input.too_short" = "入力が短すぎます";
+"error.email.invalid" = "有効なメール アドレスを入力してください";
+"error.phone.invalid" = "有効な電話番号を入力してください";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Username takeover screen
+"registration.select_handle.takeover.subtitle" = "ChatBoxでのユーザーネームを選ぶ";
+"registration.select_handle.takeover.subtitle_link" = "もっと知る";
+
+"registration.select_handle.takeover.choose_own" = "自分のものを選ぶ";
+"registration.select_handle.takeover.keep_suggested" = "これにする";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ZMUserSessionErrorCode mapping. Used during registration and profile edit
+"error.user.unkown_error" = "問題が生じたようです。もう一度やり直してください。";
+"error.user.needs_credentials" = "詳細を確認して、もう一度やり直してください。";
+"error.user.invalid_credentials" = "詳細を確認して、もう一度やり直してください。";
+"error.user.account_pending_activation" = "アクセスをしようとしているアカウントは、ライセンス認証の保留中です。詳細をご確認ください。";
+"error.user.network_error" = "ネットワークに問題があるようです。後でもう一度お試しください。";
+"error.user.email_is_taken" = "入力したメール アドレスはすでに登録されています。もう一度、やり直して頂けますようお願いします。";
+"error.user.phone_is_taken" = "指定した電話番号はすでに登録されています。もう一度やり直してください。";
+"error.user.phone_code_invalid" = "有効なコードを入力してください。";
+"error.user.phone_code_too_many" = "すでに SMS 経由でコードを送信しました。新しいものを取得するには 10 分後に、再送信をタップします。";
+"error.user.registration_unknown_error" = "何か問題が起きたようです。もう一度やり直してください。";
+"error.user.device_deleted_remotely" = "別のデバイスからログアウトしました。";
+"error.user.last_identity_cant_be_deleted" = "メールまたは電話番号のいずれかを削除するためには、それらが登録されている必要があります。";
+"error.user.account_suspended" = "This account is no longer authorized to log in.";
+"error.user.account_limit_reached" = "You can't add more than 3 accounts.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are caught by the UI without involving the SE validation. Basically very similar to ZMUserSessionErrorCode onces
+"error.updating_password" = "パスワードの更新ができませんでした。";
+
+"error.group_call.too_many_members_in_conversation.title" = "呼び出す人が多すぎます";
+"error.group_call.too_many_members_in_conversation" = "電話は最大%d人までとの間ですることができます。";
+"error.group_call.too_many_participants_in_the_call.title" = "この通話は満員です";
+"error.group_call.too_many_participants_in_the_call" = "この部屋にはあと%d人まで入ることができます。";
+"error.call.gsm_ongoing.title" = "携帯電話通話";
+"error.call.gsm_ongoing" = "ChatBoxでの通話の前に、携帯電話の通話を終わらせてください。";
+"error.call.general.title" = "呼び出しエラー";
+"error.call.general" = "数分後に再度電話をしてみてください。";
+"error.call.slow_connection.title" = "インターネット接続が遅いです";
+"error.call.slow_connection" = "通話中に問題が発生する可能性があります";
+"error.call.slow_connection.call_anyway" = "とにかく電話をする";
+
+"error.invite.no_email_provider" = "メールで招待状を送るために、メールクライアントの設定をしてください。";
+"error.invite.no_messaging_provider" = "SMSで招待状を送るために、SMSの設定をしてください。";
+
+"sketchpad.initial_hint" = "色をタップしてブラシのサイズを変更します";
+
+"migration.please_wait_message" = "どうぞしばらくお待ちください";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are used by the backend to localize APNS
+"push.notification.new_user" = "%@がChatBoxに参加しました";
+"push.notification.new_message" = "新着メッセージ";
+
+
+//Force Update
+"force.update.title" = "アップデートが必要です。";
+"force.update.message" = "新しい機能を利用できていないようです。\n最新バージョンのChatBoxをApp Storeでダウンロードしてください。";
+"force.update.ok_button" = "App Storeに行く";
+
+// Third Party
+"giphy.conversation.message" = "%@ giphy.comから";
+"giphy.conversation.random_message" = "giphy.comから";
+"giphy.error.no_more_results" = "これ以上gifがありません。";
+"giphy.error.no_result" = "gifが見つかりませんでした。";
+
+"giphy.confirm" = "送信する";
+"giphy.cancel" = "キャンセル";
+"giphy.search_placeholder" = "Giphy を検索";
+
+"invite_banner.title" = "ChatBoxに友達を連れてくる！";
+"invite_banner.message" = "二人またはグループで、電話、メッセージ、スケッチ、Gifのやり取りを楽しんでください！";
+"invite_banner.invite_button_title" = "さらに招待する";
+
+// Collections
+"collections.section.images.title" = "写真";
+"collections.section.files.title" = "ファイル";
+"collections.section.videos.title" = "ビデオ";
+"collections.section.links.title" = "リンク";
+"collections.section.all.button" = "全てを表示 %d →";
+"collections.section.no_items" = "コレクションにアイテムがありません。";
+"collections.image_viewer.copied.title" = "写真を保存しました";
+
+"collections.search.field.placeholder" = "テキストメッセージの検索";
+"collections.search.no_items" = "見つかりませんでした";
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Message composing / drafts
+
+"compose.drafts.title" = "メッセージ";
+"compose.drafts.empty.title" = "メッセージがありません";
+"compose.drafts.empty.subtitle" = "+をタップして１つ作成する";
+"compose.drafts.compose.title" = "メッセージを作成";
+"compose.drafts.compose.subject.placeholder" = "タップして件名をセット";
+
+"compose.drafts.compose.delete.confirm.title" = "削除を確認する";
+"compose.drafts.compose.delete.confirm.message" = "This action will permanently delete this draft and cannot be undone.";
+"compose.drafts.compose.delete.confirm.action.title" = "削除";
+
+"compose.drafts.compose.dismiss.confirm.title" = "Save as draft";
+"compose.drafts.compose.dismiss.confirm.action.title" = "保存";
+"compose.drafts.compose.dismiss.delete.action.title" = "削除";
+
+"availability.message.cancel" = "キャンセル";
+"availability.message.set_status" = "Set a status";
+
+"availability.none" = "なし";
+"availability.available" = "Available";
+"availability.away" = "Away";
+"availability.busy" = "Busy";
+"availability.available.placeholder" = "%@ is available";
+"availability.away.placeholder" = "%@ is away";
+"availability.busy.placeholder" = "%@ is busy";

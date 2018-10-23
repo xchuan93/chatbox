@@ -1,0 +1,1135 @@
+//
+// ChatBox
+// Copyright (C) 2016 ChatBox Swiss GmbH
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see http://www.gnu.org/licenses/.
+//
+
+
+"general.ok" = "OK";
+"general.next" = "Вперед";
+"general.cancel" = "Отменить";
+"general.open_settings" = "Открыть настройки ChatBox";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// People picker/start UI
+"peoplepicker.search_placeholder" = "Поиск по имени или имени пользователя";
+"peoplepicker.header.top_people" = "Топ-контакты";
+"peoplepicker.button.create_conversation" = "Создать группу";
+"peoplepicker.button.add_to_conversation" = "Добавить пользователей в группу";
+"peoplepicker.header.conversations" = "Группы";
+"peoplepicker.header.team_conversations" = "%@ групп";
+"peoplepicker.header.send_invitation" = "Пригласить";
+"peoplepicker.header.contacts" = "Контакты";
+"peoplepicker.header.contacts_personal" = "Личные контакты";
+"peoplepicker.header.directory" = "Добавить в контакты";
+
+"peoplepicker.group.title.singular" = "Добавить людей";
+"peoplepicker.group.title.plural" = "Добавить участников (%d)";
+"peoplepicker.group.skip" = "Пропустить";
+"peoplepicker.group.done" = "Готово";
+"peoplepicker.group.create" = "Создать";
+
+"peoplepicker.header.people" = "Участники";
+"peoplepicker.header.services" = "Службы";
+"peoplepicker.services.create_conversation.item" = "Создать новую беседу";
+"peoplepicker.services.add_service.button" = "Добавить службу";
+"peoplepicker.services.add_service.error.title" = "Не удается добавить службу";
+"peoplepicker.services.add_service.error.default" = "В данный момент служба недоступна";
+"peoplepicker.services.add_service.error.full" = "The conversation is full";
+
+"peoplepicker.title.create_conversation" = "Создать группу";
+"peoplepicker.title.add_to_conversation" = "Добавить людей";
+
+"peoplepicker.no_contacts_title" = "Нет контактов.";
+
+"peoplepicker.no_matching_results_title" = "Ничего не найдено.";
+"peoplepicker.no_matching_results_message" = "Введите полный адрес электронной почты.";
+
+"peoplepicker.no_matching_results.action.send_invite" = "Отправить приглашение";
+"peoplepicker.no_matching_results.action.share_contacts" = "Поделиться контактами";
+
+"peoplepicker.no_matching_results_provide_valid_email" = "Пожалуйста, введите правильный email";
+"peoplepicker.no_matching_results_after_address_book_upload_title" = "Ничего не найдено.";
+/* This sentence ends with button title, contained in peoplepicker.no_matching_results_after_address_book_upload_button */
+"peoplepicker.no_matching_results_after_address_book_upload_message" = "Введите полный адрес электронной почты или";
+/*  */
+"peoplepicker.no_matching_results_after_address_book_upload_button" = "поделитесь контактами";
+
+"peoplepicker.share_contacts.no_results.title" = "Ищите людей по имени или по email";
+
+"peoplepicker.send_invitation.dialog.title" = "Приглашение отправлено";
+"peoplepicker.send_invitation.dialog.message" = "Оно будет актуально в течение 2 недель. Вы можете отправить новое приглашение, если срок этого истечет.";
+"peoplepicker.send_invitation.dialog.ok" = "OK";
+
+"peoplepicker.invite_more_people" = "Пригласить еще людей";
+"peoplepicker.invite_team_members" = "Пригласите людей в команду";
+"peoplepicker.quick-action.open-conversation" = "Открыть";
+"peoplepicker.quick-action.create-conversation" = "Создать группу";
+
+"add_participants.all_contacts_added" = "Все пользователи добавлены.";
+
+// Contacts UI
+"contacts_ui.search_placeholder" = "Поиск по имени";
+"contacts_ui.invite_others" = "Пригласить еще";
+"contacts_ui.name_in_contacts" = "%@ в контактах";
+"contacts_ui.connection_request" = "Запрос на добавление";
+"contacts_ui.action_button.invite" = "Пригласить";
+"contacts_ui.action_button.open" = "Открыть";
+"contacts_ui.invite_sheet.cancel_button_title" = "Отменить";
+"contacts_ui.notification.invitation_sent" = "Приглашение отправлено";
+"contacts_ui.notification.invitation_failed" = "Не удалось отправить приглашение";
+"contacts_ui.title" = "Пригласить людей";
+
+"conversation_list.empty.all_archived.message" = "Все разговоры отправлены в архив";
+"conversation_list.empty.no_contacts.message" = "Начните разговор или создайте группу.";
+
+
+// Conversation List Indicator
+"conversation_list.right_accessory.join_button.title" = "Присоединиться";
+"conversation_list.header.self_team.accessibility_value" = "%@ аккаунт.";
+"conversation_list.header.self_team.accessibility_value.inactive" = "Нажмите, чтобы активировать.";
+"conversation_list.header.self_team.accessibility_value.active" = "Теперь активна.";
+"conversation_list.header.self_team.accessibility_value.has_new_messages" = "Есть новые сообщения.";
+
+// Profile Header View
+"conversation.connection_view.in_address_book" = "в контактах";
+
+// Conversation list voiceover accessibility
+"conversation_list.voiceover.open_conversation.hint" = "Открыть разговор";
+"conversation_list.voiceover.status.pending_connection" = "В обработке";
+"conversation_list.voiceover.status.active_call" = "активный вызов";
+"conversation_list.voiceover.status.missed_call" = "пропущенный вызов";
+"conversation_list.voiceover.status.pause_media" = "поставить на паузу";
+"conversation_list.voiceover.status.play_media" = "Воспроизведение медиа";
+"conversation_list.voiceover.status.silenced" = "тишина";
+"conversation_list.voiceover.status.typing" = "печатает";
+"conversation_list.voiceover.status.ping" = "пинг";
+"conversation_list.voiceover.bottom_bar.archived_button.label" = "Архивные";
+"conversation_list.voiceover.bottom_bar.archived_button.hint" = "список архивных разговоров";
+"conversation_list.voiceover.bottom_bar.contacts_button.label" = "контакты";
+"conversation_list.voiceover.bottom_bar.contacts_button.hint" = "поиск людей в ChatBox";
+"conversation_list.voiceover.bottom_bar.compose_button.label" = "состоять";
+"conversation_list.voiceover.bottom_bar.compose_button.hint" = "напишите сообщение и сохраните его для последующей отправки";
+"conversation_list.voiceover.bottom_bar.camera_button.label" = "камера";
+"conversation_list.voiceover.bottom_bar.camera_button.hint" = "сделать снимок и быстро отправить";
+
+// Archived List
+"archived_list.title" = "архив";
+
+// Add contact tool tip
+"tool_tip.contacts.title" = "Общение начинается здесь";
+"tool_tip.contacts.message" = "Начните разговор. Звонки, сообщения и многое другое — приватно или в группе.";
+
+// "Knows" subtitle in cell: "Knows Indrek", "Knows Indrek and Jane", "Knows Indrek and 5 others"
+"peoplepicker.suggested.knows_one" = "Знает %@";
+"peoplepicker.suggested.knows_two" = "Знает %@ и %@";
+"peoplepicker.hide_search_result" = "Спрятать";
+"peoplepicker.hide_search_result_progress" = "Прячу…";
+
+"send_invitation.subject" = "Добавь меня в ChatBox";
+"send_invitation.text" = "Я использую ChatBox. Ищите меня там по имени %@ или посетите сайт get.ChatBox.com";
+"send_invitation_no_email.text" = "Я уже в ChatBox. Посетите get.ChatBox.com, чтобы добавить меня.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++x
+// In-app notifications (chat heads)
+"notifications.shared_a_photo" = "поделился(-лась) картинкой";
+"notifications.pinged" = "отправил(-а) пинг";
+"notifications.sent_file" = "поделился(-лась) файлом";
+"notifications.sent_location" = "поделился(-лась) местоположением";
+"notifications.sent_video" = "поделился(-лась) видео";
+"notifications.sent_audio" = "поделился(-лась) аудио";
+"notifications.in_conversation" = "%@ - %@";
+"notifications.this_conversation" = "%@ в этом разговоре";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// List (labels) - Needs to be revised with updated guidance
+"list.title" = "Разговоры";
+"list.archived_conversations" = "АРХИВ";
+"list.archived_conversations_close" = "Закрыть архив";
+
+"conversation.voiceover.verified" = "верифицировано";
+
+"conversation.status.call" = "Исходящий звонок";
+"conversation.status.typing" = "Набирает сообщение…";
+"conversation.status.typing.group" = "%@: набирает сообщение…";
+"conversation.status.silenced" = "Выкл. уведомления";
+"conversation.status.blocked" = "Заблокирован(а)";
+
+"conversation.status.message.text" = "%@";
+"conversation.status.message.link" = "Поделился(-лась) ссылкой";
+"conversation.status.message.image" = "Поделился(-лась) картинкой";
+"conversation.status.message.location" = "Поделился(-лась) местоположением";
+"conversation.status.message.audio" = "Поделился(-лась) аудио сообщением";
+"conversation.status.message.video" = "Поделился(-лась) видео";
+"conversation.status.message.file" = "Поделился(-лась) файлом";
+"conversation.status.message.knock" = "Отправил(а) пинг";
+"conversation.status.message.missedcall" = "Пропущенный звонок";
+"conversation.status.message.ephemeral" = "Временное сообщение";
+
+"conversation.status.unsent" = "⚠️ Неотправленное сообщение";
+"conversation.status.you" = "Вы";
+"conversation.status.added_multiple" = "Добавлены участники";
+"conversation.status.you_was_added" = "%@ добавил(-а) вас";
+"conversation.status.added_users" = "%@ добавил(-а) %@";
+"conversation.status.joined" = "%@ присоединился";
+"conversation.status.removed_multiple" = "Удалены участники";
+"conversation.status.you_were_removed" = "Вы были удалены";
+"conversation.status.you_left" = "Вы покинули беседу";
+"conversation.status.started_conversation" = "%@ начал разговор";
+"conversation.status.removed_users" = "%@ удалил %@";
+"conversation.status.everyone_left" = "Все вышли";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Compose Entry Point
+
+"compose.contact.title" = "Разговор";
+"compose.message.title" = "Сообщение";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Conversation
+"conversation.invite_more_people.title" = "Распространить информацию!";
+"conversation.invite_more_people.description" = "Добавить людей в этот разговор";
+"conversation.invite_more_people.explanation_url" = "https://support.ChatBox.com";
+"conversation.invite_more_people.button_title" = "Добавить людей";
+
+// Conversation names
+"conversation.displayname.emptygroup" = "Пустая группа";
+
+"conversation.input_bar.verified" = "Проверено";
+"conversation.input_bar.placeholder" = "Наберите сообщение";
+"conversation.input_bar.placeholder_ephemeral" = "Временное сообщение";
+
+"conversation.input_bar.audio_message.tooltip.pull_send" = "Проведите вверх для отправки";
+"conversation.input_bar.audio_message.tooltip.tap_send" = "Нажмите для отправки";
+"conversation.input_bar.audio_message.too_long.title" = "Запись остановлена";
+"conversation.input_bar.audio_message.too_long.message" = "Аудиосообщения ограничены %@.";
+"conversation.input_bar.audio_message.send" = "Отправить";
+
+"conversation.input_bar.audio_message.keyboard.record_tip" = "Коснитесь для записи\nВы можете %@ после этого";
+"conversation.input_bar.audio_message.keyboard.filter_tip" = "Выберите фильтр выше";
+
+"conversation.call.many_participants_confirmation.title" = "Начать звонок";
+"conversation.call.many_participants_confirmation.message" = "Вы будете звонить %d людям";
+"conversation.call.many_participants_confirmation.call" = "Звонок";
+
+"conversation.connection_view.in_address_book" = "в контактах";
+
+"conversation.input_bar.shortcut.send" = "Отправить сообщение";
+"conversation.input_bar.shortcut.edit_last_message" = "Изм. последнее сообщение";
+"conversation.input_bar.shortcut.cancel_editing_message" = "Отменить";
+
+"conversation.input_bar.message_too_long.title" = "Сообщение слишком длинное";
+"conversation.input_bar.message_too_long.message" = "Вы можете отправлять сообщения длиной до %d символов.";
+
+"conversation.create.group_name.placeholder" = "Имя группы";
+"conversation.create.guidance.empty" = "Не менее 1 символа";
+"conversation.create.guidance.toolong" = "Слишком много символов";
+"conversation.create.toggle.title" = "Разрешить гостям";
+"conversation.create.toggle.subtitle" = "Открыть этот разговор для людей не из вашей команды. Вы всегда сможете изменить это позже.";
+
+"conversation.guests_present" = "Присутствуют гости";
+
+// Image confirmation dialogue
+"image_confirmer.confirm" = "OK";
+"image_confirmer.cancel" = "Отменить";
+"image.add_sketch" = "Добавить скетч";
+"image.edit_image" = "Редактировать изображение";
+
+// Camera access
+"camera_access.denied" = "ChatBox хочет получить доступ к камере.";
+"camera_access.denied.instruction" = "";
+"camera_access.denied.open_settings" = "Разрешите доступ к камере в настройках ChatBox";
+
+// Camera and photos access, keyboard
+"keyboard_photos_access.denied.keyboard.settings" = "Настройки";
+"keyboard_photos_access.denied.keyboard.camera_and_photos" = "ChatBox необходим доступ к вашим\nкамере и фото."; // split text on two lines for a better text balance
+"keyboard_photos_access.denied.keyboard.photos" = "ChatBox необходим доступ к вашим фото.";
+"keyboard_photos_access.denied.keyboard.camera" = "ChatBox необходим доступ к вашей камере.";
+
+// Camera Controls
+"camera_controls.aeaf_lock" = "Фиксация экспозиции/фокуса";
+
+// Location
+"location.send_button.title" = "Отправить";
+"location.unauthorized_alert.title" = "Включите службы геолокации";
+"location.unauthorized_alert.message" = "Чтобы отправить ваше местоположение, включите службы геолокации и разрешите ChatBox доступ к вашему местоположению.";
+"location.unauthorized_alert.cancel" = "Отменить";
+"location.unauthorized_alert.settings" = "Настройки";
+
+// Twitter
+"twitter_status.on_twitter" = "%@ в Twitter";
+
+// Ephemeral message
+"input.ephemeral.timeout.none" = "Выключен";
+"input.ephemeral.title" = "Установить время, когда сообщение исчезнет";
+
+// System messages
+"content.system.you_nominative" = "вы";
+"content.system.you_dative" = "вы";
+"content.system.you_accusative" = "вас";
+
+"content.system.continued_conversation" = "Начать разговор с %@";
+
+"content.system.other_started_conversation" = "%@ начал разговор с %@";
+"content.system.you_started_conversation" = "Вы начали разговор с %@";
+
+"content.system.you_added_participant" = "Вы добавили %@";
+"content.system.other_added_participant" = "%@ добавил(-а) %@";
+"content.system.other_added_you" = "%@ добавил(-а) вас";
+
+"content.system.participants_you" = "Вы";
+"content.system.participants_1_other" = "%@ и %@";
+"content.system.other_left" = "%@ покинул разговор";
+"content.system.you_left" = "Вы покинули разговор";
+"content.system.other_removed_other" = "%@ удалил %@";
+"content.system.other_removed_you" = "%@ удалил вас";
+"content.system.you_removed_other" = "Вы удалили %@";
+
+// New conversation participants added / removed / started system message
+
+"content.system.conversation.other.started" = "%@ начал беседу с %@";
+"content.system.conversation.other.added" = "%@ добавил %@";
+"content.system.conversation.other.removed" = "%@ удалил %@";
+"content.system.conversation.other.left" = "%@ покинул(а) разговор";
+
+"content.system.conversation.you.started" = "%@ начал беседу с %@";
+"content.system.conversation.you.added" = "%@ добавил %@";
+"content.system.conversation.you.removed" = "%@ удалил %@";
+"content.system.conversation.you.left" = "%@ покинул(а) разговор";
+"content.system.conversation.team.member-leave" = "%@ был удален из команды.";
+"content.system.conversation.guest.joined" = "%@ присоединился";
+
+"content.system.other_renamed_conv_to_nothing" = "%@ удалил(-а) название разговора";
+"content.system.you_renamed_conv_to_nothing" = "Вы удалили название разговора";
+"content.system.pending_message_timestamp" = "Отправка...";
+"content.system.message_sent_timestamp" = "Отправлено";
+"content.system.message_delivered_timestamp" = "Доставлено";
+"content.system.failedtosend_message_timestamp" = "Отправка не удалась.";
+"content.system.failedtosend_message_timestamp_resend" = "Отправить повторно";
+"content.system.failedtosend_message_timestamp_delete" = "Удалить";
+"content.system.like_tooltip" = "Нажмите, чтобы лайкнуть";
+"content.system.deleted_message_prefix_timestamp" = "Удалено: %@";
+"content.system.edited_message_prefix_timestamp" = "Изменено: %@";
+"content.system.connecting_to" = "Подключение к %@.\nНачните разговор";
+"content.system.connected_to" = "Добавил(-а) %@.\nНачните разговор";
+"content.system.other_wanted_to_talk" = "%@ звонил";
+"content.system.you_wanted_to_talk" = "Вы звонили";
+"content.system.ephemeral_time_remaining" = "%@ покинул(а) разговор";
+
+"content.system.you_started" = "Вы";
+"content.system.this_device" = "это устройство";
+
+"content.system.call.you" = "Вы";
+"content.system.call.called" = "%@ звонил(-а)";
+"content.system.call.called-you" = "%@ звонил";
+
+"content.system.renamed_conv.title" = "%@ переименовал беседу";
+"content.system.renamed_conv.title-you" = "%@ переименовал беседу";
+"content.system.renamed_conv.title.you" = "Вы";
+
+"content.system.conversation.with_name.title" = "%@ начал разговор";
+
+"content.system.conversation.with_name.participants" = "с %@";
+
+"content.system.reactivated_device" = "Вы начали использовать %@ снова. Сообщения, отправленные ранее, не будут отображаться здесь.";
+
+"content.system.new_device" = "новое устройство";
+"content.system.started_using" = "начал(-а) использовать";
+"content.system.is_verified" = "Все отпечатки верифицированы";
+
+"content.system.new_users" = "Присоединился новый участник.";
+"content.system.verify_devices" = "Верифицируйте устройства";
+
+"content.system.unverified" = "%@ деверифицировал(-а) одно из %@"; // example "You unverified one of Jule’s devices"
+"content.system.your_devices" = "ваши устройства";
+"content.system.other_devices" = "Устройства, которыми пользуется %@";
+
+"content.system.missing_messages.title" = "Вы не использовали это устройство некоторое время. Некоторые сообщения могут не отображаться здесь.";
+"content.system.missing_messages.subtitle_start" = "Тем временем,";
+
+"content.system.cannot_decrypt" = "Сообщение от %@ не было получено.";
+
+"content.system.cannot_decrypt.you_part" = "вы";
+"content.system.cannot_decrypt.why_part" = "Почему?";
+
+"content.system.cannot_decrypt.identity" = "Идентификатор устройства %@ изменился. Сообщение не доставлено.";
+"content.system.cannot_decrypt.identity.you_part" = "Ваш";
+"content.system.cannot_decrypt.identity.otherUser_part" = "%@"; // possessive apostrophe - might differ in different languages
+"content.system.cannot_decrypt.identity.why_part" = "Подробнее";
+"content.system.cannot_decrypt.otherDevice_part" = "(устройство %@)"; // example " (device d1b23c54f34a)".
+// Full sentence: "A message from %@ was not received. [...] (device d1b23c54f34a). This is a debug information.
+
+"content.system.unknown_message.body" = "Вы используете старую версию ChatBox, которая не может отображать это сообщение.";
+"content.system.unknown_message.body.link" = "Почему это происходит?";
+
+"content.file.uploading" = "Отправка…";
+"content.file.downloading" = "Загрузка…";
+"content.file.upload_failed" = "Сбой отправки";
+"content.file.upload_cancelled" = "Отправка отменена";
+"content.file.upload_video" = "Видео";
+"content.file.take_video" = "Записать видео";
+
+"content.file.save_video" = "Сохранить";
+"content.file.save_audio" = "Сохранить";
+"content.image.save_image" = "Сохранить";
+
+"content.message.delete" = "Удалить";
+"content.message.save" = "Сохранить";
+
+"content.message.like" = "Нравится";
+"content.message.unlike" = "Не нравится";
+"content.message.forward" = "Поделиться";
+"content.message.go_to_conversation" = "Показать в разговоре";
+"content.message.forward.to" = "Поиск…";
+"content.message.open" = "Открыть";
+
+"content.reactions_list.likers" = "Понравилось";
+
+"content.file.too_big" = "Вы можете отправлять файлы до %@";
+// Someone pinged
+"content.ping.text" = "%1$@ отправил(а) пинг";
+
+// Current user pinged
+"content.ping.text.you" = "Вы";
+
+// Inline Player
+"content.player.unable_to_play" = "Невозможно проиграть трек";
+
+// Connecting (NEW IMPLEMENTATION, REVIEW LATER)
+"connection_request.title" = "Подключиться к %@"; // check UPPERCASE implementation in code
+"missive.connection_request.default_message" = "Привет %@,\nдавай общаться в ChatBox!\n%@";
+
+"connection_request.send_button_title" = "Подключиться";
+"inbox.connection_request.connect_button_title" = "Добавить в контакты";
+"inbox.connection_request.ignore_button_title" = "Игнорировать";
+
+// Voice
+"voice.status.one_to_one.incoming" = "%@\nЗвонит";
+"voice.status.group_call.incoming" = "%@\nЗвонит";
+"voice.status.one_to_one.outgoing" = "%@\nЗвонит";
+"voice.status.joining" = "%@\nПодключение";
+"voice.status.video_not_available" = "Видео выключено";
+"voice.status.low_connection" = "Плохое соединение";
+"voice.network_error.title" = "Отсутствует подключение к интернету";
+"voice.status.cbr" = "Постоянный битрейт";
+"voice.network_error.body" = "Вы должны быть онлайн, чтобы позвонить. Проверьте подключение и повторите попытку.";
+"voice.degradation.new_self_device" = "Вы начали использовать новое устройство.";
+"voice.degradation.new_user_device" = "%@ начал(-а) использовать новое устройство.";
+"voice.degradation_outgoing.prompt" = "Вы действительно хотите позвонить?";
+"voice.degradation_incoming.prompt" = "Вы действительно хотите принять вызов?";
+"voice.accept_button.title" = "Принять";
+"voice.decline_button.title" = "Отклонить";
+"voice.hang_up_button.title" = "Повесить трубку";
+"voice.mute_button.title" = "Выкл.звук";
+"voice.video_button.title" = "Видео";
+"voice.speaker_button.title" = "Динамик";
+"voice.cancel_button.title" = "Отменить";
+"voice.call_button.title" = "Позвонить";
+
+"voice.alert.call_in_progress.title" = "Идёт вызов";
+"voice.alert.call_in_progress.message" = "Одновременно вы можете совершать только один звонок";
+"voice.alert.call_in_progress.confirm" = "OK";
+
+"voice.alert.microphone_warning.title" = "ChatBox необходим доступ к микрофону.";
+"voice.alert.microphone_warning.explanation" = "Включите его в настройках ChatBox.";
+
+"voice.alert.camera_warning.title" = "ChatBox необходим доступ к камере.";
+"voice.alert.camera_warning.explanation" = "Перейдите в Настройки и разрешите ChatBox доступ к камере.";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Profile and Participants
+
+"participants.add_people_button_title" = "Добавить";
+"participants.avatar.guest.title" = "Гость";
+
+"participants.title" = "Подробнее";
+"participants.section.participants" = "Участники (%d)";
+"participants.section.services" = "Сервисов (%d)";
+"participants.footer.add_title" = "Добавить участников";
+
+// Meta Menu
+"meta.menu.rename" = "Переименовать";
+"meta.menu.leave" = "Покинуть";
+"meta.menu.archive" = "Архивировать";
+"meta.menu.unarchive" = "Разархивировать";
+"meta.menu.delete" = "Удалить";
+"meta.menu.silence.mute" = "Выкл. звук";
+"meta.menu.silence.unmute" = "Вкл.звук";
+"meta.menu.cancel" = "Отменить";
+"meta.menu.cancel_connection_request" = "Отменить запрос";
+
+// Delete conversation
+"meta.menu.delete_content.dialog_title" = "Удалить содержимое?";
+"meta.menu.delete_content.dialog_message" = "Это очистит историю разговоров на всех ваших устройствах.";
+"meta.menu.delete_content.leave_as_well_message" = "Также покинуть разговор";
+"meta.menu.delete_content.button_cancel" = "Отменить";
+"meta.menu.delete_content.button_delete" = "Удалить";
+"meta.menu.delete_content.button_delete_and_leave" = "Удалить и покинуть";
+
+// Leave conversation
+"meta.leave_conversation_dialog_title" = "Покинуть разговор?";
+"meta.leave_conversation_dialog_message" = "Участники будут уведомлены и разговор будет удален из вашего списка.";
+"meta.leave_conversation.delete_content_as_well_message" = "Также удалить содержимое";
+"meta.leave_conversation_button_cancel" = "Отменить";
+"meta.leave_conversation_button_leave" = "Покинуть";
+"meta.leave_conversation_button_leave_and_delete" = "Покинуть и удалить контент";
+
+// Conversation Degraded (security level lowered)
+"meta.degraded.degradation_reason_message.singular" = "%@ начал(-а) использовать новое устройство.";
+"meta.degraded.degradation_reason_message.plural" = "%@ начал(-а) использовать новые устройства.";
+"meta.degraded.dialog_message" = "Вы все еще хотите отправить ваше сообщение?";
+"meta.degraded.show_device_button" = "Показать устройство";
+"meta.degraded.send_anyway_button" = "Все равно отправить";
+"meta.degraded.cancel_sending_button" = "Отмена";
+
+// Remove from conversation dialogue
+"profile.remove_dialog_title" = "Удалить?";
+"profile.remove_dialog_message" = "%@ больше не сможет отправлять и получать сообщения в этом разговоре.";
+"profile.remove_dialog_button_cancel" = "Отменить";
+"profile.remove_dialog_button_remove" = "Удалить";
+
+// Block dialog
+"profile.block_dialog.title" = "Заблокировать?";
+"profile.block_dialog.message" = "%@ больше не сможет связаться с вами или добавить вас в групповые разговоры.";
+"profile.block_dialog.button_cancel" = "Отменить";
+"profile.block_dialog.button_block" = "Заблокировать";
+
+// Delete message dialog
+"message.delete_dialog.message" = "Это не может быть отменено.";
+"message.delete_dialog.action.cancel" = "Отменить";
+"message.delete_dialog.action.hide" = "Удалить для меня";
+"message.delete_dialog.action.delete" = "Удалить для всех";
+
+// Edit message
+"message.menu.edit.title" = "Редактировать";
+
+// Accept connection request
+"profile.connection_request_dialog.title" = "Принять?";
+"profile.connection_request_dialog.message" = "Вы добавите %@ и откроете этот разговор.";
+"profile.connection_request_dialog.button_cancel" = "Игнорировать";
+"profile.connection_request_dialog.button_connect" = "Добавить в контакты";
+
+// Cancel connection request
+"profile.cancel_connection_request_dialog.title" = "Отменить запрос?";
+"profile.cancel_connection_request_dialog.message" = "Удалить запрос на подключение к %@.";
+"profile.cancel_connection_request_dialog.button_no" = "Нет";
+"profile.cancel_connection_request_dialog.button_yes" = "Да";
+
+// Unblock button
+"profile.unblock_button_title" = "Разблокировать";
+
+"profile.cancel_connection_button_title" = "ОТМЕНИТЬ ЗАПРОС";
+"profile.connection_request_state.blocked" = "ЗАБЛОКИРОВАН";
+"profile.create_conversation_button_title" = "Создать группу";
+"profile.open_conversation_button_title" = "Открыть разговор";
+
+// User Details
+"profile.details.title" = "Подробнее";
+"profile.details.guest" = "Гость";
+
+"profile_view.accessibility.handle" = "Имя пользователя";
+"profile_view.accessibility.name" = "Отображаемое имя";
+"profile_view.accessibility.team_name" = "Название команды";
+
+// Device list
+"profile.devices.title" = "Устройства";
+"profile.devices.fingerprint_message_unencrypted" = "%@ использует устаревшую версию ChatBox. Устройства не отображаются.";
+"profile.devices.fingerprint_message" = "ChatBox присваивает каждому устройству уникальный отпечаток. Сравните их с %@ и верифицируйте ваш разговор. Зачем верифицировать разговоры?";
+"profile.devices.fingerprint_message.link" = "Зачем верифицировать разговоры?";
+
+// Device detail
+"profile.devices.detail.verify_message" = "Убедитесь, что этот отпечаток совпадает с отпечатком, показанном на устройстве %@.";
+"profile.devices.detail.verify_message.link" = "Как это сделать?";
+"profile.devices.detail.show_my_device.title" = "Показать отпечаток моего устройства";
+"device.verified" = "Верифицировано";
+"device.not_verified" = "Не верифицировано";
+"device.class.desktop" = "Компьютер";
+"device.class.tablet" = "Планшет";
+"device.class.phone" = "Телефон";
+"profile.devices.detail.reset_session.title" = "Сбросить сессию";
+
+// General strings
+"general.confirm" = "OK";
+
+// Bot
+"participants.services.remove_integration.button" = "удалить интеграцию";
+
+// Group details
+"group_details.guest_options_cell.title" = "Опции гостей";
+"group_details.guest_options_cell.enabled" = "Вкл.";
+"group_details.guest_options_cell.disabled" = "Выключен";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Self profile
+// Options menu contents
+
+"self.settings" = "Настройки";
+"self.profile" = "Профиль";
+"self.account" = "Аккаунт";
+"self.help_center" = "Служба поддержки";
+"self.help_center.support_website" = "Cайт техподдержки ChatBox";
+"self.help_center.contact_support" = "Связаться с техподдержкой";
+"self.about" = "О программе";
+"self.sign_out" = "Выход";
+"self.report_abuse" = "Сообщить о злоупотреблении";
+"self.voiceover.label" = "Профиль";
+"self.voiceover.hint" = "Открыть профиль и настройки";
+"self.new-device.voiceover.label" = "Профиль, добавлены новые устройства";
+
+"self.add_phone_number" = "Добавить номер телефона";
+"self.add_email_password" = "Добавить email и пароль";
+
+// About screen
+"about.tos.title" = "Условия использования";
+"about.privacy.title" = "Политика конфиденциальности";
+"about.license.title" = "Информация о лицензии";
+"about.website.title" = "Веб-сайт ChatBox";
+"about.copyright.title" = "© ChatBox Swiss GmbH";
+
+// Self new devices
+"self.new_device_alert.title" = "Вы подключили %@ к вашему аккаунту ChatBox";
+"self.new_device_alert.title_prefix.tablet" = "планшет";
+"self.new_device_alert.title_prefix.phone" = "телефон";
+"self.new_device_alert.title_prefix.devices" = "%d устройств";
+"self.new_device_alert.message" = "%@\n\nЕсли вы не делали этого, удалите устройство и измените ваш пароль.";
+"self.new_device_alert.message_plural" = "%@\n\nЕсли вы не делали этого, удалите устройства и измените ваш пароль.";
+"self.new_device_alert.manage_devices" = "Управление устройствами";
+"self.new_device_alert.trust_devices" = "OK";
+
+// Settings - top level
+"self.settings.create_team.title" = "Создать команду";
+"self.settings.manage_team.title" = "Управлять командой";
+"self.settings.add_team_or_account.title" = "Новая команда или аккаунт";
+"self.settings.add_account.title" = "Добавить аккаунт";
+
+"self.settings.add_account.error.title" = "Три активных аккаунта";
+"self.settings.add_account.error.message" = "Можно авторизоваться не более чем в трех аккаунтах одновременно. Выйдите из одного для добавления другого.";
+
+// Settings - Account details
+"self.settings.account_section" = "Аккаунт";
+
+"self.settings.account_details_group.info.title" = "Информация";
+"self.settings.account_details_group.personal.title" = "Личные";
+
+"self.settings.account_section.name.title" = "Имя";
+"self.settings.account_section.email.title" = "Email";
+"self.settings.account_section.phone.title" = "Телефон";
+"self.settings.account_section.handle.title" = "Имя пользователя";
+"self.settings.account_section.add_handle.title" = "Добавить имя пользователя";
+
+"self.settings.account_details_group.info.footer" = "Люди могут найти вас с этими данными.";
+"self.settings.account_details_group.personal.footer" = "Эта информация не видна.";
+
+"self.settings.account_details.remove_device.title" = "Удалить устройство";
+"self.settings.account_details.key_fingerprint.title" = "Отпечаток";
+"self.settings.account_details.remove_device.message" = "Для удаления устройства требуется пароль";
+"self.settings.account_details.remove_device.password" = "Пароль";
+"self.settings.account_details.remove_device.password.error" = "Неправильный пароль";
+
+"self.settings.account_appearance_group.title" = "Внешний вид";
+"self.settings.account_picture_group.picture" = "Изображение";
+"self.settings.account_picture_group.color" = "Цвет";
+
+"self.settings.account_picture_group.theme" = "Тёмная тема";
+
+"self.settings.device_details.fingerprint.subtitle" = "ChatBox дает каждому устройству уникальный отпечаток. Сравните их и заверифицируйте ваши устройства и разговоры.";
+"self.settings.device_details.reset_session.subtitle" = "Если отпечатки не совпадают, сбросьте сессию для создания новых ключей шифрования на обеих сторонах.";
+"self.settings.device_details.remove_device.subtitle" = "Удалите это устройство, если вы перестали им пользоваться. На этом устройстве сразу же будет осуществлён выход из аккаунта.";
+"self.settings.device_details.reset_session.success" = "Сессия была обновлена";
+
+"self.settings.account_details.actions.title" = "Действия";
+
+"self.settings.account_details.delete_account.title" = "Удалить аккаунт";
+
+"self.settings.account_details.delete_account.alert.title" = "Удалить аккаунт";
+"self.settings.account_details.delete_account.alert.message" = "Мы вышлем вам сообщение по электронной почте или SMS. Перейдите по ссылке, чтобы окончательно удалить свой аккаунт.";
+
+"self.settings.account_details.log_out.alert.title" = "Выйти";
+"self.settings.account_details.log_out.alert.message" = "История сообщений будет удалена с этого устройства.";
+
+
+// Change Username
+
+"self.settings.account_section.handle.change.title" = "Имя пользователя";
+"self.settings.account_section.handle.change.save" = "Сохранить";
+"self.settings.account_section.handle.change.footer" = "Минимум 2 символа. Только a-z, 0 – 9 и _ .";
+"self.settings.account_section.handle.change.footer.unavailable" = "Уже занято";
+
+"self.settings.account_section.handle.change.failure_alert.title" = "Не удается задать имя пользователя";
+"self.settings.account_section.handle.change.failure_alert.message" = "Произошла ошибка при регистрации вашего имени пользователя. Пожалуйста, попробуйте еще раз.";
+
+// Change Email
+
+"self.settings.account_section.email.change.title" = "Email";
+"self.settings.account_section.email.change.save" = "Сохранить";
+
+"self.settings.account_section.email.change.verify.title" = "Подтвердить email";
+"self.settings.account_section.email.change.verify.description" = "Проверьте свой почтовый ящик и следуйте инструкциям.";
+"self.settings.account_section.email.change.verify.resend" = "Отправить заново на %@";
+
+"self.settings.account_section.email.change.resend.title" = "Отправить email заново";
+"self.settings.account_section.email.change.resend.message" = "Письмо с подтверждением было отправлено на %@ еще раз. Пожалуйста, проверьте ваш почтовый ящик и следуйте инструкциям в письме.";
+
+// Change Phone Number
+
+"self.settings.account_section.phone_number.change.title" = "Телефон";
+"self.settings.account_section.phone_number.change.save" = "Сохранить";
+"self.settings.account_section.phone_number.change.remove" = "Удалить номер телефона";
+
+"self.settings.account_section.phone_number.change.remove.action" = "Удалить номер телефона";
+
+"self.settings.account_section.phone_number.change.verify.save" = "Сохранить";
+"self.settings.account_section.phone_number.change.verify.title" = "Подтвердить";
+"self.settings.account_section.phone_number.change.verify.description" = "Введите код подтверждения, который был отправлен на номер %@.";
+
+"self.settings.account_section.phone_number.change.verify.code_placeholder" = "Введите код";
+"self.settings.account_section.phone_number.change.verify.resend" = "Запросить код повторно";
+"self.settings.account_section.phone_number.change.verify.resend_description" = "Код не показывается?\nВы можете запросить новый через 30 секунд.";
+
+"self.settings.account_section.phone_number.change.resend.title" = "Код отправлен повторно";
+"self.settings.account_section.phone_number.change.resend.message" = "Код подтверждения был повторно отправлен на номер %@.";
+
+// Chat alerts
+"self.settings.notifications.push_notification.title" = "Уведомления";
+"self.settings.notifications.push_notification.toogle" = "Предварительный просмотр сообщения";
+"self.settings.notifications.push_notification.footer" = "Имя отправителя и сообщение на экране блокировки и в центре уведомлений.";
+
+"self.settings.notifications.chat_alerts.toggle" = "Заголовки сообщений";
+"self.settings.notifications.chat_alerts.footer" = "Новые сообщения в других разговорах.";
+
+"self.settings.sound_menu.sounds.title" = "Звуки";
+"self.settings.sound_menu.ringtone.title" = "Рингтон";
+"self.settings.sound_menu.message.title" = "Звук текстового сообщения";
+"self.settings.sound_menu.ping.title" = "Пинг";
+"self.settings.sound_menu.ringtones.title" = "Рингтоны";
+"self.settings.sound_menu.sounds.wire_sound" = "ChatBox";
+"self.settings.sound_menu.sounds.none" = "Отключены";
+
+"self.settings.callkit.title" = "Звонки";
+"self.settings.callkit.caption" = "Поделиться с iOS";
+"self.settings.callkit.description" = "Показывать звонки ChatBox на экране блокировки и в истории звонков iOS. Если Вы используете iCloud, история звонков будет передана Apple.";
+
+"self.settings.vbr.title" = "Кодирование с переменным битрейтом";
+"self.settings.vbr.description" = "Это позволяет аудиозвонкам использовать меньше трафика и работать лучше при медленном соединении. Выключите, чтобы использовать кодирование с постоянным битрейтом.";
+
+"self.settings.sound_menu.sounds.wire_call" = "Звонок ChatBox";
+"self.settings.sound_menu.sounds.wire_message" = "Сообщение ChatBox";
+"self.settings.sound_menu.sounds.wire_ping" = "Пинг ChatBox";
+
+// By popular demand
+"self.settings.popular_demand.title" = "По многочисленным просьбам";
+"self.settings.popular_demand.send_button.title" = "Кнопка \"отправить\"";
+"self.settings.popular_demand.send_button.footer" = "Отключить отправку по нажатию клавиши Enter.";
+
+// Open in
+"self.settings.external_apps.header" = "Открыть с помощью";
+
+"self.settings.link_options.twitter.title" = "Твиты";
+"self.settings.link_options.maps.title" = "Местоположения";
+"self.settings.link_options.browser.title" = "Браузер";
+
+"open_link.twitter.option.default" = "Safari / Twitter";
+"open_link.twitter.option.tweetbot" = "Tweetbot";
+"open_link.twitter.option.twitterrific" = "Twitterrific";
+
+"open_link.maps.option.apple" = "Карты";
+"open_link.maps.option.google" = "Google Maps";
+
+"open_link.browser.option.safari" = "Safari";
+"open_link.browser.option.chrome" = "Chrome";
+"open_link.browser.option.firefox" = "Firefox";
+
+// Sound alerts (TO BE UPDPATED)
+"self.settings.sound_menu.title" = "Звуковые уведомления";
+"self.settings.sound_menu.no_sounds.title" = "Отключены";
+"self.settings.sound_menu.all_sounds.title" = "Все";
+"self.settings.sound_menu.mute_while_talking.title" = "Первое сообщение и пинги";
+
+// Developer options
+"self.settings.developer_options.title" = "Опции для разработчиков";
+"self.settings.apns_logging.title" = "APNS протоколирование";
+
+// Privacy (visibility) options
+"self.settings.options_menu.title" = "Настройки";
+
+"self.settings.privacy_contacts_section.title" = "Контакты";
+"self.settings.privacy_contacts_menu.settings_button.title" = "Открыть настройки контактов";
+"self.settings.privacy_contacts_menu.description_disabled.title" = "Это поможет вам связаться с другими людьми. Мы анонимизируем всю информацию и не передаем ее третьим лицам. Разрешите доступ в Настройки > Конфиденциальность > Контакты.";
+
+"self.settings.privacy_security.lock_app" = "Заблокировать с помощью пароля";
+"self.settings.privacy_security.lock_app.subtitle" = "Заблокировать ChatBox после 10 секунд нахождения в фоновом режиме. Разблокировать приложение можно с помощью Touch ID или пароля.";
+"self.settings.privacy_security.lock_app.description" = "Разблокировать ChatBox";
+
+"self.settings.privacy_security.lock_cancelled.description" = "Разблокируйте ChatBox с помощью Touch ID или пароля";
+"self.settings.privacy_security.lock_cancelled.action" = "Разблокировать";
+
+"self.settings.privacy_security.disable_link_previews.title" = "Генерировать предпросмотр для ссылок";
+"self.settings.privacy_security.disable_link_previews.footer" = "Предпросмотр всё же может отображаться для ссылок от других людей.";
+
+"self.settings.privacy_analytics_menu.devices.title" = "Устройства";
+
+"self.settings.privacy_analytics_section.title" = "Отчеты о сбоях и использовании";
+"self.settings.privacy_analytics.title" = "Отправлять анонимные данные";
+"self.settings.privacy_analytics_menu.description.title" = "Сделайте ChatBox лучше, отправляя анонимную информацию.\n";
+
+"self.settings.privacy.clear_history.title" = "Очистить историю";
+"self.settings.privacy.clear_history.subtitle" = "Это навсегда удалит содержимое всех ваших разговоров.";
+
+"self.settings.advanced.title" = "Дополнительные настройки";
+"self.settings.advanced.troubleshooting.title" = "Устранение неполадок";
+"self.settings.advanced.troubleshooting.submit_debug.title" = "Отчет для отладки звонка";
+"self.settings.advanced.troubleshooting.submit_debug.subtitle" = "Эта информация помогает отделу поддержки ChatBox диагностировать проблемы, связанные со звонками.";
+"self.settings.advanced.reset_push_token.title" = "Обновить токен Push уведомления";
+"self.settings.advanced.reset_push_token.subtitle" = "Если у вас возникли проблемы с push-уведомлениями, отдел поддержки ChatBox может попросить вас его сбросить.";
+"self.settings.advanced.reset_push_token_alert.title" = "Push-токен был обновлен";
+"self.settings.advanced.reset_push_token_alert.message" = "Уведомления будут восстановлены в течение нескольких секунд.";
+"self.settings.advanced.version_technical_details.title" = "Технические детали версии";
+
+// Technical Report
+"self.settings.technical_report_section.title" = "Технический отчет";
+"self.settings.technical_report.send_report" = "Отправить отчет в ChatBox";
+"self.settings.technical_report.mail.recipient" = "callingsupport@ChatBox.com";
+"self.settings.technical_report.mail.subject" = "ChatBox отчет о звонке";
+"self.settings.technical_report.include_log" = "Включить подробную запись логов";
+"self.settings.technical_report.privacy_warning" = "Подробные журналы могут содержать личные данные";
+"self.settings.technical_report.no_mail_alert" = "Почтовый клиент не обнаружен. Нажмите \"OK\" и отправьте журналы вручную: ";
+
+// Password reset
+"self.settings.password_reset_menu.title" = "Сбросить пароль";
+
+// Invite from Settings
+"self.settings.invite_friends.title" = "Пригласить людей";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// System status
+"system_status_bar.no_internet.title" = "Нет доступа к интернету";
+"system_status_bar.no_internet.explanation" = "Похоже, что есть проблема с подключением к интернету. Пожалуйста, убедитесь, что соединение установлено.";
+"system_status_bar.poor_connectivity.title" = "Медленный интернет, невозможно позвонить прямо сейчас";
+"system_status_bar.poor_connectivity.explanation" = "Мы не можем гарантировать качество передачи голоса. Подключитесь к Wi-Fi или попробуйте изменить ваше местоположение.";
+
+// View user profile and options menu & text field validation
+"name.placeholder" = "Ваше полное имя";
+"name.guidance.tooshort" = "Нужно минимум 2 символа";
+"name.guidance.toolong" = "Слишком много символов";
+
+"email.placeholder" = "Email";
+"email.guidance.invalid" = "Недопустимый адрес email";
+"email.guidance.tooshort" = "Email слишком короткий";
+"email.guidance.toolong" = "Слишком много символов";
+
+"password.placeholder" = "Пароль";
+"password.guidance.tooshort" = "Необходимо минимум 8 символов";
+"password.guidance.toolong" = "Слишком много символов";
+
+// Landing screen
+
+"landing.title" = "Encrypt world communication freedom.";
+"landing.create_account.title" = "Создать аккаунт";
+"landing.create_account.subtitle" = "для личного пользования";
+"landing.create_team.title" = "Создать команду";
+"landing.create_team.subtitle" = "для работы";
+"landing.login.hints" = "Уже зарегистрированы?";
+"landing.login.button.title" = "Вход";
+
+// Create team
+
+"team.name.headline" = "Назовите команду";
+"team.name.subheadline" = "Вы всегда можете изменить название позже.";
+"team.name.textfield.placeholder" = "название команды";
+"team.name.textfield.accessibility" = "Задать имя команды";
+"team.name.whatiswireforteams" = "Что такое ChatBox для команд?";
+
+"team.email.headline" = "Ваш аккаунт";
+"team.email.subheadline" = "Введите свой рабочий адрес email.";
+"team.email.textfield.placeholder" = "you@yourcompany.com";
+"team.email.textfield.accessibility" = "Email вашей компании";
+"team.email.button.learn_more" = "Подробнее";
+
+"team.activation_code.headline" = "Вам письмо";
+"team.activation_code.subheadline" = "Введите код подтверждения, отправленный на номер %@.";
+"team.activation_code.button.resend" = "Запросить код повторно";
+"team.activation_code.button.change_email" = "Изменить email";
+
+"team.full_name.headline" = "Ваше имя";
+"team.full_name.textfield.placeholder" = "Полное имя";
+"team.full_name.textfield.accessibility" = "Укажите полное имя";
+
+"team.password.headline" = "Установить пароль";
+"team.password.textfield.placeholder" = "Необходимо минимум 8 символов";
+"team.password.textfield.accessibility" = "Задать пароль, не менее 8 символов";
+
+
+"team.email_code.input_field.accessbility_label" = "Введите шестизначный код из письма.";
+
+// Invite Team Members
+
+"team.invite.header.title" = "Создание команды";
+"team.invite.header.subtitle" = "Пригласите своих коллег присоединиться.";
+"team.invite.textfield.placeholder" = "colleague@yourcompany.com";
+"team.invite.textfield.accesibility" = "Введите адрес электронной почты для приглашения коллеги.";
+"team.invite.learn_more.title" = "Подробнее";
+"team.invite.top_bar.skip" = "Пропустить";
+"team.invite.top_bar.done" = "Готово";
+
+// Team Invite Errors
+"team.invite.error.generic" = "Что-то пошло не так - пожалуйста, попробуйте еще раз";
+"team.invite.error.already_registered" = "Этот адрес электронной почты уже используется";
+"team.invite.error.already_invited" = "Этот email уже был приглашен ранее";
+"team.invite.error.too_many_invitations" = "Было отправлено максимальное количество приглашений";
+"team.invite.error.no_internet" = "Нет соединения с интернетом";
+
+// Guest Room
+
+"guest_room.allow_guests.title" = "Разрешить гостям";
+"guest_room.allow_guests.subtitle" = "Открыть этот разговор для людей не из вашей команды.";
+"guest_room.remove_guests.message" = "Текущие гости будут удалены из разговора. Новые гости допущены не будут.";
+"guest_room.remove_guests.action" = "Удалить гостей";
+"guest_room.revoke_link.message" = "Новые гости не смогут присоединиться по этой ссылке. На доступ текущих гостей это не повлияет.";
+"guest_room.revoke_link.action" = "Отменить ссылку";
+
+"guest_room.error.generic.title" = "Что-то пошло не так";
+"guest_room.error.generic.message" = "Проверьте подключение и попробуйте еще раз";
+
+// Registration
+
+"registration.title" = "Регистрация";
+"registration.close_email_invitation_button.email_title" = "Используйте другой email";
+"registration.close_email_invitation_button.phone_title" = "Регистрация по номеру телефона";
+"registration.close_phone_invitation_button.email_title" = "Регистрация по email";
+"registration.close_phone_invitation_button.phone_title" = "Использовать другой номер телефона";
+
+"registration.enter_phone_number.title" = "Изменить номер телефона";
+"registration.enter_phone_number.placeholder" = "Номер телефона";
+
+"registration.verify_phone_number.instructions" = "Введите код подтверждения, который мы отправили на %@";
+"registration.verify_phone_number.resend" = "Отправить повторно";
+"registration.verify_phone_number.resend_placeholder" = "Код не показывается?\nВы можете запросить новый через %.0f секунд";
+
+"registration.verify_email.instructions" = "Мы отправили email на %@.\n Перейдите по ссылке в письме для подтверждения вашего адреса.";
+"registration.verify_email.resend.instructions" = "Не получили уведомление?";
+"registration.verify_email.resend.button_title" = "Отправить повторно";
+
+"registration.select_picture.subtitle" = "ChatBox выглядит лучше с вашей фотографией.";
+"registration.select_picture.button_title" = "Выберите фотографию";
+"registration.keep_picture.button_title" = "Оставить эту";
+"registration.camera_action.title" = "Сделать фото";
+"registration.photo_gallery_action.title" = "Выберите фото";
+"registration.cancel_action.title" = "Отменить";
+
+"registration.no_history.hero" = "Вы впервые используете ChatBox на этом устройстве.";
+"registration.no_history.subtitle" = "Из соображений конфиденциальности история ваших разговоров не будет показана здесь.";
+"registration.no_history.got_it" = "OK";
+
+"registration.no_history.logged_out.hero" = "Вы уже использовали ChatBox на этом устройстве.";
+"registration.no_history.logged_out.subtitle" = "Сообщения, отправленные ранее, не будут показаны.";
+"registration.no_history.logged_out.got_it" = "OK";
+
+"registration.enter_name.title" = "Изменить имя";
+"registration.enter_name.hero" = "Как нам называть вас?";
+"registration.enter_name.placeholder" = "Ваше полное имя";
+
+"registration.terms_of_use.title" = "Добро пожаловать в ChatBox.";
+"registration.terms_of_use.terms" = "Продолжая, вы соглашаетесь с Условия использования ChatBox.";
+"registration.terms_of_use.terms.link" = "Условия использования";
+"registration.terms_of_use.agree" = "Принимаю";
+
+"registration.terms_of_use.terms.title" = "Условия использования";
+"registration.terms_of_use.terms.message" = "Для продолжения, пожалуйста, примите условия использования.";
+"registration.terms_of_use.terms.view" = "Вид";
+"registration.terms_of_use.accept" = "Принять";
+
+"registration.email_flow.title" = "Регистрация по email";
+"registration.email_flow.email_step.title" = "Изменить детали";
+
+"registration.country_select.title" = "Страна";
+
+"registration.share_contacts.hero.title" = "Найти людей в ChatBox";
+"registration.share_contacts.hero.paragraph" = "Поделитесь своими контактами, чтобы мы могли соединить вас с другими людьми. Мы анонимизируем всю информацию и не делимся ею с кем-либо еще.";
+"registration.share_contacts.find_friends_button.title" = "Поделиться контактами";
+"registration.share_contacts.skip_button.title" = "Не сейчас";
+
+"registration.address_book_access_denied.hero.title" = "У ChatBox нет доступа к вашим контактам.";
+"registration.address_book_access_denied.hero.paragraph1" = "ChatBox поможет вам найти ваших друзей, если поделитесь вашими контактами.";
+"registration.address_book_access_denied.hero.paragraph2" = "Чтобы гарантировать доступ, зайдите в Настройки и разрешите доступ к Контактам.";
+"registration.address_book_access_denied.settings_button.title" = "Настройки";
+"registration.address_book_access_denied.maybe_later_button.title" = "Возможно, позже";
+
+"registration.push_access_denied.hero.title" = "Не пропустите ни одного звонка или сообщения.";
+"registration.push_access_denied.hero.paragraph1" = "Включить уведомления в настройках.";
+"registration.push_access_denied.settings_button.title" = "Перейдите в настройки";
+"registration.push_access_denied.maybe_later_button.title" = "Возможно, позже";
+
+"registration.signin.title" = "Войти";
+"registration.signin.too_many_devices.title" = "";
+"registration.signin.too_many_devices.subtitle" = "Удалите одно из ваших устройств для того, чтобы начать использовать ChatBox на этом.";
+"registration.signin.too_many_devices.manage_button.title" = "Управление устройствами";
+"registration.signin.too_many_devices.sign_out_button.title" = "Выход";
+"registration.signin.email_button.title" = "Email";
+"registration.signin.phone_button.title" = "Телефон";
+
+"registration.signin.alert.password_needed.title" = "Введите пароль";
+"registration.signin.alert.password_needed.message" = "Для входа необходимо ввести пароль.";
+
+"registration.devices.title" = "Устройства";
+"registration.devices.active_list_header" = "Активное";
+"registration.devices.current_list_header" = "Текущее";
+"registration.devices.active_list_subtitle" = "Если не распознаете устройство выше, удалите его и переустановите пароль.";
+"registration.devices.activated_in" = "Активирован в";
+"registration.devices.id" = "ID:";
+
+"signin.forgot_password" = "Забыли пароль?";
+
+"registration.add_phone_number.hero.title" = "Добавить номер телефона";
+"registration.add_phone_number.hero.paragraph" = "Это поможет нам найти людей, которых вы, возможно, знаете. Мы не разглашаем информацию о вас.";
+"registration.add_phone_number.skip_button.title" = "Не сейчас";
+
+"registration.add_email_password.hero.title" = "Добавьте ваш email и пароль.";
+"registration.add_email_password.hero.paragraph" = "Это позволяет использовать ChatBox на нескольких устройствах.";
+
+"registration.email_invitation.title" = "Приглашение";
+"registration.email_invitation.hero.title" = "Привет, %@";
+"registration.email_invitation.hero.paragraph" = "Выберите пароль для создания аккаунта.";
+
+"registration.phone_invitation.title" = "Приглашение";
+"registration.phone_invitation.hero.title" = "Привет, %@";
+"registration.phone_invitation.hero.paragraph" = "Вы в одном шаге от создания аккаунта.";
+
+"error.name_and_email" = "Пожалуйста, введите свое полное имя и правильный email";
+"error.full_name" = "Пожалуйста, введите свое полное имя";
+"error.email" = "Пожалуйста, введите правильный email";
+"error.input.too_long" = "Слишком много символов";
+"error.input.too_short" = "Слишком мало символов";
+"error.email.invalid" = "Пожалуйста, введите правильный email";
+"error.phone.invalid" = "Пожалуйста, введите действительный номер телефона";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Username takeover screen
+"registration.select_handle.takeover.subtitle" = "Зарезервируйте свое уникальное имя в ChatBox.";
+"registration.select_handle.takeover.subtitle_link" = "Подробнее";
+
+"registration.select_handle.takeover.choose_own" = "Выберите ваше";
+"registration.select_handle.takeover.keep_suggested" = "Оставить эту";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ZMUserSessionErrorCode mapping. Used during registration and profile edit
+"error.user.unkown_error" = "Что-то пошло не так - пожалуйста, попробуйте еще раз";
+"error.user.needs_credentials" = "Пожалуйста, проверьте ваши данные\nи попробуйте еще раз.";
+"error.user.invalid_credentials" = "Пожалуйста, проверьте ваши данные\nи попробуйте еще раз.";
+"error.user.account_pending_activation" = "Аккаунт, к которому вы пытаетесь получить доступ, ожидает активации. Пожалуйста, проверьте свои данные.";
+"error.user.network_error" = "Наблюдаются временные проблемы с вашей сетью. Пожалуйста, повторите попытку позже.";
+"error.user.email_is_taken" = "Email-адрес, который вы ввели, уже зарегистрирован. Пожалуйста, попробуйте еще раз.";
+"error.user.phone_is_taken" = "Номер телефона, который вы ввели, уже зарегистрирован. Пожалуйста, попробуйте еще раз.";
+"error.user.phone_code_invalid" = "Пожалуйста, введите правильный код";
+"error.user.phone_code_too_many" = "Мы уже отправили вам код через SMS. Нажмите \"Отправить повторно\" через 10 минут, чтобы получить новый.";
+"error.user.registration_unknown_error" = "Что-то пошло не так. Пожалуйста, попробуйте еще раз.";
+"error.user.device_deleted_remotely" = "Вы вышли на другом устройстве.";
+"error.user.last_identity_cant_be_deleted" = "Необходимо оставить либо адрес электронной почты, либо номер телефона.";
+"error.user.account_suspended" = "У этой учетной записи истек срок действия авторизации.";
+"error.user.account_limit_reached" = "Нельзя добавить более трех учетных записей.";
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are caught by the UI without involving the SE validation. Basically very similar to ZMUserSessionErrorCode onces
+"error.updating_password" = "Не удалось обновить пароль.";
+
+"error.group_call.too_many_members_in_conversation.title" = "Вы выбрали слишком много людей для звонка";
+"error.group_call.too_many_members_in_conversation" = "Звонки работают в группах до %d человек.";
+"error.group_call.too_many_participants_in_the_call.title" = "Слишком много людей на звонке";
+"error.group_call.too_many_participants_in_the_call" = "Здесь есть место только для %d участников.";
+"error.call.gsm_ongoing.title" = "Сотовый звонок";
+"error.call.gsm_ongoing" = "Пожалуйста, отмените сотовый вызов, прежде чем звонить в ChatBox.";
+"error.call.general.title" = "Ошибка вызова";
+"error.call.general" = "Пожалуйста, попробуйте позвонить снова через несколько минут.";
+"error.call.slow_connection.title" = "Медленное соединение";
+"error.call.slow_connection" = "Могут возникнуть проблемы во время звонка";
+"error.call.slow_connection.call_anyway" = "Все равно позвонить";
+
+"error.invite.no_email_provider" = "Пожалуйста, настройте ваш почтовый клиент, чтобы иметь возможность отправлять приглашения по электронной почте";
+"error.invite.no_messaging_provider" = "Пожалуйста, настройте SMS, чтобы иметь возможность отправлять приглашения через SMS";
+
+"sketchpad.initial_hint" = "Нажмите на цвет, чтобы изменить размер кисти";
+
+"migration.please_wait_message" = "Пожалуйста, подождите";
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Those are used by the backend to localize APNS
+"push.notification.new_user" = "%@ присоединился к ChatBox";
+"push.notification.new_message" = "Новое сообщение";
+
+
+//Force Update
+"force.update.title" = "Необходимо обновление";
+"force.update.message" = "Не пропуcтите новые функции. Скачайте последнюю версию ChatBox в App Store.";
+"force.update.ok_button" = "Перейти в App Store";
+
+// Third Party
+"giphy.conversation.message" = "%@ · через giphy.com";
+"giphy.conversation.random_message" = "через giphy.com";
+"giphy.error.no_more_results" = "Больше нет gif'ок";
+"giphy.error.no_result" = "gif не найдена";
+
+"giphy.confirm" = "отправить";
+"giphy.cancel" = "отменить";
+"giphy.search_placeholder" = "Поиск Giphy";
+
+"invite_banner.title" = "Приведите друзей в ChatBox!";
+"invite_banner.message" = "Наслаждайтесь звонками, сообщениями, скетчами, GIF \nи многим другим в приватном или групповом разговоре.";
+"invite_banner.invite_button_title" = "Пригласить еще людей";
+
+// Collections
+"collections.section.images.title" = "Изображения";
+"collections.section.files.title" = "Файлы";
+"collections.section.videos.title" = "Видео";
+"collections.section.links.title" = "Ссылки";
+"collections.section.all.button" = "Показать все %d →";
+"collections.section.no_items" = "Ничего нет";
+"collections.image_viewer.copied.title" = "Изображение скопировано";
+
+"collections.search.field.placeholder" = "Поиск в текстовых сообщениях";
+"collections.search.no_items" = "Ничего не найдено";
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Message composing / drafts
+
+"compose.drafts.title" = "Сообщения";
+"compose.drafts.empty.title" = "Сообщений нет";
+"compose.drafts.empty.subtitle" = "Нажмите + чтобы создать";
+"compose.drafts.compose.title" = "Написать сообщение";
+"compose.drafts.compose.subject.placeholder" = "Нажмите, чтобы выбрать тему";
+
+"compose.drafts.compose.delete.confirm.title" = "Подтвердить удаление";
+"compose.drafts.compose.delete.confirm.message" = "Это действие навсегда удалит этот черновик и не может быть отменено.";
+"compose.drafts.compose.delete.confirm.action.title" = "Удалить";
+
+"compose.drafts.compose.dismiss.confirm.title" = "Сохранить как черновик";
+"compose.drafts.compose.dismiss.confirm.action.title" = "Сохранить";
+"compose.drafts.compose.dismiss.delete.action.title" = "Удалить";
+
+"availability.message.cancel" = "Отменить";
+"availability.message.set_status" = "Установить статус";
+
+"availability.none" = "Отключены";
+"availability.available" = "Доступен";
+"availability.away" = "Отошел";
+"availability.busy" = "Занят";
+"availability.available.placeholder" = "%@ доступен";
+"availability.away.placeholder" = "%@ отошел";
+"availability.busy.placeholder" = "%@ занят";
