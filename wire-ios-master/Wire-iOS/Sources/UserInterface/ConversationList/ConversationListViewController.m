@@ -56,6 +56,7 @@
 #import "ActionSheetController+Conversation.h"
 
 #import "Wire-Swift.h"
+#import "UIImage+Color.h"
 
 @interface ConversationListViewController (Content) <ConversationListContentDelegate>
 
@@ -84,8 +85,10 @@
 
 @end
 
-
-@interface ConversationListViewController ()
+#define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+@interface ConversationListViewController (){
+    NSMutableDictionary *listDic;
+}
 
 @property (nonatomic) ZMConversation *selectedConversation;
 @property (nonatomic) ConversationListState state;
@@ -113,6 +116,8 @@
 
 @property (nonatomic) CGFloat contentControllerBottomInset;
 
+@property (nonatomic ,strong) UIViewController *currentVC;
+
 - (void)setState:(ConversationListState)state animated:(BOOL)animated;
 
 @end
@@ -136,6 +141,88 @@
 {
     self.view = [[PassthroughTouchesView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor clearColor];
+}
+
+- (void)addSegmentView{
+    listDic = [NSMutableDictionary dictionary];
+    
+    NSArray * _titles = @[@"消息", @"好友"];
+    UISegmentedControl * _segmentedControl = [[UISegmentedControl alloc] initWithItems:_titles];
+    _segmentedControl.selectedSegmentIndex = 0;
+    [_segmentedControl setBackgroundImage:[UIImage imageWithColor:[UIColor blackColor]] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [_segmentedControl setBackgroundImage:[UIImage imageWithColor:[UIColor blackColor]] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    [_segmentedControl setDividerImage:[UIImage imageWithColor:[UIColor whiteColor]] forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [_segmentedControl setDividerImage:[UIImage imageWithColor:[UIColor whiteColor]] forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    _segmentedControl.layer.masksToBounds = YES;
+    _segmentedControl.layer.cornerRadius = 5;
+    _segmentedControl.layer.borderWidth = 1;
+    _segmentedControl.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor orangeColor],
+                         NSForegroundColorAttributeName,
+                         [UIFont systemFontOfSize:16],
+                         NSFontAttributeName,nil];
+    
+    [ _segmentedControl setTitleTextAttributes:dic forState:UIControlStateSelected];
+    
+    NSDictionary *dic1 = [NSDictionary dictionaryWithObjectsAndKeys:UIColorFromRGB(0xffffff),
+                          NSForegroundColorAttributeName,
+                          [UIFont systemFontOfSize:16],
+                          NSFontAttributeName,nil];
+    
+    [ _segmentedControl setTitleTextAttributes:dic1 forState:UIControlStateNormal];
+    
+    [_segmentedControl addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    _segmentedControl.frame = CGRectMake(100, 20, 200.0, 29.0);
+    [self.view addSubview:_segmentedControl];
+    self.view.backgroundColor = [UIColor blackColor];
+    
+//    [self addChildViewController:self.oneVC];
+//    self.oneVC.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+//    self.twoVC.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+//    self.threeVC.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+//    [self.view addSubview:self.oneVC.view];
+//    self.currentVC = _oneVC;
+}
+
+-(void)segmentValueChanged:(UISegmentedControl *)seg{
+    NSLog(@"seg.tag-->%ld",seg.selectedSegmentIndex);
+    switch (seg.selectedSegmentIndex) {
+        case 0:
+//            [self replaceController:self.currentVC newController:self.oneVC];
+            break;
+        case 1:
+//            [self replaceController:self.currentVC newController:self.twoVC];
+            break;
+        case 2:
+//            [self replaceController:self.currentVC newController:self.threeVC];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)replaceController:(UIViewController *)oldController newController:(UIViewController *)newController
+{
+    
+    [self addChildViewController:newController];
+    [self transitionFromViewController:oldController toViewController:newController duration:0.0 options:UIViewAnimationOptionTransitionNone animations:nil completion:^(BOOL finished) {
+        
+        if (finished) {
+            
+            [newController didMoveToParentViewController:self];
+            [oldController willMoveToParentViewController:nil];
+            [oldController removeFromParentViewController];
+            self.currentVC = newController;
+            
+        }else{
+            
+            self.currentVC = oldController;
+            
+        }
+    }];
 }
 
 - (void)viewDidLoad

@@ -213,6 +213,7 @@
 		188CF62A215B3C4F001BC6B6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF620215B3C4E001BC6B6 /* HomeViewController.m */; };
 		188CF62B215B3C4F001BC6B6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF622215B3C4E001BC6B6 /* WebViewController.m */; };
 		188CF62C215B3C4F001BC6B6 /* ImagesPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF626215B3C4E001BC6B6 /* ImagesPlayer.m */; };
+		18D916AF2180263700FC1852 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D916AD2180263600FC1852 /* UIImage+Color.m */; };
 		18DC122A208B23DA00685798 /* WireLinkPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DC1229208B23DA00685798 /* WireLinkPreview.framework */; };
 		18ECF2E62160DDA500748210 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF2E22160DDA400748210 /* MBProgressHUD.m */; };
 		18ECF2E72160DDA500748210 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF2E32160DDA400748210 /* MBProgressHUD+Add.m */; };
@@ -1542,6 +1543,8 @@
 		188CF626215B3C4E001BC6B6 /* ImagesPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesPlayer.m; sourceTree = "<group>"; };
 		188CF627215B3C4E001BC6B6 /* ImagesPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesPlayer.h; sourceTree = "<group>"; };
 		188CF628215B3C4E001BC6B6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		18D916AD2180263600FC1852 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		18D916AE2180263600FC1852 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		18DC1229208B23DA00685798 /* WireLinkPreview.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireLinkPreview.framework; path = Carthage/Build/iOS/WireLinkPreview.framework; sourceTree = "<group>"; };
 		18ECF2E22160DDA400748210 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		18ECF2E32160DDA400748210 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
@@ -3414,6 +3417,8 @@
 		18508840217F0C2200DF78B5 /* XCChange */ = {
 			isa = PBXGroup;
 			children = (
+				18D916AE2180263600FC1852 /* UIImage+Color.h */,
+				18D916AD2180263600FC1852 /* UIImage+Color.m */,
 				18508841217F0C5B00DF78B5 /* XCListViewController.h */,
 				18508842217F0C5B00DF78B5 /* XCListViewController.m */,
 			);
@@ -6878,6 +6883,7 @@
 				16325E651EE03CC4000E72EB /* SearchResultsView.swift in Sources */,
 				D5C34E91203D7AEA004A0986 /* ToggleSubtitleCell.swift in Sources */,
 				8FC85471199245770008B66B /* ZClientViewController.m in Sources */,
+				18D916AF2180263700FC1852 /* UIImage+Color.m in Sources */,
 				8795322E1A8A141000EB495B /* ContrastUserImageView.m in Sources */,
 				EF2127081FB9DFE300625A9B /* PhoneNumberViewController.m in Sources */,
 				167961A9203F26E600B72ACC /* GroupDetailsSectionHeader.swift in Sources */,
