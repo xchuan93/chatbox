@@ -52,6 +52,8 @@
 #import "NSLayoutConstraint+Helpers.h"
 #import "StartUIViewController.h"
 
+#import "XCListViewController.h"
+
 @interface ZClientViewController (InitialState) <SplitViewControllerDelegate>
 
 - (void)restoreStartupState;

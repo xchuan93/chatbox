@@ -193,6 +193,21 @@
 		181D97B02160A8DD00A2B1E9 /* chatbox1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181D97AE2160A8DD00A2B1E9 /* chatbox1@3x.png */; };
 		181D97B12160A8DD00A2B1E9 /* chatbox1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181D97AF2160A8DD00A2B1E9 /* chatbox1@2x.png */; };
 		181D97BE2160D03800A2B1E9 /* backGround12.png in Resources */ = {isa = PBXBuildFile; fileRef = 181D97BD2160D03800A2B1E9 /* backGround12.png */; };
+		18508832217ECF3A00DF78B5 /* XC默认个人头像@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508824217ECF3700DF78B5 /* XC默认个人头像@3x.png */; };
+		18508833217ECF3A00DF78B5 /* XC创建群聊@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508825217ECF3700DF78B5 /* XC创建群聊@2x.png */; };
+		18508834217ECF3A00DF78B5 /* XC导航栏底色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508826217ECF3800DF78B5 /* XC导航栏底色@3x.png */; };
+		18508835217ECF3A00DF78B5 /* XC默认个人头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508827217ECF3800DF78B5 /* XC默认个人头像@2x.png */; };
+		18508836217ECF3A00DF78B5 /* XC邀请好友@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508828217ECF3800DF78B5 /* XC邀请好友@2x.png */; };
+		18508837217ECF3A00DF78B5 /* XC默认群组头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508829217ECF3800DF78B5 /* XC默认群组头像@2x.png */; };
+		18508838217ECF3A00DF78B5 /* XC创建群聊@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850882A217ECF3900DF78B5 /* XC创建群聊@3x.png */; };
+		18508839217ECF3A00DF78B5 /* XC更多选择@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850882B217ECF3900DF78B5 /* XC更多选择@2x.png */; };
+		1850883A217ECF3A00DF78B5 /* XC默认群组头像@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850882C217ECF3900DF78B5 /* XC默认群组头像@3x.png */; };
+		1850883B217ECF3A00DF78B5 /* XC导航栏底色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850882D217ECF3900DF78B5 /* XC导航栏底色@2x.png */; };
+		1850883C217ECF3A00DF78B5 /* XC邀请好友@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850882E217ECF3900DF78B5 /* XC邀请好友@3x.png */; };
+		1850883D217ECF3A00DF78B5 /* XC导航栏-更多@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850882F217ECF3A00DF78B5 /* XC导航栏-更多@3x.png */; };
+		1850883E217ECF3A00DF78B5 /* XC更多选择@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508830217ECF3A00DF78B5 /* XC更多选择@3x.png */; };
+		1850883F217ECF3A00DF78B5 /* XC导航栏-更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18508831217ECF3A00DF78B5 /* XC导航栏-更多@2x.png */; };
+		18508843217F0C5B00DF78B5 /* XCListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18508842217F0C5B00DF78B5 /* XCListViewController.m */; };
 		1860853F2074D9440013E094 /* WireSyncEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860853E2074D9440013E094 /* WireSyncEngine.framework */; };
 		188CF629215B3C4F001BC6B6 /* HomeTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF61E215B3C4E001BC6B6 /* HomeTabCell.m */; };
 		188CF62A215B3C4F001BC6B6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF620215B3C4E001BC6B6 /* HomeViewController.m */; };
@@ -1502,6 +1517,22 @@
 		181D97BF2160D1C700A2B1E9 /* Wire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Wire.entitlements; path = "Wire-iOS/Wire.entitlements"; sourceTree = "<group>"; };
 		181D97C02160D3B700A2B1E9 /* Wire Share Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wire Share Extension.entitlements"; sourceTree = "<group>"; };
 		181D97C12160D3CD00A2B1E9 /* ImageNotificationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageNotificationExtension.entitlements; sourceTree = "<group>"; };
+		18508824217ECF3700DF78B5 /* XC默认个人头像@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC默认个人头像@3x.png"; sourceTree = "<group>"; };
+		18508825217ECF3700DF78B5 /* XC创建群聊@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC创建群聊@2x.png"; sourceTree = "<group>"; };
+		18508826217ECF3800DF78B5 /* XC导航栏底色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC导航栏底色@3x.png"; sourceTree = "<group>"; };
+		18508827217ECF3800DF78B5 /* XC默认个人头像@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC默认个人头像@2x.png"; sourceTree = "<group>"; };
+		18508828217ECF3800DF78B5 /* XC邀请好友@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC邀请好友@2x.png"; sourceTree = "<group>"; };
+		18508829217ECF3800DF78B5 /* XC默认群组头像@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC默认群组头像@2x.png"; sourceTree = "<group>"; };
+		1850882A217ECF3900DF78B5 /* XC创建群聊@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC创建群聊@3x.png"; sourceTree = "<group>"; };
+		1850882B217ECF3900DF78B5 /* XC更多选择@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC更多选择@2x.png"; sourceTree = "<group>"; };
+		1850882C217ECF3900DF78B5 /* XC默认群组头像@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC默认群组头像@3x.png"; sourceTree = "<group>"; };
+		1850882D217ECF3900DF78B5 /* XC导航栏底色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC导航栏底色@2x.png"; sourceTree = "<group>"; };
+		1850882E217ECF3900DF78B5 /* XC邀请好友@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC邀请好友@3x.png"; sourceTree = "<group>"; };
+		1850882F217ECF3A00DF78B5 /* XC导航栏-更多@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC导航栏-更多@3x.png"; sourceTree = "<group>"; };
+		18508830217ECF3A00DF78B5 /* XC更多选择@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC更多选择@3x.png"; sourceTree = "<group>"; };
+		18508831217ECF3A00DF78B5 /* XC导航栏-更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC导航栏-更多@2x.png"; sourceTree = "<group>"; };
+		18508841217F0C5B00DF78B5 /* XCListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCListViewController.h; sourceTree = "<group>"; };
+		18508842217F0C5B00DF78B5 /* XCListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCListViewController.m; sourceTree = "<group>"; };
 		1860853E2074D9440013E094 /* WireSyncEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireSyncEngine.framework; path = Carthage/Build/iOS/WireSyncEngine.framework; sourceTree = "<group>"; };
 		188CF61E215B3C4E001BC6B6 /* HomeTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabCell.m; sourceTree = "<group>"; };
 		188CF61F215B3C4E001BC6B6 /* HomeTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabCell.h; sourceTree = "<group>"; };
@@ -3359,6 +3390,36 @@
 			path = StemModel;
 			sourceTree = "<group>";
 		};
+		18508823217ECEAF00DF78B5 /* XCResources */ = {
+			isa = PBXGroup;
+			children = (
+				18508825217ECF3700DF78B5 /* XC创建群聊@2x.png */,
+				1850882A217ECF3900DF78B5 /* XC创建群聊@3x.png */,
+				18508831217ECF3A00DF78B5 /* XC导航栏-更多@2x.png */,
+				1850882F217ECF3A00DF78B5 /* XC导航栏-更多@3x.png */,
+				1850882D217ECF3900DF78B5 /* XC导航栏底色@2x.png */,
+				18508826217ECF3800DF78B5 /* XC导航栏底色@3x.png */,
+				1850882B217ECF3900DF78B5 /* XC更多选择@2x.png */,
+				18508830217ECF3A00DF78B5 /* XC更多选择@3x.png */,
+				18508827217ECF3800DF78B5 /* XC默认个人头像@2x.png */,
+				18508824217ECF3700DF78B5 /* XC默认个人头像@3x.png */,
+				18508829217ECF3800DF78B5 /* XC默认群组头像@2x.png */,
+				1850882C217ECF3900DF78B5 /* XC默认群组头像@3x.png */,
+				18508828217ECF3800DF78B5 /* XC邀请好友@2x.png */,
+				1850882E217ECF3900DF78B5 /* XC邀请好友@3x.png */,
+			);
+			path = XCResources;
+			sourceTree = "<group>";
+		};
+		18508840217F0C2200DF78B5 /* XCChange */ = {
+			isa = PBXGroup;
+			children = (
+				18508841217F0C5B00DF78B5 /* XCListViewController.h */,
+				18508842217F0C5B00DF78B5 /* XCListViewController.m */,
+			);
+			path = XCChange;
+			sourceTree = "<group>";
+		};
 		188CF61C215B3C4E001BC6B6 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -4827,6 +4888,7 @@
 		8FC85083199245760008B66B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18508823217ECEAF00DF78B5 /* XCResources */,
 				8FC8564019924CBA0008B66B /* Localizable.strings */,
 				1EFB23DE1ACEDE5400244571 /* Localizable.stringsdict */,
 				848DE12A1A83D20000E154B1 /* emoticons.min.json */,
@@ -4881,6 +4943,7 @@
 		8FC850D8199245760008B66B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				18508840217F0C2200DF78B5 /* XCChange */,
 				188CF61C215B3C4E001BC6B6 /* HomePage */,
 				871BC3181D34F94200DF0793 /* Components */,
 				8FC85126199245760008B66B /* Helpers */,
@@ -6328,10 +6391,12 @@
 			files = (
 				181D9712215E298C00A2B1E9 /* menu@2x.png in Resources */,
 				181D972E21609F6E00A2B1E9 /* tip@2x.png in Resources */,
+				1850883C217ECF3A00DF78B5 /* XC邀请好友@3x.png in Resources */,
 				1658D2041D3E742A00249609 /* new_message.caf in Resources */,
 				87AEDB281DBA619D00010451 /* logo@2x.png in Resources */,
 				BF732A761D9C14C7003077DB /* emoji_nature.plist in Resources */,
 				16A2024D1B66505C0095BBD1 /* soundcloud@2x.png in Resources */,
+				1850883F217ECF3A00DF78B5 /* XC导航栏-更多@2x.png in Resources */,
 				181D976421609F8100A2B1E9 /* MJRefresh.bundle in Resources */,
 				181D970C215E298C00A2B1E9 /* bar@3x.png in Resources */,
 				181D973121609F6E00A2B1E9 /* youth@3x.png in Resources */,
@@ -6339,9 +6404,12 @@
 				877316121B970A82007BA779 /* tutorial.plist in Resources */,
 				8FC853D7199245770008B66B /* Settings.bundle in Resources */,
 				877316081B970A82007BA779 /* ipad.plist in Resources */,
+				18508832217ECF3A00DF78B5 /* XC默认个人头像@3x.png in Resources */,
 				BF732A781D9C14C7003077DB /* emoji_people.plist in Resources */,
 				1ED28CD71A94E26D00B96189 /* group-icon.png in Resources */,
+				18508833217ECF3A00DF78B5 /* XC创建群聊@2x.png in Resources */,
 				181D970F215E298C00A2B1E9 /* more@3x.png in Resources */,
+				1850883B217ECF3A00DF78B5 /* XC导航栏底色@2x.png in Resources */,
 				1658D2031D3E742A00249609 /* new_message_apns.caf in Resources */,
 				877316061B970A82007BA779 /* framework.plist in Resources */,
 				87A4DA9D1D34FEF400105D44 /* audio-notifications in Resources */,
@@ -6350,6 +6418,8 @@
 				8773160F1B970A82007BA779 /* profile.plist in Resources */,
 				18F838DA215CC442000360AE /* back@3x.png in Resources */,
 				BF732A7A1D9C14C7003077DB /* emoji_travel.plist in Resources */,
+				18508834217ECF3A00DF78B5 /* XC导航栏底色@3x.png in Resources */,
+				18508839217ECF3A00DF78B5 /* XC更多选择@2x.png in Resources */,
 				181D97BE2160D03800A2B1E9 /* backGround12.png in Resources */,
 				1658D2061D3E742A00249609 /* ringing_from_them_long.caf in Resources */,
 				16A2024C1B66505B0095BBD1 /* soundcloud.png in Resources */,
@@ -6358,18 +6428,25 @@
 				874C09361B4A8EF40077393B /* InfoPlist.strings in Resources */,
 				18F838D9215CC442000360AE /* back@2x.png in Resources */,
 				181D970A215E298C00A2B1E9 /* play@3x.png in Resources */,
+				1850883D217ECF3A00DF78B5 /* XC导航栏-更多@3x.png in Resources */,
 				BF732A731D9C14C7003077DB /* emoji_activities.plist in Resources */,
 				877316071B970A82007BA779 /* ipad_landscape.plist in Resources */,
 				87AEDB291DBA619D00010451 /* logo@3x.png in Resources */,
 				181D973221609F6E00A2B1E9 /* tip@3x.png in Resources */,
 				DBF597581A3600FC00269B7F /* icon-no-appstore.xcassets in Resources */,
+				18508838217ECF3A00DF78B5 /* XC创建群聊@3x.png in Resources */,
+				18508835217ECF3A00DF78B5 /* XC默认个人头像@2x.png in Resources */,
 				BF732A771D9C14C7003077DB /* emoji_objects.plist in Resources */,
+				1850883A217ECF3A00DF78B5 /* XC默认群组头像@3x.png in Resources */,
 				87D482AF1B8C7DBC004ED174 /* soundcloud@3x.png in Resources */,
+				18508836217ECF3A00DF78B5 /* XC邀请好友@2x.png in Resources */,
 				181D970B215E298C00A2B1E9 /* play@2x.png in Resources */,
 				BF732A791D9C14C7003077DB /* emoji_symbols.plist in Resources */,
+				18508837217ECF3A00DF78B5 /* XC默认群组头像@2x.png in Resources */,
 				1EBA8C681B70C15D0089CC44 /* common-controls.cas in Resources */,
 				181D973021609F6E00A2B1E9 /* youth@2x.png in Resources */,
 				181D9711215E298C00A2B1E9 /* GenesisLOGO@3x.png in Resources */,
+				1850883E217ECF3A00DF78B5 /* XC更多选择@3x.png in Resources */,
 				181D97B12160A8DD00A2B1E9 /* chatbox1@2x.png in Resources */,
 				8FC8563E19924CBA0008B66B /* Localizable.strings in Resources */,
 				EF21270B1FB9DFE300625A9B /* CountryCodes.plist in Resources */,
@@ -7431,6 +7508,7 @@
 				87168510203332F800AC9F81 /* UIViewController+SafeArea.swift in Sources */,
 				870DC1EB1C92F5CC005C1DB9 /* AVSLogObserver.m in Sources */,
 				EF00FD741FDA97BA0059FEDC /* UIViewController+Orientation.swift in Sources */,
+				18508843217F0C5B00DF78B5 /* XCListViewController.m in Sources */,
 				AFD4E72A1E449925002A4732 /* Analytics+StorableTrackingEvent.swift in Sources */,
 				8F89141D1A9F287E0056AB0C /* ConversationListViewModel.m in Sources */,
 				BF10B58D1E6452B800E7036E /* ZMMessage+Likes.swift in Sources */,

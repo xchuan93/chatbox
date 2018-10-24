@@ -59,8 +59,9 @@ extension ConversationListViewController {
         self.topBar = ConversationListTopBar()
         self.topBar.layoutMargins = UIEdgeInsetsMake(0, 9, 0, 16)
         self.contentContainer.addSubview(self.topBar)
-        self.topBar.leftView = button
-        self.topBar.rightView = profileAccountView
+        self.topBar.leftView = profileAccountView
+        self.topBar.rightView = button
+        
         
     }
     func tapped(_ button:UIButton) {
