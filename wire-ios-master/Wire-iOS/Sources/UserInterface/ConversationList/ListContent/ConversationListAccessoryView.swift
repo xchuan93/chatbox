@@ -119,6 +119,7 @@ final internal class ConversationListAccessoryView: UIView {
             return .none
         case .unreadMessages(let count):
             textLabel.text = String(count)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ChangeBadgeCount"), object: String(count))
             self.accessibilityValue = textLabel.text
             return textLabel
         case .unreadPing:

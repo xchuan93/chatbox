@@ -28,6 +28,9 @@
 #import "UIView+Borders.h"
 #import "WireSyncEngine+iOS.h"
 #import "Wire-Swift.h"
+#import <Masonry.h>
+
+typedef void(^BadgeCount)(NSString *badgecount);
 
 @import Classy;
 
@@ -44,6 +47,9 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
 @property (nonatomic) UILabel *titleField;
 @property (nonatomic) UILabel *subtitleField;
 @property (nonatomic) UIView *lineView;
+@property (nonatomic) UILabel *badgeLab;
+
+@property (nonatomic, copy) BadgeCount badgeChange;
 
 @property (nonatomic) NSLayoutConstraint *titleTwoLineConstraint;
 @property (nonatomic) NSLayoutConstraint *titleOneLineConstraint;
@@ -73,18 +79,32 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
                                                  selector:@selector(mediaPlayerStateChanged:)
                                                      name:MediaPlaybackManagerPlayerStateChangedNotification
                                                    object:nil];
+        self.backgroundColor = UIColorFromRGB(0xffffff);
+//        self.backgroundColor = [UIColor blackColor];
     }
     return self;
 }
 
+- (void)ChangeBadgeCount:(NSNotification *)no{
+    NSString *badgeCount = no.object;
+//    self.badgeLab.hidden = NO;
+//    self.badgeLab.accessibilityValue = badgeCount;
+    self.badgeChange(badgeCount);
+}
+
 - (void)setupConversationListItemView
 {
+    
+//    NSNotificationCenter.defaultCenter().postNotificationName("ChangeBadgeCount", object: String(count))
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ChangeBadgeCount:) name:@"ChangeBadgeCount" object:nil];
     self.labelsContainer = [[UIView alloc] initForAutoLayout];
     [self addSubview:self.labelsContainer];
     self.labelsContainer.isAccessibilityElement = YES;
     self.labelsContainer.accessibilityTraits = UIAccessibilityTraitButton;
     
     self.titleField = [[UILabel alloc] initForAutoLayout];
+//    self.titleField.font = [UIFont systemFontOfSize:15];
+    
     self.titleField.numberOfLines = 1;
     self.titleField.lineBreakMode = NSLineBreakByTruncatingTail;
     [self.labelsContainer addSubview:self.titleField];
@@ -95,6 +115,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     [self addSubview:self.avatarContainer];
 
     self.avatarView = [[ConversationAvatarView alloc] initForAutoLayout];
+    
     [self.avatarContainer addSubview:self.avatarView];
 
     self.rightAccessory = [[ConversationListAccessoryView alloc] initWithMediaPlaybackManager:[AppDelegate sharedAppDelegate].mediaPlaybackManager];
@@ -104,7 +125,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     [self createSubtitleField];
     
     self.lineView = [[UIView alloc] initForAutoLayout];
-    self.lineView.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.08f];
+    self.lineView.backgroundColor = UIColorFromRGB(0xdddddd);
     [self addSubview:self.lineView];
     
     [self.rightAccessory setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
@@ -126,12 +147,39 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
                                                object:nil];
     
     self.isAccessibilityElement = NO;
+    
+    self.avatarView.frame = CGRectMake(self.avatarView.frame.origin.x, self.avatarView.frame.origin.y, 44, 44);
+    
+    self.titleField.textColor = UIColorFromRGB(0x323232);
+    self.subtitleField.textColor = UIColorFromRGB(0x323232);
+    UILabel  *badgeLab = [UILabel new];
+    badgeLab.font = [UIFont systemFontOfSize:12];
+    badgeLab.textColor = UIColorFromRGB(0xffffff);
+    badgeLab.backgroundColor = UIColorFromRGB(0xef8752);
+    badgeLab.layer.cornerRadius = 7.5;
+    badgeLab.layer.borderColor = UIColorFromRGB(0xef8752).CGColor;
+    badgeLab.layer.masksToBounds = YES;
+//    badgeLab.text = @"2";
+    badgeLab.textAlignment = NSTextAlignmentCenter;
+    badgeLab.hidden = YES;
+    [self addSubview:badgeLab];
+    [badgeLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.avatarView.mas_right).offset(0);
+        make.top.equalTo(self.avatarView.mas_top).offset(0);
+        make.width.height.mas_equalTo(15);
+    }];
+    
+    self.badgeChange = ^(NSString *badgecount) {
+        badgeLab.hidden = NO;
+        badgeLab.text = badgecount;
+    };
+    
 }
 
 - (void)createSubtitleField
 {
     self.subtitleField = [[UILabel alloc] initForAutoLayout];
-    self.subtitleField.textColor = [UIColor colorWithWhite:1.0f alpha:0.64f];
+//    self.subtitleField.font = [UIFont systemFontOfSize:12];
     self.subtitleField.accessibilityIdentifier = @"Conversation status";
     self.subtitleField.numberOfLines = 1;
     [self.labelsContainer addSubview:self.subtitleField];
@@ -147,27 +195,50 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
         [self.avatarContainer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.titleField];
         
         [self.avatarView autoCenterInSuperview];
+        [self.avatarView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.centerY.mas_offset(0);
+            make.width.height.mas_equalTo(44);
+            make.left.mas_offset(15);
+        }];
         
-        [self.titleField autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
-        [self.subtitleField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleField withOffset:2.0];
-        [self.subtitleField autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
+        [self.titleField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.avatarView.mas_right).offset(22);
+            make.top.equalTo(self.avatarView.mas_top);
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(19);
+        }];
+        [self.subtitleField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.titleField);
+            make.top.equalTo(self.titleField.mas_bottom).offset(6);
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(13);
+        }];
+//        [self.titleField autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
+//        [self.subtitleField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleField withOffset:2.0];
+//        [self.subtitleField autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
         
-        [self.labelsContainer autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:8 relation:NSLayoutRelationGreaterThanOrEqual];
-        [self.labelsContainer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self withOffset:leftMargin];
-        [self.labelsContainer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.rightAccessory withOffset:-8.0];
-        [self.labelsContainer autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:8 relation:NSLayoutRelationGreaterThanOrEqual];
-        
-        self.titleTwoLineConstraint = [self.labelsContainer autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
-        self.titleTwoLineConstraint.active = NO;
-        self.titleOneLineConstraint = [self.titleField autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self];
+//        [self.labelsContainer autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:8 relation:NSLayoutRelationGreaterThanOrEqual];
+//        [self.labelsContainer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self withOffset:leftMargin];
+//        [self.labelsContainer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.rightAccessory withOffset:-8.0];
+//        [self.labelsContainer autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:8 relation:NSLayoutRelationGreaterThanOrEqual];
+//
+//        self.titleTwoLineConstraint = [self.labelsContainer autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+//        self.titleTwoLineConstraint.active = NO;
+//        self.titleOneLineConstraint = [self.titleField autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self];
         
         [self.rightAccessory autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
         [self.rightAccessory autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:16.0];
         
-        [self.lineView autoSetDimension:ALDimensionHeight toSize:UIScreen.hairline];
-        [self.lineView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
-        [self.lineView autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self withOffset:0.0];
-        [self.lineView autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.titleField];
+//        [self.lineView autoSetDimension:ALDimensionHeight toSize:UIScreen.hairline];
+//        [self.lineView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+//        [self.lineView autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self withOffset:0.0];
+//        [self.lineView autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.titleField];
+        [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.titleField);
+            make.right.mas_offset(0);
+            make.height.mas_equalTo(1);
+            make.bottom.mas_offset(0);
+        }];
     }];
 }
 
@@ -175,6 +246,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
 {
     _titleText = titleText;
     self.titleField.attributedText = titleText;
+    self.titleField.textColor = UIColorFromRGB(0x323232);
 }
 
 - (void)setSubtitleAttributedText:(NSAttributedString *)subtitleAttributedText
@@ -190,6 +262,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
         self.titleOneLineConstraint.active = NO;
         self.titleTwoLineConstraint.active = YES;
     }
+    self.subtitleField.textColor = UIColorFromRGB(0x323232);
 }
 
 - (void)setSelected:(BOOL)selected

@@ -76,6 +76,7 @@ static const NSTimeInterval OverscrollRatio = 2.5;
     self = [super initWithFrame:frame];
     if (self) {
         [self setupConversationListCell];
+        self.backgroundColor = UIColorFromRGB(0xffffff);
     }
     return self;
 }

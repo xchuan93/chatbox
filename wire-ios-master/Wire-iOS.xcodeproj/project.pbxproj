@@ -3417,6 +3417,7 @@
 		18508840217F0C2200DF78B5 /* XCChange */ = {
 			isa = PBXGroup;
 			children = (
+				18D916B021804C8700FC1852 /* Resource */,
 				18D916AE2180263600FC1852 /* UIImage+Color.h */,
 				18D916AD2180263600FC1852 /* UIImage+Color.m */,
 				18508841217F0C5B00DF78B5 /* XCListViewController.h */,
@@ -3475,6 +3476,13 @@
 				188CF626215B3C4E001BC6B6 /* ImagesPlayer.m */,
 			);
 			path = XCCarouselView;
+			sourceTree = "<group>";
+		};
+		18D916B021804C8700FC1852 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		18ECF2E12160DDA400748210 /* MBProgressHUD */ = {

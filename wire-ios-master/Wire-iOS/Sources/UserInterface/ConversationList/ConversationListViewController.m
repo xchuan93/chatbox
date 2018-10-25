@@ -57,6 +57,7 @@
 
 #import "Wire-Swift.h"
 #import "UIImage+Color.h"
+#import <Masonry.h>
 
 @interface ConversationListViewController (Content) <ConversationListContentDelegate>
 
@@ -101,6 +102,7 @@
 @property (nonatomic) id initialSyncObserverToken;
 
 @property (nonatomic) ConversationListContentController *listContentController;
+@property (nonatomic) StartUIViewController *startcontroller;
 @property (nonatomic) ConversationListBottomBarController *bottomBarController;
 
 @property (nonatomic) ConversationListTopBar *topBar;
@@ -174,26 +176,40 @@
     
     [_segmentedControl addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
     
-    _segmentedControl.frame = CGRectMake(100, 20, 200.0, 29.0);
     [self.view addSubview:_segmentedControl];
-    self.view.backgroundColor = [UIColor blackColor];
+    [_segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.topBar.mas_centerY).offset(0);
+        make.height.mas_equalTo(27);
+        make.width.mas_equalTo(167);
+    }];
     
-//    [self addChildViewController:self.oneVC];
-//    self.oneVC.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
-//    self.twoVC.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
-//    self.threeVC.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
-//    [self.view addSubview:self.oneVC.view];
-//    self.currentVC = _oneVC;
+    self.view.backgroundColor = [UIColor blackColor];
+    self.listContentController = [[ConversationListContentController alloc] init];
+    self.listContentController.collectionView.contentInset = UIEdgeInsetsMake(0, 0, self.contentControllerBottomInset, 0);
+    self.listContentController.view.translatesAutoresizingMaskIntoConstraints = NO;
+    self.listContentController.contentDelegate = self;
+    self.listContentController.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+    [self.listContentController.collectionView scrollRectToVisible:CGRectMake(0, 0, self.view.bounds.size.width, 1) animated:NO];
+    
+    [self addChildViewController:self.listContentController];
+    [self.view addSubview:self.listContentController.view];
+    self.currentVC = self.listContentController;
+    
+    self.startcontroller = [[StartUIViewController alloc] init];
+    self.startcontroller.delegate = self;
+    self.startcontroller.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+    
 }
 
 -(void)segmentValueChanged:(UISegmentedControl *)seg{
     NSLog(@"seg.tag-->%ld",seg.selectedSegmentIndex);
     switch (seg.selectedSegmentIndex) {
         case 0:
-//            [self replaceController:self.currentVC newController:self.oneVC];
+            [self replaceController:self.currentVC newController:self.listContentController];
             break;
         case 1:
-//            [self replaceController:self.currentVC newController:self.twoVC];
+            [self replaceController:self.currentVC newController:self.startcontroller];
             break;
         case 2:
 //            [self replaceController:self.currentVC newController:self.threeVC];
@@ -248,12 +264,11 @@
     self.initialSyncObserverToken = [ZMUserSession addInitialSyncCompletionObserver:self userSession:[ZMUserSession sharedSession]];
 
     [self createNoConversationLabel];
-    [self createListContentController];
+//    [self createListContentController];
     [self createBottomBarController];
     [self createTopBar];
 
     [self createViewConstraints];
-    [self.listContentController.collectionView scrollRectToVisible:CGRectMake(0, 0, self.view.bounds.size.width, 1) animated:NO];
     
     [self hideNoContactLabelAnimated:NO];
     [self updateNoConversationVisibility];
@@ -261,6 +276,8 @@
     
     [self updateObserverTokensForActiveTeam];
     [self showPushPermissionDeniedDialogIfNeeded];
+    
+    [self addSegmentView];
 }
 
 - (void)updateObserverTokensForActiveTeam
