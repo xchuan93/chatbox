@@ -91,7 +91,8 @@ CGFloat const accessoryButtonSize = 32.0f;
 - (void)setupDefaultAppearance
 {
     [self setupFonts];
-    _textColor = [UIColor blackColor];
+    self.backgroundColor = UIColorFromRGB(0xf1f1f1);
+    _textColor = UIColorFromRGB(0xf1f1f1);
     _lineSpacing = 8.0f;
     _hasAccessoryButton = NO;
     _tokenTitleVerticalAdjustment = 1;

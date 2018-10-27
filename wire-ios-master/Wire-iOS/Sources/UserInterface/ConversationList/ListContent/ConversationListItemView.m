@@ -90,6 +90,12 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
 //    self.badgeLab.hidden = NO;
 //    self.badgeLab.accessibilityValue = badgeCount;
     self.badgeChange(badgeCount);
+//    [self setbadgeCount:badgeCount];
+}
+
+- (void)setbadgeCount:(NSString *)badge{
+    self.badgeLab.text = badge;
+    self.badgeLab.hidden = NO;
 }
 
 - (void)setupConversationListItemView
@@ -152,26 +158,31 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     
     self.titleField.textColor = UIColorFromRGB(0x323232);
     self.subtitleField.textColor = UIColorFromRGB(0x323232);
-    UILabel  *badgeLab = [UILabel new];
-    badgeLab.font = [UIFont systemFontOfSize:12];
-    badgeLab.textColor = UIColorFromRGB(0xffffff);
-    badgeLab.backgroundColor = UIColorFromRGB(0xef8752);
-    badgeLab.layer.cornerRadius = 7.5;
-    badgeLab.layer.borderColor = UIColorFromRGB(0xef8752).CGColor;
-    badgeLab.layer.masksToBounds = YES;
+    self.badgeLab = [UILabel new];
+    _badgeLab.font = [UIFont systemFontOfSize:12];
+    _badgeLab.textColor = UIColorFromRGB(0xffffff);
+    _badgeLab.backgroundColor = UIColorFromRGB(0xef8752);
+    _badgeLab.layer.cornerRadius = 7.5;
+    _badgeLab.layer.borderColor = UIColorFromRGB(0xef8752).CGColor;
+    _badgeLab.layer.masksToBounds = YES;
 //    badgeLab.text = @"2";
-    badgeLab.textAlignment = NSTextAlignmentCenter;
-    badgeLab.hidden = YES;
-    [self addSubview:badgeLab];
-    [badgeLab mas_makeConstraints:^(MASConstraintMaker *make) {
+    _badgeLab.textAlignment = NSTextAlignmentCenter;
+    _badgeLab.hidden = YES;
+    
+    NSLog(@"-----%@",_badgeLab);
+    
+    [self addSubview:_badgeLab];
+    [_badgeLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.avatarView.mas_right).offset(0);
         make.top.equalTo(self.avatarView.mas_top).offset(0);
         make.width.height.mas_equalTo(15);
     }];
-    
+    typeof(self)weakSelf = self;
     self.badgeChange = ^(NSString *badgecount) {
-        badgeLab.hidden = NO;
-        badgeLab.text = badgecount;
+        
+        weakSelf.badgeLab.hidden = NO;
+        weakSelf.badgeLab.text = badgecount;
+        NSLog(@"-----12%@",weakSelf.badgeLab);
     };
     
 }
@@ -190,7 +201,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     [NSLayoutConstraint autoCreateAndInstallConstraints:^{
         
         [self autoSetDimension:ALDimensionHeight toSize:64.0 relation:NSLayoutRelationGreaterThanOrEqual];
-        CGFloat leftMargin = 64.0;
+//        CGFloat leftMargin = 64.0;
         [self.avatarContainer autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTrailing];
         [self.avatarContainer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.titleField];
         

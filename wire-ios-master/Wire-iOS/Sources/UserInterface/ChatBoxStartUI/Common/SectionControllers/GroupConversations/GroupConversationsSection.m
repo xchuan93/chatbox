@@ -42,7 +42,7 @@ NSString *const PeoplePickerGroupConversationsReuseIdentifier = @"PeoplePickerGr
 {
     _collectionView = collectionView;
     [self.collectionView registerClass:[SearchResultCell class] forCellWithReuseIdentifier:PeoplePickerGroupConversationsReuseIdentifier];
-    [self.collectionView registerClass:[SearchSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:PeoplePickerHeaderReuseIdentifier];
+//    [self.collectionView registerClass:[SearchSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:PeoplePickerHeaderReuseIdentifier];
 }
 
 #pragma mark - UICollectionViewDelegate, UICollectionViewDataSource
@@ -52,19 +52,19 @@ NSString *const PeoplePickerGroupConversationsReuseIdentifier = @"PeoplePickerGr
     return self.groupConversations.count;
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    SearchSectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-                                                                             withReuseIdentifier:PeoplePickerHeaderReuseIdentifier
-                                                                                    forIndexPath:indexPath];
-    
-    headerView.title = self.title;
-    
-    // in case of search, the headers are with zero frame, and their content should not be displayed
-    // if not clipping, then part of the label is still displayed, so we clip it
-    headerView.clipsToBounds = YES;
-    return headerView;
-}
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    SearchSectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+//                                                                             withReuseIdentifier:PeoplePickerHeaderReuseIdentifier
+//                                                                                    forIndexPath:indexPath];
+//
+//    headerView.title = self.title;
+//
+//    // in case of search, the headers are with zero frame, and their content should not be displayed
+//    // if not clipping, then part of the label is still displayed, so we clip it
+//    headerView.clipsToBounds = YES;
+//    return headerView;
+//}
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -108,17 +108,27 @@ NSString *const PeoplePickerGroupConversationsReuseIdentifier = @"PeoplePickerGr
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
+    if (section == 0) {
+        return CGSizeZero;
+    }
     return CGSizeMake(self.collectionView.bounds.size.width, [WAZUIMagic cgFloatForIdentifier:@"people_picker.section_header.height"]);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0) {
+        return CGSizeZero;
+    }
+    
     return CGSizeMake(self.collectionView.bounds.size.width, 
                       [WAZUIMagic floatForIdentifier:@"people_picker.search_results_mode.tile_height"]);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
+    if (section == 0) {
+        return UIEdgeInsetsZero;
+    }
     CGFloat topInset = [WAZUIMagic floatForIdentifier:@"people_picker.search_results_mode.top_padding"];
     CGFloat leftInset = [WAZUIMagic floatForIdentifier:@"people_picker.search_results_mode.left_padding"];
     CGFloat righInset = [WAZUIMagic floatForIdentifier:@"people_picker.search_results_mode.right_padding"];

@@ -58,6 +58,7 @@
 #import "Wire-Swift.h"
 #import "UIImage+Color.h"
 #import <Masonry.h>
+#import "IFMMenu.h"
 
 @interface ConversationListViewController (Content) <ConversationListContentDelegate>
 
@@ -189,7 +190,7 @@
     self.listContentController.collectionView.contentInset = UIEdgeInsetsMake(0, 0, self.contentControllerBottomInset, 0);
     self.listContentController.view.translatesAutoresizingMaskIntoConstraints = NO;
     self.listContentController.contentDelegate = self;
-    self.listContentController.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+    self.listContentController.view.frame = CGRectMake(0, 70, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70);
     [self.listContentController.collectionView scrollRectToVisible:CGRectMake(0, 0, self.view.bounds.size.width, 1) animated:NO];
     
     [self addChildViewController:self.listContentController];
@@ -198,7 +199,9 @@
     
     self.startcontroller = [[StartUIViewController alloc] init];
     self.startcontroller.delegate = self;
-    self.startcontroller.view.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49);
+    self.startcontroller.view.frame = CGRectMake(0, 70, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(NavigationBarPullDown) name:@"NavigationBarPullDown" object:nil];
     
 }
 
@@ -239,6 +242,35 @@
             
         }
     }];
+}
+
+- (void)NavigationBarPullDown{
+    __weak typeof(self)weakSelf = self;
+    NSMutableArray *menuItems = [[NSMutableArray alloc] initWithObjects:
+                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"icon_sj_video"]
+                                                      title:@"发视频"
+                                                     action:^(IFMMenuItem *item) {
+//                                                         [weakSelf startVideoRecord];
+                                                     }],
+                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"icon_sj_photo"]
+                                                      title:@"发照片文字"
+                                                     action:^(IFMMenuItem *item) {
+//                                                         [weakSelf onSendImageOrText];
+                                                     }], nil];
+    
+    IFMMenu *menu = [[IFMMenu alloc] initWithItems:menuItems];
+    menu.menuBackGroundColor = UIColorFromRGB(0xffffff);
+    menu.titleFont = [UIFont systemFontOfSize:15];
+    menu.titleColor = [UIColor whiteColor];
+    menu.segmenteLineColor = UIColorFromRGB(0xdddddd);
+    menu.menuCornerRadiu = 2.f;
+    menu.gapBetweenImageTitle = 20.f;
+    menu.edgeInsets = UIEdgeInsetsMake(1, 24, 1, 10);
+    menu.showShadow = NO;
+    menu.minMenuItemHeight = 44;
+    menu.minMenuItemWidth = 150;
+    
+    [menu showFromRect:self.topBar.rightView.frame inView:self.view];
 }
 
 - (void)viewDidLoad

@@ -102,7 +102,7 @@
         //        NSMutableArray *arr = [[response objectForKey:@"data"] objectForKey:@"news_list"];
         self.sourceItem = arr.mutableCopy;
         [self.tabView reloadData];
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+//        [MBProgressHUD hideHUDForView:self.view animated:YES];
     } fail:^(NSError *error) {
         NSLog(@"error");
     } showHUD:NO];
@@ -180,7 +180,7 @@
         make.left.bottom.right.mas_offset(0);
         make.top.mas_offset(64+topMargin);
     }];
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

@@ -26,6 +26,7 @@
 #import "UIView+WR_ExtendedBlockAnimations.h"
 @import WireDataModel;
 #import "Wire-Swift.h"
+#import <Masonry.h>
 
 static NSMutableDictionary *correlationFormatters;
 
@@ -238,14 +239,22 @@ static NSMutableDictionary *correlationFormatters;
     }
 
     self.nameRightMarginConstraint.constant = -rightMarginForName;
+    
+    [self.nameLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_offset(0);
+        make.left.equalTo(self.badgeUserImageView.mas_right).offset(13);
+        make.right.mas_offset(-15);
+        make.height.mas_equalTo(20);
+    }];
+    
     [super updateConstraints];
 }
 
 - (void)updateForContext
 {
-    self.nameLabel.font = [UIFont fontWithMagicIdentifier:@"people_picker.search_results_mode.name_label_font"];
-    self.nameLabel.textColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorTextForeground variant:self.colorSchemeVariant];
-    self.separatorLineView.backgroundColor = [ColorScheme.defaultColorScheme colorWithName:ColorSchemeColorCellSeparator variant:self.colorSchemeVariant];
+    self.nameLabel.font = [UIFont systemFontOfSize:16];
+    self.nameLabel.textColor = UIColorFromRGB(0x323232);
+    self.separatorLineView.backgroundColor = UIColorFromRGB(0xdddddd);
 
     CGFloat squareImageWidth = [WAZUIMagic cgFloatForIdentifier:@"people_picker.search_results_mode.tile_image_diameter"];
     self.avatarViewSizeConstraint.constant = squareImageWidth;

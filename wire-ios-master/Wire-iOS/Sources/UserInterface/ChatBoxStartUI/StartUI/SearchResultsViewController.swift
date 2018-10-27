@@ -194,6 +194,7 @@ public class SearchResultsViewController : UIViewController {
         conversationsSection.delegate = self
         servicesSection.delegate = self
         createGroupSection.delegate = self
+    
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -314,7 +315,7 @@ public class SearchResultsViewController : UIViewController {
                 sections = [createGroupSection, inviteTeamMemberSection, teamMemberAndContactsSection]
             }
         }
-        
+        sections = [contactsSection]
         sectionAggregator.sectionControllers = sections
     }
 

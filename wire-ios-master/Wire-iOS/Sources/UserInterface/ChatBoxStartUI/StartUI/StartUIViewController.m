@@ -45,6 +45,7 @@
 #import "UIView+PopoverBorder.h"
 #import "UIViewController+WR_Invite.h"
 #import "Wire-Swift.h"
+#import <Masonry.h>
 
 
 static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
@@ -90,7 +91,7 @@ static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     Team *team = ZMUser.selfUser.team;
     
     self.userSelection = [[UserSelection alloc] init];
@@ -103,30 +104,31 @@ static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
     self.emptyResultLabel.textColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorTextForeground variant:ColorSchemeVariantDark];
     self.emptyResultLabel.font = [UIFont fontWithMagicIdentifier:@"style.text.normal.font_spec"];
     
-    self.searchHeaderViewController = [[SearchHeaderViewController alloc] initWithUserSelection:self.userSelection variant:ColorSchemeVariantDark];
+    self.searchHeaderViewController = [[SearchHeaderViewController alloc] initWithUserSelection:self.userSelection variant:ColorSchemeVariantLight];
     self.title = (team != nil ? team.name : ZMUser.selfUser.displayName).localizedUppercaseString;
     self.searchHeaderViewController.delegate = self;
     self.searchHeaderViewController.allowsMultipleSelection = NO;
     self.searchHeaderViewController.view.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSearchBarBackground variant:ColorSchemeVariantDark];
+//    self.searchHeaderViewController.view.backgroundColor = [UIColor whiteColor];
     [self addChildViewController:self.searchHeaderViewController];
     [self.view addSubview:self.searchHeaderViewController.view];
     [self.searchHeaderViewController didMoveToParentViewController:self];
-    
-    self.groupSelector = [[SearchGroupSelector alloc] initWithVariant:ColorSchemeVariantDark];
-    self.groupSelector.translatesAutoresizingMaskIntoConstraints = NO;
-    self.groupSelector.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSearchBarBackground variant:ColorSchemeVariantDark];
-    @weakify(self);
-    self.groupSelector.onGroupSelected = ^(SearchGroup group) {
-        @strongify(self);
-        if (SearchGroupServices == group) {
-            // Remove selected users when switching to services tab to avoid the user confusion: users in the field are
-            // not going to be added to the new conversation with the bot.
-            [self.searchHeaderViewController clearInput];
-        }
-        self.searchResultsViewController.searchGroup = group;
-        [self performSearch];
-    };
-    [self.view addSubview:self.groupSelector];
+//    self.searchHeaderViewController.view.hidden = YES;
+//    self.groupSelector = [[SearchGroupSelector alloc] initWithVariant:ColorSchemeVariantDark];
+//    self.groupSelector.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.groupSelector.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSearchBarBackground variant:ColorSchemeVariantDark];
+//    @weakify(self);
+//    self.groupSelector.onGroupSelected = ^(SearchGroup group) {
+//        @strongify(self);
+//        if (SearchGroupServices == group) {
+//            // Remove selected users when switching to services tab to avoid the user confusion: users in the field are
+//            // not going to be added to the new conversation with the bot.
+//            [self.searchHeaderViewController clearInput];
+//        }
+//        self.searchResultsViewController.searchGroup = group;
+//        [self performSearch];
+//    };
+//    [self.view addSubview:self.groupSelector];
     
     self.searchResultsViewController = [[SearchResultsViewController alloc] initWithUserSelection:self.userSelection
                                                                                           variant:ColorSchemeVariantDark
@@ -138,11 +140,12 @@ static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
     [self.view addSubview:self.searchResultsViewController.view];
     [self.searchResultsViewController didMoveToParentViewController:self];
     self.searchResultsViewController.searchResultsView.emptyResultView = self.emptyResultLabel;
+    self.searchResultsViewController.view.backgroundColor = [UIColor whiteColor];
     
-    self.quickActionsBar = [[StartUIInviteActionBar alloc] init];
-    [self.quickActionsBar.inviteButton addTarget:self action:@selector(inviteMoreButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    self.quickActionsBar = [[StartUIInviteActionBar alloc] init];
+//    [self.quickActionsBar.inviteButton addTarget:self action:@selector(inviteMoreButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
-    self.view.backgroundColor = [UIColor clearColor];
+//    self.view.backgroundColor = [UIColor clearColor];
     
     [self createConstraints];
     [self updateActionBar];
@@ -168,18 +171,32 @@ static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
 
 - (void)createConstraints
 {
-    [self.searchHeaderViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTop];
-    [self.searchHeaderViewController.view autoPinEdgeToSuperviewEdge:ALEdgeLeading];
-    [self.searchHeaderViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
-    
-    [self.groupSelector autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.searchHeaderViewController.view];
-    [self.groupSelector autoPinEdgeToSuperviewEdge:ALEdgeLeading];
-    [self.groupSelector autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
-
-    [self.searchResultsViewController.view autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.groupSelector];
-    [self.searchResultsViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
-    [self.searchResultsViewController.view autoPinEdgeToSuperviewEdge:ALEdgeLeading];
-    [self.searchResultsViewController.view autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+//    [self.searchHeaderViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTop];
+//    [self.searchHeaderViewController.view autoPinEdgeToSuperviewEdge:ALEdgeLeading];
+//    [self.searchHeaderViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
+//
+//    [self.groupSelector autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.searchHeaderViewController.view];
+//    [self.groupSelector autoPinEdgeToSuperviewEdge:ALEdgeLeading];
+//    [self.groupSelector autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
+//
+//    [self.searchResultsViewController.view autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.groupSelector];
+//    [self.searchResultsViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
+//    [self.searchResultsViewController.view autoPinEdgeToSuperviewEdge:ALEdgeLeading];
+//    [self.searchResultsViewController.view autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+//    [self.searchResultsViewController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.bottom.mas_offset(0);
+//        make.top.mas_offset(15);
+//    }];
+    [self.searchHeaderViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_offset(15);
+        make.right.mas_offset(-15);
+        make.top.mas_offset(15);
+        make.height.mas_equalTo(44);
+    }];
+    [self.searchResultsViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.mas_offset(0);
+        make.top.equalTo(self.searchHeaderViewController.view.mas_bottom).offset(7);
+    }];
 }
 
 - (void)handleUploadAddressBookLogicIfNeeded

@@ -52,7 +52,7 @@ extension ConversationListViewController {
         }
         
         let button:UIButton = UIButton(type: .system)
-        button.setBackgroundImage(UIImage(named:"back"), for: .normal)
+        button.setBackgroundImage(UIImage(named:"XC导航栏更多"), for: .normal)
         button.addTarget(self, action:#selector(tapped(_:)), for:.touchUpInside)
         
         
@@ -66,10 +66,11 @@ extension ConversationListViewController {
     }
     func tapped(_ button:UIButton) {
         print("我摁下了这个按钮")
-        AppDelegate.shared().rootViewController.mainWindow.isHidden = true
-        AppDelegate.shared().homeVC?.homeWindow.isHidden = false
-        AppDelegate.shared().homeVC?.homeWindow.makeKey()
-        AppDelegate.shared().homeVC?.homeWindow.makeKeyAndVisible()
+//        AppDelegate.shared().rootViewController.mainWindow.isHidden = true
+//        AppDelegate.shared().homeVC?.homeWindow.isHidden = false
+//        AppDelegate.shared().homeVC?.homeWindow.makeKey()
+//        AppDelegate.shared().homeVC?.homeWindow.makeKeyAndVisible()
         
+        NotificationCenter.default.post(name:NSNotification.Name(rawValue: "NavigationBarPullDown"), object: nil)
     }
 }

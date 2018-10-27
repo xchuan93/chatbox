@@ -52,7 +52,8 @@ NSString *const PeoplePickerHeaderReuseIdentifier = @"PeoplePickerHeaderReuseIde
 {
     self.titleField = [[UILabel alloc] initWithFrame:CGRectZero];
 
-    self.titleField.font = [UIFont fontWithMagicIdentifier:@"style.text.small.font_spec_light"];
+    self.titleField.font = [UIFont systemFontOfSize:12];
+    self.titleField.textColor = UIColorFromRGB(0x323232);
     self.titleField.translatesAutoresizingMaskIntoConstraints = NO;
     self.titleField.textAlignment = NSTextAlignmentLeft;
     self.titleField.numberOfLines = 0;
@@ -79,7 +80,7 @@ NSString *const PeoplePickerHeaderReuseIdentifier = @"PeoplePickerHeaderReuseIde
 {
     _colorSchemeVariant = colorSchemeVariant;
     
-    self.titleField.textColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSectionText variant:self.colorSchemeVariant];
+    self.titleField.textColor = UIColorFromRGB(0x323232);
     self.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSectionBackground variant:self.colorSchemeVariant];
 }
 

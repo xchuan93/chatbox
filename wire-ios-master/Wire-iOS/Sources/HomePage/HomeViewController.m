@@ -235,7 +235,7 @@
         [self itemInit:response];
         [self loadImgplayView:self.banner];
         [self.tableView reloadData];
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+//        [MBProgressHUD hideHUDForView:self.view animated:YES];
     } fail:^(NSError *error) {
         NSLog(@"error");
     } showHUD:NO];
@@ -339,7 +339,7 @@
         make.bottom.mas_offset(-40);
     }];
     [self.chatBtn addTarget:self action:@selector(chatBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 #pragma mark = ImagesPlayerIndictorPattern
