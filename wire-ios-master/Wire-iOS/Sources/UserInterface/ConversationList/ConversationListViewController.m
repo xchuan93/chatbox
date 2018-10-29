@@ -62,7 +62,7 @@
 #import "InviteContactsViewController.h"
 #import "AnalyticsTracker+Invitations.h"
 
-@interface ConversationListViewController (Content) <ConversationListContentDelegate>
+@interface ConversationListViewController (Content) <ConversationListContentDelegate,ContactsViewControllerDelegate>
 
 - (void)updateBottomBarSeparatorVisibilityWithContentController:(ConversationListContentController *)controller;
 
@@ -90,7 +90,7 @@
 @end
 
 #define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
-@interface ConversationListViewController (){
+@interface ConversationListViewController ()<ConversationCreationControllerDelegate>{
     NSMutableDictionary *listDic;
 }
 
@@ -122,6 +122,8 @@
 @property (nonatomic) CGFloat contentControllerBottomInset;
 
 @property (nonatomic ,strong) UIViewController *currentVC;
+
+@property (nonatomic, strong) ConversationCreationController *groupchat;
 
 - (void)setState:(ConversationListState)state animated:(BOOL)animated;
 
@@ -248,10 +250,36 @@
 
 - (void)CreateGroupChat{
 
-    ConversationCreationController *groupchat = [[ConversationCreationController alloc] init];
-    KeyboardAvoidingViewController *keyboard = [[KeyboardAvoidingViewController alloc] initWithViewController:groupchat];
-    [self.navigationController pushViewController:keyboard animated:YES completion:^{
-        [[UIApplication sharedApplication] wr_updateStatusBarForCurrentControllerAnimated:YES];
+    self.groupchat = [[ConversationCreationController alloc] init];
+    _groupchat.delegate = self;
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:_groupchat];
+//    UIButton *backbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIImage *img = [UIImage imageNamed:@"back"];
+//    [backbtn setImage:img forState:UIControlStateNormal];
+//    [backbtn addTarget:self action:@selector(backbtn) forControlEvents:UIControlEventTouchUpInside];
+//    backbtn.frame = CGRectMake(0, 0, img.size.width, img.size.height);
+//    nav.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backbtn];
+//    [self presentViewController:nav animated:YES completion:nil];
+    UINavigationController *embeddedNavigationController = [_groupchat wrapInNavigationController];
+    embeddedNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:embeddedNavigationController animated:YES completion:nil];
+}
+
+//- (void)backbtn{
+//    [_groupchat dismissViewControllerAnimated:YES completion:nil];
+//}
+
+#pragma mark - ContactsViewControllerDelegate
+
+- (void)contactsViewControllerDidCancel:(ContactsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)contactsViewControllerDidNotShareContacts:(ContactsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+//        [self wr_presentInviteActivityViewControllerWithSourceView:self.quickActionsBar logicalContext:GenericInviteContextStartUIBanner];
     }];
 }
 

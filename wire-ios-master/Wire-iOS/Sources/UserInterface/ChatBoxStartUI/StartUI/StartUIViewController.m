@@ -51,7 +51,7 @@
 static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
 
 
-@interface StartUIViewController () <ContactsViewControllerDelegate, UserSelectionObserver, SearchHeaderViewControllerDelegate>
+@interface StartUIViewController () <ContactsViewControllerDelegate, UserSelectionObserver, SearchHeaderViewControllerDelegate,SearchResultsViewControllerDelegate>
 
 @property (nonatomic) ProfilePresenter *profilePresenter;
 @property (nonatomic) StartUIInviteActionBar *quickActionsBar;
@@ -113,22 +113,22 @@ static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
     [self addChildViewController:self.searchHeaderViewController];
     [self.view addSubview:self.searchHeaderViewController.view];
     [self.searchHeaderViewController didMoveToParentViewController:self];
-//    self.searchHeaderViewController.view.hidden = YES;
-//    self.groupSelector = [[SearchGroupSelector alloc] initWithVariant:ColorSchemeVariantDark];
-//    self.groupSelector.translatesAutoresizingMaskIntoConstraints = NO;
-//    self.groupSelector.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSearchBarBackground variant:ColorSchemeVariantDark];
-//    @weakify(self);
-//    self.groupSelector.onGroupSelected = ^(SearchGroup group) {
-//        @strongify(self);
-//        if (SearchGroupServices == group) {
-//            // Remove selected users when switching to services tab to avoid the user confusion: users in the field are
-//            // not going to be added to the new conversation with the bot.
-//            [self.searchHeaderViewController clearInput];
-//        }
-//        self.searchResultsViewController.searchGroup = group;
-//        [self performSearch];
-//    };
-//    [self.view addSubview:self.groupSelector];
+    self.searchHeaderViewController.view.hidden = YES;
+    self.groupSelector = [[SearchGroupSelector alloc] initWithVariant:ColorSchemeVariantDark];
+    self.groupSelector.translatesAutoresizingMaskIntoConstraints = NO;
+    self.groupSelector.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSearchBarBackground variant:ColorSchemeVariantDark];
+    @weakify(self);
+    self.groupSelector.onGroupSelected = ^(SearchGroup group) {
+        @strongify(self);
+        if (SearchGroupServices == group) {
+            // Remove selected users when switching to services tab to avoid the user confusion: users in the field are
+            // not going to be added to the new conversation with the bot.
+            [self.searchHeaderViewController clearInput];
+        }
+        self.searchResultsViewController.searchGroup = group;
+        [self performSearch];
+    };
+    [self.view addSubview:self.groupSelector];
     
     self.searchResultsViewController = [[SearchResultsViewController alloc] initWithUserSelection:self.userSelection
                                                                                           variant:ColorSchemeVariantDark

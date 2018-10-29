@@ -97,7 +97,10 @@ final class ConversationCreationController: UIViewController {
         self.init(source: .conversationDetails)
         self.preSelectedParticipants = preSelectedParticipants
     }
-    
+    @objc public convenience init(){
+        self.init(source: .startUI)
+//        super.init(nibName: nil, bundle: nil)
+    }
     public init(source: LinearGroupCreationFlowEvent.Source = .startUI) {
         self.source = source
         super.init(nibName: nil, bundle: nil)
@@ -267,7 +270,12 @@ final class ConversationCreationController: UIViewController {
     }
 
     dynamic func onCancel() {
-        delegate?.conversationCreationControllerDidCancel(self)
+//        if (delegate == nil) {
+//
+//            return ;
+//        }
+        dismiss(animated: true, completion: nil)
+//        delegate?.conversationCreationControllerDidCancel(self)
     }
 
     func proceedWith(value: SimpleTextField.Value) {
