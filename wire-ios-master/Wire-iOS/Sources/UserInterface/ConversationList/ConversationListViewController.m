@@ -59,6 +59,8 @@
 #import "UIImage+Color.h"
 #import <Masonry.h>
 #import "IFMMenu.h"
+#import "InviteContactsViewController.h"
+#import "AnalyticsTracker+Invitations.h"
 
 @interface ConversationListViewController (Content) <ConversationListContentDelegate>
 
@@ -244,22 +246,41 @@
     }];
 }
 
+- (void)CreateGroupChat{
+
+    ConversationCreationController *groupchat = [[ConversationCreationController alloc] init];
+    KeyboardAvoidingViewController *keyboard = [[KeyboardAvoidingViewController alloc] initWithViewController:groupchat];
+    [self.navigationController pushViewController:keyboard animated:YES completion:^{
+        [[UIApplication sharedApplication] wr_updateStatusBarForCurrentControllerAnimated:YES];
+    }];
+}
+
+- (void)Invitemore{
+    InviteContactsViewController *inviteContactsViewController = [[InviteContactsViewController alloc] init];
+    inviteContactsViewController.analyticsTracker = [AnalyticsTracker analyticsTrackerWithContext:NSStringFromInviteContext(InviteContextStartUI)];
+    inviteContactsViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    inviteContactsViewController.delegate = self;
+    [self presentViewController:inviteContactsViewController animated:YES completion:^() {
+        [inviteContactsViewController.analyticsTracker tagEvent:AnalyticsEventInviteContactListOpened];
+    }];
+}
+
 - (void)NavigationBarPullDown{
     __weak typeof(self)weakSelf = self;
     NSMutableArray *menuItems = [[NSMutableArray alloc] initWithObjects:
-                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"icon_sj_video"]
-                                                      title:@"发视频"
+                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"XC创建群聊"]
+                                                      title:@"创建群聊"
                                                      action:^(IFMMenuItem *item) {
-//                                                         [weakSelf startVideoRecord];
+                                                         [weakSelf CreateGroupChat];
                                                      }],
-                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"icon_sj_photo"]
-                                                      title:@"发照片文字"
+                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"XC邀请好友"]
+                                                      title:@"邀请好友"
                                                      action:^(IFMMenuItem *item) {
-//                                                         [weakSelf onSendImageOrText];
+                                                         [weakSelf Invitemore];
                                                      }], nil];
     
     IFMMenu *menu = [[IFMMenu alloc] initWithItems:menuItems];
-    menu.menuBackGroundColor = UIColorFromRGB(0xffffff);
+    menu.menuBackGroundColor = [UIColor blackColor];
     menu.titleFont = [UIFont systemFontOfSize:15];
     menu.titleColor = [UIColor whiteColor];
     menu.segmenteLineColor = UIColorFromRGB(0xdddddd);
@@ -270,7 +291,7 @@
     menu.minMenuItemHeight = 44;
     menu.minMenuItemWidth = 150;
     
-    [menu showFromRect:self.topBar.rightView.frame inView:self.view];
+    [menu showFromRect:CGRectMake(self.view.bounds.size.width - 30, 80, 0, 0) inView:self.view];
 }
 
 - (void)viewDidLoad
