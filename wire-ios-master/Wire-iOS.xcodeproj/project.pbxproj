@@ -205,6 +205,9 @@
 		185971E62184596D009C2A1D /* XC邀请好友@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185971E22184596C009C2A1D /* XC邀请好友@3x.png */; };
 		185971E72184596D009C2A1D /* XC邀请好友@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185971E32184596C009C2A1D /* XC邀请好友@2x.png */; };
 		1860853F2074D9440013E094 /* WireSyncEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860853E2074D9440013E094 /* WireSyncEngine.framework */; };
+		186F300E2190190B006CDFF7 /* GKDYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F30082190190A006CDFF7 /* GKDYScrollView.m */; };
+		186F300F2190190B006CDFF7 /* PerCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F300C2190190B006CDFF7 /* PerCenterViewController.m */; };
+		186F30102190190B006CDFF7 /* MainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F300D2190190B006CDFF7 /* MainTestViewController.m */; };
 		188CF629215B3C4F001BC6B6 /* HomeTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF61E215B3C4E001BC6B6 /* HomeTabCell.m */; };
 		188CF62A215B3C4F001BC6B6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF620215B3C4E001BC6B6 /* HomeViewController.m */; };
 		188CF62B215B3C4F001BC6B6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF622215B3C4E001BC6B6 /* WebViewController.m */; };
@@ -1516,6 +1519,12 @@
 		185971E22184596C009C2A1D /* XC邀请好友@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "XC邀请好友@3x.png"; path = "../../../../../chatbox改版/ios/切图/XC邀请好友@3x.png"; sourceTree = "<group>"; };
 		185971E32184596C009C2A1D /* XC邀请好友@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "XC邀请好友@2x.png"; path = "../../../../../chatbox改版/ios/切图/XC邀请好友@2x.png"; sourceTree = "<group>"; };
 		1860853E2074D9440013E094 /* WireSyncEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireSyncEngine.framework; path = Carthage/Build/iOS/WireSyncEngine.framework; sourceTree = "<group>"; };
+		186F30082190190A006CDFF7 /* GKDYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDYScrollView.m; sourceTree = "<group>"; };
+		186F30092190190A006CDFF7 /* PerCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerCenterViewController.h; sourceTree = "<group>"; };
+		186F300A2190190B006CDFF7 /* GKDYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDYScrollView.h; sourceTree = "<group>"; };
+		186F300B2190190B006CDFF7 /* MainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTestViewController.h; sourceTree = "<group>"; };
+		186F300C2190190B006CDFF7 /* PerCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerCenterViewController.m; sourceTree = "<group>"; };
+		186F300D2190190B006CDFF7 /* MainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTestViewController.m; sourceTree = "<group>"; };
 		188CF61E215B3C4E001BC6B6 /* HomeTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabCell.m; sourceTree = "<group>"; };
 		188CF61F215B3C4E001BC6B6 /* HomeTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabCell.h; sourceTree = "<group>"; };
 		188CF620215B3C4E001BC6B6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -3362,6 +3371,7 @@
 		18508840217F0C2200DF78B5 /* XCChange */ = {
 			isa = PBXGroup;
 			children = (
+				186F3007219017B1006CDFF7 /* XCScrollView */,
 				185971D2218450DC009C2A1D /* XCSupport */,
 				18D916B021804C8700FC1852 /* Resource */,
 				18D916AE2180263600FC1852 /* UIImage+Color.h */,
@@ -3393,6 +3403,19 @@
 				185971DB218450E5009C2A1D /* IFMMenu.m */,
 			);
 			path = IFMMenu;
+			sourceTree = "<group>";
+		};
+		186F3007219017B1006CDFF7 /* XCScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				186F300A2190190B006CDFF7 /* GKDYScrollView.h */,
+				186F30082190190A006CDFF7 /* GKDYScrollView.m */,
+				186F300B2190190B006CDFF7 /* MainTestViewController.h */,
+				186F300D2190190B006CDFF7 /* MainTestViewController.m */,
+				186F30092190190A006CDFF7 /* PerCenterViewController.h */,
+				186F300C2190190B006CDFF7 /* PerCenterViewController.m */,
+			);
+			path = XCScrollView;
 			sourceTree = "<group>";
 		};
 		188CF61C215B3C4E001BC6B6 /* HomePage */ = {
@@ -6909,6 +6932,7 @@
 				54FF9E281E813BA500323D2E /* DebugAlert.swift in Sources */,
 				F93D58451D7DA865003AE972 /* ZMConversation+Analytics.swift in Sources */,
 				87AB6DB61D9AB47400ADAD38 /* SettingsStyleNavigationController.swift in Sources */,
+				186F300E2190190B006CDFF7 /* GKDYScrollView.m in Sources */,
 				16F6BB101EDDA0BA009EA803 /* AddParticipantsViewController.swift in Sources */,
 				871BC0051D34F56300DF0793 /* AnalyticsTracker.m in Sources */,
 				EF2127241FB9DFE300625A9B /* CountryCodeView.m in Sources */,
@@ -7028,6 +7052,7 @@
 				7C5836641FD5ABE7001CC843 /* AvailabilityTitleView.swift in Sources */,
 				D5CA8E572045718900D2F16E /* UINavigationController+CloseButton.swift in Sources */,
 				871BC24C1D34F8F800DF0793 /* WAZUIMagic.m in Sources */,
+				186F300F2190190B006CDFF7 /* PerCenterViewController.m in Sources */,
 				F95E08B41D0EAFE80098A9EE /* TTTAttributedLabel+Links.swift in Sources */,
 				87DCF48D1D34E9BA00BB420F /* ContactsCell.m in Sources */,
 				8FC853A5199245770008B66B /* main.m in Sources */,
@@ -7559,6 +7584,7 @@
 				F1AA8AD61E5DF36A006A0E68 /* DegradationOverlayView.swift in Sources */,
 				D550F57020444924009E09DD /* ConversationActionController+Delete.swift in Sources */,
 				8784D4551E817D13007A6867 /* ConversationListTopBar.swift in Sources */,
+				186F30102190190B006CDFF7 /* MainTestViewController.m in Sources */,
 				1682AEB920483CC5003A052A /* RenameGroupSectionController.swift in Sources */,
 				871BC3521D34F94200DF0793 /* AggregateArray.m in Sources */,
 				873C5FE81C10426A00D5132A /* ClientTableViewCell.swift in Sources */,

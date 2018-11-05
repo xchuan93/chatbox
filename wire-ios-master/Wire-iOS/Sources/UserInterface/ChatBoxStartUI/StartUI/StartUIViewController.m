@@ -113,7 +113,7 @@ static NSUInteger const StartUIInitiallyShowsKeyboardConversationThreshold = 10;
     [self addChildViewController:self.searchHeaderViewController];
     [self.view addSubview:self.searchHeaderViewController.view];
     [self.searchHeaderViewController didMoveToParentViewController:self];
-    self.searchHeaderViewController.view.hidden = YES;
+//    self.searchHeaderViewController.view.hidden = YES;
     self.groupSelector = [[SearchGroupSelector alloc] initWithVariant:ColorSchemeVariantDark];
     self.groupSelector.translatesAutoresizingMaskIntoConstraints = NO;
     self.groupSelector.backgroundColor = [UIColor wr_colorFromColorScheme:ColorSchemeColorSearchBarBackground variant:ColorSchemeVariantDark];

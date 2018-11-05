@@ -39,8 +39,10 @@ NS_ASSUME_NONNULL_END
     if (self) {
         [self setupSubviews];
         [self setupConstraints];
+        
     }
-    
+    self.titleLabel.textColor = [UIColor blackColor];
+    self.contentView.backgroundColor = UIColorFromRGB(0xf1f1f1);
     return self;
 }
 
@@ -49,7 +51,9 @@ NS_ASSUME_NONNULL_END
     self.height = 20.0f;
     self.textLabel.hidden = YES;
     self.titleLabel = [[UILabel alloc] initForAutoLayout];
+    self.titleLabel.textColor = [UIColor blackColor];
     [self.contentView addSubview:self.titleLabel];
+    self.contentView.backgroundColor = UIColorFromRGB(0xf1f1f1);
 }
 
 - (void)setupConstraints
@@ -57,13 +61,17 @@ NS_ASSUME_NONNULL_END
     [self.titleLabel autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
     self.sectionTitleLeftConstraint = [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading
                                                                         withInset:24];
+    self.titleLabel.textColor = [UIColor blackColor];
+    self.contentView.backgroundColor = UIColorFromRGB(0xf1f1f1);
 }
 
 - (void)prepareForReuse
 {
     [super prepareForReuse];
     
-    self.backgroundColor = [UIColor clearColor];
+//    self.backgroundColor = [UIColor clearColor];
+    self.titleLabel.textColor = [UIColor blackColor];
+    self.contentView.backgroundColor = UIColorFromRGB(0xf1f1f1);
 }
 
 - (CGSize)intrinsicContentSize

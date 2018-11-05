@@ -252,14 +252,6 @@
 
     self.groupchat = [[ConversationCreationController alloc] init];
     _groupchat.delegate = self;
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:_groupchat];
-//    UIButton *backbtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    UIImage *img = [UIImage imageNamed:@"back"];
-//    [backbtn setImage:img forState:UIControlStateNormal];
-//    [backbtn addTarget:self action:@selector(backbtn) forControlEvents:UIControlEventTouchUpInside];
-//    backbtn.frame = CGRectMake(0, 0, img.size.width, img.size.height);
-//    nav.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backbtn];
-//    [self presentViewController:nav animated:YES completion:nil];
     UINavigationController *embeddedNavigationController = [_groupchat wrapInNavigationController];
     embeddedNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:embeddedNavigationController animated:YES completion:nil];
@@ -279,7 +271,6 @@
 - (void)contactsViewControllerDidNotShareContacts:(ContactsViewController *)controller
 {
     [self dismissViewControllerAnimated:YES completion:^{
-//        [self wr_presentInviteActivityViewControllerWithSourceView:self.quickActionsBar logicalContext:GenericInviteContextStartUIBanner];
     }];
 }
 

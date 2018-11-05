@@ -22,6 +22,7 @@
 @import PureLayout;
 #import "WireSyncEngine+iOS.h"
 #import "UserImageView+Magic.h"
+#import "UIImage+Color.h"
 @import WireExtensionComponents;
 
 
@@ -90,19 +91,35 @@ NS_ASSUME_NONNULL_END
     self.userImageView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addSubview:self.userImageView];
     
-    self.userNameContainerView = [[UIView alloc] initForAutoLayout];
+    self.userNameContainerView = [[UIView alloc] init];
+    self.userNameContainerView.backgroundColor = [UIColor whiteColor];
     [self.contentView addSubview:self.userNameContainerView];
     
-    self.userNameLabel = [[UILabel alloc] initForAutoLayout];
+    self.userNameLabel = [[UILabel alloc] init];
     [self.userNameContainerView addSubview:self.userNameLabel];
     
-    self.userSubtitleLabel = [[UILabel alloc] initForAutoLayout];
+    self.userSubtitleLabel = [[UILabel alloc] init];
     [self.userNameContainerView addSubview:self.userSubtitleLabel];
     
-    self.actionButton = [Button buttonWithStyleClass:@"dialogue-button-full"];
-    [self.actionButton setTitle:NSLocalizedString(@"contacts_ui.action_button.invite", @"") forState:UIControlStateNormal];
+    self.actionButton = [[Button alloc] init];
+//    [self.actionButton setTitle:NSLocalizedString(@"contacts_ui.action_button.invite", @"") forState:UIControlStateNormal];
+    self.actionButton.layer.borderWidth = 0.1f;
+    self.actionButton.layer.borderColor = UIColorFromRGB(0xef8752).CGColor;
+    self.actionButton.layer.cornerRadius = 5;
+    self.actionButton.layer.masksToBounds = YES;
+    [self.actionButton.titleLabel setFont:[UIFont systemFontOfSize:12]];
     [self.actionButton addTarget:self action:@selector(actionButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:self.actionButton];
+    
+
+    self.userNameLabel.font = [UIFont systemFontOfSize:16];
+    self.userNameLabel.textColor = UIColorFromRGB(0x323232);
+    
+    self.userSubtitleLabel.font = [UIFont systemFontOfSize:16];
+    self.userSubtitleLabel.textColor = UIColorFromRGB(0x323232);
+    
+    [self.actionButton setBackgroundImageColor:UIColorFromRGB(0xef8752) forState:UIControlStateNormal];
+    [self.actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 - (void)setupConstraints
@@ -134,6 +151,15 @@ NS_ASSUME_NONNULL_END
     [self.actionButton autoSetDimension:ALDimensionWidth toSize:48 relation:NSLayoutRelationGreaterThanOrEqual];    // MIN Width
     [self.actionButton autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self withMultiplier:0.4f relation:NSLayoutRelationLessThanOrEqual];  // MAX width
     [self.actionButton autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+    
+    self.userNameLabel.font = [UIFont systemFontOfSize:16];
+    self.userNameLabel.textColor = UIColorFromRGB(0x323232);
+    
+    self.userSubtitleLabel.font = [UIFont systemFontOfSize:16];
+    self.userSubtitleLabel.textColor = UIColorFromRGB(0x323232);
+    
+    [self.actionButton setBackgroundImageColor:UIColorFromRGB(0xef8752) forState:UIControlStateNormal];
+    [self.actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 #pragma mark - Properties
@@ -145,6 +171,7 @@ NS_ASSUME_NONNULL_END
     self.userImageView.user = _searchUser;
     if (_searchUser.name.length > 0) {
         self.userNameLabel.text = _searchUser.name;
+       
     } else if (_searchUser.contact.emailAddresses.count > 0) {
         self.userNameLabel.text = _searchUser.contact.emailAddresses[0];
     } else if (_searchUser.contact.phoneNumbers.count > 0) {
@@ -167,12 +194,24 @@ NS_ASSUME_NONNULL_END
         subtitle = @"";
     }
     self.userSubtitleLabel.text = subtitle;
-    
+    self.userSubtitleLabel.font = [UIFont systemFontOfSize:16];
+    self.userSubtitleLabel.textColor = UIColorFromRGB(0x323232);
     if ([searchUser.user isPendingApprovalBySelfUser]) {
         [self.userImageView setBadgeIcon:ZetaIconTypeClock];
     } else {
         self.userImageView.badgeIcon = ZetaIconTypeNone;
     }
+    
+    self.userNameLabel.font = [UIFont systemFontOfSize:16];
+    self.userNameLabel.textColor = UIColorFromRGB(0x323232);
+    self.userNameLabel.hidden = NO;
+    
+    self.userSubtitleLabel.font = [UIFont systemFontOfSize:16];
+    self.userSubtitleLabel.textColor = UIColorFromRGB(0x323232);
+    self.userNameLabel.hidden = NO;
+    [self.actionButton setBackgroundImageColor:UIColorFromRGB(0xef8752) forState:UIControlStateNormal];
+    [self.actionButton setBackgroundColor:UIColorFromRGB(0xef8752)];
+    [self.actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

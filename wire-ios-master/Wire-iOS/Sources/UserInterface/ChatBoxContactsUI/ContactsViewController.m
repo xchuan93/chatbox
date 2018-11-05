@@ -37,7 +37,7 @@
 #import "WireSyncEngine+iOS.h"
 #import "UIViewController+WR_Invite.h"
 #import "UIViewController+WR_Additions.h"
-
+#import <Masonry.h>
 #import "Wire-Swift.h"
 
 static NSString * const ContactsViewControllerCellID = @"ContactsCell";
@@ -65,6 +65,9 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
 @property (nonatomic) NSLayoutConstraint *emptyResultsBottomConstraint;
 @property (nonatomic) NSLayoutConstraint *titleLabelHeightConstraint;
 @property (nonatomic) NSLayoutConstraint *closeButtonTopConstraint;
+
+@property (nonatomic, strong) UIView *seachView;
+@property (nonatomic, strong) UIView *backView;
 
 @end
 
@@ -96,6 +99,10 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     if (self.sharingContactsRequired && ! [[AddressBookHelper sharedHelper] isAddressBookAccessGranted] && !shouldSkip) {
         [self presentShareContactsViewController];
     }
+    
+//    [self.tableView reloadData];
+//    self.tableView.sectionIndexBackgroundColor = [UIColor greenColor];
+    self.tableView.sectionIndexColor = UIColorFromRGB(0x888888);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -103,6 +110,7 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [super viewWillAppear:animated];
     [self cas_updateStylingIfNeeded];
     [[UIApplication sharedApplication] wr_updateStatusBarForCurrentControllerAnimated:YES];
+    [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -110,6 +118,13 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [super viewWillDisappear:animated];
     [self.tokenField resignFirstResponder];
     [[UIApplication sharedApplication] wr_updateStatusBarForCurrentControllerAnimated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
+//    self.tableView.sectionIndexBackgroundColor = [UIColor greenColor];
+    self.tableView.sectionIndexColor = UIColorFromRGB(0x888888);
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -126,6 +141,13 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
 
 - (void)setupViews
 {
+    self.backView = [UIView new];
+    _backView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_backView];
+    self.seachView = [UIView new];
+    self.seachView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.seachView];
+    
     ColorScheme *colorScheme = [[ColorScheme alloc] init];
     colorScheme.variant = self.colorSchemeVariant;
     
@@ -143,6 +165,10 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [self.topContainerView addSubview:self.titleLabel];
     
     self.tokenField = [[TokenField alloc] initForAutoLayout];
+    self.tokenField.layer.cornerRadius = 5;
+    self.tokenField.layer.borderColor = UIColorFromRGB(0xf1f1f1).CGColor;
+    self.tokenField.layer.borderWidth = 0.1f;
+    self.tokenField.layer.masksToBounds = YES;
     self.tokenField.delegate = self;
     self.tokenField.textColor = [colorScheme colorWithName:ColorSchemeColorTextForeground];
     self.tokenField.textView.accessibilityIdentifier = @"textViewSearch";
@@ -158,10 +184,12 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     
     // Separator
     self.separatorView = [[UIView alloc] initForAutoLayout];
+    self.separatorView.backgroundColor = UIColorFromRGB(0xf1f1f1);
+    self.separatorView.hidden = YES;
     [self.view addSubview:self.separatorView];
     
     // Table View
-    self.tableView = [[UITableView alloc] initForAutoLayout];
+    self.tableView = [[UITableView alloc] init];
     self.tableView.dataSource = self.dataSource;
     self.tableView.delegate = self;
     self.tableView.allowsMultipleSelection = YES;
@@ -170,7 +198,13 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     self.tableView.sectionIndexMinimumDisplayRowCount = MinimumNumberOfContactsToDisplaySections;
     [self.tableView registerClass:[ContactsCell class] forCellReuseIdentifier:ContactsViewControllerCellID];
     [self.tableView registerClass:[ContactsSectionHeaderView class] forHeaderFooterViewReuseIdentifier:ContactsViewControllerSectionHeaderID];
+    self.tableView.backgroundColor = [UIColor whiteColor];
+//    self.tableView.tableHeaderView.backgroundColor = [UIColor whiteColor];
+//    self.tableView.tableFooterView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    
+    
+    [self.tableView reloadData];
 
     // Empty results view
     self.emptyResultsView = [[ContactsEmptyResultView alloc] initForAutoLayout];
@@ -184,19 +218,25 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     self.noContactsLabel.text = NSLocalizedString(@"peoplepicker.no_contacts_title", @"");
     [self.view addSubview:self.noContactsLabel];
     
-    // Bottom Views
-    self.bottomContainerView = [[UIView alloc] initForAutoLayout];
-    [self.view addSubview:self.bottomContainerView];
+//    // Bottom Views
+//    self.bottomContainerView = [[UIView alloc] initForAutoLayout];
+//    self.bottomContainerView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:self.bottomContainerView];
+//
+//    self.bottomContainerSeparatorView = [[UIView alloc] initForAutoLayout];
+//    [self.bottomContainerView addSubview:self.bottomContainerSeparatorView];
+//
+//    self.inviteOthersButton = [Button buttonWithStyle:ButtonStyleEmpty variant:self.colorSchemeVariant];
+//    self.inviteOthersButton.translatesAutoresizingMaskIntoConstraints = NO;
+//    [self.inviteOthersButton addTarget:self action:@selector(sendIndirectInvite:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.inviteOthersButton setTitle:NSLocalizedString(@"contacts_ui.invite_others", @"") forState:UIControlStateNormal];
+//    [self.inviteOthersButton setBackgroundImageColor:UIColorFromRGB(0xdddddd) forState:UIControlStateNormal];
+//    [self.inviteOthersButton setBorderColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [self.inviteOthersButton setTitleColor:UIColorFromRGB(0xef8752) forState:UIControlStateNormal];
+//    [self.bottomContainerView addSubview:self.inviteOthersButton];
+//    [self.bottomContainerView setBackgroundColor:[UIColor whiteColor]];
     
-    self.bottomContainerSeparatorView = [[UIView alloc] initForAutoLayout];
-    [self.bottomContainerView addSubview:self.bottomContainerSeparatorView];
-    
-    self.inviteOthersButton = [Button buttonWithStyle:ButtonStyleEmpty variant:self.colorSchemeVariant];
-    self.inviteOthersButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.inviteOthersButton addTarget:self action:@selector(sendIndirectInvite:) forControlEvents:UIControlEventTouchUpInside];
-    [self.inviteOthersButton setTitle:NSLocalizedString(@"contacts_ui.invite_others", @"") forState:UIControlStateNormal];
-    [self.bottomContainerView addSubview:self.inviteOthersButton];
-    
+
     [self.view cas_updateStylingIfNeeded];
     [self updateEmptyResults];
 }
@@ -243,12 +283,12 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [self.bottomContainerSeparatorView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
     [self.bottomContainerSeparatorView autoSetDimension:ALDimensionHeight toSize:0.5];
     
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, bottomContainerHeight, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, bottomContainerHeight+3, 0);
     
     [self.tokenField autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:standardOffset];
     [self.tokenField autoPinEdgeToSuperviewEdge:ALEdgeBottom];
     [self.tokenField autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.cancelButton withOffset:- standardOffset / 2];
-    [self.tokenField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel withOffset:0 relation:NSLayoutRelationGreaterThanOrEqual];
+    [self.tokenField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel withOffset:3 relation:NSLayoutRelationGreaterThanOrEqual];
     [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
         [self.tokenField autoSetContentHuggingPriorityForAxis:ALAxisVertical];
     }];
@@ -269,6 +309,19 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [self.inviteOthersButton autoSetDimension:ALDimensionHeight toSize:28];
     [self.inviteOthersButton autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:standardOffset / 2.0];
     
+    @weakify(self)
+    [self.seachView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_offset(0);
+        make.top.equalTo(self.tokenField.mas_top);
+        make.bottom.equalTo(self.tokenField.mas_bottom);
+    }];
+    
+    [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_offset(0);
+        make.top.equalTo(self.tokenField.mas_top);
+        make.bottom.mas_offset(0);
+    }];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameDidChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
 }
 
@@ -286,6 +339,7 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     }
     _dataSource = dataSource;
     self.dataSource.delegate = self;
+//    [self.tableView reloadData];
 }
 
 - (void)setBottomButton:(Button *)bottomButton
@@ -426,7 +480,9 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
 - (UITableViewCell *)dataSource:(ContactsDataSource *)dataSource cellForUser:(ZMSearchUser *)user atIndexPath:(NSIndexPath *)indexPath
 {
     ContactsCell *cell = (ContactsCell *)[self.tableView dequeueReusableCellWithIdentifier:ContactsViewControllerCellID forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
     cell.searchUser = user;
+    
     cell.sectionIndexShown = self.dataSource.shouldShowSectionIndex;
     
     @weakify(cell);
@@ -501,16 +557,33 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    ContactsSectionHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ContactsViewControllerSectionHeaderID];
-    headerView.titleLabel.text = [self.dataSource tableView:tableView titleForHeaderInSection:section];
+//    ContactsSectionHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ContactsViewControllerSectionHeaderID];
+//
+//    headerView.titleLabel.text = [self.dataSource tableView:tableView titleForHeaderInSection:section];
+//    headerView.backgroundColor = [UIColor whiteColor];
+//    headerView.titleLabel.textColor = [UIColor blackColor];
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 40)];
+    headerView.backgroundColor = UIColorFromRGB(0xf1f1f1);
+    UILabel *textLab = [[UILabel alloc] init];
+    textLab.font = [UIFont systemFontOfSize:14];
+    textLab.textColor = [UIColor blackColor];
+    textLab.textAlignment = NSTextAlignmentLeft;
+    [headerView addSubview:textLab];
+    [textLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.right.mas_offset(0);
+        make.left.mas_offset(15);
+    }];
+    textLab.text = [self.dataSource tableView:tableView titleForHeaderInSection:section];
+    
     return headerView;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
-{
-    // For some reason section header view styling is not updated in time, unless we mark it explicitly
-    [view cas_setNeedsUpdateStylingForSubviews];
-}
+//- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+//{
+//    // For some reason section header view styling is not updated in time, unless we mark it explicitly
+//    [view cas_setNeedsUpdateStylingForSubviews];
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

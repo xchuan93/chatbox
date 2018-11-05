@@ -139,6 +139,11 @@ static NSString * const CellReuseIdConversation = @"CellId";
                                                             selector:@selector(activeMediaPlayerChanged:)];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.collectionView reloadData];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
