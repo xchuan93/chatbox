@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^DismissPer)(void);
+
 @interface PerCenterViewController : UIViewController
 
 - (void)updateChange;
 
+@property (nonatomic, copy) DismissPer dismissBlock;
+
 @end
+

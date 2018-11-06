@@ -50,6 +50,9 @@ final internal class SelfProfileViewController: UIViewController {
         
         profileView.imageView.delegate = self
         
+        settingsController.view.backgroundColor = UIColor.white
+        profileView.backgroundColor = UIColor.white
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

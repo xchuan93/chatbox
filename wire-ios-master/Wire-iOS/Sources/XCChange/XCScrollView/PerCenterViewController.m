@@ -27,6 +27,7 @@
 @property (nonatomic, strong) UIButton *generalBtn;
 @property (nonatomic, strong) UIImageView *feedbackImg;
 @property (nonatomic, strong) UIButton *feedbackBtn;
+@property (nonatomic, strong) UIView *maskView;
 
 @end
 
@@ -44,9 +45,20 @@
 
 - (void)layoutUI{
     
+    self.view.backgroundColor = [UIColor clearColor];
+    self.maskView  = [UIView new];
+    self.maskView.backgroundColor = UIColorFromRGB(0x050505);
+    self.maskView.alpha = 0.5f;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick)];
+    [self.maskView addGestureRecognizer:tap];
+    self.maskView.userInteractionEnabled = YES;
+    [self.view addSubview:self.maskView];
+    
     self.backView = [UIView new];
     self.backView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.backView];
+    
+    
     
     self.subView = [UIImageView new];
     self.subView.image = [UIImage imageNamed:@"XC设置页面背景"];
@@ -120,7 +132,13 @@
 - (void)layoutConstraints{
     
     [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.bottom.right.mas_offset(0);
+        make.top.left.bottom.mas_offset(0);
+        make.right.mas_offset(-[UIScreen mainScreen].bounds.size.width * 0.2f);
+    }];
+    
+    [self.maskView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.bottom.mas_offset(0);
+        make.width.mas_equalTo([UIScreen mainScreen].bounds.size.width);
     }];
     
     [self.subView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -207,8 +225,14 @@
     self.subLab.text = @"@sushine";
 }
 
-- (void)updateChange{
+- (void)tapClick{
+    self.dismissBlock();
 }
+
+- (void)updateChange{
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -216,13 +240,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+

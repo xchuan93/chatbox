@@ -208,6 +208,19 @@
 		186F300E2190190B006CDFF7 /* GKDYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F30082190190A006CDFF7 /* GKDYScrollView.m */; };
 		186F300F2190190B006CDFF7 /* PerCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F300C2190190B006CDFF7 /* PerCenterViewController.m */; };
 		186F30102190190B006CDFF7 /* MainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F300D2190190B006CDFF7 /* MainTestViewController.m */; };
+		186F301321901DD8006CDFF7 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F301121901DD7006CDFF7 /* TestViewController.m */; };
+		186F30202190262E006CDFF7 /* XC反馈@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F30142190262B006CDFF7 /* XC反馈@3x.png */; };
+		186F30212190262E006CDFF7 /* XC设置页面背景@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F30152190262C006CDFF7 /* XC设置页面背景@3x.png */; };
+		186F30222190262E006CDFF7 /* XC设置页面背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F30162190262C006CDFF7 /* XC设置页面背景@2x.png */; };
+		186F30232190262E006CDFF7 /* XC通用@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F30172190262C006CDFF7 /* XC通用@2x.png */; };
+		186F30242190262E006CDFF7 /* XC默认头像设置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F30182190262C006CDFF7 /* XC默认头像设置@2x.png */; };
+		186F30252190262E006CDFF7 /* XC反馈@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F30192190262C006CDFF7 /* XC反馈@2x.png */; };
+		186F30262190262E006CDFF7 /* XC登录设备@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F301A2190262C006CDFF7 /* XC登录设备@3x.png */; };
+		186F30272190262E006CDFF7 /* XC通用@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F301B2190262D006CDFF7 /* XC通用@3x.png */; };
+		186F30282190262E006CDFF7 /* XC帐号@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F301C2190262D006CDFF7 /* XC帐号@2x.png */; };
+		186F30292190262E006CDFF7 /* XC登录设备@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F301D2190262D006CDFF7 /* XC登录设备@2x.png */; };
+		186F302A2190262E006CDFF7 /* XC帐号@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F301E2190262D006CDFF7 /* XC帐号@3x.png */; };
+		186F302B2190262E006CDFF7 /* XC默认头像设置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186F301F2190262D006CDFF7 /* XC默认头像设置@3x.png */; };
 		188CF629215B3C4F001BC6B6 /* HomeTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF61E215B3C4E001BC6B6 /* HomeTabCell.m */; };
 		188CF62A215B3C4F001BC6B6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF620215B3C4E001BC6B6 /* HomeViewController.m */; };
 		188CF62B215B3C4F001BC6B6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF622215B3C4E001BC6B6 /* WebViewController.m */; };
@@ -1525,6 +1538,20 @@
 		186F300B2190190B006CDFF7 /* MainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTestViewController.h; sourceTree = "<group>"; };
 		186F300C2190190B006CDFF7 /* PerCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerCenterViewController.m; sourceTree = "<group>"; };
 		186F300D2190190B006CDFF7 /* MainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTestViewController.m; sourceTree = "<group>"; };
+		186F301121901DD7006CDFF7 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		186F301221901DD7006CDFF7 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		186F30142190262B006CDFF7 /* XC反馈@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC反馈@3x.png"; sourceTree = "<group>"; };
+		186F30152190262C006CDFF7 /* XC设置页面背景@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC设置页面背景@3x.png"; sourceTree = "<group>"; };
+		186F30162190262C006CDFF7 /* XC设置页面背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC设置页面背景@2x.png"; sourceTree = "<group>"; };
+		186F30172190262C006CDFF7 /* XC通用@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC通用@2x.png"; sourceTree = "<group>"; };
+		186F30182190262C006CDFF7 /* XC默认头像设置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC默认头像设置@2x.png"; sourceTree = "<group>"; };
+		186F30192190262C006CDFF7 /* XC反馈@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC反馈@2x.png"; sourceTree = "<group>"; };
+		186F301A2190262C006CDFF7 /* XC登录设备@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC登录设备@3x.png"; sourceTree = "<group>"; };
+		186F301B2190262D006CDFF7 /* XC通用@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC通用@3x.png"; sourceTree = "<group>"; };
+		186F301C2190262D006CDFF7 /* XC帐号@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC帐号@2x.png"; sourceTree = "<group>"; };
+		186F301D2190262D006CDFF7 /* XC登录设备@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC登录设备@2x.png"; sourceTree = "<group>"; };
+		186F301E2190262D006CDFF7 /* XC帐号@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC帐号@3x.png"; sourceTree = "<group>"; };
+		186F301F2190262D006CDFF7 /* XC默认头像设置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC默认头像设置@3x.png"; sourceTree = "<group>"; };
 		188CF61E215B3C4E001BC6B6 /* HomeTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabCell.m; sourceTree = "<group>"; };
 		188CF61F215B3C4E001BC6B6 /* HomeTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabCell.h; sourceTree = "<group>"; };
 		188CF620215B3C4E001BC6B6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -3414,6 +3441,8 @@
 				186F300D2190190B006CDFF7 /* MainTestViewController.m */,
 				186F30092190190A006CDFF7 /* PerCenterViewController.h */,
 				186F300C2190190B006CDFF7 /* PerCenterViewController.m */,
+				186F301221901DD7006CDFF7 /* TestViewController.h */,
+				186F301121901DD7006CDFF7 /* TestViewController.m */,
 			);
 			path = XCScrollView;
 			sourceTree = "<group>";
@@ -3472,6 +3501,18 @@
 		18D916B021804C8700FC1852 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				186F301D2190262D006CDFF7 /* XC登录设备@2x.png */,
+				186F301A2190262C006CDFF7 /* XC登录设备@3x.png */,
+				186F30192190262C006CDFF7 /* XC反馈@2x.png */,
+				186F30142190262B006CDFF7 /* XC反馈@3x.png */,
+				186F30182190262C006CDFF7 /* XC默认头像设置@2x.png */,
+				186F301F2190262D006CDFF7 /* XC默认头像设置@3x.png */,
+				186F30162190262C006CDFF7 /* XC设置页面背景@2x.png */,
+				186F30152190262C006CDFF7 /* XC设置页面背景@3x.png */,
+				186F30172190262C006CDFF7 /* XC通用@2x.png */,
+				186F301B2190262D006CDFF7 /* XC通用@3x.png */,
+				186F301C2190262D006CDFF7 /* XC帐号@2x.png */,
+				186F301E2190262D006CDFF7 /* XC帐号@3x.png */,
 				185971E12184596C009C2A1D /* XC创建群聊@2x.png */,
 				185971E02184596C009C2A1D /* XC创建群聊@3x.png */,
 				185971E32184596C009C2A1D /* XC邀请好友@2x.png */,
@@ -6405,9 +6446,11 @@
 				1658D2041D3E742A00249609 /* new_message.caf in Resources */,
 				87AEDB281DBA619D00010451 /* logo@2x.png in Resources */,
 				BF732A761D9C14C7003077DB /* emoji_nature.plist in Resources */,
+				186F30212190262E006CDFF7 /* XC设置页面背景@3x.png in Resources */,
 				16A2024D1B66505C0095BBD1 /* soundcloud@2x.png in Resources */,
 				1850883F217ECF3A00DF78B5 /* XC导航栏-更多@2x.png in Resources */,
 				181D976421609F8100A2B1E9 /* MJRefresh.bundle in Resources */,
+				186F30292190262E006CDFF7 /* XC登录设备@2x.png in Resources */,
 				181D970C215E298C00A2B1E9 /* bar@3x.png in Resources */,
 				181D973121609F6E00A2B1E9 /* youth@3x.png in Resources */,
 				181D97A62160A3AA00A2B1E9 /* menuData.plist in Resources */,
@@ -6418,11 +6461,14 @@
 				BF732A781D9C14C7003077DB /* emoji_people.plist in Resources */,
 				1ED28CD71A94E26D00B96189 /* group-icon.png in Resources */,
 				18508833217ECF3A00DF78B5 /* XC创建群聊@2x.png in Resources */,
+				186F30252190262E006CDFF7 /* XC反馈@2x.png in Resources */,
 				181D970F215E298C00A2B1E9 /* more@3x.png in Resources */,
 				1850883B217ECF3A00DF78B5 /* XC导航栏底色@2x.png in Resources */,
 				1658D2031D3E742A00249609 /* new_message_apns.caf in Resources */,
+				186F30282190262E006CDFF7 /* XC帐号@2x.png in Resources */,
 				877316061B970A82007BA779 /* framework.plist in Resources */,
 				87A4DA9D1D34FEF400105D44 /* audio-notifications in Resources */,
+				186F30272190262E006CDFF7 /* XC通用@3x.png in Resources */,
 				181D9713215E298C00A2B1E9 /* menu@3x.png in Resources */,
 				8773160E1B970A82007BA779 /* people_picker.plist in Resources */,
 				8773160F1B970A82007BA779 /* profile.plist in Resources */,
@@ -6437,6 +6483,7 @@
 				8773160C1B970A82007BA779 /* misc.plist in Resources */,
 				871BC2281D34F8F800DF0793 /* CameraAccessMessageViewController.xib in Resources */,
 				874C09361B4A8EF40077393B /* InfoPlist.strings in Resources */,
+				186F30242190262E006CDFF7 /* XC默认头像设置@2x.png in Resources */,
 				18F838D9215CC442000360AE /* back@2x.png in Resources */,
 				181D970A215E298C00A2B1E9 /* play@3x.png in Resources */,
 				1850883D217ECF3A00DF78B5 /* XC导航栏-更多@3x.png in Resources */,
@@ -6452,6 +6499,7 @@
 				87D482AF1B8C7DBC004ED174 /* soundcloud@3x.png in Resources */,
 				18508836217ECF3A00DF78B5 /* XC邀请好友@2x.png in Resources */,
 				181D970B215E298C00A2B1E9 /* play@2x.png in Resources */,
+				186F30262190262E006CDFF7 /* XC登录设备@3x.png in Resources */,
 				BF732A791D9C14C7003077DB /* emoji_symbols.plist in Resources */,
 				18508837217ECF3A00DF78B5 /* XC默认群组头像@2x.png in Resources */,
 				1EBA8C681B70C15D0089CC44 /* common-controls.cas in Resources */,
@@ -6468,7 +6516,9 @@
 				1ED28CD91A94E26D00B96189 /* group-icon@3x.png in Resources */,
 				185971CE21840892009C2A1D /* XC导航栏更多@3x.png in Resources */,
 				185971E52184596D009C2A1D /* XC创建群聊@2x.png in Resources */,
+				186F302A2190262E006CDFF7 /* XC帐号@3x.png in Resources */,
 				BF0BDF721DA7A9D8003C61DE /* RedactedScript-Regular.ttf in Resources */,
+				186F30232190262E006CDFF7 /* XC通用@2x.png in Resources */,
 				DB3E943A1B96EDBD00990482 /* LaunchScreen.xib in Resources */,
 				8FC853BF199245770008B66B /* Images.xcassets in Resources */,
 				181D970D215E298C00A2B1E9 /* bar@2x.png in Resources */,
@@ -6479,10 +6529,13 @@
 				877316111B970A82007BA779 /* style.plist in Resources */,
 				848DE12B1A83D20000E154B1 /* emoticons.min.json in Resources */,
 				1ED28CD81A94E26D00B96189 /* group-icon@2x.png in Resources */,
+				186F302B2190262E006CDFF7 /* XC默认头像设置@3x.png in Resources */,
 				1660F2381FBC6E2E00A0EE54 /* silence.m4a in Resources */,
 				185971E62184596D009C2A1D /* XC邀请好友@3x.png in Resources */,
 				87501FB31D40D6490056C042 /* ComponentsVersions.plist in Resources */,
+				186F30202190262E006CDFF7 /* XC反馈@3x.png in Resources */,
 				BF732A741D9C14C7003077DB /* emoji_flags.plist in Resources */,
+				186F30222190262E006CDFF7 /* XC设置页面背景@2x.png in Resources */,
 				877316051B970A82007BA779 /* conversation.plist in Resources */,
 				1EFB23DC1ACEDE5400244571 /* Localizable.stringsdict in Resources */,
 				1658D2021D3E742A00249609 /* hotping_from_them.caf in Resources */,
@@ -7397,6 +7450,7 @@
 				87D56DFA1E0046FE00DFF722 /* CollectionImageCell.swift in Sources */,
 				EF2127151FB9DFE300625A9B /* NameStepViewController.m in Sources */,
 				EF25F7DE1FC45F8E0040C3CC /* AccessoryTextField.swift in Sources */,
+				186F301321901DD8006CDFF7 /* TestViewController.m in Sources */,
 				8759E2C31FC82BDF008E17C9 /* AnalyticsTracker+Registration.swift in Sources */,
 				871BC28D1D34F8F800DF0793 /* UITableView+RowCount.m in Sources */,
 				87F18BC21E02E4B600C69D9B /* CollectionVideoCell.swift in Sources */,

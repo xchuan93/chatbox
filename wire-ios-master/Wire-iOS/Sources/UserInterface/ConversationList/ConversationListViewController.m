@@ -62,6 +62,8 @@
 #import "InviteContactsViewController.h"
 #import "AnalyticsTracker+Invitations.h"
 
+#import "PerCenterViewController.h"
+
 @interface ConversationListViewController (Content) <ConversationListContentDelegate,ContactsViewControllerDelegate>
 
 - (void)updateBottomBarSeparatorVisibilityWithContentController:(ConversationListContentController *)controller;
@@ -124,6 +126,8 @@
 @property (nonatomic ,strong) UIViewController *currentVC;
 
 @property (nonatomic, strong) ConversationCreationController *groupchat;
+
+@property (nonatomic,strong) PerCenterViewController *vc;
 
 - (void)setState:(ConversationListState)state animated:(BOOL)animated;
 
@@ -740,11 +744,12 @@
     [self setState:ConversationListStatePeoplePicker animated:animated];
 }
 
+//点击头像123
 - (void)presentSettings
 {
     SettingsNavigationController *settingsViewController = [self createSettingsViewController];
     KeyboardAvoidingViewController *keyboardAvoidingWrapperController = [[KeyboardAvoidingViewController alloc] initWithViewController:settingsViewController];
-    
+
     if (self.wr_splitViewController.layoutSize == SplitViewControllerLayoutSizeCompact) {
         keyboardAvoidingWrapperController.topInset = UIScreen.safeArea.top;
         @weakify(keyboardAvoidingWrapperController);
@@ -752,7 +757,7 @@
             @strongify(keyboardAvoidingWrapperController);
             [keyboardAvoidingWrapperController dismissViewControllerAnimated:YES completion:nil];
         };
-        
+
         keyboardAvoidingWrapperController.modalPresentationStyle = UIModalPresentationCurrentContext;
         keyboardAvoidingWrapperController.transitioningDelegate = self;
         [self presentViewController:keyboardAvoidingWrapperController animated:YES completion:nil];
@@ -767,6 +772,17 @@
         keyboardAvoidingWrapperController.view.backgroundColor = [UIColor blackColor];
         [self.parentViewController presentViewController:keyboardAvoidingWrapperController animated:YES completion:nil];
     }
+//    self.vc = [[PerCenterViewController alloc] init];
+//    typeof(self)weakself = self;
+//    _vc.dismissBlock = ^{
+//        [weakself.vc.view removeFromSuperview];
+//    };
+//    [self addChildViewController:_vc];
+//    [self.view addSubview:_vc.view];
+//    [UIView animateWithDuration:1 animations:^{
+//    } completion:^(BOOL finished) {
+//        _vc.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+//    }];
 }
 
 - (void)dismissPeoplePickerWithCompletionBlock:(dispatch_block_t)block
