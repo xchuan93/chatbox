@@ -83,6 +83,7 @@ final internal class SelfProfileViewController: UIViewController {
         createCloseButton()
         configureAccountLabel()
         createConstraints()
+        self.view.backgroundColor = UIColor.white
     }
     
     override func viewDidAppear(_ animated: Bool) {
