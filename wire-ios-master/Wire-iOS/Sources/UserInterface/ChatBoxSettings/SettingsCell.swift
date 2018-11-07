@@ -135,7 +135,7 @@ protocol SettingsCellType: class {
                 else
                     
                 {
-                self.iconImageView.image = UIImage(for: icon, iconSize: .tiny, color: UIColor.white)
+                self.iconImageView.image = UIImage(for: icon, iconSize: .tiny, color: UIColor.black)
                 }
                 self.cellNameLabelToIconInset.isActive = true
             }
@@ -148,10 +148,11 @@ protocol SettingsCellType: class {
         }
     }
     
-    var titleColor: UIColor = UIColor.white {
+    var titleColor: UIColor = UIColor.white{
         didSet {
-            self.cellNameLabel.textColor = self.titleColor
+            self.cellNameLabel.textColor = UIColor.black
         }
+        
     }
     
     var cellColor: UIColor? {
@@ -211,7 +212,7 @@ protocol SettingsCellType: class {
         
         self.cellNameLabelToIconInset.isActive = false
         
-        self.valueLabel.textColor = UIColor.lightGray
+        self.valueLabel.textColor = UIColor.black
         self.valueLabel.font = UIFont.systemFont(ofSize: 17)
         self.valueLabel.textAlignment = .right
         
@@ -259,7 +260,8 @@ protocol SettingsCellType: class {
             imagePreview.centerY == contentView.centerY
         }
         
-        self.separatorLine.backgroundColor = UIColor(white: 1.0, alpha: 0.08)
+        self.separatorLine.backgroundColor = UIColor.white
+        self.separatorLine.alpha = 0.8
         self.addSubview(self.separatorLine)
         
         constrain(self, self.separatorLine, self.cellNameLabel) { selfView, separatorLine, cellNameLabel in
@@ -269,7 +271,8 @@ protocol SettingsCellType: class {
             separatorLine.height == .hairline
         }
         
-        self.topSeparatorLine.backgroundColor = UIColor(white: 1.0, alpha: 0.08)
+        self.topSeparatorLine.backgroundColor = UIColor.white
+        self.topSeparatorLine.alpha = 0.8
         self.addSubview(self.topSeparatorLine)
         
         constrain(self, self.topSeparatorLine, self.cellNameLabel) { selfView, topSeparatorLine, cellNameLabel in
@@ -278,6 +281,9 @@ protocol SettingsCellType: class {
             topSeparatorLine.top == selfView.top
             topSeparatorLine.height == .hairline
         }
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
     }
     
     func setupAccessibiltyElements() {
@@ -293,7 +299,7 @@ protocol SettingsCellType: class {
         
         if self.isHighlighted && self.selectionStyle != .none {
             self.backgroundColor = UIColor(white: 0, alpha: 0.2)
-            self.badge.backgroundColor = UIColor.white
+            self.badge.backgroundColor = UIColor.black
             self.badgeLabel.textColor = UIColor.black
         }
         else {
@@ -306,14 +312,27 @@ protocol SettingsCellType: class {
     override func setup() {
         super.setup()
         self.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
+        self.iconImageView.image = UIImage(for: icon, iconSize: .tiny, color: UIColor.black)
     }
 }
 
 @objc class SettingsButtonCell: SettingsTableCell {
     override func setup() {
         super.setup()
-        self.cellNameLabel.textColor = UIColor.accent()
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
     }
+    
 }
 
 @objc class SettingsToggleCell: SettingsTableCell {
@@ -330,6 +349,9 @@ protocol SettingsCellType: class {
         self.switchView.isAccessibilityElement = true
         
         self.accessibilityElements = [self.cellNameLabel, self.switchView]
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
     }
     
     func onSwitchChanged(_ sender: UIResponder) {
@@ -384,6 +406,9 @@ protocol SettingsCellType: class {
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onCellSelected(_:)))
         self.contentView.addGestureRecognizer(tapGestureRecognizer)
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
     }
     
     override func setupAccessibiltyElements() {

@@ -160,6 +160,7 @@ class SettingsTableViewController: SettingsBaseTableViewController {
         }
 
         self.selfUserObserver = UserChangeInfo.add(observer: self, for: ZMUser.selfUser(), userSession: ZMUserSession.shared()!)
+        self.view.backgroundColor = UIColor.white
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -210,6 +211,7 @@ class SettingsTableViewController: SettingsBaseTableViewController {
             cell.descriptor = cellDescriptor
             cellDescriptor.featureCell(cell)
             cell.isFirst = indexPath.row == 0
+//            cell.contentView.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
             return cell
         }
 

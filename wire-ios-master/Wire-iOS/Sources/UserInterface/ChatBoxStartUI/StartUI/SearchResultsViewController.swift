@@ -149,7 +149,7 @@ public class SearchResultsViewController : UIViewController {
     }
     
     deinit {
-        searchDirectory.tearDown()
+//        searchDirectory.tearDown()
     }
     
     @objc

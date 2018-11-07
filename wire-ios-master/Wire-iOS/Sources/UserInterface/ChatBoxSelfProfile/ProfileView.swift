@@ -85,6 +85,16 @@ import Cartography
         addSubview(stackView)
         
         self.createConstraints()
+        nameLabel.textColor = UIColor.black
+        handleLabel.textColor = UIColor.black
+        teamNameLabel.textColor = UIColor.black
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        nameLabel.textColor = UIColor.black
+        handleLabel.textColor = UIColor.black
+        teamNameLabel.textColor = UIColor.black
     }
     
     fileprivate func updateHandleLabel(user: ZMBareUser) {
@@ -95,6 +105,9 @@ import Cartography
         else {
             handleLabel.isHidden = true
         }
+        nameLabel.textColor = UIColor.black
+        handleLabel.textColor = UIColor.black
+        teamNameLabel.textColor = UIColor.black
     }
     
     private func createConstraints() {
@@ -119,5 +132,8 @@ extension ProfileView: ZMUserObserver {
         if changeInfo.handleChanged {
             updateHandleLabel(user: changeInfo.user)
         }
+        nameLabel.textColor = UIColor.black
+        handleLabel.textColor = UIColor.black
+        teamNameLabel.textColor = UIColor.black
     }
 }

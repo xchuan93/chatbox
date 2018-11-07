@@ -760,6 +760,7 @@
 
         keyboardAvoidingWrapperController.modalPresentationStyle = UIModalPresentationCurrentContext;
         keyboardAvoidingWrapperController.transitioningDelegate = self;
+        keyboardAvoidingWrapperController.view.backgroundColor = [UIColor whiteColor];
         [self presentViewController:keyboardAvoidingWrapperController animated:YES completion:nil];
     }
     else {
@@ -769,7 +770,7 @@
             [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
         };
         keyboardAvoidingWrapperController.modalPresentationStyle = UIModalPresentationFormSheet;
-        keyboardAvoidingWrapperController.view.backgroundColor = [UIColor blackColor];
+        keyboardAvoidingWrapperController.view.backgroundColor = [UIColor whiteColor];
         [self.parentViewController presentViewController:keyboardAvoidingWrapperController animated:YES completion:nil];
     }
 //    self.vc = [[PerCenterViewController alloc] init];

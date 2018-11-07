@@ -24,7 +24,7 @@ extension IconButton {
         let closeButton = IconButton.iconButtonDefaultLight()
         closeButton.setIcon(.X, with: .tiny, for: .normal)
         closeButton.frame = CGRect(x: 0, y: 0, width: 32, height: 20)
-        closeButton.accessibilityIdentifier = "close"
+        closeButton.setBackgroundImage(UIImage(named: "x.png"), for: .normal)
         closeButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -16)
         return closeButton
     }
@@ -111,7 +111,7 @@ final internal class SelfProfileViewController: UIViewController {
         accountLabel.isHidden = SessionManager.shared?.accountManager.accounts.count > 1
         accountLabel.text = "self.account".localized.uppercased()
         accountLabel.accessibilityTraits = UIAccessibilityTraitHeader
-        accountLabel.textColor = ColorScheme.default().color(withName: ColorSchemeColorTextForeground, variant: .dark)
+        accountLabel.textColor = UIColor.black
         accountLabel.font = FontSpec(.medium, .semibold).font
     }
     
