@@ -63,6 +63,7 @@
 #import "AnalyticsTracker+Invitations.h"
 
 #import "PerCenterViewController.h"
+#import <Aspects.h>
 
 @interface ConversationListViewController (Content) <ConversationListContentDelegate,ContactsViewControllerDelegate>
 
@@ -288,6 +289,8 @@
     }];
 }
 
+- (void)information{}
+
 - (void)NavigationBarPullDown{
     __weak typeof(self)weakSelf = self;
     NSMutableArray *menuItems = [[NSMutableArray alloc] initWithObjects:
@@ -300,7 +303,12 @@
                                                       title:@"邀请好友"
                                                      action:^(IFMMenuItem *item) {
                                                          [weakSelf Invitemore];
-                                                     }], nil];
+                                                     }],
+                                 [IFMMenuItem itemWithImage:[UIImage imageNamed:@"XC返回资讯"]
+                                                      title:@"返回资讯"
+                                                     action:^(IFMMenuItem *item) {
+                                                         [weakSelf information];
+                                                     }],nil];
     
     IFMMenu *menu = [[IFMMenu alloc] initWithItems:menuItems];
     menu.menuBackGroundColor = [UIColor blackColor];
@@ -354,6 +362,7 @@
     [self showPushPermissionDeniedDialogIfNeeded];
     
     [self addSegmentView];
+    [self notification];
 }
 
 - (void)updateObserverTokensForActiveTeam
@@ -367,6 +376,12 @@
 
 }
 
+- (void)notification{
+    [self aspect_hookSelector:@selector(information) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectinfo){
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"informationChanged" object:nil];
+    } error:nil];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -376,6 +391,16 @@
     }];
 
     [self requestSuggestedHandlesIfNeeded];
+    
+
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+//
+- (BOOL)prefersStatusBarHidden{
+    return NO;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -390,6 +415,12 @@
     
     [self updateBottomBarSeparatorVisibilityWithContentController:self.listContentController];
     [self closePushPermissionDialogIfNotNeeded];
+    
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = [UIColor blackColor];
+    }
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)requestSuggestedHandlesIfNeeded
@@ -403,20 +434,20 @@
     }
 }
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
+//- (BOOL)prefersStatusBarHidden
+//{
+//    return YES;
+//}
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    if (self.presentedViewController != nil) {
-        return self.presentedViewController.preferredStatusBarStyle;
-    }
-    else {
-        return UIStatusBarStyleLightContent;
-    }
-}
+//- (UIStatusBarStyle)preferredStatusBarStyle
+//{
+//    if (self.presentedViewController != nil) {
+//        return self.presentedViewController.preferredStatusBarStyle;
+//    }
+//    else {
+//        return UIStatusBarStyleLightContent;
+//    }
+//}
 
 - (void)createNoConversationLabel;
 {
@@ -457,6 +488,7 @@
     [self addChildViewController:self.bottomBarController];
     [self.conversationListContainer addSubview:self.bottomBarController.view];
     [self.bottomBarController didMoveToParentViewController:self];
+    self.bottomBarController.view.hidden = YES;
 }
 
 - (ArchivedListViewController *)createArchivedListViewController
@@ -760,7 +792,8 @@
 
         keyboardAvoidingWrapperController.modalPresentationStyle = UIModalPresentationCurrentContext;
         keyboardAvoidingWrapperController.transitioningDelegate = self;
-        keyboardAvoidingWrapperController.view.backgroundColor = [UIColor whiteColor];
+        keyboardAvoidingWrapperController.view.backgroundColor = [UIColor blackColor];
+        [settingsViewController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
         [self presentViewController:keyboardAvoidingWrapperController animated:YES completion:nil];
     }
     else {

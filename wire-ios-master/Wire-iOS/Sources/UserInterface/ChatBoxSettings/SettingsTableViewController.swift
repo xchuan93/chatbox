@@ -67,11 +67,19 @@ class SettingsBaseTableViewController: UIViewController {
         super.viewDidAppear(animated)
         self.tableView.reloadData()
     }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tableView.separatorStyle = .singleLine
+        tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        tableView.separatorColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
+        
+    }
 
     private func createTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorStyle = .none
+//        tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
         tableView.clipsToBounds = true
         tableView.tableFooterView = UIView()
@@ -79,6 +87,9 @@ class SettingsBaseTableViewController: UIViewController {
         view.addSubview(footerContainer)
         footerContainer.addSubview(footerSeparator)
         footerSeparator.inverse = true
+        tableView.separatorStyle = .singleLine
+        tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        tableView.separatorColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
     }
 
     private func createConstraints() {
@@ -211,7 +222,6 @@ class SettingsTableViewController: SettingsBaseTableViewController {
             cell.descriptor = cellDescriptor
             cellDescriptor.featureCell(cell)
             cell.isFirst = indexPath.row == 0
-//            cell.contentView.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
             return cell
         }
 
@@ -238,13 +248,15 @@ class SettingsTableViewController: SettingsBaseTableViewController {
 
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerFooterView = view as? UITableViewHeaderFooterView {
-            headerFooterView.textLabel?.textColor = UIColor(white: 1, alpha: 0.4)
+            headerFooterView.textLabel?.textColor = UIColor(red: 157/255.0, green: 157/255.0, blue: 157/255.0, alpha: 1)
+            headerFooterView.backgroundView?.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
         }
     }
 
     func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         if let headerFooterView = view as? UITableViewHeaderFooterView {
-            headerFooterView.textLabel?.textColor = UIColor(white: 1, alpha: 0.4)
+            headerFooterView.textLabel?.textColor = UIColor(red: 157/255.0, green: 157/255.0, blue: 157/255.0, alpha: 1)
+            headerFooterView.backgroundView?.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
         }
     }
 

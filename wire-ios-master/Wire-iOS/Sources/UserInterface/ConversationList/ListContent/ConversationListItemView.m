@@ -87,7 +87,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
 
 - (void)ChangeBadgeCount:(NSNotification *)no{
     NSString *badgeCount = no.object;
-//    self.badgeLab.hidden = NO;
+    self.badgeLab.hidden = YES;
 //    self.badgeLab.accessibilityValue = badgeCount;
     self.badgeChange(badgeCount);
 //    [self setbadgeCount:badgeCount];
@@ -95,7 +95,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
 
 - (void)setbadgeCount:(NSString *)badge{
     self.badgeLab.text = badge;
-    self.badgeLab.hidden = NO;
+    self.badgeLab.hidden = YES;
 }
 
 - (void)setupConversationListItemView
@@ -165,7 +165,6 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     _badgeLab.layer.cornerRadius = 7.5;
     _badgeLab.layer.borderColor = UIColorFromRGB(0xef8752).CGColor;
     _badgeLab.layer.masksToBounds = YES;
-//    badgeLab.text = @"2";
     _badgeLab.textAlignment = NSTextAlignmentCenter;
     _badgeLab.hidden = YES;
     
@@ -180,7 +179,7 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     typeof(self)weakSelf = self;
     self.badgeChange = ^(NSString *badgecount) {
         
-        weakSelf.badgeLab.hidden = NO;
+        weakSelf.badgeLab.hidden = YES;
         weakSelf.badgeLab.text = badgecount;
         NSLog(@"-----12%@",weakSelf.badgeLab);
     };
@@ -201,7 +200,6 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
     [NSLayoutConstraint autoCreateAndInstallConstraints:^{
         
         [self autoSetDimension:ALDimensionHeight toSize:64.0 relation:NSLayoutRelationGreaterThanOrEqual];
-//        CGFloat leftMargin = 64.0;
         [self.avatarContainer autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTrailing];
         [self.avatarContainer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.titleField];
         
@@ -224,26 +222,10 @@ NSString * const ConversationListItemDidScrollNotification = @"ConversationListI
             make.width.mas_equalTo(100);
             make.height.mas_equalTo(13);
         }];
-//        [self.titleField autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
-//        [self.subtitleField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleField withOffset:2.0];
-//        [self.subtitleField autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
-        
-//        [self.labelsContainer autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:8 relation:NSLayoutRelationGreaterThanOrEqual];
-//        [self.labelsContainer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self withOffset:leftMargin];
-//        [self.labelsContainer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.rightAccessory withOffset:-8.0];
-//        [self.labelsContainer autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:8 relation:NSLayoutRelationGreaterThanOrEqual];
-//
-//        self.titleTwoLineConstraint = [self.labelsContainer autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
-//        self.titleTwoLineConstraint.active = NO;
-//        self.titleOneLineConstraint = [self.titleField autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self];
         
         [self.rightAccessory autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
         [self.rightAccessory autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:16.0];
         
-//        [self.lineView autoSetDimension:ALDimensionHeight toSize:UIScreen.hairline];
-//        [self.lineView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
-//        [self.lineView autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self withOffset:0.0];
-//        [self.lineView autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.titleField];
         [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.titleField);
             make.right.mas_offset(0);

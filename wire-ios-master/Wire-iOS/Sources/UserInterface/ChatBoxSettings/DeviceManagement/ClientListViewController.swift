@@ -122,6 +122,7 @@ import CocoaLumberjackSwift
             self.isEqual(rootViewController) {
                 self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(ClientListViewController.backPressed(_:)))
         }
+        self.view.backgroundColor = UIColor.white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -147,7 +148,9 @@ import CocoaLumberjackSwift
         tableView.register(ClientTableViewCell.self, forCellReuseIdentifier: ClientTableViewCell.zm_reuseIdentifier)
         tableView.isEditing = self.editingList
         tableView.backgroundColor = UIColor.clear
-        tableView.separatorColor = UIColor(white: 1, alpha: 0.1)
+        tableView.separatorStyle = .singleLine
+        tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        tableView.separatorColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
         self.view.addSubview(tableView)
         self.clientsTableView = tableView
     }
@@ -286,13 +289,15 @@ import CocoaLumberjackSwift
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerFooterView = view as? UITableViewHeaderFooterView {
-            headerFooterView.textLabel?.textColor = UIColor(white: 1, alpha: 0.4)
+            headerFooterView.textLabel?.textColor = UIColor(red: 157/255.0, green: 157/255.0, blue: 157/255.0, alpha: 1)
+            headerFooterView.backgroundView?.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
         }
     }
     
     func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         if let headerFooterView = view as? UITableViewHeaderFooterView {
-            headerFooterView.textLabel?.textColor = UIColor(white: 1, alpha: 0.4)
+            headerFooterView.textLabel?.textColor = UIColor(red: 157/255.0, green: 157/255.0, blue: 157/255.0, alpha: 1)
+            headerFooterView.backgroundView?.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
         }
     }
     

@@ -1,5 +1,6 @@
 PODS:
   - ARCollectionViewMasonryLayout (2.3.0)
+  - Aspects (1.4.1)
   - GoogleAPIClient/Core (1.0.4):
     - GTMSessionFetcher (~> 1.1)
   - GoogleAPIClient/YouTube (1.0.4):
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - ARCollectionViewMasonryLayout (from `https://github.com/wireapp/ARCollectionViewMasonryLayout`, tag `2.3.0`)
+  - Aspects
   - GoogleAPIClient/YouTube (= 1.0.4)
   - Localytics (= 4.3.0)
   - Masonry
@@ -29,6 +31,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Aspects
     - GoogleAPIClient
     - GTMSessionFetcher
     - Localytics
@@ -59,6 +62,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ARCollectionViewMasonryLayout: 97cb468434b546b79a98c7c0908447ff803eb85e
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   GoogleAPIClient: bde49b31072d3c296d051f58c37b27a66ca45936
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   Localytics: 45fc45f5600bdb151e839d14db1360c971f0b9de
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   SCSiriWaveformView: b8b2756af42addcd31900c3945f24edafefb5395
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 634a2e35da043051e7127e21d51b5fe8f40a1774
+PODFILE CHECKSUM: bca31ec29b0f5336a85c97c0c38045cb4fd10773
 
 COCOAPODS: 1.5.3

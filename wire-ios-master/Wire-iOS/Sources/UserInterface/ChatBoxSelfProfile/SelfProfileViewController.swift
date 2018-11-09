@@ -21,10 +21,11 @@ import Cartography
 
 extension IconButton {
     public static func closeButton() -> IconButton {
-        let closeButton = IconButton.iconButtonDefaultLight()
+        let closeButton = IconButton.iconButtonDefaultDark()
         closeButton.setIcon(.X, with: .tiny, for: .normal)
         closeButton.frame = CGRect(x: 0, y: 0, width: 32, height: 20)
-        closeButton.setBackgroundImage(UIImage(named: "x.png"), for: .normal)
+//        closeButton.setBackgroundImage(UIImage(named: "x.png"), for: .normal)
+        closeButton.accessibilityIdentifier = "close"
         closeButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -16)
         return closeButton
     }
@@ -84,6 +85,7 @@ final internal class SelfProfileViewController: UIViewController {
         configureAccountLabel()
         createConstraints()
         self.view.backgroundColor = UIColor.white
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

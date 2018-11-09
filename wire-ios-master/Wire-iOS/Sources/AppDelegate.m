@@ -133,7 +133,7 @@ static AppDelegate *sharedAppDelegate = nil;
                                                object:nil];
 
     
-    
+//    UIStatusBarStyleLightContent
     self.homeVC = [[HomeViewController alloc] init];
     __weak typeof(self) weakself = self;
     _homeVC.rootinit = ^{

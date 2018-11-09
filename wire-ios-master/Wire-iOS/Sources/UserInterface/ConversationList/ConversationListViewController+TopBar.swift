@@ -71,6 +71,16 @@ extension ConversationListViewController {
 //        AppDelegate.shared().homeVC?.homeWindow.makeKey()
 //        AppDelegate.shared().homeVC?.homeWindow.makeKeyAndVisible()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(informationChanged), name: NSNotification.Name(rawValue: "informationChanged"), object: nil)
+        
         NotificationCenter.default.post(name:NSNotification.Name(rawValue: "NavigationBarPullDown"), object: nil)
     }
+    
+    func informationChanged() {
+        AppDelegate.shared().rootViewController.mainWindow.isHidden = true
+        AppDelegate.shared().homeVC?.homeWindow.isHidden = false
+        AppDelegate.shared().homeVC?.homeWindow.makeKey()
+        AppDelegate.shared().homeVC?.homeWindow.makeKeyAndVisible()
+    }
+    
 }

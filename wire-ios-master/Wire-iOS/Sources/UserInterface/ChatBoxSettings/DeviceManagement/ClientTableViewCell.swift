@@ -32,6 +32,16 @@ class ClientTableViewCell: UITableViewCell {
     let fingerprintLabel = UILabel(frame: CGRect.zero)
     let verifiedLabel = UILabel(frame: CGRect.zero)
     
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        nameLabel.textColor = UIColor.black
+        labelLabel.textColor = UIColor.black
+        activationLabel.textColor = UIColor.black
+        fingerprintLabel.textColor = UIColor.black
+        verifiedLabel.textColor = UIColor.black
+    }
+    
     var showVerified: Bool = false {
         didSet {
             self.updateVerifiedLabel()

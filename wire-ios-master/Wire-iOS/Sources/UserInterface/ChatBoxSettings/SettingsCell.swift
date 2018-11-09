@@ -354,6 +354,14 @@ protocol SettingsCellType: class {
         self.badgeLabel.textColor = UIColor.black
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
+        self.badgeLabel.textColor = UIColor.black
+        self.iconImageView.image = UIImage(for: icon, iconSize: .tiny, color: UIColor.black)
+    }
+    
     func onSwitchChanged(_ sender: UIResponder) {
         self.descriptor?.select(SettingsPropertyValue(self.switchView.isOn))
     }
@@ -445,5 +453,10 @@ protocol SettingsCellType: class {
         if let text = self.textInput.text {
             self.descriptor?.select(SettingsPropertyValue.string(value: text))
         }
+    }
+    override func layoutSubviews() {
+        self.textInput.textColor = UIColor.black
+        self.cellNameLabel.textColor = UIColor.black
+        self.valueLabel.textColor = UIColor.black
     }
 }

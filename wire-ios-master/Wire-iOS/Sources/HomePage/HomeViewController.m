@@ -20,7 +20,7 @@
 #define kCarouselViewH 200
 
 #define isIPhoneX [UIScreen mainScreen].bounds.size.height == 812
-#define topMargin (isIPhoneX ? 44 : 0)
+#define topMargin (isIPhoneX ? 44 : 0)+20
 #define bottomMargin (isIPhoneX ? 34 : 0)
 
 @interface HomeViewController ()<ImagesPlayerIndictorPattern, ImagesPlayerDelegae,UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>{
@@ -69,9 +69,9 @@
     }
     return _dataItem;
 }
-- (BOOL)prefersStatusBarHidden{
-    return YES;
-}
+//- (BOOL)prefersStatusBarHidden{
+//    return YES;
+//}
 
 - (void)viewDidDisappear:(BOOL)animated
 {
@@ -193,13 +193,6 @@
     [gesture.view removeFromSuperview];
     [_menuTableView removeFromSuperview];
 }
-
-//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
-//    if ([touch.view isKindOfClass:[UITableView class]]) {
-//        return YES;
-//    }
-//    return true;
-//}
 
 - (void)menuClick:(UITapGestureRecognizer *)tap{
     NSLog(@"dianji");
@@ -339,7 +332,31 @@
         make.bottom.mas_offset(-40);
     }];
     [self.chatBtn addTarget:self action:@selector(chatBtnClick) forControlEvents:UIControlEventTouchUpInside];
-//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+//    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+//    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+//        statusBar.backgroundColor = [UIColor blackColor];
+//    }
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = [UIColor clearColor];
+    }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+- (BOOL)prefersStatusBarHidden{
+    return NO;
 }
 
 #pragma mark = ImagesPlayerIndictorPattern

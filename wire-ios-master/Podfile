@@ -8,6 +8,7 @@ def ios_pods
     pod 'SCSiriWaveformView', :git => 'https://github.com/wireapp/SCSiriWaveformView', :tag => 'v1.0.3'
     pod 'Masonry'
     pod 'SDWebImage'
+    pod 'Aspects'
 end
     
     
