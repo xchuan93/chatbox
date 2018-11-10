@@ -63,6 +63,7 @@
 #import "AnalyticsTracker+Invitations.h"
 
 #import "PerCenterViewController.h"
+#import <Masonry.h>
 #import <Aspects.h>
 
 @interface ConversationListViewController (Content) <ConversationListContentDelegate,ContactsViewControllerDelegate>
@@ -197,9 +198,10 @@
     self.view.backgroundColor = [UIColor blackColor];
     self.listContentController = [[ConversationListContentController alloc] init];
     self.listContentController.collectionView.contentInset = UIEdgeInsetsMake(0, 0, self.contentControllerBottomInset, 0);
+    self.listContentController.view.backgroundColor = [UIColor whiteColor];
     self.listContentController.view.translatesAutoresizingMaskIntoConstraints = NO;
     self.listContentController.contentDelegate = self;
-    self.listContentController.view.frame = CGRectMake(0, 70, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70);
+    self.listContentController.view.frame = CGRectMake(0, 70+XCtopMargin, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70-XCbottomMargin);
     [self.listContentController.collectionView scrollRectToVisible:CGRectMake(0, 0, self.view.bounds.size.width, 1) animated:NO];
     
     [self addChildViewController:self.listContentController];
@@ -208,7 +210,7 @@
     
     self.startcontroller = [[StartUIViewController alloc] init];
     self.startcontroller.delegate = self;
-    self.startcontroller.view.frame = CGRectMake(0, 70, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70);
+    self.startcontroller.view.frame = CGRectMake(0, 70+XCtopMargin, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70-XCbottomMargin);
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(NavigationBarPullDown) name:@"NavigationBarPullDown" object:nil];
     
@@ -262,9 +264,6 @@
     [self presentViewController:embeddedNavigationController animated:YES completion:nil];
 }
 
-//- (void)backbtn{
-//    [_groupchat dismissViewControllerAnimated:YES completion:nil];
-//}
 
 #pragma mark - ContactsViewControllerDelegate
 
@@ -328,11 +327,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+//    [self addmaskView];
     self.contentControllerBottomInset = 16;
     
     self.contentContainer = [[UIView alloc] initForAutoLayout];
-//    self.contentContainer.backgroundColor = [UIColor orangeColor];
-//    self.contentContainer.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.contentContainer];
 
     self.userProfile = ZMUserSession.sharedSession.userProfile;
@@ -348,7 +347,6 @@
     self.initialSyncObserverToken = [ZMUserSession addInitialSyncCompletionObserver:self userSession:[ZMUserSession sharedSession]];
 
     [self createNoConversationLabel];
-//    [self createListContentController];
     [self createBottomBarController];
     [self createTopBar];
 
@@ -380,6 +378,15 @@
     [self aspect_hookSelector:@selector(information) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectinfo){
         [[NSNotificationCenter defaultCenter] postNotificationName:@"informationChanged" object:nil];
     } error:nil];
+}
+
+- (void)addmaskView{
+    UIView *maskView = [UIView new];
+    maskView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:maskView];
+    [maskView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.bottom.right.mas_offset(0);
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated

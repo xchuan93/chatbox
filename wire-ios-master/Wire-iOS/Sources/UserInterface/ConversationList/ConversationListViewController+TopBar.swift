@@ -34,6 +34,7 @@ extension ConversationListViewController {
     
     public func createTopBar() {
         let profileAccountView = self.currentAccountView()
+//        profileAccountView.backgroundColor = UIColor.black
         profileAccountView.selected = false
         profileAccountView.autoUpdateSelection = false
         

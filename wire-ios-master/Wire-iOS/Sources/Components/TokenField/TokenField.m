@@ -25,6 +25,8 @@
 #import "Logging.h"
 #import "ColorScheme.h"
 #import "Wire-Swift.h"
+#import <Masonry.h>
+#import <Aspects.h>
 
 
 CGFloat const accessoryButtonSize = 32.0f;
@@ -86,7 +88,10 @@ CGFloat const accessoryButtonSize = 32.0f;
     [self setupDefaultAppearance];
     [self setupSubviews];
     [self setupConstraints];
+    [self updateAsConstraints];
 }
+
+
 
 - (void)setupDefaultAppearance
 {
@@ -163,6 +168,21 @@ CGFloat const accessoryButtonSize = 32.0f;
     [self.textView addConstraints:@[self.toLabelLeftMargin, self.toLabelTopMargin]];
     
     [self updateTextAttributes];
+    
+
+}
+
+- (void)updateAsConstraints{
+    [self aspect_hookSelector:@selector(tokenizedTextView:didTapTextRange:fraction:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectinfo){
+        [self.textView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_offset(0);
+        }];
+    } error:nil];
+    [self aspect_hookSelector:@selector(setupConstraints) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectinfo){
+        [self.toLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_offset(0);
+        }];
+    } error:nil];
 }
 
 #pragma mark - Appearance
