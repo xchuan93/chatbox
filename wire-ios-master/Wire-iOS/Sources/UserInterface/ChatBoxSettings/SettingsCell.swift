@@ -114,22 +114,22 @@ protocol SettingsCellType: class {
             else {
                 if(self.titleText.caseInsensitiveCompare("self.about".localized).rawValue==0){
  
-                 self.iconImageView.image=UIImage.init(named: "settingAbout");
+                 self.iconImageView.image=UIImage.init(named: "XC05关于");
                 }
                    else if(self.titleText.caseInsensitiveCompare("self.account".localized).rawValue==0){
-                          self.iconImageView.image=UIImage.init(named: "setAccount");
+                          self.iconImageView.image=UIImage.init(named: "XC帐号");
                 }
                 else if(self.titleText.caseInsensitiveCompare("profile.devices.title".localized).rawValue==0){
-                    self.iconImageView.image=UIImage.init(named: "setDevice");
+                    self.iconImageView.image=UIImage.init(named: "XC登录设备");
                 }
                 else if(self.titleText.caseInsensitiveCompare("self.settings.options_menu.title".localized).rawValue==0){
-                    self.iconImageView.image=UIImage.init(named: "setUsual");
+                    self.iconImageView.image=UIImage.init(named: "XC通用");
                 }
                 else if(self.titleText.caseInsensitiveCompare("self.settings.advanced.title".localized).rawValue==0){
-                    self.iconImageView.image=UIImage.init(named: "setBack");
+                    self.iconImageView.image=UIImage.init(named: "XC反馈");
                 }
                 else if(self.titleText.caseInsensitiveCompare("self.help_center".localized).rawValue==0){
-                    self.iconImageView.image=UIImage.init(named: "setSupport");
+                    self.iconImageView.image=UIImage.init(named: "XC05帮助");
                 }
    
                 else

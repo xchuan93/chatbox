@@ -280,7 +280,7 @@ const static int ConversationContentViewControllerMessagePrefetchDepth = 10;
     CGSize fittingSize = CGSizeMake(self.tableView.bounds.size.width, self.tableView.bounds.size.height - 20);
     CGSize requiredSize = [headerView systemLayoutSizeFittingSize:fittingSize withHorizontalFittingPriority:UILayoutPriorityRequired verticalFittingPriority:UILayoutPriorityDefaultLow];
     headerView.frame = CGRectMake(0, 0, requiredSize.width, requiredSize.height);
-    self.tableView.tableHeaderView = headerView;
+    self.tableView.tableHeaderView = [UIView new];
 }
 
 - (void)setSearchQueries:(NSArray<NSString *> *)searchQueries

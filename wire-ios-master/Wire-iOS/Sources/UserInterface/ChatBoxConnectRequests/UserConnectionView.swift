@@ -71,9 +71,10 @@ public final class UserConnectionView: UIView, Copyable {
         
         [self.labelContainer, self.userImageView].forEach(self.addSubview)
         [self.firstLabel, self.secondLabel].forEach(labelContainer.addSubview)
+        self.setHidden()
         self.updateLabels()
     }
-
+    
     private func updateLabels() {
         updateFirstLabel()
         updateSecondLabel()
@@ -133,6 +134,12 @@ public final class UserConnectionView: UIView, Copyable {
                 $0.trailing == labelContainer.trailing
             }
         }
+    }
+    
+    private func setHidden() {
+        self.userImageView.isHidden = true
+        self.firstLabel.isHidden = true
+        self.secondLabel.isHidden = true
     }
 
 }

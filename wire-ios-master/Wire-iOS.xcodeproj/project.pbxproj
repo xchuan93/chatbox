@@ -230,6 +230,10 @@
 		188CF62C215B3C4F001BC6B6 /* ImagesPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188CF626215B3C4E001BC6B6 /* ImagesPlayer.m */; };
 		18D916AF2180263700FC1852 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D916AD2180263600FC1852 /* UIImage+Color.m */; };
 		18DC122A208B23DA00685798 /* WireLinkPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DC1229208B23DA00685798 /* WireLinkPreview.framework */; };
+		18EA0AA12196D62D00C04C51 /* XC05关于@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EA0A9F2196D62D00C04C51 /* XC05关于@3x.png */; };
+		18EA0AA22196D62D00C04C51 /* XC05关于@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EA0AA02196D62D00C04C51 /* XC05关于@2x.png */; };
+		18EA0AA52196D69400C04C51 /* XC05帮助@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EA0AA32196D69400C04C51 /* XC05帮助@2x.png */; };
+		18EA0AA62196D69400C04C51 /* XC05帮助@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EA0AA42196D69400C04C51 /* XC05帮助@3x.png */; };
 		18ECC45B219562170012CA2D /* XC返回资讯@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC459219562160012CA2D /* XC返回资讯@3x.png */; };
 		18ECC45C219562170012CA2D /* XC返回资讯@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC45A219562170012CA2D /* XC返回资讯@2x.png */; };
 		18ECF2E62160DDA500748210 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF2E22160DDA400748210 /* MBProgressHUD.m */; };
@@ -1571,6 +1575,10 @@
 		18D916AD2180263600FC1852 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		18D916AE2180263600FC1852 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		18DC1229208B23DA00685798 /* WireLinkPreview.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireLinkPreview.framework; path = Carthage/Build/iOS/WireLinkPreview.framework; sourceTree = "<group>"; };
+		18EA0A9F2196D62D00C04C51 /* XC05关于@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "XC05关于@3x.png"; path = "../../../../../chatbox改版/ios/切图/XC05关于@3x.png"; sourceTree = "<group>"; };
+		18EA0AA02196D62D00C04C51 /* XC05关于@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "XC05关于@2x.png"; path = "../../../../../chatbox改版/ios/切图/XC05关于@2x.png"; sourceTree = "<group>"; };
+		18EA0AA32196D69400C04C51 /* XC05帮助@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "XC05帮助@2x.png"; path = "../../../../../chatbox改版/ios/切图/XC05帮助@2x.png"; sourceTree = "<group>"; };
+		18EA0AA42196D69400C04C51 /* XC05帮助@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "XC05帮助@3x.png"; path = "../../../../../chatbox改版/ios/切图/XC05帮助@3x.png"; sourceTree = "<group>"; };
 		18ECC459219562160012CA2D /* XC返回资讯@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC返回资讯@3x.png"; sourceTree = "<group>"; };
 		18ECC45A219562170012CA2D /* XC返回资讯@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XC返回资讯@2x.png"; sourceTree = "<group>"; };
 		18ECF2E22160DDA400748210 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -3511,6 +3519,10 @@
 		18D916B021804C8700FC1852 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18EA0AA32196D69400C04C51 /* XC05帮助@2x.png */,
+				18EA0AA42196D69400C04C51 /* XC05帮助@3x.png */,
+				18EA0AA02196D62D00C04C51 /* XC05关于@2x.png */,
+				18EA0A9F2196D62D00C04C51 /* XC05关于@3x.png */,
 				18ECC45A219562170012CA2D /* XC返回资讯@2x.png */,
 				18ECC459219562160012CA2D /* XC返回资讯@3x.png */,
 				185305CF2192962100F1B58C /* XC关闭@2x.png */,
@@ -6460,6 +6472,7 @@
 				1850883C217ECF3A00DF78B5 /* XC邀请好友@3x.png in Resources */,
 				1658D2041D3E742A00249609 /* new_message.caf in Resources */,
 				87AEDB281DBA619D00010451 /* logo@2x.png in Resources */,
+				18EA0AA62196D69400C04C51 /* XC05帮助@3x.png in Resources */,
 				BF732A761D9C14C7003077DB /* emoji_nature.plist in Resources */,
 				186F30212190262E006CDFF7 /* XC设置页面背景@3x.png in Resources */,
 				16A2024D1B66505C0095BBD1 /* soundcloud@2x.png in Resources */,
@@ -6467,6 +6480,7 @@
 				185305D12192962100F1B58C /* XC关闭@2x.png in Resources */,
 				181D976421609F8100A2B1E9 /* MJRefresh.bundle in Resources */,
 				186F30292190262E006CDFF7 /* XC登录设备@2x.png in Resources */,
+				18EA0AA12196D62D00C04C51 /* XC05关于@3x.png in Resources */,
 				181D970C215E298C00A2B1E9 /* bar@3x.png in Resources */,
 				181D973121609F6E00A2B1E9 /* youth@3x.png in Resources */,
 				181D97A62160A3AA00A2B1E9 /* menuData.plist in Resources */,
@@ -6495,6 +6509,7 @@
 				18ECC45B219562170012CA2D /* XC返回资讯@3x.png in Resources */,
 				18508839217ECF3A00DF78B5 /* XC更多选择@2x.png in Resources */,
 				181D97BE2160D03800A2B1E9 /* backGround12.png in Resources */,
+				18EA0AA52196D69400C04C51 /* XC05帮助@2x.png in Resources */,
 				1658D2061D3E742A00249609 /* ringing_from_them_long.caf in Resources */,
 				16A2024C1B66505B0095BBD1 /* soundcloud.png in Resources */,
 				8773160C1B970A82007BA779 /* misc.plist in Resources */,
@@ -6540,6 +6555,7 @@
 				DB3E943A1B96EDBD00990482 /* LaunchScreen.xib in Resources */,
 				8FC853BF199245770008B66B /* Images.xcassets in Resources */,
 				181D970D215E298C00A2B1E9 /* bar@2x.png in Resources */,
+				18EA0AA22196D62D00C04C51 /* XC05关于@2x.png in Resources */,
 				1EF42D411B1889B300A3145D /* stylesheet.cas in Resources */,
 				185971E72184596D009C2A1D /* XC邀请好友@2x.png in Resources */,
 				8773160A1B970A82007BA779 /* iphone6.plist in Resources */,

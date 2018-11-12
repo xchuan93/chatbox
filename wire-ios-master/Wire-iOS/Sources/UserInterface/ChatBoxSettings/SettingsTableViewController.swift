@@ -250,13 +250,15 @@ class SettingsTableViewController: SettingsBaseTableViewController {
         if let headerFooterView = view as? UITableViewHeaderFooterView {
             headerFooterView.textLabel?.textColor = UIColor(red: 157/255.0, green: 157/255.0, blue: 157/255.0, alpha: 1)
             headerFooterView.backgroundView?.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
+            headerFooterView.contentView.frame = CGRect.init(x: 15, y: 0, width: headerFooterView.bounds.size.width, height: headerFooterView.bounds.size.height);
         }
     }
-
+    
     func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         if let headerFooterView = view as? UITableViewHeaderFooterView {
             headerFooterView.textLabel?.textColor = UIColor(red: 157/255.0, green: 157/255.0, blue: 157/255.0, alpha: 1)
             headerFooterView.backgroundView?.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
+            headerFooterView.contentView.frame = CGRect.init(x: 15, y: 0, width: headerFooterView.bounds.size.width, height: headerFooterView.bounds.size.height);
         }
     }
 

@@ -41,7 +41,6 @@
         self.contentDelegate = self;
         self.dataSource = [[ContactsDataSource alloc] init];
         self.dataSource.searchQuery = @"";
-//        self.view.backgroundColor = [UIColor whiteColor];
         self.title = NSLocalizedString(@"contacts_ui.title", @"");
     }
     

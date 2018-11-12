@@ -425,7 +425,7 @@ NSString * const SwipeMenuCollectionCellIDToCloseKey = @"IDToClose";
             result = NO;
         }
         else {
-            result = fabs(offset.x) < fabs(offset.y);
+            result = fabs(offset.x) > fabs(offset.y);
         }
     }
     return result;

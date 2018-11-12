@@ -56,7 +56,6 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
 
 @property (nonatomic) BOOL searchResultsReceived;
 
-// Containers, ect.
 @property (nonatomic) UIView *topContainerView;
 @property (nonatomic) UIView *separatorView;
 @property (nonatomic) UIView *bottomContainerView;
@@ -100,8 +99,6 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
         [self presentShareContactsViewController];
     }
     
-//    [self.tableView reloadData];
-//    self.tableView.sectionIndexBackgroundColor = [UIColor greenColor];
     self.tableView.sectionIndexColor = UIColorFromRGB(0x888888);
 }
 
@@ -123,7 +120,6 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self.tableView reloadData];
-//    self.tableView.sectionIndexBackgroundColor = [UIColor greenColor];
     self.tableView.sectionIndexColor = UIColorFromRGB(0x888888);
 }
 
@@ -254,7 +250,7 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:UIScreen.safeArea.top];
     [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:standardOffset];
     [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:standardOffset];
-        
+    
     self.titleLabelHeightConstraint = [self.titleLabel autoSetDimension:ALDimensionHeight toSize:44.0f];
     self.titleLabelHeightConstraint.active = (self.titleLabel.text.length > 0);
     
@@ -288,7 +284,7 @@ static NSString * const ContactsViewControllerSectionHeaderID = @"ContactsSectio
     [self.tokenField autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:standardOffset];
     [self.tokenField autoPinEdgeToSuperviewEdge:ALEdgeBottom];
     [self.tokenField autoPinEdge:ALEdgeTrailing toEdge:ALEdgeLeading ofView:self.cancelButton withOffset:- standardOffset / 2];
-    [self.tokenField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel withOffset:3 relation:NSLayoutRelationGreaterThanOrEqual];
+    [self.tokenField autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel withOffset:20 relation:NSLayoutRelationGreaterThanOrEqual];
     [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
         [self.tokenField autoSetContentHuggingPriorityForAxis:ALAxisVertical];
     }];
